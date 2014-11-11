@@ -1,0 +1,176 @@
+html{overflow-y:scroll;} 
+
+body{ list-style:none; margin-right:10px; padding:0; font-size:13px; font-family:Georgia,  "Times New Roman", Times, serif; color:#232323; }
+
+
+
+a{outline:none; text-decoration:none;}
+
+
+
+
+/*----------------------------------------------Generalise-------------------------------------*/
+
+#header, #container, #footer{display:block; width:960px; margin:0 auto;}
+
+nav ul{margin:0; padding:0; list-style:none;}
+
+
+address{font-style:normal;}
+
+
+form, fieldset, legend{margin:0; padding:0; border:none;}
+legend{display:none;}
+input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Times,serif;}
+
+
+
+
+
+
+/*----------------------------------------------Header-------------------------------------*/
+
+#header{
+	width:1024px;
+
+}
+
+#header #logo{float:left; margin:0 0 0px 0;}
+
+#logo #header{
+	 vertical-align: middle }
+}
+
+#header  {color:#232323;}
+#header nav{display:block; float:right; margin:10px 0 0 0; padding:20px 0; color:#C0BAB6; background-color:#232323;}
+#header nav ul{padding:0 10px;  }
+#header nav li a{display:inline; margin-right:25px; color:#FFFFFF; }
+#header nav li a:hover{
+	text-decoration: underline;
+    -moz-text-decoration-color: red; /* Code for Firefox */
+    -webkit-text-decoration-color: red; }
+#header nav li{display:inline; margin-right:25px; color:#FFFFFF; }
+#header nav li.last{margin-right:0;}
+
+
+
+/*----------------------------------------------Content Area-------------------------------------*/
+
+#container{padding:30px 0;}
+#container section{display:block; width:100%; margin:0 0 30px 0; padding:0;}
+#container .last{margin:0;}
+#container .more{text-align:right;}
+
+
+
+/* ------Homepage-----*/
+
+#container #homepage{display:block; width:100%; line-height:1.6em;}
+
+#container #homepage #services{padding:0 0 30px 0; border-bottom:1px solid #DEDEDE;}
+#container #homepage #services article{}
+#container #homepage #services figure{display:inline; float:left;}
+#container #homepage #services strong{float:left; margin:8px 0 0 10px; padding:0; font-size:14px; font-weight:bold; text-transform:uppercase;}
+#container #homepage #services p{display:block; margin:0; padding:5px 0 0 0; clear:both; line-height:1.6em;}
+
+
+#container #homepage #tim_video article figure ul{margin:0; padding:0; list-style:none;}
+
+
+
+/* ------Main Content-----*/
+
+#container #content{float:left; width:630px; line-height:1.6em;}
+
+#container #content #posts{}
+#container #content #posts ul{margin:0; padding:0; list-style:none;}
+#container #content #posts ul li{display:block; width:100%; margin-bottom:30px;}
+#container #content #posts ul li.last{ margin-bottom:0;}
+#container #content #posts ul li article{}
+#container #content #posts ul li article figure{}
+#container #content #posts ul li article figure img{float:left; width:180px; height:150px; margin:0; padding:4px; border:1px solid #D6D6D6;}
+#container #content #posts ul li article figure figcaption{display:block; float:right; width:410px;}
+#container #content #posts ul li article figure h2{font-size:14px;}
+#container #content #posts ul li article figure footer{}
+
+/* -----Tim en video-----*/
+
+#slider{
+	margin: auto;
+	padding: auto;
+}
+
+
+/* -----Tim en video-----*/
+
+#tim_video h2{
+	color:#FA8B60;
+	width:250px;
+	padding-left: 50% ;
+	
+}
+
+#tim_video p{
+	color:#232323;
+	width:30px;
+	padding-left: 50% ;
+	
+}
+
+#multi_info{
+	background-color: #C7D0D5;
+	height: 150px;
+}
+hr {
+	height: 5px;
+	background-color:#FA8B60;
+}
+
+#content h2{
+	color:#FA8B60;
+    list-style:none;
+    margin:auto;
+    padding:auto;
+}
+#content h3{
+	
+	color:#FA8B60;
+    list-style:none;
+    margin:auto;
+    padding:auto;
+}
+
+#formation img{
+	
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+
+/* ------Right Column-----*/
+
+
+
+#right_column h2{
+	color:#FA8B60;
+    list-style:none;
+    margin:auto;
+    padding-top:11px;
+}
+
+#right_column img{
+
+    padding-top:11px;
+}
+
+
+
+#container #right_column{float:right; width:280px;}
+
+
+
+
+/*----------------------------------------------Footer-------------------------------------*/
+
+#footer{padding:20px 0;}
+#footer p{margin:0; padding:0;}
