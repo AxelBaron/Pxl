@@ -9,7 +9,7 @@
 	<body>
 	
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Administrateur Ajoutée</h2>
+	<h2>Menu Ajoutée</h2>
 
 	<?php 
 

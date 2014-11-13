@@ -9,7 +9,7 @@
 	<body>
 	
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Ajouter un Portfolio</h2>
+	<h2>Ajouter une Page</h2>
 
 	<form action="traitement-ajouter-page.php" method="POST">
 	
