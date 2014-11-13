@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Formulaire d'ajout d'Actualités</title>
-		<meta charset="UTF-8"/>
-	</head>
-	
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style_admin.css">
+	<title>#TIM Matane - Administration principale</title>
+</head>
+<body>
 
-	<body>
+	<?php include("menu-admin.php");?>
+
+	<div class="right">
+
+		<section>
 	
 	<h1>Administration #TIM Matane</h1>	
 	<h2>Ajouter une Actualité</h2>
@@ -47,4 +52,6 @@
 	</form>
 	
 	</body>
+	</section>
+	</div>
 </html>
