@@ -2,9 +2,13 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<link rel="stylesheet" type="text/css" href="style_admin.css">
+	<title>#TIM Matane - Administration Actualités</title>
 </head>
 <body>
+<?php include("menu-admin.php");?>
+<div class="right">
+<section>
 
 <h1>Actualités</h2>
 <?php
@@ -52,5 +56,7 @@ alert(txt);*/
 	?>
 	
 </form>
+</section>
+</div>
 </body>
 </html>
