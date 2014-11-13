@@ -9,7 +9,7 @@
 	<body>
 	
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Ajouter un menu principal</h2>
+	<h2>Ajouter un menu Principal</h2>
 
 	<form action="traitement-ajouter-menu.php" method="POST">
 	

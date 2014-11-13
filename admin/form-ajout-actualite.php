@@ -9,7 +9,7 @@
 	<body>
 	
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Ajouter une actualité</h2>
+	<h2>Ajouter une Actualité</h2>
 
 	<form action="traitement-ajouter-actualité.php" method="POST">
 	

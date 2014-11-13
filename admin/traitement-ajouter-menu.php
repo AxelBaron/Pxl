@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Formulaire d'ajout d' Administrateur</title>
+		<title>Formulaire d'ajout de Menu Principal</title>
 		<meta charset="UTF-8"/>
 	</head>
 	
