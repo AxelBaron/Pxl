@@ -8,6 +8,7 @@
 
 <h1>Menu</h2>
 <?php
+	include_once "connectionbdd.php";
 	//Boucle pour calculer le nombre pour la case tout cocher
 	$sql = "SELECT * FROM menu";
 		$resultat = $pdo->query($sql);
@@ -20,8 +21,8 @@
 <!-- Cocher, ajouter et supprimer -->
 <input type='checkbox' id="checkbox-tout" onclick="javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)" />
 <label>Tout cocher/décocher</label>
-<input type='button' value='Ajouter' />
-<input type='button' value='Supprimer' />
+<a href="form-ajout-menu.php">Ajouter</a>
+<a href="#">Supprimer</a>
 
 <!-- Liste des Menu -->
 <form>
@@ -34,7 +35,7 @@
 			echo("<div>");
 			echo("<input type='checkbox' id='$nbEntre' />");
 			echo($donnees["nom"]);
-			echo("<input type='button' value='Modifier' />");
+			echo("<a href='modifier-menu.php?menu_id=".$donnees['menu_id']."'>Modifier</a>");
 			echo("</div>");
 		}
 	?>
