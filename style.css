@@ -112,7 +112,11 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 
 #tim_video p{
 	color:#232323;
-	width:30px;
+	/*cette ligne n'est pas utile, elle donne une zone de 30px pour le texte descriptif, beaucoup trop petit*/
+	/*width:30px;*/
+	width: 500px;
+	/*le texte sera justifié*/
+	text-align: justify;
 	padding-left: 50% ;
 	
 }

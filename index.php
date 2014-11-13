@@ -3,7 +3,7 @@
 <head>
 <title>Site Web Techniques d'intégration Multimédia</title>
 <meta charset="utf-8">
-<link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 <div>
