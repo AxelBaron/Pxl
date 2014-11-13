@@ -27,8 +27,8 @@
 <!-- Cocher, ajouter et supprimer -->
 <input type='checkbox' id="checkbox-tout" onclick="javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)" />
 <label>Tout cocher/décocher</label>
-<input type='button' value='Ajouter' />
-<input type='button' value='Supprimer' />
+<a href="form-ajout-portfolio.php">Ajouter</a>
+<a href="#">Supprimer</a>
 
 <!-- Liste des Actualités -->
 <form>
@@ -41,7 +41,7 @@
 			echo("<div>");
 			echo("<input type='checkbox' id='$nbEntre' />");
 			echo($donnees["etudiant"]);
-			echo("<input type='button' value='Modifier' />");
+			echo("<a href='modifier-portfolio.php?portfolio_id=".$donnees['portfolio_id']."'>Modifier</a>");
 			echo("</div>");
 		}
 	?>
