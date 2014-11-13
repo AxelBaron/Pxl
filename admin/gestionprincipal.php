@@ -2,9 +2,32 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<link rel="stylesheet" type="text/css" href="style_admin.css">
+	<title>#TIM Matane - Administration principale</title>
 </head>
 <body>
-	
+
+	<nav>
+		<ul>
+				<li><a href="gestion-actualite.php">Actualités</a></li>
+				<li><a href="gestion-portfolio.php">Portfolio</a></li>
+				<li><a href="gestion-menu.php">Menus</a></li>
+				<li><a href="gestion-page.php">Pages</a></li>
+				<li><a href="gestion-admin.php">Administrateurs</a></li>
+		</ul>
+	</nav>
+
+	<div class="right">
+
+		<section>	
+			<p>Bienvenu dans la section d'administration du site #TIM Matane.</p>
+			<img src="../images/logo2.png" alt="Logo tim Matane">
+		
+
+			<p> Dans cette section, vous pouvez gérer toute les atualités, pages ,textes de votre site de facon simple.
+				Rensez-vous dans le menu juste à gauche pour effectuer des modification sur le site</p>
+		</section>
+	</div>
+
 </body>
 </html>
