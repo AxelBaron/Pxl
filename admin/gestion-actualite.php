@@ -23,21 +23,30 @@
 ?>
 
 <script>
-/*var txt;
-var supprimerAlert = confirm("Êtes-vous sûr de vouloir supprimer définitivement le ou les actualités sélectionnées?");
-if (r == true) {
-    txt = "Votre !";
-} else {
-    txt = "You pressed Cancel!";
-}*
-alert(txt);*/
+	function suppression(nbEntre){
+
+		//Détecte le d'actualité cocher
+		for(i = 1; i < nbEntre+1; i++){
+			if(document.getElementById(i).checked == true){
+				alert(document.getElementById(i).name);
+			}
+		}
+		//Utilisation de ajax pour appeler un script PHP pour supprimer l'actualité
+		
+		var message;
+		var supprimerAlert = confirm("Êtes-vous sûr de vouloir supprimer définitivement le ou les actualités sélectionnées?");
+		if (supprimerAlert == true) {
+			message = "Votre actualité a été supprimer!";
+			alert(message);
+		}
+	}
 </script>
 
 <!-- Cocher, ajouter et supprimer -->
 <input type='checkbox' id="checkbox-tout" onclick="javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)" />
 <label>Tout cocher/décocher</label>
 <a href="form-ajout-actualite.php">Ajouter</a>
-<a href="#">Supprimer</a>
+<a href="#" onclick="suppression(<?php echo ($nbEntre); ?>)">Supprimer</a>
 
 <!-- Liste des Actualités -->
 <form>
@@ -48,7 +57,7 @@ alert(txt);*/
 		while($donnees = $resultat->fetch()){
 			$nbEntre++;
 			echo("<div>");
-			echo("<input type='checkbox' id='$nbEntre' />");
+			echo("<input type='checkbox' id='$nbEntre' name='".$donnees['actu_id']."' />");
 			echo($donnees["titre"]);
 			echo("<a href='modifier-actualite.php?actu_id=".$donnees['actu_id']."'>Modifier</a>");
 			echo("</div>");
