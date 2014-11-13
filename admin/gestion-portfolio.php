@@ -14,6 +14,7 @@
 
 <h1>Portfolio</h2>
 <?php
+	include("connectionbdd.php");
 	//Boucle pour calculer le nombre pour la case tout cocher
 	$sql = "SELECT * FROM portfolio";
 		$resultat = $pdo->query($sql);
