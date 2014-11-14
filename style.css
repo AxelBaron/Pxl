@@ -1,13 +1,23 @@
 html{overflow-y:scroll;} 
 
-body{ list-style:none; margin-right:10px; padding:0; font-size:13px; font-family:Georgia,  "Times New Roman", Times, serif; color:#232323; }
-
-
+body{ list-style:none; margin-right:10px; padding:0; font-size:13px; font-family:'Avenir Next', Arial, Times, serif; color:#232323;  }
 
 a{outline:none; text-decoration:none;}
 
+@font-face { 
+  font-family: 'Avenir'; 
+  src: url('font/Avenir.ttf'); 
+}
 
+@font-face { 
+  font-family: 'Avenir'; 
+  src: url('font/AvenirNext.ttf'); 
+}
 
+@font-face { 
+  font-family: 'Museo'; 
+  src: url('font/Museo300.otf'); 
+}
 
 /*----------------------------------------------Generalise-------------------------------------*/
 
@@ -21,12 +31,12 @@ address{font-style:normal;}
 
 form, fieldset, legend{margin:0; padding:0; border:none;}
 legend{display:none;}
-input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Times,serif;}
+input, textarea, select{font-size:12px; font-family:'Avenir Next', Arial ,Times,serif;}
 
-
-
-
-
+h2{
+	font-family: 'Museo', Arial;
+	color:#FA8B60;
+}
 
 /*----------------------------------------------Header-------------------------------------*/
 
@@ -67,7 +77,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 
 #container #homepage{display:block; width:100%; line-height:1.6em;}
 
-#container #homepage #services{padding:0 0 30px 0; border-bottom:1px solid #DEDEDE;}
+#container #homepage #services{padding:0 0 0 0; border-bottom:0px solid #DEDEDE;}
 #container #homepage #services article{}
 #container #homepage #services figure{display:inline; float:left;}
 #container #homepage #services strong{float:left; margin:8px 0 0 10px; padding:0; font-size:14px; font-weight:bold; text-transform:uppercase;}
@@ -107,6 +117,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 	color:#FA8B60;
 	width:250px;
 	padding-left: 50% ;
+	font-family: 'Museo', Arial;
 	
 }
 
@@ -114,7 +125,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 	color:#232323;
 	/*cette ligne n'est pas utile, elle donne une zone de 30px pour le texte descriptif, beaucoup trop petit*/
 	/*width:30px;*/
-	width: 500px;
+	width: 480px;
 	/*le texte sera justifié*/
 	text-align: justify;
 	padding-left: 50% ;
@@ -135,6 +146,7 @@ hr {
     list-style:none;
     margin:auto;
     padding:auto;
+    font-family: 'Museo', Arial;
 }
 #content h3{
 	
@@ -160,6 +172,7 @@ hr {
     list-style:none;
     margin:auto;
     padding-top:11px;
+    font-family: 'Museo', Arial;
 }
 
 #right_column img{
@@ -172,9 +185,33 @@ hr {
 #container #right_column{float:right; width:280px;}
 
 
-
-
 /*----------------------------------------------Footer-------------------------------------*/
 
 #footer{padding:20px 0;}
 #footer p{margin:0; padding:0;}
+
+/* -- -- -- -- -- PAGE TIM C'EST QUOI -- -- -- -- -- */
+
+
+
+#proweb{
+	width: 50%;
+	height: 400px;
+	float: left;
+	background-color: red;
+	text-align: center;
+}
+
+#descriptionproweb{
+	width: 50%;
+	float: left;
+	background-color: yellow;
+	text-align: justify;
+	margin-top: 80px;
+
+	line-height: 20px;
+}
+
+.clear{
+	clear:both;
+}
