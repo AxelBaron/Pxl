@@ -29,7 +29,7 @@
 <div class="wrapper row2">
   <div id="container">
     <!-- Silder -->
-    <section id="slider"><a href="#"><img src="images/slider.jpg" alt="Slider1"></a></section>
+    <section id="slider"><a href="#"><img src="images/slider.jpg" alt="Slider1" width="960" height="auto"></a></section>
     <!-- main content -->
     <div id="homepage">
      <!-- #Index Image -->
