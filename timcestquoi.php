@@ -107,6 +107,7 @@
       <div id="conteneurVS">
         <h1>TIM VS les autre départements</h1>
         <div id="VS">
+        
         </div>
 
       </div>
