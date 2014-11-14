@@ -21,7 +21,7 @@ a{outline:none; text-decoration:none;}
 
 /*----------------------------------------------Generalise-------------------------------------*/
 
-#header, #container, #footer{display:block; width:960px; margin:0 auto; background-color: blue;}
+#header, #container, #footer{display:block; width:960px; margin:0 auto; /*background-color: blue;*/}
 
 nav ul{margin:0; padding:0; list-style:none;}
 
@@ -36,6 +36,14 @@ input, textarea, select{font-size:12px; font-family:'Avenir Next', Arial ,Times,
 h2{
 	font-family: 'Museo', Arial;
 	color:#FA8B60;
+}
+
+h2 a{
+	color:#FA8B60;
+}
+
+h2 a:hover{
+	text-decoration: underline;
 }
 
 /*----------------------------------------------Header-------------------------------------*/
@@ -205,7 +213,7 @@ hr {
 	/*largeur de 50%, hauteur de 400px (taille de l'image)*/
 	width: 50%;
 	height: 400px;
-	background-color: red;
+	/*background-color: red;*/
 
 	/*un float pour placer mon élément à gauche, en premier*/
 	float: left;
@@ -215,8 +223,8 @@ hr {
 }
 
 #descriptionproweb{
-	width: 50%;
-	background-color: yellow;
+	width: 49%;
+	/*background-color: yellow;*/
 
 	/*Il faut que cet élément se place en float, après la div proweb*/
 	float: left;
@@ -227,7 +235,7 @@ hr {
 	line-height: 20px;
 	text-align: justify;
 }
-
+/*cette partie sert pour les liens qui seront dans la première partie et serviront d'ancre dans la page*/
 #lienancre{
 	text-align: center;
 }

@@ -50,9 +50,9 @@
               Aenean tincidunt turpis non arcu elementum varius. In quis tortor sit amet nulla consectetur malesuada in id nulla. 
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed a urna vulputate eros tempor consectetur. </p></li>
               
-              <h2 id="lienancre">Les matières de Multi <br />
+              <h2 id="lienancre"><a href="#">Les matières de Multi <br />
               VS<br />
-              Les autres départements</h2>
+              Les autres départements</a></h2>
         </article>
       </section>
 
