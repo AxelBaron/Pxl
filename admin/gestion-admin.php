@@ -41,7 +41,7 @@
 			echo("<div>");
 			echo("<input type='checkbox' id='$nbEntre' />");
 			echo($donnees["usager"]);
-			echo("<a href='modifier-admin.php?admin_id=".$donnees['admin_id']."'>Modifier</a>");
+			echo("<a href='form-modifier-admin.php?admin_id=".$donnees['admin_id']."'>Modifier</a>");
 			echo("</div>");
 		}
 	?>

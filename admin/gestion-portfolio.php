@@ -41,7 +41,7 @@
 			echo("<div>");
 			echo("<input type='checkbox' id='$nbEntre' />");
 			echo($donnees["etudiant"]);
-			echo("<a href='modifier-portfolio.php?portfolio_id=".$donnees['portfolio_id']."'>Modifier</a>");
+			echo("<a href='form-modifier-portfolio.php?portfolio_id=".$donnees['portfolio_id']."'>Modifier</a>");
 			echo("</div>");
 		}
 	?>

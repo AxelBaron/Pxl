@@ -42,7 +42,7 @@
 			echo("<div>");
 			echo("<input type='checkbox' id='$nbEntre' />");
 			echo($donnees["nom"]);
-			echo("<a href='modifier-menu.php?menu_id=".$donnees['menu_id']."'>Modifier</a>");
+			echo("<a href='form-modifier-menu.php?menu_id=".$donnees['menu_id']."'>Modifier</a>");
 			echo("</div>");
 		}
 	?>
