@@ -23,7 +23,7 @@
 			<h1>#TIM Matane Administration</h1>	
 			<h2>Modifier l'Actualité: <?php echo $data['titre']; ?> </h2>
 			 
-			 <form action="traitement-modification-actualite.php?num=<?php echo $data['actu_id']?>" method="POST">
+			 <form action="traitement-modifier-actualite.php?actu_id=<?php echo $data['actu_id']?>" method="POST">
 	
 		<fieldset>
 			<legend>Formulaire de Modification :</legend>
