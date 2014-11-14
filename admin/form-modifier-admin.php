@@ -23,7 +23,7 @@
 			<h1>#TIM Matane Administration</h1>	
 			<h2>Modifier l'Administrateur: <?php echo $data['usager']; ?> </h2>
 			 
-			 <form action="traitement-modification-admin.php?num=<?php echo $data['admin_id']?>" method="POST">
+			 <form action="traitement-modifier-admin.php?admin_id=<?php echo $data['admin_id']?>" method="POST">
 	
 		<fieldset>
 			<legend>Formulaire de Modification :</legend>
