@@ -1,55 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style_admin.css">
-	<title>#TIM Matane - Administration Actualités</title>
-</head>
-<body>
-<?php include("menu-admin.php");?>
-<div class="right">
-<section>
-
-<h1>Actualités</h2>
 <?php
-	include_once "connectionbdd.php";
+	include_once "header-admin.php";
 	//Boucle pour calculer le nombre pour la case tout cocher
 	$sql = "SELECT * FROM actualite";
-		$resultat = $pdo->query($sql);
-		$nbEntre = 0;
-		while($donnees = $resultat->fetch()){
-			$nbEntre++;
-		}
-?>
-
-<script>
-	function suppression(nbEntre){
-
-		//Détecte le d'actualité cocher
-		for(i = 1; i < nbEntre+1; i++){
-			if(document.getElementById(i).checked == true){
-				alert(document.getElementById(i).name);
-			}
-		}
-		//Utilisation de ajax pour appeler un script PHP pour supprimer l'actualité
-		
-		var message;
-		var supprimerAlert = confirm("Êtes-vous sûr de vouloir supprimer définitivement le ou les actualités sélectionnées?");
-		if (supprimerAlert == true) {
-			message = "Votre actualité a été supprimer!";
-			alert(message);
-		}
+	$resultat = $pdo->query($sql);
+	$nbEntre = 0;
+	while($donnees = $resultat->fetch()){
+		$nbEntre++;
 	}
-</script>
-
+?>
+<h1>Actualités</h2>
 <!-- Cocher, ajouter et supprimer -->
-<input type='checkbox' id="checkbox-tout" onclick="javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)" />
-<label>Tout cocher/décocher</label>
-<a href="form-ajout-actualite.php">Ajouter</a>
-<a href="#" onclick="suppression(<?php echo ($nbEntre); ?>)">Supprimer</a>
-
+<div id="gestion-list">
+	<input type='checkbox' id="checkbox-tout" onclick="javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)" />
+	<label>Tout cocher/décocher</label>
+	<a href="form-ajout-actualite.php">Ajouter</a>
+	<a href="#" onclick="javascript:suppression(<?php echo ($nbEntre); ?>, 'actualite')">Supprimer</a>
+</div>
 <!-- Liste des Actualités -->
 <form>
+<div id="liste-elements">
 	<?php
 		$sql = "SELECT * FROM actualite";
 		$resultat = $pdo->query($sql);
@@ -59,13 +28,12 @@
 			echo("<div>");
 			echo("<input type='checkbox' id='$nbEntre' name='".$donnees['actu_id']."' />");
 			echo($donnees["titre"]);
-			echo("<a href='form-modifier-actualite.php?actu_id=".$donnees['actu_id']."'>Modifier</a>");
+			echo("<a href='modifier-actualite.php?actu_id=".$donnees['actu_id']."'>Modifier</a>");
 			echo("</div>");
 		}
 	?>
-	
+<div>
 </form>
-</section>
-</div>
-</body>
-</html>
+<?php
+	include_once "footer-admin.php";
+?>
