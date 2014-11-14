@@ -28,7 +28,7 @@
 			echo("<div>");
 			echo("<input type='checkbox' id='$nbEntre' name='".$donnees['actu_id']."' />");
 			echo($donnees["titre"]);
-			echo("<a href='modifier-actualite.php?actu_id=".$donnees['actu_id']."'>Modifier</a>");
+			echo("<a href='form-modifier-actualite.php?actu_id=".$donnees['actu_id']."'>Modifier</a>");
 			echo("</div>");
 		}
 	?>
