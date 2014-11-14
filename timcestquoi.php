@@ -42,13 +42,73 @@
       <h1>Les matières</h1>
         <div id="matieres">
           
-          <div id="mat1">1</div>
-          <div id="mat2">2</div>
-          <div id="mat3">3</div>
-          <div id="mat4">4</div>
-          <div id="mat3">5</div>
-          <div id="mat4">6</div>
+          <div id="mat1">
+            <h2>Matière 1</h2>
+            <p>
+              Lipsum psum de quelques lignes qui permettra de comprendre ce qu'est la matière de façon très brève.
+              Mais il faudra qu'elle fasse quelques lignes, minimum 5, car sinon ça fait vraiment trop court pour le carré. Alors je mets encore un peu de lipsum psam bam.
+            </p>
+            <p class="imgillu">
+              <img src="lapin" alt="la petite image qui illustre" title="image qui illustre" width="370" height="100px;">
+            </p>
+          </div>
+          <div id="mat2">
+            <h2>Matière 1</h2>
+            <p>
+              Lipsum psum de quelques lignes qui permettra de comprendre ce qu'est la matière de façon très brève.
+              Mais il faudra qu'elle fasse quelques lignes, minimum 5, car sinon ça fait vraiment trop court pour le carré. Alors je mets encore un peu de lipsum psam bam.
+            </p>
+            <p class="imgillu">
+              <img src="lapin" alt="la petite image qui illustre" title="image qui illustre" width="370" height="100px;">
+            </p>
+          </div>
+          <div id="mat3">
+            <h2>Matière 1</h2>
+            <p>
+              Lipsum psum de quelques lignes qui permettra de comprendre ce qu'est la matière de façon très brève.
+              Mais il faudra qu'elle fasse quelques lignes, minimum 5, car sinon ça fait vraiment trop court pour le carré. Alors je mets encore un peu de lipsum psam bam.
+            </p>
+            <p class="imgillu">
+              <img src="lapin" alt="la petite image qui illustre" title="image qui illustre" width="370" height="100px;">
+            </p>
+          </div>
+          <div id="mat4">
+            <h2>Matière 1</h2>
+            <p>
+              Lipsum psum de quelques lignes qui permettra de comprendre ce qu'est la matière de façon très brève.
+              Mais il faudra qu'elle fasse quelques lignes, minimum 5, car sinon ça fait vraiment trop court pour le carré. Alors je mets encore un peu de lipsum psam bam.
+            </p>
+            <p class="imgillu">
+              <img src="lapin" alt="la petite image qui illustre" title="image qui illustre" width="370" height="100px;">
+            </p>
+          </div>
+          <div id="mat3">
+            <h2>Matière 1</h2>
+            <p>
+              Lipsum psum de quelques lignes qui permettra de comprendre ce qu'est la matière de façon très brève.
+              Mais il faudra qu'elle fasse quelques lignes, minimum 5, car sinon ça fait vraiment trop court pour le carré. Alors je mets encore un peu de lipsum psam bam.
+            </p>
+            <p class="imgillu">
+              <img src="lapin" alt="la petite image qui illustre" title="image qui illustre" width="370" height="100px;">
+            </p>
+          </div>
+          <div id="mat4">
+            <h2>Matière 1</h2>
+            <p>
+              Lipsum psum de quelques lignes qui permettra de comprendre ce qu'est la matière de façon très brève.
+              Mais il faudra qu'elle fasse quelques lignes, minimum 5, car sinon ça fait vraiment trop court pour le carré. Alors je mets encore un peu de lipsum psam bam.
+            </p>
+            <p class="imgillu">
+              <img src="lapin" alt="la petite image qui illustre" title="image qui illustre" width="370" height="100px;">
+            </p>
+          </div>
         </div>
+      </div>
+      <div id="conteneurVS">
+        <h1>TIM VS les autre départements</h1>
+        <div id="VS">
+        </div>
+
       </div>
         
       

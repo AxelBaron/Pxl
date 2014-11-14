@@ -264,13 +264,12 @@ hr {
 	clear:both;
 }
 
+/* ---- MATIÈRES ---- */
+
 #conteneurmatieres{
 	width: 960px;
 	margin: 0 auto;
-
 }
-
-/* ---- MATIÈRES ---- */
 
 #matieres{
 	width: 960px;
@@ -278,13 +277,30 @@ hr {
 	/*background-color: green;*/
 	margin: 0 auto;
 	border-top: 6px #FA8B60 solid;
+}
 
+#matieres h2{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#matieres p{
+	margin-top: 5px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+	text-align: justify;
+
+}
+
+#matieres p .imgillus{
+	text-align: center;
 }
 
 #mat1{
 	width: 400px;
 	height: 250px;
-	background-color: blue;
+	/*background-color: blue;*/
 	margin-top: 30px;
 	margin-left: 55px;
 	margin-right: 25px;
@@ -295,7 +311,7 @@ hr {
 #mat2{
 	width: 400px;
 	height: 250px;
-	background-color: yellow;
+	/*background-color: yellow;*/
 	margin-top: 30px;
 	margin-right: 55px;
 	margin-left: 25px;
@@ -306,7 +322,7 @@ hr {
 #mat3{
 	width: 400px;
 	height: 250px;
-	background-color: blue;
+	/*background-color: blue;*/
 	margin-top: 15px;
 	margin-left: 55px;
 	margin-right: 25px;
@@ -317,11 +333,30 @@ hr {
 #mat4{
 	width: 400px;
 	height: 250px;
-	background-color: yellow;
+	/*background-color: yellow;*/
 	margin-top: 15px;
 	margin-right: 55px;
 	margin-left: 25px;
 	margin-bottom: 15px;
 	float: left;
 }
+
+/* ---- FIN MATIERES ---- */
+
+/* ---- VS ---- */
+
+#conteneurVS{
+	width: 960px;
+	margin: 0 auto;
+}
+
+#VS{
+	width: 960px;
+	height: 500px;
+	background-color: green;
+	margin: 0 auto;
+	border-top: 6px #FA8B60 solid;
+}
+
+/* ---- FIN VS ----*/
 
