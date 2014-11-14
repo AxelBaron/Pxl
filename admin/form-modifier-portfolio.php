@@ -23,7 +23,7 @@
 			<h1>#TIM Matane Administration</h1>	
 			<h2>Modifier le portfolio de: <?php echo $data['etudiant']; ?> </h2>
 			 
-			 <form action="traitement-modification-admin.php?num=<?php echo $data['portfolio_id']?>" method="POST">
+			 <form action="traitement-modifier-portfolio.php?portfolio_id=<?php echo $data['portfolio_id']?>" method="POST">
 	
 		<fieldset>
 			<legend>Formulaire de Modification :</legend>
