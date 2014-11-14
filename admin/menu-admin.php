@@ -6,6 +6,6 @@
 				<li><a href="gestion-menu.php">Menus</a></li>
 				<li><a href="gestion-page.php">Pages</a></li>
 				<li><a href="gestion-admin.php">Administrateurs</a></li>
-				<li><a href="../index.php">Retour page index publique</a></li>
+				<li><a href="../index.php" target="_blank">Retour page index publique</a></li>
 		</ul>
 	</nav>
