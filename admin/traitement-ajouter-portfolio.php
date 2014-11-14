@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Formulaire d'ajout de Portfolio</title>
-		<meta charset="UTF-8"/>
-	</head>
-	
-
-	<body>
+<?php include("header-admin.php"); ?>
 	
 	<h1>Administration #TIM Matane</h1>	
 	<h2>Portfolio Ajoutée</h2>
@@ -25,6 +17,4 @@
 		echo $sql;
 		$pdo->exec($sql);
 	?>
-	
-	</body>
-</html>
+<?php include("footer-admin.php"); ?>

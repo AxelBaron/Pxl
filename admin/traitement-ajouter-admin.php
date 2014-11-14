@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Formulaire d'ajout d' Administrateur</title>
-		<meta charset="UTF-8"/>
-	</head>
-	
-
-	<body>
+<?php include("header-admin.php"); ?>	
 	
 	<h1>Administration #TIM Matane</h1>	
 	<h2>Administrateur Ajoutée</h2>
@@ -26,6 +18,4 @@
 		echo $sql;
 		$pdo->exec($sql);
 	?>
-	
-	</body>
-</html>
+<?php include("footer-admin.php"); ?>
