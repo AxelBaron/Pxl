@@ -23,7 +23,7 @@
 			<h1>#TIM Matane Administration</h1>	
 			<h2>Modifier le Menu: <?php echo $data['nom']; ?> </h2>
 			 
-			 <form action="traitement-modification-menu.php?num=<?php echo $data['menu_id']?>" method="POST">
+			 <form action="traitement-modifier-menu.php?menu_id=<?php echo $data['menu_id']?>" method="POST">
 	
 		<fieldset>
 			<legend>Formulaire de Modification :</legend>
@@ -45,7 +45,7 @@
 
 			<div>
 				<label for="Nom sous menu 1">Page vers lequel amene le premier sous menu :</label>
-				<input type="text" name="sm_nom_1" value="<?php echo $data['sm_lien_1']; ?>"/>
+				<input type="text" name="sm_lien_1" value="<?php echo $data['sm_lien_1']; ?>"/>
 			</div>
 
 			<div>
@@ -55,7 +55,7 @@
 
 			<div>
 				<label for="Nom sous menu 2">Page vers lequel amene le deuxieme sous menu :</label>
-				<input type="text" name="sm_nom_2" value="<?php echo $data['sm_lien_2']; ?>"/>
+				<input type="text" name="sm_lien_2" value="<?php echo $data['sm_lien_2']; ?>"/>
 			</div>	
 
 			<div>
@@ -65,7 +65,7 @@
 
 			<div>
 				<label for="Nom sous menu 3">Page vers lequel amene le troisième sous menu :</label>
-				<input type="text" name="sm_nom_3" value="<?php echo $data['sm_lien_3']; ?>"/>
+				<input type="text" name="sm_lien_3" value="<?php echo $data['sm_lien_3']; ?>"/>
 			</div>
 			
 			<div>
@@ -75,7 +75,7 @@
 
 			<div>
 				<label for="Nom sous menu 4">Page vers lequel amene le quatrième sous menu :</label>
-				<input type="text" name="sm_nom_4" value="<?php echo $data['sm_lien_4']; ?>"/>
+				<input type="text" name="sm_lien_4" value="<?php echo $data['sm_lien_4']; ?>"/>
 			</div>
 
 			<div>
@@ -85,7 +85,7 @@
 
 			<div>
 				<label for="Nom sous menu 5">Page vers lequel amene le cinquième sous menu :</label>
-				<input type="text" name="sm_nom_5" value="<?php echo $data['sm_lien_5']; ?>"/>
+				<input type="text" name="sm_lien_5" value="<?php echo $data['sm_lien_5']; ?>"/>
 			</div>
 
 			<div>
@@ -95,7 +95,7 @@
 
 			<div>
 				<label for="Nom sous menu 6">Page vers lequel amene le sixième sous menu :</label>
-				<input type="text" name="sm_nom_6" value="<?php echo $data['sm_lien_6']; ?>"/>
+				<input type="text" name="sm_lien_6" value="<?php echo $data['sm_lien_6']; ?>"/>
 			</div>
 
 			<div>
@@ -105,7 +105,7 @@
 
 			<div>
 				<label for="Nom sous menu 7">Page vers lequel amene le septième sous menu :</label>
-				<input type="text" name="sm_nom_7" value="<?php echo $data['sm_lien_7']; ?>"/>
+				<input type="text" name="sm_lien_7" value="<?php echo $data['sm_lien_7']; ?>"/>
 			</div>
 
 			<div>
@@ -115,7 +115,7 @@
 
 			<div>
 				<label for="Nom sous menu 8">Page vers lequel amene le huitième sous menu :</label>
-				<input type="text" name="sm_nom_8" value="<?php echo $data['sm_lien_8']; ?>"/>
+				<input type="text" name="sm_lien_8" value="<?php echo $data['sm_lien_8']; ?>"/>
 			</div>
 
 
