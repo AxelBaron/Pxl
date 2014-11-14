@@ -23,7 +23,7 @@
 			<h1>#TIM Matane Administration</h1>	
 			<h2>Modifier la page: <?php echo $data['page_id']; ?> </h2>
 			 
-			 <form action="traitement-modification-admin.php?num=<?php echo $data['page_id']?>" method="POST">
+			 <form action="traitement-modifier-page.php?page_id=<?php echo $data['page_id']?>" method="POST">
 	
 		<fieldset>
 			<legend>Formulaire de Modification :</legend>
@@ -90,8 +90,9 @@
 
 			<div>
 				<label for="Nom Nav inter page 6">Nom du sixième lien vers la page</label>
-				<input type="text" name="nav_page_nom_5" value="<?php echo $data['nav_page_nom_5']; ?>"/>
+				<input type="text" name="nav_page_nom_6" value="<?php echo $data['nav_page_nom_6']; ?>"/>
 			</div>
+
 
 			<div>
 				<label for="Lien du sixième lien vers la page">Lien du sixième lien vers la page</label>
