@@ -9,10 +9,11 @@
 <div>
   <header id="header">
     <nav>
-      <ul>
-         <div id="logo">
-         <a href="#"><img src="images/logo2.png" alt="Logo TIM"></a>
+    <!-- Retrait de la div logo de la liste pour un placement plus facile -->
+    <div id="logo">
+         <a href="#"><img src="images/TIMlogo2.svg" alt="Logo TIM" width="240" height="88"></a>
          </div>
+      <ul>
         <li><a href="#">Actualités</a></li>
         <li><a href="#">Programme</a></li>
         <li><a href="#">Réalisations </a></li>
@@ -48,7 +49,10 @@
               Vivamus dapibus finibus ante, vitae tempus velit aliquet sed. Morbi rhoncus lorem quis felis mattis, vitae tincidunt quam malesuada. 
               Aenean tincidunt turpis non arcu elementum varius. In quis tortor sit amet nulla consectetur malesuada in id nulla. 
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed a urna vulputate eros tempor consectetur. </p></li>
-            
+              
+              <h2 id="lienancre">Les matières de Multi <br />
+              VS<br />
+              Les autres départements</h2>
         </article>
       </section>
 

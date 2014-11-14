@@ -1,6 +1,6 @@
 html{overflow-y:scroll;} 
 
-body{ list-style:none; margin-right:10px; padding:0; font-size:13px; font-family:'Avenir Next', Arial, Times, serif; color:#232323;  }
+body{ list-style:none; /*retrait de toutes marges*/ padding:0px; margin:0px; /*Pourquoi un margin-right de 10px? -> Modifiée à margin:0px; et ajout de padding:0px;*/ padding:0; font-size:13px; font-family:'Avenir Next', Arial, Times, serif; color:#232323;  }
 
 a{outline:none; text-decoration:none;}
 
@@ -21,7 +21,7 @@ a{outline:none; text-decoration:none;}
 
 /*----------------------------------------------Generalise-------------------------------------*/
 
-#header, #container, #footer{display:block; width:960px; margin:0 auto;}
+#header, #container, #footer{display:block; width:960px; margin:0 auto; background-color: blue;}
 
 nav ul{margin:0; padding:0; list-style:none;}
 
@@ -41,25 +41,32 @@ h2{
 /*----------------------------------------------Header-------------------------------------*/
 
 #header{
-	width:1024px;
+	width:960px;
 
 }
-
-#header #logo{float:left; margin:0 0 0px 0;}
+/*margin: haut, droite, bas, gauche*/
+#header #logo{float:left; margin:0 20px 0 20px;}
 
 #logo #header{
-	 vertical-align: middle }
+	 vertical-align: middle;
 }
 
 #header  {color:#232323;}
-#header nav{display:block; float:right; margin:10px 0 0 0; padding:20px 0; color:#C0BAB6; background-color:#232323;}
-#header nav ul{padding:0 10px;  }
-#header nav li a{display:inline; margin-right:25px; color:#FFFFFF; }
+/*retrait du margin:10px 0 0 0 dans la ligne en-dessous pour la nav, car sinon espace en haut inutile*/
+/*ajout de la taille de la navigation avec width:960px;*/
+#header nav{width: 960px; display:block; float:right; margin:0 0 0 0; padding:5px 0; color:#C0BAB6; background-color:#232323;}
+/*padding plus petit pour que tous les items du menu tiennent*/
+#header nav ul{padding:35px 0;  }
+/*Réduction de l'espacement des liens du menu à 0px*/
+#header nav li a{display:inline; margin-right:0px; color:#FFFFFF; font-family: "Museo"; font-size: 17px; }
 #header nav li a:hover{
-	text-decoration: underline;
+	text-decoration: none;
+	/*Ajout d'un soulignement au survol à l'aide d'un border-bottom*/
+	border-bottom: 2px #ef7039 solid;
     -moz-text-decoration-color: red; /* Code for Firefox */
     -webkit-text-decoration-color: red; }
-#header nav li{display:inline; margin-right:25px; color:#FFFFFF; }
+/*on réduit le margin-right afin de placer une police plus grosse pour le menu*/
+#header nav li{display:inline; margin-right:15px; color:#FFFFFF; }
 #header nav li.last{margin-right:0;}
 
 
@@ -195,23 +202,37 @@ hr {
 
 
 #proweb{
+	/*largeur de 50%, hauteur de 400px (taille de l'image)*/
 	width: 50%;
 	height: 400px;
-	float: left;
 	background-color: red;
+
+	/*un float pour placer mon élément à gauche, en premier*/
+	float: left;
+	
+	/*Un text-align pour aligner l'image au centre de sa div*/
 	text-align: center;
 }
 
 #descriptionproweb{
 	width: 50%;
-	float: left;
 	background-color: yellow;
-	text-align: justify;
-	margin-top: 80px;
+
+	/*Il faut que cet élément se place en float, après la div proweb*/
+	float: left;
+	
+	/*on donne une marge au-dessus du bloc de texte*/
+	margin-top: 40px;
 
 	line-height: 20px;
+	text-align: justify;
 }
 
+#lienancre{
+	text-align: center;
+}
+
+/*UTILISATION DE FLOAT QUI NÉCESSITE UN CLEAR*/
 .clear{
 	clear:both;
 }
