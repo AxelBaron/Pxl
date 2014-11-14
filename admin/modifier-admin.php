@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style_admin.css">
-	<title>#TIM Matane - Administration principale</title>
-</head>
-<body>
-
-	<?php include("menu-admin.php");?>
-
-	<div class="right">
-
-		<section>
+<?php include("header-admin.php"); ?>
 			<?php 
 				include("connectionbdd.php");
 				$admin_id = $_GET["admin_id"];
@@ -58,9 +45,5 @@
 		
 		<input type="submit" name="enregistrer" id="enregistrer" value="Enregistrer" />
 	</form>
-
-		</section>
-	</div>
-
-</body>
-</html>
+	</form>
+<?php include("footer-admin.php"); ?>
