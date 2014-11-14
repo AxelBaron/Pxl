@@ -36,9 +36,22 @@
     <div id="content">
       <section>
         <?php include("morceaux/cinqpts.php") ?>
-
-        
       </section>
+
+      <div id="conteneurmatieres">
+      <h1>Les matières</h1>
+        <div id="matieres">
+          
+          <div id="mat1">1</div>
+          <div id="mat2">2</div>
+          <div id="mat3">3</div>
+          <div id="mat4">4</div>
+          <div id="mat3">5</div>
+          <div id="mat4">6</div>
+        </div>
+      </div>
+        
+      
     </div><!--FIN content -->
   <!-- Footer -->
       <div class="clear">
