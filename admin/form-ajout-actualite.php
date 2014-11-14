@@ -16,7 +16,7 @@
 	<h1>Administration #TIM Matane</h1>	
 	<h2>Ajouter une Actualité</h2>
 
-	<form action="traitement-ajouter-actualité.php" method="POST">
+	<form action="traitement-ajouter-actualite.php" method="POST">
 	
 		<fieldset>
 			<legend>Formulaire</legend>
