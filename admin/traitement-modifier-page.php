@@ -28,4 +28,5 @@
 		  		WHERE page_id =$page_id;";
 		$pdo->exec($sql);
 	?>
+	<a href="gestion-page.php"><button>Retour</button></a>
 <?php include("footer-admin.php"); ?>

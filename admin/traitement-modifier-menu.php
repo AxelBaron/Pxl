@@ -33,4 +33,5 @@
 		
 		$pdo->exec($sql);
 	?>
+	<a href="gestion-menu.php"><button>Retour</button></a>
 <?php include("footer-admin.php"); ?>

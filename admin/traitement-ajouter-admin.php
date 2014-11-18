@@ -14,7 +14,7 @@
 		$courriel = $_POST['courriel'];
 
 		$sql = "INSERT INTO admin(usager,mdp,nom,prenom,courriel) VALUES('$usager','$mdp','$nom','$prenom','$courriel')";
-		echo $sql;
 		$pdo->exec($sql);
 	?>
+	<a href="gestion-admin.php"><button>Retour</button></a>
 <?php include("footer-admin.php"); ?>

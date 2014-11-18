@@ -21,4 +21,5 @@
 		  WHERE admin_id=$admin_id";
 		$pdo->exec($sql);
 	?>
+	<a href="gestion-admin.php"><button>Retour</button></a>
 <?php include("footer-admin.php"); ?>

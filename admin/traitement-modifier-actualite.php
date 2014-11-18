@@ -21,4 +21,5 @@
 		  WHERE actu_id=$actu_id";
 		$pdo->exec($sql);
 	?>
+	<a href="gestion-actualite.php"><button>Retour</button></a>
 <?php include("footer-admin.php"); ?>

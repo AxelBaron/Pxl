@@ -17,4 +17,5 @@
 		  WHERE portfolio_id=$portfolio_id";
 		$pdo->exec($sql);
 	?>
+	<a href="gestion-portfolio.php"><button>Retour</button></a>
 <?php include("footer-admin.php"); ?>

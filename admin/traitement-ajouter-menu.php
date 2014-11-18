@@ -28,4 +28,5 @@
 		$sql = "INSERT INTO menu(nom,nom_lien,sm_nom_1,sm_lien_1,sm_nom_2,sm_lien_2,sm_nom_3,sm_lien_3,sm_nom_4,sm_lien_4,sm_nom_5,sm_lien_5,sm_nom_6,sm_lien_6,sm_nom_7,sm_lien_7,sm_nom_8,sm_lien_8) VALUES('$nom','$nom_lien','$sm_nom_1','$sm_lien_1','$sm_nom_2','$sm_lien_2','$sm_nom_3','$sm_lien_3','$sm_nom_4','$sm_lien_4','$sm_nom_5','$sm_lien_5','$sm_nom_6','$sm_lien_6','$sm_nom_7','$sm_lien_7','$sm_nom_8','$sm_lien_8')";
 		$pdo->exec($sql);
 	?>
+	<a href="gestion-menu.php"><button>Retour</button></a>
 <?php include("footer-admin.php"); ?>

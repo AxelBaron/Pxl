@@ -14,7 +14,7 @@
 
 		$sql = "INSERT INTO portfolio(etudiant,lien,image,annees) VALUES('$etudiant','$lien','$image','$annee')";
 		
-		echo $sql;
 		$pdo->exec($sql);
 	?>
+	<a href="gestion-portfolio.php"><button>Retour</button></a>
 <?php include("footer-admin.php"); ?>
