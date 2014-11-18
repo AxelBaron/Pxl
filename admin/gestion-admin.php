@@ -13,8 +13,8 @@
 <div id="gestion-list">
 	<input type='checkbox' id="checkbox-tout" onclick="javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)" />
 	<label>Tout cocher/décocher</label>
-	<a href="form-ajout-admin.php">Ajouter</a>
-	<a href="#" onclick="javascript:suppression(<?php echo ($nbEntre); ?>, 'admin')">Supprimer</a>
+	<a href="form-ajout-admin.php"><button>Ajouter</button></a>
+	<a href="#" onclick="javascript:suppression(<?php echo ($nbEntre); ?>, 'admin')"><button>Supprimer</button></a>
 </div>
 <!-- Liste des Admin -->
 <form>
@@ -25,10 +25,10 @@
 		$nbEntre = 0;
 		while($donnees = $resultat->fetch()){
 			$nbEntre++;
-			echo("<div>");
+			echo("<div class='list_gestion'>");
 			echo("<input type='checkbox' id='$nbEntre' name='".$donnees['admin_id']."' />");
 			echo($donnees["usager"]);
-			echo("<a href='form-modifier-admin.php?admin_id=".$donnees['admin_id']."'>Modifier</a>");
+			echo("<a href='form-modifier-admin.php?admin_id=".$donnees['admin_id']."'><button class='btn_modif'>Modifier</button></a>");
 			echo("</div>");
 		}
 	?>

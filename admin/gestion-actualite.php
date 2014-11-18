@@ -14,7 +14,7 @@
 	<input type='checkbox' id="checkbox-tout" onclick="javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)" />
 	<label>Tout cocher/décocher</label>
 	<a href="form-ajout-actualite.php"><button>Ajouter</button></a>
-	<a href="#" onclick="javascript:suppression(<?php echo ($nbEntre); ?>, 'actualite')"><button>Supprimer</a></button>
+	<a href="#" onclick="javascript:suppression(<?php echo ($nbEntre); ?>, 'actualite')"><button>Supprimer/button></a><
 </div>
 <!-- Liste des Actualités -->
 <form>
