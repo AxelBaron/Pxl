@@ -13,8 +13,8 @@
 <div id="gestion-list">
 	<input type='checkbox' id="checkbox-tout" onclick="javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)" />
 	<label>Tout cocher/décocher</label>
-	<a href="form-ajout-portfolio.php">Ajouter</a>
-	<a href="#" onclick="javascript:suppression(<?php echo ($nbEntre); ?>, 'portfolio')">Supprimer</a>
+	<a href="form-ajout-portfolio.php"><button>Ajouter</button></a>
+	<a href="#" onclick="javascript:suppression(<?php echo ($nbEntre); ?>, 'portfolio')"><button>Supprimer</button></a>
 </div>
 <!-- Liste des Portfolios -->
 <form>
@@ -25,10 +25,10 @@
 		$nbEntre = 0;
 		while($donnees = $resultat->fetch()){
 			$nbEntre++;
-			echo("<div>");
+			echo("<div class='list_gestion'>");
 			echo("<input type='checkbox' id='$nbEntre' name='".$donnees['portfolio_id']."' />");
 			echo($donnees["etudiant"]);
-			echo("<a href='form-modifier-portfolio.php?portfolio_id=".$donnees['portfolio_id']."'>Modifier</a>");
+			echo("<a href='form-modifier-portfolio.php?portfolio_id=".$donnees['portfolio_id']."'> <button class='btn_modif'>Modifier</button></a>");
 			echo("</div>");
 		}
 	?>

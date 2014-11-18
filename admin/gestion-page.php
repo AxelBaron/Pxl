@@ -8,13 +8,13 @@
 		$nbEntre++;
 	}
 ?>
-<h1>Page</h1>
+<h1>Pages</h1>
 <!-- Cocher, ajouter et supprimer -->
 <div id="gestion-list">
 	<input type='checkbox' id="checkbox-tout" onclick="javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)" />
 	<label>Tout cocher/décocher</label>
-	<a href="form-ajout-page.php">Ajouter</a>
-	<a href="#" onclick="javascript:suppression(<?php echo ($nbEntre); ?>, 'page')">Supprimer</a>
+	<a href="form-ajout-page.php"><button>Ajouter</button></a>
+	<a href="#" onclick="javascript:suppression(<?php echo ($nbEntre); ?>, 'page')"><button>Supprimer</button></a>
 </div>
 <!-- Liste des Page -->
 <form>
@@ -25,10 +25,10 @@
 		$nbEntre = 0;
 		while($donnees = $resultat->fetch()){
 			$nbEntre++;
-			echo("<div>");
+			echo("<div class='list_gestion'>");
 			echo("<input type='checkbox' id='$nbEntre' name='".$donnees['page_id']."' />");
 			echo($donnees["titre"]);
-			echo("<a href='form-modifier-page.php?page_id=".$donnees['page_id']."'>Modifier</a>");
+			echo("<a href='form-modifier-page.php?page_id=".$donnees['page_id']."'><button class='btn_modif'>Modifier</button></a>");
 			echo("</div>");
 		}
 	?>
