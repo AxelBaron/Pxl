@@ -31,6 +31,11 @@
 			echo("<a class='btn_modif' href='form-modifier-portfolio.php?portfolio_id=".$donnees['portfolio_id']."'>Modifier</a>");
 			echo("</div>");
 		}
+		
+	//Si il n'y a aucun entrées
+	if($donnees == null || $donnees == ""){
+		echo("Vous n'avez aucun éléments dans cette page.");
+	}
 	?>
 <div>
 </form>

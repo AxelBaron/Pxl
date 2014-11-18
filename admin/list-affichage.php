@@ -41,4 +41,8 @@
 		echo("<a class='btn_modif' href='form-modifier-".$categorie.".php?".$id."=".$donnees[$id]."'>Modifier</a>");
 		echo("</div>");
 	}
+	
+	if($donnees == null || $donnees == ""){
+		echo("Vous n'avez aucun éléments dans cette page.");
+	}
 ?>

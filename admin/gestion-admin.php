@@ -31,6 +31,11 @@
 			echo("<a class='btn_modif' href='form-modifier-admin.php?admin_id=".$donnees['admin_id']."'>Modifier</a>");
 			echo("</div>");
 		}
+		
+	//Si il n'y a aucun entrées
+	if($donnees == null || $donnees == ""){
+		echo("Vous n'avez aucun éléments dans cette page.");
+	}
 	?>
 <div>
 </form>
