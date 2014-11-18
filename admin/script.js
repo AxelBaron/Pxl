@@ -25,7 +25,7 @@ function suppression(nbEntre, categorie){
 	if (supprimerAlert == true && elementsASupprimer.length > 0) {
 		//Change le message selon le nombre de cases cocher
 		if(elementsASupprimer.length == 1){
-			message = "L'actualité sélectionnée a été supprimer!";
+			message = "L'actualité sélectionnée a été supprimé!";
 		}else{
 			message = "Les actualités sélectionnées ont été supprimés!";
 		}
