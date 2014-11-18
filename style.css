@@ -451,36 +451,53 @@ p .imgillus{
 footer{
 	width: 960px;
 	height: 220px;
-	background-color: #000000;
+	background-color: #232323;
 }
 
 #conteneurfooter{
 	width: 640px;
-	background-color: yellow;
 	margin: auto;
+	padding-top: 15px;
+	padding-bottom: 10px;
 	color: white;
 }
 
 .part1{
-
+	
 	width: 640px;
 	height: auto;
-	background-color: red;
 }
+
+.part1 p{
+	font-family: "museo";
+	font-size: 25px;
+	line-height: 55px;
+
+	/* ON NE VEUT AUCUNE MARGE EN HAUT OU EN BAS, SAUF À DROITE */
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 10px;
+
+	/* POUR QUE LES IMAGES FB TW NE PASSENT PAS EN-DESSOUS*/
+	float: left;
+}
+
 
 .part2{
 	width: 213px;
 	height: auto;
 
-	background-color: blue;
 	float: left;
 }
 
 .part3{
-	width: 960px;
+	width: 640px;
 	height: auto;
+}
 
-	background-color: green;
+.part3 p{
+	/* ON ALIGNE LE COPYRIGHT AU CENTRE */
+	text-align: center;
 }
 
 /* ---- FIN FOOTER ---- */
