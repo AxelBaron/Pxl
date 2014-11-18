@@ -123,7 +123,7 @@
       </div><!-- FIN CONTENEURVS -->
 
       <div id="citations">
-        <p class="cita">"Une formation qui a de l'avenir"</p>
+        <p class="cita">"Une formation qui a de l'avenir..."</p>
       </div><!-- FIN CITATIONS -->
         
       
