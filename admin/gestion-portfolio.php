@@ -28,7 +28,7 @@
 			echo("<div class='list_gestion'>");
 			echo("<input type='checkbox' id='$nbEntre' name='".$donnees['portfolio_id']."' />");
 			echo($donnees["etudiant"]);
-			echo("<a href='form-modifier-portfolio.php?portfolio_id=".$donnees['portfolio_id']."'> <button class='btn_modif'>Modifier</button></a>");
+			echo("<a class='btn_modif' href='form-modifier-portfolio.php?portfolio_id=".$donnees['portfolio_id']."'>Modifier</a>");
 			echo("</div>");
 		}
 	?>

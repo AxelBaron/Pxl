@@ -28,7 +28,7 @@
 			echo("<div class='list_gestion'>");
 			echo("<input type='checkbox' id='$nbEntre' name='".$donnees['menu_id']."' />");
 			echo($donnees["nom"]);
-			echo("<a href='form-modifier-menu.php?menu_id=".$donnees['menu_id']."'><button class='btn_modif'>Modifier</button></a>");
+			echo("<a class='btn_modif' href='form-modifier-menu.php?menu_id=".$donnees['menu_id']."'>Modifier</a>");
 			echo("</div>");
 		}
 	?>
