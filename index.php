@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-<title>Site Web Techniques d'intégration Multimédia</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="style.css" type="text/css">
-</head>
-<body>
-<div>
-  <header id="header">
-    <nav>
-      <ul>
-         <div id="logo">
-         <a href="#"><img src="images/logo2.png" alt="Logo TIM"></a>
-         </div>
-        <li><a href="#">Actualités</a></li>
-        <li><a href="#">Programme</a></li>
-        <li><a href="#">Réalisations </a></li>
-        <li><a href="#">Cégep</a></li>
-        <li><a href="#">Étudier à Matane</a></li>
-        <li><a href="#">Stages</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-</div>
+<?php include("morceaux/header.php") ?>
 <!-- content -->
 <div class="wrapper row2">
   <div id="container">

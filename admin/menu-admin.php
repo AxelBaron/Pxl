@@ -1,11 +1,11 @@
 <nav>
 		<ul>	
-				<li><a href="gestionprincipal.php">Accueil Administration</a></li>
-				<li><a href="gestion-actualite.php">Actualités</a></li>
-				<li><a href="gestion-portfolio.php">Portfolio</a></li>
-				<li><a href="gestion-menu.php">Menus</a></li>
-				<li><a href="gestion-page.php">Pages</a></li>
-				<li><a href="gestion-admin.php">Administrateurs</a></li>
-				<li><a href="../index.php" target="_blank">Retour page index publique</a></li>
+				<a href="gestionprincipal.php"><li><span>Accueil Administration</span></li></a>
+				<a href="gestion-actualite.php"><li><span>Actualités</li></span></a>
+				<a href="gestion-portfolio.php"><li><span>Portfolios</span></li></a>
+				<a href="gestion-menu.php"><li><span>Menus</li></span></a>
+				<a href="gestion-page.php"><li><span>Pages</li></span></a>
+				<a href="gestion-admin.php"><li><span>Administrateurs</li></span></a>
+				<a href="../index.php" target="_blank"><li><span>Retour page index publique</li></span></a>
 		</ul>
 	</nav>

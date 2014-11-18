@@ -8,7 +8,7 @@
 		$nbEntre++;
 	}
 ?>
-<h1>Portfolio</h1>
+<h1>Portfolios</h1>
 <!-- Cocher, ajouter et supprimer -->
 <div id="gestion-list">
 	<input type='checkbox' id="checkbox-tout" onclick="javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)" />
@@ -20,10 +20,12 @@
 <form>
 <div id="liste-elements">
 	<?php
+		$pasElements = true;
 		$sql = "SELECT * FROM portfolio";
 		$resultat = $pdo->query($sql);
 		$nbEntre = 0;
 		while($donnees = $resultat->fetch()){
+			$pasElements = false;
 			$nbEntre++;
 			echo("<div class='list_gestion'>");
 			echo("<input type='checkbox' id='$nbEntre' name='".$donnees['portfolio_id']."' />");
@@ -31,6 +33,11 @@
 			echo("<a class='btn_modif' href='form-modifier-portfolio.php?portfolio_id=".$donnees['portfolio_id']."'>Modifier</a>");
 			echo("</div>");
 		}
+		
+	//Si il n'y a aucun entrées
+	if($pasElements == true){
+		echo("Vous n'avez aucun éléments dans cette page.");
+	}
 	?>
 <div>
 </form>

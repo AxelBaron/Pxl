@@ -50,36 +50,104 @@ h2 a:hover{
 /*----------------------------------------------Header-------------------------------------*/
 
 #header{
-	width:960px;
 
+	width:960px;
+	margin: auto;
 }
+
 /*margin: haut, droite, bas, gauche*/
-#header #logo{float:left; margin:0 20px 0 20px;}
+/* le logo n'est plus dans la nav, de ce fait il faut lui attriber un bg-color ainsi qu'un padding et non un margin afin que la couleur du fond se place partout */
+#header #logo{float:left; padding:0 20px 0px 20px; background-color: #232323}
 
 #logo #header{
 	 vertical-align: middle;
 }
 
-#header  {color:#232323;}
+/* ---- NAVIGATION ---- */
+
 /*retrait du margin:10px 0 0 0 dans la ligne en-dessous pour la nav, car sinon espace en haut inutile*/
 /*ajout de la taille de la navigation avec width:960px;*/
-#header nav{width: 960px; display:block; float:right; margin:0 0 0 0; padding:5px 0; color:#C0BAB6; background-color:#232323;}
+#header nav{
+	/*le menu fait 960 - la taille du logo + 40px, donc 680px*/
+	width: 680px; 
+	/* il fait la hauteur du logo, de 93px*/
+	height: 93px;
+	/*un float est nécessaire pour se placer à droite du logo*/
+	float: left; 
+	/* disposition en ligne */
+	display: inline;  
+	/* aucune marge ni padding*/
+	margin:0; 
+	padding:0; 
+
+	color:#C0BAB6; 
+	background-color:#232323;
+}
+
 /*padding plus petit pour que tous les items du menu tiennent*/
-#header nav ul{padding:35px 0;  }
-/*Réduction de l'espacement des liens du menu à 0px*/
-#header nav li a{display:inline; margin-right:0px; color:#FFFFFF; font-family: "Museo"; font-size: 17px; }
-#header nav li a:hover{
-	padding-bottom: 4px;
+#header nav ul{ margin-top: 35px; margin-bottom: 0px;  }
+
+#header nav li a{
+
+	display:inline-block; 
+	/*margin-right:0px; */
+	color:#FFFFFF; 
+	font-family: "Museo"; 
+	font-size: 17px; 
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+	line-height: 30px;
+
+}
+
+#header nav>ul>li>a:hover{
+
 	text-decoration: none;
+
+	padding-bottom: 3px;
 	/*Ajout d'un soulignement au survol à l'aide d'un border-bottom*/
 	border-bottom: 2px #ef7039 solid;
-    -moz-text-decoration-color: red; /* Code for Firefox */
+    -moz-text-decoration-color: red;  
     -webkit-text-decoration-color: red; }
+
 /*on réduit le margin-right afin de placer une police plus grosse pour le menu*/
-#header nav li{display:inline; margin-right:15px; color:#FFFFFF; }
+
+#header nav li{display:inline-block; margin-right:15px; color:#FFFFFF; }
+
 #header nav li.last{margin-right:0;}
 
+#header nav ul li ul{
 
+	position: absolute;
+    width: 150px; /* Largeur des sous-listes */
+   	left: -999em;  /*Hop, on envoie loin du champ de vision */
+   	/*pour que le sous-menu soit à zéro pixel du menu au-dessus du lui*/
+   	margin-top: 0px;
+   	background-color: #232323;
+   	
+}
+
+#header nav>ul>li>ul>a>li{
+	line-height: 30px;
+	/*taille à 145 car prend la largeur du ul qui le contient, moins cinq pixels utilisés en padding*/
+	width: 145px;
+	padding-left: 5px;
+	color: white;
+
+}
+
+#header nav>ul>li>ul>a>li:hover{
+	color: #FA8B60;
+	background-color: white;
+}
+
+#header li:hover ul, #header li li:hover ul, #header li.sfhover ul, #header li li.sfhover ul  /* Sous-listes lorsque la souris passe sur un élément de liste ET sous-sous-lites lorsque la souris passe sur un élément de sous-liste */
+{
+        left: auto; /* Repositionnement normal */
+        min-height: 0; /* Corrige un bug sous IE */
+}
+
+/* ---- FIN NAVIGATION ---- */
 
 /*----------------------------------------------Content Area-------------------------------------*/
 /* suppression du padding 30px du container car sinon le footer a 30px d'espace avec le bas */
@@ -243,6 +311,7 @@ hr {
  	size:70%;
     font-size: 20px;
     text-align: center;
+<<<<<<< HEAD
     vertical-align: center;
     padding-left: 25px;
    }
@@ -263,6 +332,9 @@ hr {
 
 
 
+=======
+}
+>>>>>>> origin/master
 
 
 
