@@ -8,9 +8,31 @@
 	while($donnees = $resultat->fetch()){
 		$nbEntre++;
 	}
-	$actualite = '"actualite"';
+	
+	switch($categorie){
+		case "actualite":
+			$newCategorie = '"actualite"';
+		break;
+		
+		case "admin":
+			$newCategorie = '"admin"';
+		break;
+		
+		case "menu":
+			$newCategorie = '"menu"';
+		break;
+		
+		case "page":
+			$newCategorie = '"page"';
+		break;
+		
+		case "portfolio":
+			$newCategorie = '"portfolio"';
+		break;
+	}
+	
 	echo("<input type='checkbox' id='checkbox-tout' onclick='javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)' />");
 	echo("<label>Tout cocher/décocher</label>");
-	echo("<a href='form-ajout-actualite.php'>Ajouter</a>");
-	echo("<a href='#' onclick='javascript:suppression($nbEntre, $actualite)'>Supprimer</a>");
+	echo("<a href='form-ajout-".$categorie.".php'>Ajouter</a>");
+	echo("<a href='#' onclick='javascript:suppression($nbEntre, $newCategorie)'>Supprimer</a>");
 ?>

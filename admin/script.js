@@ -12,7 +12,7 @@ function suppression(nbEntre, categorie){
 	var message;
 	var unSeulMessage = 0;
 	var elementsASupprimer = [];
-	alert("NB d'entré "+nbEntre);
+	//alert("NB d'entré "+nbEntre);
 	
 	//Détecte le nombe d'éléments cocher à supprimer
 	for(i = 1; i < nbEntre+1; i++){
@@ -32,6 +32,7 @@ function suppression(nbEntre, categorie){
 		
 		//Boucle chaque éléments pour les supprimer
 		for (var i = 0; i < elementsASupprimer.length; i++) {
+			
 			//Appel de fonction pour éffacer
 			$.ajax({
 				data: 'id='+elementsASupprimer[i]+'&categorie='+categorie,
