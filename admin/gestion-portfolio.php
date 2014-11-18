@@ -8,7 +8,7 @@
 		$nbEntre++;
 	}
 ?>
-<h1>Portfolio</h1>
+<h1>Portfolios</h1>
 <!-- Cocher, ajouter et supprimer -->
 <div id="gestion-list">
 	<input type='checkbox' id="checkbox-tout" onclick="javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)" />

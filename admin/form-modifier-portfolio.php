@@ -30,22 +30,22 @@
 			
 			<div>
 				<label for="Etudiant">Etudiant</label>
-				<input type="text" name="etudiant" value="<?php echo $data['etudiant']; ?>"/>
+				<input class="form"type="text" name="etudiant" value="<?php echo $data['etudiant']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Lien">Lien</label>
-				<input type="text" name="lien" value="<?php echo $data['lien']; ?>"/>
+				<input class="form"type="text" name="lien" value="<?php echo $data['lien']; ?>"/>
 			</div>
 
 			<div>
 				<label for="image">Image</label>
-				<input type="text" name="image" value="<?php echo $data['image']; ?>"/>
+				<input class="form"type="text" name="image" value="<?php echo $data['image']; ?>"/>
 			</div>
 
 			<div>
 				<label for="annees">Année optiention diplome</label>
-				<input type="text" name="annees" value="<?php echo $data['annees']; ?>"/>
+				<input class="form"type="text" name="annees" value="<?php echo $data['annees']; ?>"/>
 			</div>
 						
 		</fieldset>
