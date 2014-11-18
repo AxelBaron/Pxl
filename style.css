@@ -69,6 +69,7 @@ h2 a:hover{
 /*Réduction de l'espacement des liens du menu à 0px*/
 #header nav li a{display:inline; margin-right:0px; color:#FFFFFF; font-family: "Museo"; font-size: 17px; }
 #header nav li a:hover{
+	padding-bottom: 4px;
 	text-decoration: none;
 	/*Ajout d'un soulignement au survol à l'aide d'un border-bottom*/
 	border-bottom: 2px #ef7039 solid;
@@ -289,11 +290,15 @@ hr {
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-bottom: 10px;
-	text-align: justify;
+	/*text-align: justify;*/
 
 }
 
 #matieres p .imgillus{
+	text-align: center;
+}
+
+p .imgillus{
 	text-align: center;
 }
 
@@ -352,11 +357,44 @@ hr {
 
 #VS{
 	width: 960px;
-	height: 500px;
-	background-color: green;
+	height: 100%;
 	margin: 0 auto;
 	border-top: 6px #FA8B60 solid;
+	padding-top: 20px;
+}
+
+.txtalign{
+	text-align: justify;
+}
+
+.imgalign{
+	text-align: center;
 }
 
 /* ---- FIN VS ----*/
+
+/* ---- CITATIONS ---- */
+
+#citations{
+	/*margin-top: 30px;*/
+	width: 960px;
+	height: 120px;
+
+	background-color: #e1e1e0;
+}
+
+.cita{
+	text-align: center;
+	font-family: "museo", Arial;
+	font-size: 45px;
+	font-weight: bold;
+	/*alignement au centre horizontalement*/
+	line-height: 120px;
+	color: #868282;
+
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+/* ---- FIN CITATIONS ---- */
 
