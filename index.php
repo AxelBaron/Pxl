@@ -53,9 +53,9 @@
     <!-- main content -->
     <div id="content">
       <section>
-        <ul>
-          <li>
+      
             <article>
+
               
                   <h2>Actualités</h2>
                   <hr>
@@ -68,8 +68,7 @@
               
            
             </article>
-          </li>
-          <li >
+        
             <article >
                 
                   <h3>Titre 2 </h3>
@@ -81,8 +80,7 @@
                 
             </article>
                  
-          </li>
-        </ul>
+        
 
       </section>
 
@@ -90,14 +88,16 @@
     </div>
     <!-- right column -->
     <aside id="right_column">
-      <h2 class="title">Portefolio</h2>
+      <h2 class="title" >Portefolio</h2>
+       
       <hr>
       <nav>
         <ul>
-          <li><a href="#"> <img src="images/proposition_stage.jpg"> </a></li>
-          <li><a href="#"> <img src="images/portefolio_etudiant.jpg"> </a></li>
-          <li><a href="#"> <img src="images/etudiants.jpg"> </a></li>
-          <li><a href="#"> <img src="images/portefolio1.jpg"> </a></li>
+          <li> <a href="#"> <img src="images/proposition_stage.jpg"> </a> </li>
+        
+          <li><a href="#" title="Visitez le portefolio de l'étudiant : Pierre Laroche"  title="" class="tooltip"> <img src="images/portefolio_etudiant.jpg"> </a></li>
+          <li><a href="#" class="tooltip"> <img src="images/etudiants.jpg"> </a></li>
+          <li><a href="#" class="tooltip"> <img src="images/portefolio1.jpg"> </a></li>
         </ul>
 
     
@@ -115,3 +115,5 @@
 </div>
 </body>
 </html>
+
+

@@ -180,7 +180,7 @@ hr {
 	color:#FA8B60;
     list-style:none;
     margin:auto;
-    padding:auto;
+    padding-top:14px;
     font-family: 'Museo', Arial;
 }
 #content h3{
@@ -218,6 +218,53 @@ hr {
 
 
 #container #right_column{float:right; width:280px;}
+
+
+/* ------MouseOver Portefolio-----*/
+
+
+.tooltip{
+    display: inline;
+    position: relative;
+}
+
+
+.tooltip:hover:after{
+    background: #FA8B60;
+    opacity:0.9;
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(title);
+    left: 5%;
+    padding: 5px ;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+    height:250px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*----------------------------------------------Footer-------------------------------------*/
