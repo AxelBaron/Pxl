@@ -33,6 +33,6 @@
 	
 	echo("<input type='checkbox' id='checkbox-tout' onclick='javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)' />");
 	echo("<label>Tout cocher/décocher</label>");
-	echo("<a href='form-ajout-".$categorie.".php'>Ajouter</a>");
-	echo("<a href='#' onclick='javascript:suppression($nbEntre, $newCategorie)'>Supprimer</a>");
+	echo("<a href='form-ajout-".$categorie.".php'><button>Ajouter</button></a>");
+	echo("<a href='#' onclick='javascript:suppression($nbEntre, $newCategorie)'><button>Supprimer</button></a>");
 ?>
