@@ -1,12 +1,13 @@
 <?php
 	include_once "connectionbdd.php";
+	$pasElements = true;
 	$categorie = $_POST['categorie'];
 	$sql = "SELECT * FROM $categorie";
 	$resultat = $pdo->query($sql);
 	$nbEntre = 0;
 	
 	while($donnees = $resultat->fetch()){
-	
+		$pasElements = false;
 		switch($categorie){
 			case "actualite":
 				$id = "actu_id";
@@ -42,7 +43,8 @@
 		echo("</div>");
 	}
 	
-	if($donnees == null || $donnees == ""){
+	//Si il n'y a aucun entrées
+	if($pasElements == true){
 		echo("Vous n'avez aucun éléments dans cette page.");
 	}
 ?>
