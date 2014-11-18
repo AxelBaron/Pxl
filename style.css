@@ -63,6 +63,8 @@ h2 a:hover{
 	 vertical-align: middle;
 }
 
+/* ---- NAVIGATION ---- */
+
 /*retrait du margin:10px 0 0 0 dans la ligne en-dessous pour la nav, car sinon espace en haut inutile*/
 /*ajout de la taille de la navigation avec width:960px;*/
 #header nav{
@@ -119,32 +121,33 @@ h2 a:hover{
 	position: absolute;
     width: 150px; /* Largeur des sous-listes */
    	left: -999em;  /*Hop, on envoie loin du champ de vision */
+   	/*pour que le sous-menu soit à zéro pixel du menu au-dessus du lui*/
    	margin-top: 0px;
    	background-color: #232323;
-   	line-height: 30px;
-
-
+   	
 }
+
 #header nav>ul>li>ul>a>li{
 	line-height: 30px;
+	/*taille à 145 car prend la largeur du ul qui le contient, moins cinq pixels utilisés en padding*/
 	width: 145px;
 	padding-left: 5px;
 	color: white;
-	background-color: #232323;
 
 }
 
 #header nav>ul>li>ul>a>li:hover{
-	color: orange;
+	color: #FA8B60;
 	background-color: white;
 }
-
 
 #header li:hover ul, #header li li:hover ul, #header li.sfhover ul, #header li li.sfhover ul  /* Sous-listes lorsque la souris passe sur un élément de liste ET sous-sous-lites lorsque la souris passe sur un élément de sous-liste */
 {
         left: auto; /* Repositionnement normal */
         min-height: 0; /* Corrige un bug sous IE */
 }
+
+/* ---- FIN NAVIGATION ---- */
 
 /*----------------------------------------------Content Area-------------------------------------*/
 /* suppression du padding 30px du container car sinon le footer a 30px d'espace avec le bas */
@@ -308,25 +311,6 @@ hr {
     font-size: 20px;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
