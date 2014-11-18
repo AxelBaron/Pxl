@@ -406,7 +406,35 @@ footer{
 	width: 960px;
 	height: 220px;
 	background-color: #000000;
+}
 
+#conteneurfooter{
+	width: 640px;
+	background-color: yellow;
+	margin: auto;
+	color: white;
+}
+
+.part1{
+
+	width: 640px;
+	height: auto;
+	background-color: red;
+}
+
+.part2{
+	width: 213px;
+	height: auto;
+
+	background-color: blue;
+	float: left;
+}
+
+.part3{
+	width: 960px;
+	height: auto;
+
+	background-color: green;
 }
 
 /* ---- FIN FOOTER ---- */
