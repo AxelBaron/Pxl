@@ -4,34 +4,63 @@ body{
 	padding: 0;
 }
 
+a{
+	text-decoration: none;
+}
+
+
+/* MENU________________________________________________________*/
 nav{
 	position: fixed;
 	width: 20%;
 	height: 100%;
 	background-color: #1E2D57;
+	text-decoration: none;
+	padding-top: 20px;
 }
 
 nav ul{
 	text-decoration: none;
 	list-style-type: none;
+	padding: 0;
 }
 
 
 nav ul li {
-	margin-top: 5px;
-	margin-bottom: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	text-decoration: none;
 }
 
-nav ul li a{
+nav ul li:hover {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	background-color: orange;
+}
+
+nav ul a li{
 	color:white;
 	text-decoration: none;
 }
 
-nav ul li a:hover{
-	color:orange;
-	width: 100%;
+nav ul a li span{
+	padding-left: 30px;
 }
 
+nav ul a:hover{
+	color: #1E2D57;
+	width: 100%;
+	text-decoration: none;
+}
+
+
+
+
+
+
+/* Section droite________________________________________________________*/
 .right{
 	float: right;
 	width: 80%; 
@@ -99,7 +128,8 @@ article #plus p{
 }
 
 button{
-	margin-left: 5px; 
+	margin-left: 5px;
+	cursor: pointer; 
 }
 
 .list_gestion{

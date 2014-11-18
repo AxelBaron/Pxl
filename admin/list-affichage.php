@@ -1,12 +1,13 @@
 <?php
 	include_once "connectionbdd.php";
+	$pasElements = true;
 	$categorie = $_POST['categorie'];
 	$sql = "SELECT * FROM $categorie";
 	$resultat = $pdo->query($sql);
 	$nbEntre = 0;
 	
 	while($donnees = $resultat->fetch()){
-	
+		$pasElements = false;
 		switch($categorie){
 			case "actualite":
 				$id = "actu_id";
@@ -38,7 +39,12 @@
 		echo("<div class='list_gestion'>");
 		echo("<input type='checkbox' id='$nbEntre' name='".$donnees[$id]."' />");
 		echo($entre);
-		echo("<a href='form-modifier-".$categorie.".php?".$id."=".$donnees[$id]."'><button class='btn_modif'>Modifier</button></a>");
+		echo("<a class='btn_modif' href='form-modifier-".$categorie.".php?".$id."=".$donnees[$id]."'>Modifier</a>");
 		echo("</div>");
+	}
+	
+	//Si il n'y a aucun entrées
+	if($pasElements == true){
+		echo("Vous n'avez aucun éléments dans cette page.");
 	}
 ?>
