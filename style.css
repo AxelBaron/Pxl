@@ -236,17 +236,18 @@ hr {
     color: #fff;
     content: attr(title);
     left: 0%;
-    padding: 5px ;
+    padding: 5px;
     position: absolute;
     z-index: 98;
-   	size: 120%;
+    height:200px;
+ 	size:70%;
     font-size: 20px;
     text-align: center;
-}
+    vertical-align: center;
+    padding-left: 25px;
+   }
 
-
-
-
+   
 
 
 

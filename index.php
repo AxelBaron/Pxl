@@ -95,9 +95,9 @@
         <ul>
           <li> <a href="#"> <img src="images/proposition_stage.jpg"> </a> </li>
         
-          <li><a href="#" title="Visitez le portfolio de l'étudiant : Pierre Laroche" class="tooltip"> <img src="images/portefolio_etudiant.jpg"> </a></li>
+          <li><a href="#" title="Visitez le portfolio de l'étudiant : Pierre Laroche" class="tooltip"> <img src="images/portefolio_etudiant.jpg"> </a> </li>
           <li><a href="#" title="Visitez le portfolio de l'étudiant : Pierre Laroche" class="tooltip"> <img src="images/etudiants.jpg"> </a></li>
-          <li><a href="#" title="Visitez le portfolio de l'étudiant : Pierre Laroche" class="tooltip"> <img src="images/portefolio1.jpg"> </a></li>
+          <li><a href="#" title="Visitez le portfolio de l'étudiant : Pierre Laroche"class="tooltip"> <img src="images/portefolio1.jpg"> </a></li>
         </ul>
 
     
