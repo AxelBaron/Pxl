@@ -46,7 +46,7 @@ nav ul a li{
 }
 
 nav ul a li span{
-	padding: 30px;
+	padding-left: 30px;
 }
 
 nav ul a:hover{
@@ -128,7 +128,8 @@ article #plus p{
 }
 
 button{
-	margin-left: 5px; 
+	margin-left: 5px;
+	cursor: pointer; 
 }
 
 .list_gestion{
