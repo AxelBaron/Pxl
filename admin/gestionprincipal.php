@@ -27,7 +27,7 @@
 			<article>
 				<h1>Bienvenu Administrateur !</h1>
 				<p> Dans cette section, vous pouvez gérer toute les atualités, pages ,textes de votre site de facon simple.
-				Rensez-vous dans le menu juste à gauche pour effectuer des modification sur le site</p>
+				Rensez-vous dans le menu juste à gauche pour effectuer des modifications sur le site</p>
 			</article>
 
 			<article>

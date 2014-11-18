@@ -90,3 +90,26 @@ article #plus{
 article #plus p{
 	color: white;
 }
+
+#gestion-list{
+	border-bottom: solid 2px orange;
+	padding-bottom: 5px;
+	margin-bottom: 25px;
+}
+
+button{
+	margin-left: 5px; 
+}
+
+.list_gestion{
+	border-bottom: solid 1px grey;
+	margin-bottom: 5px; 
+}
+
+.btn_modif{
+	float: right; 
+}
+
+input{
+	margin-right: 10px;
+}

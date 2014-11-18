@@ -13,8 +13,8 @@
 <div id="gestion-list">
 	<input type='checkbox' id="checkbox-tout" onclick="javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)" />
 	<label>Tout cocher/décocher</label>
-	<a href="form-ajout-actualite.php">Ajouter</a>
-	<a href="#" onclick="javascript:suppression(<?php echo ($nbEntre); ?>, 'actualite')">Supprimer</a>
+	<a href="form-ajout-actualite.php"><button>Ajouter</button></a>
+	<a href="#" onclick="javascript:suppression(<?php echo ($nbEntre); ?>, 'actualite')"><button>Supprimer</a></button>
 </div>
 <!-- Liste des Actualités -->
 <form>
@@ -25,10 +25,10 @@
 		$nbEntre = 0;
 		while($donnees = $resultat->fetch()){
 			$nbEntre++;
-			echo("<div>");
+			echo("<div class='list_gestion'>");
 			echo("<input type='checkbox' id='$nbEntre' name='".$donnees['actu_id']."' />");
 			echo($donnees["titre"]);
-			echo("<a href='form-modifier-actualite.php?actu_id=".$donnees['actu_id']."'>Modifier</a>");
+			echo("<a href='form-modifier-actualite.php?actu_id=".$donnees['actu_id']."'><button class='btn_modif'>Modifier</button></a>");
 			echo("</div>");
 		}
 	?>
