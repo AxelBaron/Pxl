@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<title>Site Web Techniques d'intégration Multimédia - Page Tim c'est quoi?</title>
+<title>Site Web Techniques d'intégration Multimédia</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="style.css" type="text/css">
 <script type="text/javascript">

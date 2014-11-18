@@ -311,30 +311,10 @@ hr {
  	size:70%;
     font-size: 20px;
     text-align: center;
-<<<<<<< HEAD
     vertical-align: center;
     padding-left: 25px;
    }
 
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-}
->>>>>>> origin/master
 
 
 
@@ -346,10 +326,10 @@ hr {
 /* -- -- -- -- -- PAGE TIM C'EST QUOI -- -- -- -- -- */
 
 
-
 #proweb{
 	/*largeur de 50%, hauteur de 400px (taille de l'image)*/
 	width: 50%;
+
 	height: 400px;
 	/*background-color: red;*/
 
