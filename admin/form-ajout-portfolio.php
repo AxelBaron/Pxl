@@ -23,22 +23,22 @@
 			
 			<div>
 				<label for="etudiant">Etudiant</label>
-				<input type="text" name="etudiant"/>
+				<input class="form" type="text" name="etudiant"/>
 			</div>
 			
 			<div>
 				<label for="lien">Lien du PortFolio</label>
-				<input type="text" name="lien" />
+				<input class="form" type="text" name="lien" />
 			</div>
 			
 			<div>
 				<label for="image">Image de preview</label>
-				<input type="text" name="image" />
+				<input class="form" type="text" name="image" />
 			</div>
 			
 			<div>
 				<label for="annee">Etudiant diplomé en</label>
-				<input type="text" name="annee" />
+				<input class="form" type="text" name="annee" />
 			</div>
 		</fieldset>
 		
