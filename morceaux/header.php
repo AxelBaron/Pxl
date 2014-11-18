@@ -33,10 +33,10 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
     <nav>
       <ul>
         <li>
-          <a href="#">Actualités</a>
+          <a href="actualites.php">Actualités</a>
         </li>
         <li>
-          <a href="#">Programme</a>
+          <a href="">Programme</a>
           <ul>
             <a href="timcestquoi.php">
               <li>Tim c'est quoi?</li>
@@ -44,10 +44,10 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
             <a href="grillecours.php">
               <li>Grille de cours</li>
             </a>
-            <a href="">
+            <a href="aprestim.php">
               <li>Après TIM?</li>
             </a>
-            <a href="">
+            <a href="equipe.php">
               <li>L'équipe</li>
             </a>
           </ul>
@@ -55,32 +55,32 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
         <li>
           <a href="#">Réalisations </a>
           <ul>
-            <a href=""><li>3e année</li></a>
-            <a href=""><li>1e et 2e année</li></a>
+            <a href="realisation3annee.php"><li>3e année</li></a>
+            <a href="realisation2&1annee.php"><li>1e et 2e année</li></a>
           </ul>
         </li>
         <li>
           <a href="#">Cégep</a>
           <ul>
-            <a href=""><li>Locaux</li></a>
-            <a href=""><li>Matériel</li></a>
-            <a href=""><li>Club</li></a>
+            <a href="locaux.php"><li>Locaux</li></a>
+            <a href="materiel.php"><li>Matériel</li></a>
+            <a href="club"><li>Clubs</li></a>
           </ul>
         </li>
         <li>
           <a href="#">Étudier à Matane</a>
           <ul>
-            <a href=""><li>Passerelle DEP</li></a>
-            <a href=""><li>International</li></a>
-            <a href=""><li>CDRIN</li></a>
-            <a href=""><li>Région de Matane</li></a>
+            <a href="passerelledep.php"><li>Passerelle DEP</li></a>
+            <a href="international.php"><li>International</li></a>
+            <a href="cdrin.php"><li>CDRIN</li></a>
+            <a href="regiondematane"><li>Région de Matane</li></a>
           </ul>
         </li>
         <li>
-          <a href="#">Stages</a>
+          <a href="stages.php">Stages</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="contacts.php">Contact</a>
         </li>
       </ul>
     </nav>
