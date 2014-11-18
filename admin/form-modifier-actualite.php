@@ -30,27 +30,27 @@
 			
 			<div>
 				<label for="titre">Titre</label>
-				<input class="form" type="text" name="titre" value="<?php echo $data['titre']; ?>"/>
+				<input type="text" name="titre" value="<?php echo $data['titre']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Auteur">Auteur</label>
-				<input class="form" type="text" name="auteur" value="<?php echo $data['auteur']; ?>"/>
-			</div>
-
-			<div>
-				<label for="Date">Date</label>
-				<input class="form" type="date" name="date" value="<?php echo $data['date']; ?>"/>
-			</div>
-
-			<div>
-				<label for="Image">Image</label>
-				<input class="form" type="text" name="image" value="<?php echo $data['image']; ?>"/>
+				<input type="text" name="auteur" value="<?php echo $data['auteur']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Contenu">Contenu</label>
-				<textarea name="contenu"><?php echo $data['contenu']; ?> </textarea>
+				<input type="text" name="contenu" value="<?php echo $data['contenu']; ?>"/>
+			</div>
+
+			<div>
+				<label for="Date">Date</label>
+				<input type="date" name="date" value="<?php echo $data['date']; ?>"/>
+			</div>
+
+			<div>
+				<label for="Image">Image</label>
+				<input type="text" name="image" value="<?php echo $data['image']; ?>"/>
 			</div>
 			
 			

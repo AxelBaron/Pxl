@@ -13,7 +13,7 @@
 
 		<section>
 			<div id="fond_logo">	
-				<img src="../images/TIMlogo2.svg" alt="Logo tim Matane" id="logo">
+				<img src="../images/logo2.png" alt="Logo tim Matane" id="logo">
 			</div>
 
 			<div id="fond_banniere">

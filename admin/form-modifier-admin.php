@@ -30,27 +30,27 @@
 			
 			<div>
 				<label for="Usager">Usager / Loggin</label>
-				<input class="form" type="text" name="usager" value="<?php echo $data['usager']; ?>"/>
+				<input type="text" name="usager" value="<?php echo $data['usager']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Mot de Passe">Mot de Passe</label>
-				<input class="form" type="text" name="mdp" value="<?php echo $data['mdp']; ?>"/>
+				<input type="text" name="mdp" value="<?php echo $data['mdp']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Nom">Nom</label>
-				<input class="form" type="text" name="nom" value="<?php echo $data['nom']; ?>"/>
+				<input type="text" name="nom" value="<?php echo $data['nom']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Prenom">Prénom</label>
-				<input class="form" type="text" name="prenom" value="<?php echo $data['prenom']; ?>"/>
+				<input type="text" name="prenom" value="<?php echo $data['prenom']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Courriel">Courriel</label>
-				<input class="form" type="text" name="courriel" value="<?php echo $data['courriel']; ?>"/>
+				<input type="text" name="courriel" value="<?php echo $data['courriel']; ?>"/>
 			</div>
 			
 			

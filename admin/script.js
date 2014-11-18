@@ -27,7 +27,7 @@ function suppression(nbEntre, categorie){
 		if(elementsASupprimer.length == 1){
 			message = "L'actualité sélectionnée a été supprimer!";
 		}else{
-			message = "Les actualités sélectionnées ont été supprimer!";
+			message = "Les actualités sélectionnées a été supprimer!";
 		}
 		
 		//Boucle chaque éléments pour les supprimer
@@ -42,6 +42,7 @@ function suppression(nbEntre, categorie){
 					//Affiche le message une seul fois peut importe le nombre d'éléments sélectionnés
 					if(unSeulMessage != 1){
 						unSeulMessage = 1;	
+					}else{
 						alert(message);
 					}
 					

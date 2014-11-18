@@ -30,73 +30,73 @@
 			
 			<div>
 				<label for="Titre">Titre de la page</label>
-				<input class="form" type="text" name="titre" value="<?php echo $data['titre']; ?>"/>
+				<input type="text" name="titre" value="<?php echo $data['titre']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Resumé">Resumé en haut de page</label>
-				<input class="form" type="text" name="resume" value="<?php echo $data['resume']; ?>"/>
+				<input type="text" name="resume" value="<?php echo $data['resume']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Nom Nav inter page 1">Nom du premier lien vers la page</label>
-				<input class="form" type="text" name="nav_page_nom_1" value="<?php echo $data['nav_page_nom_1']; ?>"/>
+				<input type="text" name="nav_page_nom_1" value="<?php echo $data['nav_page_nom_1']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Lien du premier lien vers la page">Lien du premier lien vers la page</label>
-				<input class="form" type="text" name="nav_page_lien_1" value="<?php echo $data['nav_page_lien_1']; ?>"/>
+				<input type="text" name="nav_page_lien_1" value="<?php echo $data['nav_page_lien_1']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Nom Nav inter page 2">Nom du deuxième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_nom_2" value="<?php echo $data['nav_page_nom_2']; ?>"/>
+				<input type="text" name="nav_page_nom_2" value="<?php echo $data['nav_page_nom_2']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Lien du deuxieme lien vers la page">Lien du deuxieme lien vers la page</label>
-				<input class="form" type="text" name="nav_page_lien_2" value="<?php echo $data['nav_page_lien_2']; ?>"/>
+				<input type="text" name="nav_page_lien_2" value="<?php echo $data['nav_page_lien_2']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Nom Nav inter page 3">Nom du troisième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_nom_3" value="<?php echo $data['nav_page_nom_3']; ?>"/>
+				<input type="text" name="nav_page_nom_3" value="<?php echo $data['nav_page_nom_3']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Lien du troisième lien vers la page">Lien du troisième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_lien_3" value="<?php echo $data['nav_page_lien_3']; ?>"/>
+				<input type="text" name="nav_page_lien_3" value="<?php echo $data['nav_page_lien_3']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Nom Nav inter page 4">Nom du quatrième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_nom_4" value="<?php echo $data['nav_page_nom_4']; ?>"/>
+				<input type="text" name="nav_page_nom_4" value="<?php echo $data['nav_page_nom_4']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Lien du quatrième lien vers la page">Lien du quatrième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_lien_4" value="<?php echo $data['nav_page_lien_4']; ?>"/>
+				<input type="text" name="nav_page_lien_4" value="<?php echo $data['nav_page_lien_4']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Nom Nav inter page 5">Nom du cinquième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_nom_5" value="<?php echo $data['nav_page_nom_5']; ?>"/>
+				<input type="text" name="nav_page_nom_5" value="<?php echo $data['nav_page_nom_5']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Lien du cinquième lien vers la page">Lien du cinquième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_lien_5" value="<?php echo $data['nav_page_lien_5']; ?>"/>
+				<input type="text" name="nav_page_lien_5" value="<?php echo $data['nav_page_lien_5']; ?>"/>
 			</div>
 
 			<div>
 				<label for="Nom Nav inter page 6">Nom du sixième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_nom_6" value="<?php echo $data['nav_page_nom_6']; ?>"/>
+				<input type="text" name="nav_page_nom_6" value="<?php echo $data['nav_page_nom_6']; ?>"/>
 			</div>
 
 
 			<div>
 				<label for="Lien du sixième lien vers la page">Lien du sixième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_lien_6" value="<?php echo $data['nav_page_lien_6']; ?>"/>
+				<input type="text" name="nav_page_lien_6" value="<?php echo $data['nav_page_lien_6']; ?>"/>
 			</div>
 
 

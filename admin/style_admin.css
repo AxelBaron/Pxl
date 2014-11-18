@@ -4,63 +4,34 @@ body{
 	padding: 0;
 }
 
-a{
-	text-decoration: none;
-}
-
-
-/* MENU________________________________________________________*/
 nav{
 	position: fixed;
 	width: 20%;
 	height: 100%;
 	background-color: #1E2D57;
-	text-decoration: none;
-	padding-top: 20px;
 }
 
 nav ul{
 	text-decoration: none;
 	list-style-type: none;
-	padding: 0;
 }
 
 
 nav ul li {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	width: 100%;
-	text-decoration: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
-nav ul li:hover {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	width: 100%;
-	background-color: #eF7039;
-}
-
-nav ul a li{
+nav ul li a{
 	color:white;
 	text-decoration: none;
 }
 
-nav ul a li span{
-	padding-left: 30px;
-}
-
-nav ul a:hover{
-	color: #1E2D57;
+nav ul li a:hover{
+	color:orange;
 	width: 100%;
-	text-decoration: none;
 }
 
-
-
-
-
-
-/* Section droite________________________________________________________*/
 .right{
 	float: right;
 	width: 80%; 
@@ -83,7 +54,6 @@ nav ul a:hover{
 #logo{
 	text-align: center;
 	background-color: black;
-	width: 300px;
 	margin: 0;
 	padding: 0;
 }
@@ -108,7 +78,7 @@ article{
 }
 
 article h1{
-	color: #eF7039;
+	color: orange;
 	text-decoration: underline;
 }
 
@@ -123,14 +93,13 @@ article #plus p{
 }
 
 #gestion-list{
-	border-bottom: solid 2px #eF7039;
+	border-bottom: solid 2px orange;
 	padding-bottom: 5px;
 	margin-bottom: 25px;
 }
 
 button{
-	margin-left: 5px;
-	cursor: pointer; 
+	margin-left: 5px; 
 }
 
 .list_gestion{

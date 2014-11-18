@@ -20,12 +20,10 @@
 <form>
 <div id="liste-elements">
 	<?php
-		$pasElements = true;
 		$sql = "SELECT * FROM page";
 		$resultat = $pdo->query($sql);
 		$nbEntre = 0;
 		while($donnees = $resultat->fetch()){
-			$pasElements = false;
 			$nbEntre++;
 			echo("<div class='list_gestion'>");
 			echo("<input type='checkbox' id='$nbEntre' name='".$donnees['page_id']."' />");
@@ -33,11 +31,6 @@
 			echo("<a class='btn_modif' href='form-modifier-page.php?page_id=".$donnees['page_id']."'>Modifier</a>");
 			echo("</div>");
 		}
-		
-	//Si il n'y a aucun entrées
-	if($pasElements == true){
-		echo("Vous n'avez aucun éléments dans cette page.");
-	}
 	?>
 <div>
 </form>
