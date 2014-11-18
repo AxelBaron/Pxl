@@ -11,13 +11,30 @@
 
 	<div class="right">
 
-		<section>	
-			<p>Bienvenu dans la section d'administration du site #TIM Matane.</p>
-			<img src="../images/logo2.png" alt="Logo tim Matane">
-		
+		<section>
+			<div id="fond_logo">	
+				<img src="../images/logo2.png" alt="Logo tim Matane" id="logo">
+			</div>
 
-			<p> Dans cette section, vous pouvez gérer toute les atualités, pages ,textes de votre site de facon simple.
+			<div id="fond_banniere">
+				<img src="../images/slider.jpg" alt="Page d'accueil">
+			</div>
+			
+			<div  id="tim_hr">
+				<img src="../images/timhr.png" alt="orange">
+			</div>
+			
+			<article>
+				<h1>Bienvenu Administrateur !</h1>
+				<p> Dans cette section, vous pouvez gérer toute les atualités, pages ,textes de votre site de facon simple.
 				Rensez-vous dans le menu juste à gauche pour effectuer des modification sur le site</p>
+			</article>
+
+			<article>
+				<h1>Guide d'utilisateur !</h1>
+				<p> Si vous rencontrez des porblèmes, cliquez ici pour consulter le guide utilisateur.</p>
+				<div id="plus"><p>+</p></div>
+			</article>
 		</section>
 	</div>
 
