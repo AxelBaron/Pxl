@@ -42,7 +42,6 @@ function suppression(nbEntre, categorie){
 					//Affiche le message une seul fois peut importe le nombre d'éléments sélectionnés
 					if(unSeulMessage != 1){
 						unSeulMessage = 1;	
-					}else{
 						alert(message);
 					}
 					
