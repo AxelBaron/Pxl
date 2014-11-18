@@ -22,28 +22,28 @@
 			<legend>Formulaire</legend>
 			
 			<div>
-				<label for="titre">Titre</label>
+				<label for="titre">Titre</label><br/>
 				<input type="text" name="titre"/>
 			</div>
 			
 			<div>
-				<label for="auteur">Auteur</label>
+				<label for="auteur">Auteur</label><br/>
 				<input type="text" name="auteur" />
 			</div>
 			
 			<div>
-				<label for="date">Date</label>
+				<label for="date">Date</label><br/>
 				<input type="date" name="date" />
 			</div>
 			
 			<div>
-				<label for="image-preview">Image de preview</label>
+				<label for="image-preview">Image de preview</label><br/>
 				<input type="text" name="image-preview" />
 			</div>
 			
 			<div>
-				<label for="contenu">Contenu</label>
-				<input type="text" name="contenu" />
+				<label for="contenu">Contenu</label><br/>
+				<textarea name="contenu"></textarea>
 			</div>
 		</fieldset>
 		

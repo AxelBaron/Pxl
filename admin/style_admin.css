@@ -29,6 +29,7 @@ nav ul li a{
 
 nav ul li a:hover{
 	color:orange;
+	width: 100%;
 }
 
 .right{
@@ -107,9 +108,20 @@ button{
 }
 
 .btn_modif{
-	float: right; 
+	float: right;
+	text-decoration: none;
+	color: #1E2D57;; 
 }
 
 input{
 	margin-right: 10px;
+}
+
+textarea{
+	width: 100%;
+	height:300px;
+}
+
+input{
+	width: 100%;
 }
