@@ -85,7 +85,6 @@ h2 a:hover{
 /*padding plus petit pour que tous les items du menu tiennent*/
 #header nav ul{ margin-top: 35px; margin-bottom: 0px;  }
 
-/*Réduction de l'espacement des liens du menu à 0px*/
 #header nav li a{
 
 	display:inline-block; 
@@ -93,19 +92,17 @@ h2 a:hover{
 	color:#FFFFFF; 
 	font-family: "Museo"; 
 	font-size: 17px; 
-}
-
-#header nav>ul>li>a{
-	/*pour que le soulignement au hover ne colle pas le lien*/
-	/*mais aussi pour qu'il n'y ait pas de mouvement lorsqu'on ne survol plus le lien, 6 car 4 d'éloignement et 2 de border-bottom*/
-	padding-bottom: 6px;
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+	line-height: 30px;
 
 }
+
 #header nav>ul>li>a:hover{
 
 	text-decoration: none;
 
-	padding-bottom: 4px;
+	padding-bottom: 3px;
 	/*Ajout d'un soulignement au survol à l'aide d'un border-bottom*/
 	border-bottom: 2px #ef7039 solid;
     -moz-text-decoration-color: red;  
@@ -122,9 +119,10 @@ h2 a:hover{
 	position: absolute;
     width: 150px; /* Largeur des sous-listes */
    	left: -999em;  /*Hop, on envoie loin du champ de vision */
-   	margin-top: 5px;
+   	margin-top: 0px;
    	background-color: #232323;
    	line-height: 30px;
+
 
 }
 #header nav>ul>li>ul>a>li{
@@ -133,6 +131,7 @@ h2 a:hover{
 	padding-left: 5px;
 	color: white;
 	background-color: #232323;
+
 }
 
 #header nav>ul>li>ul>a>li:hover{
