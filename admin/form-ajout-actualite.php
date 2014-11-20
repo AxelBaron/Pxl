@@ -16,7 +16,7 @@
 	<h1>Administration #TIM Matane</h1>	
 	<h2>Ajouter une Actualité</h2>
 
-	<form action="traitement-ajouter-actualite.php" method="POST">
+	<form action="traitement-ajouter-actualite.php" method="POST" enctype="multipart/form-data">
 	
 		<fieldset>
 			<legend>Formulaire</legend>
@@ -38,7 +38,7 @@
 			
 			<div>
 				<label for="image-preview">Image de preview</label><br/>
-				<input class="form" type="text" name="image-preview" />
+    			<input type="file" name="fileToUpload" id="fileToUpload">
 			</div>
 			
 			<div>

@@ -5,16 +5,19 @@
 	<?php 
 
 		include('connectionbdd.php');
+		include('test_upload.php');
 
+		uploadImage($_FILES["fileToUpload"]);
 		$titre = $_POST['titre'];
 		$auteur = $_POST['auteur'];
 		$date = $_POST['date'];
-		$imagepreview = $_POST['image-preview'];
 		$contenu = $_POST['contenu'];
+		$image = "/upload/".$_FILES["fileToUpload"]["name"];
 
-		$sql = "INSERT INTO actualite(titre, auteur,date, image, contenu) VALUES('$titre','$auteur','$date','$imagepreview','$contenu')";
+		$sql = "INSERT INTO actualite(titre, auteur,date,image,contenu) VALUES('$titre','$auteur','$date','$image','$contenu')";
 		
 		$pdo->exec($sql);
+		
 	?>
 	<a href="gestion-actualite.php"><button>Retour</button></a>
 <?php include("footer-admin.php"); ?>
