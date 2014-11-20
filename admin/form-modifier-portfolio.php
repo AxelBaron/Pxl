@@ -40,6 +40,7 @@
 
 			<div>
 				<label for="image-preview">Image de preview</label><br/>
+				<p> Attention ! Veuillez télécharger une image carré de 250 pixels x 250 pixels</p>
     			<input type="file" name="fileToUpload" id="fileToUpload">
 			</div>
 

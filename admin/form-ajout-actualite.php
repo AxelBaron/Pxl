@@ -38,6 +38,7 @@
 			
 			<div>
 				<label for="image-preview">Image de preview</label><br/>
+				<p> Attention ! Veuillez télécharger une image de 680 pixels x 200 pixels</p>
     			<input type="file" name="fileToUpload" id="fileToUpload">
 			</div>
 			
