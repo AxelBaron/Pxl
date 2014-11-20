@@ -8,13 +8,16 @@
 	<?php 
 
 		include('connectionbdd.php');
+		include('test_upload.php');
+
+		uploadImage($_FILES["fileToUpload"]);
 
 
 		$titre = $_POST['titre'];
 		$auteur = $_POST['auteur'];
 		$contenu = $_POST['contenu'];
 		$date = $_POST['date'];
-		$image = $_POST['image'];
+		$image = "/upload/".$_FILES["fileToUpload"]["name"];
 		
 		$sql = "UPDATE actualite 
 		  SET titre ='$titre',auteur='$auteur',contenu='$contenu',date='$date',image='$image'

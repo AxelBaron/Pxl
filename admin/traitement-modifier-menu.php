@@ -7,6 +7,9 @@
 
 	<?php 
 
+		include('test_upload.php');
+		uploadImage($_FILES["fileToUpload"]);
+
 		$nom = $_POST['nom'];
 		$nom_lien = $_POST['nom_lien'];
 		$sm_nom_1 = $_POST['sm_nom_1'];

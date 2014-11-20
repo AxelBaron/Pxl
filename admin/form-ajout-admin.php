@@ -16,7 +16,7 @@
 	<h1>Administration #TIM Matane</h1>	
 	<h2>Ajouter un Administrateur</h2>
 
-	<form action="traitement-ajouter-admin.php" method="POST">
+	<form action="traitement-ajouter-admin.php" method="POST" enctype="multipart/form-data">
 	
 		<fieldset>
 			<legend>Formulaire</legend>
