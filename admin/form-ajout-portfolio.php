@@ -16,7 +16,7 @@
 	<h1>Administration #TIM Matane</h1>	
 	<h2>Ajouter un Portfolio</h2>
 
-	<form action="traitement-ajouter-portfolio.php" method="POST">
+	<form action="traitement-ajouter-portfolio.php" method="POST" enctype="multipart/form-data">
 	
 		<fieldset>
 			<legend>Formulaire</legend>
@@ -32,8 +32,8 @@
 			</div>
 			
 			<div>
-				<label for="image">Image de preview</label>
-				<input class="form" type="text" name="image" />
+				<label for="image-preview">Image de preview</label><br/>
+    			<input type="file" name="fileToUpload" id="fileToUpload">
 			</div>
 			
 			<div>

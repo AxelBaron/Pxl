@@ -6,10 +6,13 @@
 	<?php 
 
 		include('connectionbdd.php');
+		include('test_upload.php');
+
+		uploadImage($_FILES["fileToUpload"]);
 
 		$etudiant = $_POST['etudiant'];
 		$lien = $_POST['lien'];
-		$image = $_POST['image'];
+		$image = "/upload/".$_FILES["fileToUpload"]["name"];
 		$annee = $_POST['annee'];
 
 		$sql = "INSERT INTO portfolio(etudiant,lien,image,annees) VALUES('$etudiant','$lien','$image','$annee')";

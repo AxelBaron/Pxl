@@ -23,7 +23,7 @@
 			<h1>#TIM Matane Administration</h1>	
 			<h2>Modifier le portfolio de: <?php echo $data['etudiant']; ?> </h2>
 			 
-			 <form action="traitement-modifier-portfolio.php?portfolio_id=<?php echo $data['portfolio_id']?>" method="POST">
+			 <form action="traitement-modifier-portfolio.php?portfolio_id=<?php echo $data['portfolio_id']?>" method="POST" enctype="multipart/form-data">
 	
 		<fieldset>
 			<legend>Formulaire de Modification :</legend>
@@ -39,8 +39,8 @@
 			</div>
 
 			<div>
-				<label for="image">Image</label>
-				<input class="form"type="text" name="image" value="<?php echo $data['image']; ?>"/>
+				<label for="image-preview">Image de preview</label><br/>
+    			<input type="file" name="fileToUpload" id="fileToUpload">
 			</div>
 
 			<div>

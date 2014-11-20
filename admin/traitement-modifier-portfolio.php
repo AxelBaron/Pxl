@@ -7,9 +7,12 @@
 
 	<?php 
 
+		include('test_upload.php');
+		uploadImage($_FILES["fileToUpload"]);
+		
 		$etudiant = $_POST['etudiant'];
 		$lien = $_POST['lien'];
-		$image = $_POST['image'];
+		$image = "/upload/".$_FILES["fileToUpload"]["name"];
 		$annees = $_POST['annees'];
 		
 		$sql = "UPDATE portfolio 
