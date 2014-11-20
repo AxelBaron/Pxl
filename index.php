@@ -45,14 +45,14 @@
           <article class="contenuprincip">
           <h2>Concert au Cégep</h2>
           <p>Proin luctus magna augue, in rhoncus arcu efficitur et. Quisque malesuada ligula quis sapien egestas maximus. Nulla iaculis odio non porttitor sollicitudin. Duis cursus dignissim sagittis. Vestibulum eget eleifend augue, in faucibus ante. Duis viverra lectus justo, nec sodales neque ornare pellentesque. In convallis ipsum in lectus efficitur viverra. Praesent ut viverra nulla. Quisque at nisi et tortor accumsan sagittis. Donec vitae massa cursus, volutpat mauris vel, consectetur massa. Pellentesque fringilla rhoncus eros. Cras pretium, sapien a imperdiet condimentum, ante mauris ullamcorper nisl, at suscipit erat purus et nulla. Maecenas posuere enim a quam molestie scelerisque. Integer auctor nulla lorem, nec fermentum eros cursus ut.</p>
-          <p class="imgalign"><img src="images/actualites1.jpg" alt="image actualité" width="567" height="237"></p>
+          <p class="imgalign"><img src="images/actu1.jpg" alt="image actualité" width="680" height="200"></p>
           </article>
           
           <article class="contenuprincip">
           <h2>Soirée des étudiants</h2>
           <p>Proin luctus magna augue, in rhoncus arcu efficitur et. Quisque malesuada ligula quis sapien egestas maximus. Nulla iaculis odio non porttitor sollicitudin. Duis cursus dignissim sagittis. Vestibulum eget eleifend augue, in faucibus ante. Duis viverra lectus justo, nec sodales neque ornare pellentesque. In convallis ipsum in lectus efficitur viverra. Praesent ut viverra nulla. Quisque at nisi et tortor accumsan sagittis. Donec vitae massa cursus, volutpat mauris vel, consectetur massa. Pellentesque fringilla rhoncus eros. Cras pretium, sapien a imperdiet condimentum, ante mauris ullamcorper nisl, at suscipit erat purus et nulla. Maecenas posuere enim a quam molestie scelerisque. Integer auctor nulla lorem, nec fermentum eros cursus ut.</p>
           <p class="imgalign">
-            <img src="images/actualites2.jpg" alt="image actualité" width="567" height="186" />
+            <img src="images/actu2.jpg" alt="image actualité" width="680" height="200" />
           </p>
           </article>
           
