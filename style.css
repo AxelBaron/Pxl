@@ -47,6 +47,14 @@ h2 a:hover{
 	text-decoration: underline;
 }
 
+h4{
+	color: #1e2d57;
+	font-family: "Museo", Arial;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	font-size: 17px;
+}
+
 /*----------------------------------------------Header-------------------------------------*/
 
 #header{
@@ -230,19 +238,96 @@ h2 a:hover{
 
 /* ---- BARRE DES CINQ POINTS ---- */
 
-#cinqpts{
-	width: 960px;
-	height: 200px;
-	background-color: #e1e1e0;
+/* CINQ POINTS */
+
+.circle{
 	margin-top: 30px;
-	text-align: center;
+	position:relative;
+	width:960px;
+	height:150px;
+	background-color: #e1e1e0;
 }
 
-#imgcinqpts{
+.circle2{
+	width:960px;
+	height:100px;
+	background-color: #e1e1e0;
 	text-align: center;
-	position:relative;
-	top:10%;
+	margin-bottom: 10px;
 }
+
+.trait{
+	background-color: #ef713b;
+	width: 800px;
+	height: 6px;
+
+	margin-top: 80px;
+	margin-left: 50px;
+	position: absolute;
+}
+
+.c1, .c2, .c3, .c4, .c5{
+	position:absolute;
+	top: 15px;
+	margin-left: 15px;
+
+	background-color:#1e2d57;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 390px;
+	border-radius: 390px;
+	width:130px;
+	height:130px;
+}
+
+.c1{
+	left: 0px;
+}
+
+.c2{
+	left:200px;
+}
+.c3{
+	left:400px;
+}
+.c4{
+	left:600px;	
+}
+.c5{
+	left:800px;	
+}
+
+.circle2 div{
+	float: left;
+	width: 130px;
+	margin-right: 70px;
+
+}
+
+.circle2 div:first-child{ padding-left: 16px;}
+.circle2 div:last-child { margin-right:0px }
+
+.circle img{
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.c2 img{
+	margin-left: 45px;
+}
+.c3 img{
+	margin-left: 55px;
+}
+.c4 img{
+	margin-left: 45px;
+}
+.c5 img{
+	margin-left: 40px;
+	margin-top: 40px;
+}
+
+/* FIN CINQ POINTS */
+
+
 
 /* ---- CONTENU ---- */
 
