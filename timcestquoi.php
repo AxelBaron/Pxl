@@ -7,10 +7,13 @@
     <section id="slider"><a href="#"><img src="images/slider.jpg" alt="Slider1" width="960" height="auto"></a></section>
     <!-- main content -->
     <div id="homepage">
+
      <!-- #tim? Image -->
+
       <section id="services" class="clear"> 
           <img src="images/timhr.png" alt="tim?" title="tim?" width="960" height="104">
       </section>
+      
    <!-- #TIM? image -->
       <section>
 		<article id="proweb">
