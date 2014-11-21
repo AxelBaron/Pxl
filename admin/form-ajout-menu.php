@@ -6,73 +6,48 @@
 	<h2>Ajouter un menu Principal</h2>
 <script>
 function ajoutSM(id){
-	
-	//Apparissions des nouveaux champs de sous-menu
-	if(document.getElementById(id).value != ""){
-		
-		//S'il n'y a aucun sous-menu
-		if(id == "nom"){
-			var nbPresentSM = 0;
-		}else{
-			//Sinon boucle pour savoir combien il y en a
-			for(i = 0; i < 8; i++){
-			//	alert("FOR i = "+i);
-				if(document.getElementById('sm_nom_'+i)){
-					var nbPresentSM = i;
-				}
-			}
+	//alert("salut");
+	//Sinon boucle pour savoir combien il y en a
+	for(i = 0; i < 9; i++){
+	//	alert("FOR i = "+i);
+		if(document.getElementById('sm_nom_'+i)){
+			var nbPresentSM = i;
 		}
-		
+	}
+	
+	//S'il n'y a pas de sous-menu
+	if(!nbPresentSM){
+		var nbPresentSM = 0;
+	}
+	if(nbPresentSM < 8){
 		$.ajax({
 			data: 'fonction=ajoutSM&nbPresentSM='+nbPresentSM,
 			url: 'fonctions.php',
 			method: 'POST', // or GET
 			success: function(elements) {
-				//Retire l'ancient écouteur d'événement
-				document.getElementById(id).onkeyup = "";
 				//Ajoute le nouveau
 				$('#liste-elements').append(elements);
 			}
 		});
 	}
-	
-	//Dissparirrions des nouveaux champs de sous-menu
-	if(document.getElementById(id).value == ""){
-		//Sinon boucle pour savoir combien il y en a
-		for(i = 0; i < 9; i++){
-			if(document.getElementById('sm_nom_'+i)){
-				var nbPresentSM = i;
-				alert(nbPresentSM);
-			}
-		}	
-	}
-}
-
-
-/**
-**
-** TOUT A CHANGER
-*
-*/
-
-function supprimeSM(id){
-
 }
 </script>
 	<form action="traitement-ajouter-menu.php" method="POST">
 	
-		<fieldset id="liste-elements">
+		<fieldset>
 			<legend>Formulaire</legend>
-			
-			<div>
-				<label for="nom">Intitulé du menu principal</label>
-				<input type="text" name="nom" id="nom" onkeyup="ajoutSM(id);" required />
+			<div id="liste-elements">
+				<div>
+					<label for="nom">Intitulé du menu principal</label>
+					<input type="text" name="nom" id="nom"/>
+				</div>
+				
+				<div>
+					<label for="nom_lien">Lien du menu principal</label>
+					<input type="text" id="test" name="nom_lien" />
+				</div>
 			</div>
-			
-			<div>
-				<label for="nom_lien">Lien du menu principal</label>
-				<input type="text" id="test" name="nom_lien" />
-			</div>
+			<a href="#" id="0" onclick="ajoutSM(id)" >Ajouter un sous-menu</a>
 			<!--
 			<div>
 				<label for="sm_nom_1">Nom du premier sous menu. Laissez ce champs vide le menu principal ne contient pas de sous menu ou si ce sous menu n'est pas nécessaire</label>
