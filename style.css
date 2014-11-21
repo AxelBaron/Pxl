@@ -161,6 +161,9 @@ h4{
 /* suppression du padding 30px du container car sinon le footer a 30px d'espace avec le bas */
 #container{padding:0, 0;}
 #container section{display:block; width:100%; margin:0 0 30px 0; padding:0;}
+section#slider{
+	margin: 0px;
+}
 #container .last{margin:0;}
 #container .more{text-align:right;}
 
@@ -791,6 +794,7 @@ p .imgillus{
 	color: white;
 }
 
+/* ====== FIN PAGE ACTUALITÉS ===== */
 
 
 

@@ -15,6 +15,15 @@
 
 	   	</div>
     </section>
+
+
+    <div id="header">
+      <div id="slider"><a href="#"><img src="images/slider.jpg" alt="Slider1"></a></div>
+      <div id="services" class="clear"><img src="images/Actu.png"></div>
+      
+    </div>
+
+
     <!-- main content -->
     <div id="content">
 
