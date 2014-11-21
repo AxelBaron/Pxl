@@ -15,9 +15,13 @@
 			<?php 
 				include("connectionbdd.php");
 				$page_id = $_GET["page_id"];
-				$sql="SELECT * FROM page WHERE page_id= $page_id";
+				$sql="SELECT * FROM page 
+					  WHERE page_id= $page_id";
 				$liste = $pdo->query($sql);
 				$data = $liste->fetch();
+				print_r($data);
+
+
 			 ?>
 			
 			<h1>#TIM Matane Administration</h1>	
@@ -97,6 +101,11 @@
 			<div>
 				<label for="Lien du sixième lien vers la page">Lien du sixième lien vers la page</label>
 				<input class="form" type="text" name="nav_page_lien_6" value="<?php echo $data['nav_page_lien_6']; ?>"/>
+			</div>
+
+			<div>
+				<label for="">Contenu de la page</label>
+				<textarea name="contenu" ><?php echo $data['nav_page_lien_6'] ?></textarea>
 			</div>
 
 
