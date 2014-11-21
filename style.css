@@ -192,17 +192,6 @@ h4{
 
 #container #content{float:left; width:630px; line-height:1.6em;}
 
-#container #content #posts{}
-#container #content #posts ul{margin:0; padding:0; list-style:none;}
-#container #content #posts ul li{display:block; width:100%; margin-bottom:30px;}
-#container #content #posts ul li.last{ margin-bottom:0;}
-#container #content #posts ul li article{}
-#container #content #posts ul li article figure{}
-#container #content #posts ul li article figure img{float:left; width:180px; height:150px; margin:0; padding:4px; border:1px solid #D6D6D6;}
-#container #content #posts ul li article figure figcaption{display:block; float:right; width:410px;}
-#container #content #posts ul li article figure h2{font-size:14px;}
-#container #content #posts ul li article figure footer{}
-
 /* -----Tim en video-----*/
 
 #slider{
@@ -410,7 +399,6 @@ h4{
 #conteneurprincipal{
 	width: 960px;
 	height: 932px;
-	margin-bottom: 30px;
 }
 
 hr{
@@ -448,6 +436,18 @@ article.contenuprincip {
 	border-bottom: 3px solid #FA8B60; 
 	/*pour que sous les articles il y ait un espacement entre l'image et le border bottom*/
 	padding-bottom: 10px;
+}
+
+
+article.contenuprincip a{
+	color: #FA8B60;
+	font-weight: bold;
+}
+
+article:last-child{
+
+	margin-bottom: 30px;
+
 }
 
 /* ---- PORTFOLIOS ---- */
@@ -765,9 +765,31 @@ p .imgillus{
 /* ---- FIN CITATION ---- */
 
 
+/* ======== PAGE ACTUALITÉS ======= */
+#plus{
+	background-color: #FA8B60;
+	width: 680px;
+	height: 50px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
 
+#plus p{
+	/* on retire les marges engendrées par le paragraphe*/
+	margin: 0px;
 
+	font-family: "Museo", Arial;
+	font-size: 50px;
 
+	/* on centre verticalement et horizontalement */
+	line-height: 42px;
+	text-align: center;
+}
+
+/* le lien étant placé sur la div, on fait en sorte que le lien sera en blanc*/
+#conteneurun a{
+	color: white;
+}
 
 
 
