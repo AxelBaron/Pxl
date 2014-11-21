@@ -32,8 +32,9 @@
 		$pdo->exec($sql);
 		
 
-		$sql2= "INSERT INTO contenu(contenu_id, titre, contenu)
-				VALUES ('test', '$contenu_titre', '$contenu')";
+
+		$sql2= "INSERT INTO contenu(contenu)
+				VALUES ('$contenu')";
 		$pdo->exec($sql2);
 	?>
 	<a href="gestion-page.php"><button>Retour</button></a>
