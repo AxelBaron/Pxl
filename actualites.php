@@ -3,12 +3,18 @@
 <div class="wrapper row2">
   <div id="container">
     <!-- Silder -->
-    <a href="#">
-      <div id="header">
-      <img src="images/slider.jpg" alt="Slider1">
-        <div id="service"><img src="images/Actu.png"></div>
-      </div>
-    </a>
+    <section id="slider"><a href="#"><img src="images/slider.jpg" alt="Slider1"></a></section>
+    <!-- main content -->
+	    <div id="homepage">
+
+	     <!-- #Index Image -->
+
+	      <section id="services" class="clear"> 
+	          <img src="images/Actu.png">
+	      </section>
+
+	   	</div>
+    </section>
     <!-- main content -->
     <div id="content">
 
