@@ -31,6 +31,7 @@
 			echo("<input type='checkbox' id='$nbEntre' name='".$donnees['page_id']."' />");
 			echo($donnees["titre"]);
 			echo("<a class='btn_modif' href='form-modifier-page.php?page_id=".$donnees['page_id']."'>Modifier</a>");
+			
 			echo("</div>");
 		}
 		
