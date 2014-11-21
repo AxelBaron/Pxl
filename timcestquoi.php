@@ -4,15 +4,12 @@
 <div class="wrapper row2">
   <div id="container">
     <!-- Slider -->
-    <section id="slider"><a href="#"><img src="images/slider.jpg" alt="Slider1" width="960" height="auto"></a></section>
-    <!-- main content -->
-    <div id="homepage">
-
-     <!-- #tim? Image -->
-
-      <section id="services" class="clear"> 
-          <img src="images/timhr.png" alt="tim?" title="tim?" width="960" height="104">
-      </section>
+    <a href="#">
+      <div id="header">
+      <img src="images/slider.jpg" alt="Slider1">
+        <div id="service"><img src="images/Actu.png"></div>
+      </div>
+    </a>
       
    <!-- #TIM? image -->
       <section>

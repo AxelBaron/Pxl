@@ -3,14 +3,12 @@
 <div class="wrapper row2">
   <div id="container">
     <!-- Silder -->
-    <section id="slider"><a href="#"><img src="images/slider.jpg" alt="Slider1"></a></section>
-    <!-- main content -->
-
-    <!-- #tim? Image -->
-
-      <section id="services" class="clear"> 
-          <img src="images/cours.png" alt="Grille de cours" title="Grille de cours" width="960" height="104">
-      </section>
+    <a href="#">
+      <div id="header">
+      <img src="images/slider.jpg" alt="Slider1">
+        <div id="service"><img src="images/Actu.png"></div>
+      </div>
+    </a>
 
 	<div id="content">
       <div id="conteneurmatieres">

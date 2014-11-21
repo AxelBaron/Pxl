@@ -3,27 +3,12 @@
 <div class="wrapper row2">
   <div id="container">
     <!-- Silder -->
-    <section id="slider"><a href="#"><img src="images/slider.jpg" alt="Slider1"></a></section>
-    <!-- main content -->
-	    <div id="homepage">
-
-	     <!-- #Index Image -->
-
-	      <section id="services" class="clear"> 
-	          <img src="images/Actu.png">
-	      </section>
-
-	   	</div>
-    </section>
-
-
-    <div id="header">
-      <div id="slider"><a href="#"><img src="images/slider.jpg" alt="Slider1"></a></div>
-      <div id="services" class="clear"><img src="images/Actu.png"></div>
-      
-    </div>
-
-
+    <a href="#">
+      <div id="header">
+      <img src="images/slider.jpg" alt="Slider1">
+        <div id="service"><img src="images/Actu.png"></div>
+      </div>
+    </a>
     <!-- main content -->
     <div id="content">
 
@@ -76,7 +61,7 @@
 
           <a href="" alt="plus d'articles" title="plus d'articles">
             <div id="plus">
-              <p>+</p>
+            <p>+</p>
             </div>
           </a>
 
