@@ -80,6 +80,10 @@ nav ul a:hover{
 	text-align: center;
 }
 
+#fond_logo img{
+	width: 20%;
+} 
+
 #logo{
 	text-align: center;
 	background-color: black;
