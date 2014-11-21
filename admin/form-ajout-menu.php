@@ -5,7 +5,7 @@
 	<h1>Administration #TIM Matane</h1>	
 	<h2>Ajouter un menu Principal</h2>
 <script>
-function ajoutSM(id){
+function ajoutSM(){
 	//alert("salut");
 	//Sinon boucle pour savoir combien il y en a
 	for(i = 0; i < 9; i++){
@@ -47,7 +47,7 @@ function ajoutSM(id){
 					<input type="text" id="test" name="nom_lien" />
 				</div>
 			</div>
-			<a href="#" id="0" onclick="ajoutSM(id)" >Ajouter un sous-menu</a>
+			<a href="#" onclick="ajoutSM()" >Ajouter un sous-menu</a>
 			<!--
 			<div>
 				<label for="sm_nom_1">Nom du premier sous menu. Laissez ce champs vide le menu principal ne contient pas de sous menu ou si ce sous menu n'est pas nécessaire</label>

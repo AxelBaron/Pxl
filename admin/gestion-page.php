@@ -1,7 +1,7 @@
 <?php
 	include_once "header-admin.php";
 	//Boucle pour calculer le nombre pour la case tout cocher
-	$sql = "SELECT * FROM actualite";
+	$sql = "SELECT * FROM page";
 	$resultat = $pdo->query($sql);
 	$nbEntre = 0;
 	while($donnees = $resultat->fetch()){
