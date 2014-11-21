@@ -85,6 +85,12 @@
 				<label for="nav_page_lien_6">Adresse du lien de navigation interne à la page</label>
 				<input class="form" type="text" name="nav_page_lien_6" />
 			</div>
+
+			<div>
+				<label for="">Contenu de la page</label>
+				<textarea name="contenu" ></textarea>
+			</div>
+
 		</fieldset>
 		
 	
