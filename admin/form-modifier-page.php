@@ -19,7 +19,6 @@
 					  WHERE page_id= $page_id";
 				$liste = $pdo->query($sql);
 				$data = $liste->fetch();
-				print_r($data);
 
 
 			 ?>

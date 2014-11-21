@@ -13,7 +13,7 @@
 <div id="gestion-list">
 	<input type='checkbox' id="checkbox-tout" onclick="javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)" />
 	<label>Tout cocher/décocher</label>
-	<a href="form-ajout-page.php"><button>Ajouter</button></a>
+	<a href="form-ajout-contenu.php"><button>Ajouter</button></a>
 	<a href="#" onclick="javascript:suppression(<?php echo ($nbEntre); ?>, 'page')"><button>Supprimer</button></a>
 </div>
 <!-- Liste des Page -->
