@@ -63,6 +63,11 @@ h4{
 	margin: auto;
 }
 
+#services img{
+
+	margin-top: -55px;
+}
+
 /*margin: haut, droite, bas, gauche*/
 /* le logo n'est plus dans la nav, de ce fait il faut lui attriber un bg-color ainsi qu'un padding et non un margin afin que la couleur du fond se place partout */
 #header #logo{float:left; padding:0 20px 0px 20px; background-color: #232323}
@@ -160,7 +165,7 @@ h4{
 /*----------------------------------------------Content Area-------------------------------------*/
 /* suppression du padding 30px du container car sinon le footer a 30px d'espace avec le bas */
 #container{padding:0, 0;}
-#container section{display:block; width:100%; margin:0 0 0 0; padding:0;}
+#container section{display:block; width:100%; margin:0 0 30px 0; padding:0;}
 section#slider{
 	margin: 0px;
 }
@@ -796,9 +801,45 @@ p .imgillus{
 
 /* ====== FIN PAGE ACTUALITÉS ===== */
 
+/* ====== PAGE GRILLE DE COURS ===== */
+
+/* ---- tableau ---- */
+table{
+	width: 800px;
+	cellspacing: 0px;
+	border-spacing: 0px;
+}
+
+tr.session{
+	background-color: #ef713b;
+	height: 35px;
+}
+
+tr.session td{
+	color: white;
+	font-size: 18px;
+	font-family: "Museo";
+
+}
+
+tr.formation{
+	background-color: #ee8d63;
+	font-size: 15px;
+	height: 25px;
+}
+
+tr.ligneun{
+	background-color: #ffc8b1;
+}
+
+tr{
+	background-color: white;
+	font-size: 14px;
 
 
+}
 
+/* ===== FIN PAGE GRILLE DE COURS ===== */
 
 
 
@@ -860,18 +901,8 @@ footer{
 	text-align: center;
 }
 
-/* ---- FIN FOOTER ---- */
 
-/*#headerslide{
-	position: relative;
-	width: 960px;
-	height: 385px;
-	margin: auto 0;
-}
-*/
 
-#services img{
 
-	margin-top: -55px;
-}
+
 
