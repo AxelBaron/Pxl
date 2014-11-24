@@ -805,39 +805,64 @@ p .imgillus{
 
 /* ---- tableau ---- */
 table{
-	width: 800px;
-	cellspacing: 0px;
+	width: 960px;
+	/*aucun espacement entre les bords*/
 	border-spacing: 0px;
+	/*une marge en bas de chaque tableau*/
+	margin-bottom: 30px;
 }
 
-tr.session{
-	background-color: #ef713b;
+/*style appliqué aux lignes en générale*/
+tr{
+	background-color: white;
+	font-size: 14px;
+	height: 25px;
+	line-height: 25px;
+}
+/* style appliqué aux colonnes en général*/
+ td{
+	border-bottom:1px solid #ef713b;
+	padding-left: 10px;
+}
+
+tr.annee{
+	background-color: #1e2d57;
 	height: 35px;
+	text-align: center;
+	color: white;
+	font-size: 22px;
+	font-family: "Museo";
+}
+
+
+tr.session{
+	height: 30px;
+	text-align: center;
 }
 
 tr.session td{
-	color: white;
-	font-size: 18px;
+	width: 480px;
+	color: black;
+	font-size: 20px;
 	font-family: "Museo";
 
 }
 
 tr.formation{
-	background-color: #ee8d63;
-	font-size: 15px;
+	width: 480px;
+	background-color: #ef713b;
+	font-size: 18px;
 	height: 25px;
+	color: white;
+	font-family: "Avenir"
 }
 
-tr.ligneun{
-	background-color: #ffc8b1;
+td.chiffreslast{
+	/*une bordure de séparation entre les sessions*/
+	border-right: 1px solid #ef713b;
 }
 
-tr{
-	background-color: white;
-	font-size: 14px;
 
-
-}
 
 /* ===== FIN PAGE GRILLE DE COURS ===== */
 
