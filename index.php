@@ -6,14 +6,13 @@
     <section id="slider"><a href="#"><img src="images/slider.jpg" alt="Slider1"></a></section>
     <!-- main content -->
     <div id="homepage">
-
      <!-- #Index Image -->
 
       <section id="services" class="clear"> 
           <img src="images/index.png">
       </section>
 
-   <!-- #TIM Matane en Vidéo -->
+      <!-- #TIM Matane en Vidéo -->
       <section>
       <article id="tim_video">
           <img src="" alt="Les pros du web" title="Les pros du web" width="420" height="315">
@@ -30,7 +29,6 @@
               
         </article>
       </section>
-
     </div>
     <!-- main content -->
     <div id="content">
