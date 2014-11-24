@@ -35,8 +35,8 @@ function suppression(nbEntre, categorie){
 			
 			//Appel de fonction pour éffacer
 			$.ajax({
-				data: 'id='+elementsASupprimer[i]+'&categorie='+categorie,
-				url: 'suppression.php',
+				data: 'fonction=suppression&id='+elementsASupprimer[i]+'&categorie='+categorie,
+				url: 'fonctions.php',
 				method: 'POST', // or GET
 				success: function() {
 					//Affiche le message une seul fois peut importe le nombre d'éléments sélectionnés
@@ -56,8 +56,8 @@ function suppression(nbEntre, categorie){
 function listAffichage(categorie){
 	//MAJ de la liste
 	$.ajax({
-		data: 'categorie='+categorie,
-		url: 'list-affichage.php',
+		data: 'fonction=listAffichage&categorie='+categorie,
+		url: 'fonctions.php',
 		method: 'POST', // or GET
 		success: function(list) {
 			//alert(list);
@@ -70,11 +70,37 @@ function listAffichage(categorie){
 function listGestion(categorie){
 	//MAJ du menu de gestion
 	$.ajax({
-		data: 'categorie='+categorie,
-		url: 'gestion-list.php',
+		data: 'fonction=listGestion&categorie='+categorie,
+		url: 'fonctions.php',
 		method: 'POST', // or GET
 		success: function(list) {
 			$('#gestion-list').html(list);
 		}
 	});
+}
+
+//Dans la page de formulaire d'ajout de menu
+function ajoutSM(){
+	//Sinon boucle pour savoir combien il y en a
+	for(i = 0; i < 9; i++){
+		if(document.getElementById('sm_nom_'+i)){
+			var nbPresentSM = i;
+		}
+	}
+	
+	//S'il n'y a pas de sous-menu
+	if(!nbPresentSM){
+		var nbPresentSM = 0;
+	}
+	if(nbPresentSM < 8){
+		$.ajax({
+			data: 'fonction=ajoutSM&nbPresentSM='+nbPresentSM,
+			url: 'fonctions.php',
+			method: 'POST', // or GET
+			success: function(elements) {
+				//Ajoute le nouveau
+				$('#liste-elements').append(elements);
+			}
+		});
+	}
 }
