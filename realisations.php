@@ -11,7 +11,7 @@
      <!-- #tim? Image -->
 
       <section id="services" class="clear"> 
-          <img src="images/apres.png" alt="Après?" title="Après?" width="960" height="104">
+          <img src="images/cours.png" alt="cours" title="cours" width="960" height="104">
       </section>
       
    <!-- #TIM? image -->

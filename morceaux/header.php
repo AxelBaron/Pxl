@@ -53,11 +53,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
           </ul>
         </li>
         <li>
-          <a href="#">Réalisations </a>
-          <ul>
-            <a href="realisation3annee.php"><li>3e année</li></a>
-            <a href="realisation2&1annee.php"><li>1e et 2e année</li></a>
-          </ul>
+          <a href="realisations.php">Réalisations </a>
         </li>
         <li>
           <a href="#">Cégep</a>
@@ -73,7 +69,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
             <a href="passerelledep.php"><li>Passerelle DEP</li></a>
             <a href="international.php"><li>International</li></a>
             <a href="cdrin.php"><li>CDRIN</li></a>
-            <a href="regiondematane"><li>Région de Matane</li></a>
+            <a href="regiondematane.php"><li>Région de Matane</li></a>
           </ul>
         </li>
         <li>

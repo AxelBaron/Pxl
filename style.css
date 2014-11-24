@@ -33,6 +33,9 @@ form, fieldset, legend{margin:0; padding:0; border:none;}
 legend{display:none;}
 input, textarea, select{font-size:12px; font-family:'Avenir Next', Arial ,Times,serif;}
 
+h1{
+	font-size: 2em;
+}
 
 h1, h2{
 	font-family: 'Museo', Arial;
