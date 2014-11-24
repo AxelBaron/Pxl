@@ -120,7 +120,10 @@
       </div>
     <!-- content body -->
     </div>
-  <div class="clear"></div>  
+  <div class="clear"></div> 
+  <div id="citations">
+    <p class="cita">"Une formation qui a de l'avenir..."</p>
+  </div><!-- FIN CITATIONS -->  
   <?php include("morceaux/footer.php") ?>
 </div>
 </body>

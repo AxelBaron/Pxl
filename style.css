@@ -454,7 +454,7 @@ article.contenuprincip a{
 
 article:last-child{
 
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 
 }
 
@@ -499,7 +499,10 @@ article:last-child{
 
 .ch-grid {
     padding: 0;
-    margin: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
     list-style: none;
 }
 
@@ -810,6 +813,11 @@ table{
 	border-spacing: 0px;
 	/*une marge en bas de chaque tableau*/
 	margin-bottom: 30px;
+}
+
+table:last-child{
+	/*on ne veut pas de marge en bas du dernier tableau*/
+	margin-bottom: 0px;
 }
 
 /*style appliqué aux lignes en générale*/
