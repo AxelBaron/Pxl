@@ -5,25 +5,21 @@
   <div id="container">
     <!-- Slider -->
     <section id="slider"><a href="#"><img src="images/slider.jpg" alt="Slider1" width="960" height="auto"></a></section>
-    <!-- main content -->
     <div id="homepage">
-
-     <!-- #tim? Image -->
-
       <section id="services" class="clear"> 
           <img src="images/apres.png" alt="Après?" title="Après?" width="960" height="104">
       </section>
-      
-   <!-- #TIM? image -->
-      
     </div>
+
+
     <!-- main content -->
     <div id="content">
-    	<div id="content"></div>
-		<div class="clear"></div>
-		<div id="citations">
-        	<p class="cita">"Une formation qui a de l'avenir..."</p>
-      	</div><!-- FIN CITATIONS -->
+      <div id="conteneurprincipal">lapin</div>
+
+  		<div class="clear"></div>
+  		<div id="citations">
+          	<p class="cita">"Une formation qui a de l'avenir..."</p>
+        	</div><!-- FIN CITATIONS -->
     </div><!--FIN content -->
   
     <div class="clear">
