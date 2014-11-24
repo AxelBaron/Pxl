@@ -6,10 +6,8 @@
 	<h2>Ajouter un menu Principal</h2>
 <script>
 function ajoutSM(){
-	//alert("salut");
 	//Sinon boucle pour savoir combien il y en a
 	for(i = 0; i < 9; i++){
-	//	alert("FOR i = "+i);
 		if(document.getElementById('sm_nom_'+i)){
 			var nbPresentSM = i;
 		}

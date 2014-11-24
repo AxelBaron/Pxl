@@ -11,7 +11,7 @@
 		$nbSM = ($_POST['nbPresentSM'] + 1);
 		echo("<div>");
 			echo("<label for='sm_nom_".$nbSM."'>Intitulé du sous-menu ".$nbSM."</label>");
-			echo("<input type='text' name='sm_nom_".$nbSM."' id='sm_nom_".$nbSM."' onkeyup=$fnName />");
+			echo("<input type='text' name='sm_nom_".$nbSM."' id='sm_nom_".$nbSM."' />");
 		echo("</div>");
 		
 		echo("<div>");
