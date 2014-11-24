@@ -59,7 +59,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
           <a href="#">Cégep</a>
           <ul>
             <a href="materiel_locaux.php"><li>Matériel & Locaux</li></a>
-            <a href="club"><li>Clubs</li></a>
+            <a href="clubs.php"><li>Clubs</li></a>
           </ul>
         </li>
         <li>

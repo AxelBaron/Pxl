@@ -18,19 +18,18 @@
     </div>
 
     <section>
-    <article id="proweb">
+      <article id="proweb">
         <img src="images/prosduweb.jpg" alt="Les pros du web" title="Les pros du web" width="412" height="400">
-    </article>
-        <article id="descriptionproweb">
-            
-              <h2>#Locaux & Matériaux </h2>
-              <li><p> Retrouver dans cette pages toutes les informations concernant les locaux du Cégep de Matane à disposition pour la formation.</p></li>
-              
-              <h2 id="lienancre"><a href="#">Matériel</a></h2>
-              <h2 id="lienancre"><a href="#">Locaux</a></h2>
-              
-        </article>
-      </section>
+      </article>
+      
+      <article id="descriptionproweb">
+        <h2>#Locaux & Matériaux </h2>
+        <li><p> Retrouver dans cette pages toutes les informations concernant les locaux du Cégep de Matane à disposition pour la formation.</p></li>   
+        <h2 id="lienancre"><a href="#">Matériel</a></h2>
+        <h2 id="lienancre"><a href="#">Locaux</a></h2>
+      </article>
+    </section>
+
 <div class="clear"></div>
     <!-- main content -->
     <div id="container">
