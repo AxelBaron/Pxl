@@ -19,6 +19,23 @@
 					<label for="resume">Résumé de la page. ( Situé en haut de page )</label>
 					<textarea class="form" type="text" name="resume"> </textarea>
 				</div>
+
+
+				<p style="color:red;">Inserer un bouton si l'utilisateur veux ajouter un contenu </p>
+				
+				<div>
+					<label for="resume">Quels contenus déjà existants voulez vous ajoutez à la page ?</label><br /><br />
+					 <?php 
+					 	$sql2="SELECT * FROM contenu";
+					 	$pdo->query($sql2);
+					 	$liste = $pdo->query($sql2);
+					 	
+					 	while ($contenu = $liste->fetch()) {
+					 		echo "<input type='checkbox'/>".$contenu['titre']."<br />";  
+					 	}
+					 ?>
+				</div>
+				
 			</div>
 			<!-- <a href="#" onclick="javascript:ajoutSM('page')" >Ajouter un titre de contenu</a> -->
 			

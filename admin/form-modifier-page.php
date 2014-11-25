@@ -41,7 +41,7 @@
 				<textarea class="form" type="text" name="resume"><?php echo $data['resume']; ?></textarea>
 			</div>
 
-			<p style="color:red;">Inserer un bouton si l'utilisateur veux modifier un contenu </p>
+			<p style="color:red;">Inserer un bouton si l'utilisateur veux modifier l'ordre un contenu </p>
 
 			<div>
 				<label for="resume">Choisisez dans quelle ordre s'afficherons les contenus dans votre page. (1 = haut de page)</label><br /><br />
