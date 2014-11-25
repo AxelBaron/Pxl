@@ -11,19 +11,44 @@
      <!-- #tim? Image -->
 
       <section id="services" class="clear"> 
-          <img src="images/réalisations.png" alt="Réalisations" title="Réalisations" width="960" height="104">
+          <img src="images/cours.png" alt="cours" title="cours" width="960" height="104">
       </section>
+
       
    <!-- #TIM? image -->
       
     </div>
     <!-- main content -->
     <div id="content">
-    	<div id="content"></div>
-		<div class="clear"></div>
-		<div id="citations">
-        	<p class="cita">"Une formation qui a de l'avenir..."</p>
-      	</div><!-- FIN CITATIONS -->
+      <div id="conteneurprincipal">
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+        <div class="portfolio"></div>
+      </div>
+
+      <div class="clear"></div>
+      <div id="citations">
+        <p class="cita">"Une formation qui a de l'avenir..."</p>
+      </div><!-- FIN CITATIONS -->
+        
+      
     </div><!--FIN content -->
   
     <div class="clear">

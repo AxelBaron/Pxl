@@ -682,6 +682,7 @@ article:last-child{
 	height: 100%;
 	margin: 0 auto;
 	border-top: 6px #FA8B60 solid;
+	/*ajouté car sinon les ancres marchent mal, à cause d'un mauvais placement des conteneurs*/
 	overflow: auto;
 }
 
@@ -946,16 +947,41 @@ td.chiffreslast{
 .enseignants:nth-child(-n+2){
 	margin-top: 30px;
 }
-
-
-
-
-
-
 /* ===== FIN DE PAGE L'ÉQUIPE ===== */
 
 
 
+/* ===== PAGE RÉALISATIONS ===== */
+	.portfolio{
+		width: 240px;
+		height: 240px;
+		float: left;
+
+	}
+
+	.portfolio:nth-child(4n){
+		border-bottom: 1px solid white;
+	}
+
+
+
+	.portfolio:nth-child(-n+4){
+		margin-top: 30px;
+	}
+
+	.portfolio:nth-child(n+19){
+		margin-bottom: 10px;
+		border-bottom: none;
+
+	}
+
+	.portfolio:nth-child(odd){
+		background-color: purple;
+	}
+	.portfolio:nth-child(even){
+		background-color: yellow;
+	}
+/* ===== FIN PAGE RÉALISATIONS ===== */
 
 
 /* ---- FOOTER ---- */
