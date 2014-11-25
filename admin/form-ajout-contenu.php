@@ -20,7 +20,7 @@
 	<h1>Administration #TIM Matane</h1>	
 	<h2>Ajouter un Contenu</h2>
 
-	<form action="traitement-ajouter-contenu.php?page=" method="POST">
+	<form action="traitement-ajouter-contenu.php?" method="POST">
 	
 		<fieldset>
 			<legend>Formulaire</legend>
@@ -40,11 +40,11 @@
 				<select name="id_page_">
 					<?php  
 						
-							$sql="SELECT titre FROM page";
+							$sql="SELECT * FROM page";
 							$req = $pdo->query($sql);
 		
 							while ( $data = $req->fetch()) {
-								echo "<option>".$data["titre"]."</option>";
+								echo "<option value=".$data['page_id'].">".$data["titre"]."</option>";
 							 }
 						
 					
