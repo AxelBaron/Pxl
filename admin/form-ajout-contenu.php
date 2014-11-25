@@ -20,7 +20,7 @@
 	<h1>Administration #TIM Matane</h1>	
 	<h2>Ajouter un Contenu</h2>
 
-	<form action="traitement-ajouter-contenu.php" method="POST">
+	<form action="traitement-ajouter-contenu.php?page=" method="POST">
 	
 		<fieldset>
 			<legend>Formulaire</legend>
@@ -34,15 +34,10 @@
 				<label for="contenu">Contenu</label>
 				<textarea class="form" name="contenu"></textarea>
 			</div>
-			
-			<div>
-				<label for="nav_page_nom_1">Nom du lien de navigation interne à la page</label>
-				<input class="form" type="text" name="nav_page_nom_1" />
-			</div>
 
 			<div>
-				<label for="nav_page_nom_1">A quelle page voulez vous affecter ce contenu ?</label>
-				<select>
+				<label for="id_page_">A quelle page voulez vous affecter ce contenu ?</label>
+				<select name="id_page_">
 					<?php  
 						
 							$sql="SELECT titre FROM page";
