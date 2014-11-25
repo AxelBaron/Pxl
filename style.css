@@ -23,11 +23,20 @@ a{outline:none; text-decoration:none;}
 
 #header, #container, #footer{display:block; width:960px; margin:0 auto; /*background-color: blue;*/}
 
+.conteneursecondaire{
+	width: 100%;
+	height: 100%;
+	border-top: 6px #FA8B60 solid;
+	padding-top: 30px;
+}
+
+
 nav ul{margin:0; padding:0; list-style:none;}
 
 
 address{font-style:normal;}
 
+a { color:#FA8B60 }
 
 form, fieldset, legend{margin:0; padding:0; border:none;}
 legend{display:none;}
@@ -37,7 +46,7 @@ h1{
 	font-size: 2em;
 }
 
-h1, h2{
+h1, h2, h3{
 	font-family: 'Museo', Arial;
 	color:#FA8B60;
 }
@@ -626,7 +635,7 @@ article:last-child{
 	/*largeur de 50%, hauteur de 400px (taille de l'image)*/
 	width: 50%;
 
-	height: 400px;
+	height: 100%;
 	/*background-color: red;*/
 
 	/*un float pour placer mon élément à gauche, en premier*/
@@ -634,6 +643,7 @@ article:last-child{
 	
 	/*Un text-align pour aligner l'image au centre de sa div*/
 	text-align: center;
+	margin-bottom: 30px;
 }
 
 #descriptionproweb{
@@ -672,6 +682,7 @@ article:last-child{
 	height: 100%;
 	margin: 0 auto;
 	border-top: 6px #FA8B60 solid;
+	overflow: auto;
 }
 
 #matieres h2{
@@ -696,58 +707,43 @@ p .imgillus{
 	text-align: center;
 }
 
-#mat1{
+.mat:nth-child(-n+2){
+	margin-top: 30px;
+	background-color: green;
+
+}
+
+/*un sur deux en impair*/
+.mat:nth-child(odd){
 	width: 400px;
 	height: 100%;
-	/*background-color: blue;*/
-	margin-top: 30px;
+	background-color: blue;
+	
 	margin-left: 55px;
 	margin-right: 25px;
 	margin-bottom: 15px;
 	float: left;
 }
 
-#mat2{
+/*un sur deux en pair*/
+.mat:nth-child(even){
 	width: 400px;
 	height: 100%;
-	/*background-color: yellow;*/
-	margin-top: 30px;
+	background-color: yellow;
 	margin-right: 55px;
 	margin-left: 25px;
 	margin-bottom: 15px;
 	float: left;
 }
 
-#mat3{
-	width: 400px;
-	height: 100%;
-	/*background-color: blue;*/
-	margin-top: 15px;
-	margin-left: 55px;
-	margin-right: 25px;
-	margin-bottom: 15px;
-	float: left;
-}
-
-#mat4{
-	width: 400px;
-	height: 100%;
-	/*background-color: yellow;*/
-	margin-top: 15px;
-	margin-right: 55px;
-	margin-left: 25px;
-	margin-bottom: 15px;
-	float: left;
+.mat:nth-child(n+9){
+	margin-bottom: 30px;
 }
 
 /* ---- FIN MATIERES ---- */
 
 /* ---- VS ---- */
 
-#conteneurVS{
-	width: 960px;
-	margin: 0 auto;
-}
 
 #VS{
 	width: 960px;

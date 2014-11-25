@@ -13,6 +13,24 @@
       <section id="services" class="clear"> 
           <img src="images/cours.png" alt="cours" title="cours" width="960" height="104">
       </section>
+
+      <section>
+        <article id="proweb">
+            <img src="images/prosduweb.jpg" alt="Les pros du web" title="Les pros du web" width="312" height="300">
+        </article>
+        <article id="descriptionproweb">
+              
+                <h2>Grille de cours</h2>
+                <li><p>Voici la grille des cours des 3 années découpées en 6 sessions que l'étudiant réalisera au cours de son séjour au Cégep de Matane afin de valider son diplôme.
+                Chaque matière est décomposée par : Xh de pratique, Xh de cours, Xh de travail personnel. 
+                </p></li>
+                
+                <h2 id="lienancre"><a href="#un">1e année</a></h2>
+                <h2 id="lienancre"><a href="#deux">2e année</a></h2>
+                <h2 id="lienancre"><a href="#trois">3e année</a></h2>
+                
+        </article>
+      </section>
       
    <!-- #TIM? image -->
       
@@ -21,10 +39,10 @@
     <div id="content">
       
 
-      <div id="content">
+      <div id="conteneurprincipal">
       <h1>La grille des cours</h1>
 
-      		<table>
+      		<table id="un">
       		<tr class="annee"><td colspan="8">1e année</td></tr>
       		<tr class="session">
       			<td colspan="4">1ère session</td>
@@ -121,7 +139,7 @@
       		</tr>
       		</table>
       		<!-- DEUXIÈME TABLE -->
-      		<table>
+      		<table id="deux">
       		<tr class="annee"><td colspan="8">2e année</td></tr>
       		<tr class="session">
       			<td colspan="4">3e session</td>
@@ -228,7 +246,7 @@
       		</tr>
       		</table>
       		<!-- TROISIÈME TABLE -->
-      		<table>
+      		<table id="trois">
       		<tr class="annee"><td colspan="8">3e année</td></tr>
       		<tr class="session">
       			<td colspan="4">4e session</td>
@@ -306,9 +324,9 @@
       		</tr>
       		<tr class="ligneun">
       			<td>Production multimédia</td>
-      			<td class="chiffres">1</td>
       			<td class="chiffres">2</td>
-      			<td class="chiffreslast">3</td>
+      			<td class="chiffres">8</td>
+      			<td class="chiffreslast">4</td>
       			<td></td>
       			<td class="chiffres"></td>
       			<td class="chiffres"></td>
