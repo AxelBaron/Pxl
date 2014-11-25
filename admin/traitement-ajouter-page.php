@@ -6,7 +6,6 @@
 	<?php 
 
 		include('connectionbdd.php');
-
 		
 		for($i = 1; $i < 7; $i++){
 		
@@ -31,12 +30,13 @@
 		$contenu = $_POST['contenu'];
 
 		
-		
-
 		$sql = "INSERT INTO page(titre, resume,nav_page_nom_1, nav_page_lien_1,nav_page_nom_2,nav_page_lien_2,nav_page_nom_3, nav_page_lien_3,nav_page_nom_4, nav_page_lien_4,nav_page_nom_5, nav_page_lien_5,nav_page_nom_6, nav_page_lien_6) 
 			VALUES('$titre', '$resume','$nav_page_nom_1','$nav_page_lien_1','$nav_page_nom_2','$nav_page_lien_2','$nav_page_nom_3','$nav_page_lien_3','$nav_page_nom_4','$nav_page_lien_4','$nav_page_nom_5','$nav_page_lien_5','$nav_page_nom_6','$nav_page_lien_6')";
 		$pdo->exec($sql);
 		
+		//Création de la page
+		$thePage = fopen("$titre.php", "w");
+		$header = ;
 
 
 		$sql2= "INSERT INTO contenu(contenu)

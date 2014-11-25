@@ -12,7 +12,7 @@
 			<div id="liste-elements">
 				<div>
 					<label for="titre">Titre de la page</label>
-					<input class="form" type="text" name="titre"/>
+					<input class="form" type="text" name="titre" required/>
 				</div>
 				
 				<div>

@@ -23,6 +23,10 @@
 			$categoriePost = $_POST['categorie'];
 			listGestion($categoriePost);
 		break;
+		
+		case "writeHeader":
+			writeHeader();
+		break;
 	}
 			
 	function ajoutSM($categorie) {
@@ -83,6 +87,11 @@
 			case "portfolio":
 				$id = "portfolio_id=";
 			break;
+			
+			case "contenu":
+				$id = "contenu_id=";
+			break;
+			
 		}
 		$id .= $idPost;
 		$sql = "DELETE FROM $categorie WHERE $id";
@@ -122,6 +131,11 @@
 				case "portfolio":
 					$id = "portfolio_id";
 					$entre = $donnees["etudiant"];
+				break;
+				
+				case "contenu":
+					$id = "contenu_id";
+					$entre = $donnees["titre"];
 				break;
 			}
 		
@@ -169,11 +183,20 @@
 			case "portfolio":
 				$newCategorie = '"portfolio"';
 			break;
+			
+			case "contenu":
+				$newCategorie = '"contenu"';
+			break;
+			
 		}
 		
 		echo("<input type='checkbox' id='checkbox-tout' onclick='javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)' />");
 		echo("<label>Tout cocher/décocher</label>");
 		echo("<a href='form-ajout-".$categorie.".php'><button>Ajouter</button></a>");
 		echo("<a href='#' onclick='javascript:suppression($nbEntre, $newCategorie)'><button>Supprimer</button></a>");
+	}
+	
+	function writeHeader() {
+		echo("tertetete");
 	}
 ?>
