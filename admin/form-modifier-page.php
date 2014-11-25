@@ -24,7 +24,7 @@
 			 ?>
 			
 			<h1>#TIM Matane Administration</h1>	
-			<h2>Modifier la page: <?php echo $data['page_id']; ?> </h2>
+			<h2>Modifier la page: <?php echo $data['titre']; ?> </h2>
 			 
 			 <form action="traitement-modifier-page.php?page_id=<?php echo $data['page_id']?>" method="POST">
 	
@@ -41,76 +41,22 @@
 				<input class="form" type="text" name="resume" value="<?php echo $data['resume']; ?>"/>
 			</div>
 
-			<div>
-				<label for="Nom Nav inter page 1">Nom du premier lien vers la page</label>
-				<input class="form" type="text" name="nav_page_nom_1" value="<?php echo $data['nav_page_nom_1']; ?>"/>
-			</div>
+			<p style="color:red;">Inserer un bouton si l'utilisateur veux ajouter un contenu </p>
 
 			<div>
-				<label for="Lien du premier lien vers la page">Lien du premier lien vers la page</label>
-				<input class="form" type="text" name="nav_page_lien_1" value="<?php echo $data['nav_page_lien_1']; ?>"/>
+				<label for="resume">Choisisez dans quelle ordre s'afficherons les contenus dans votre page. (1 = haut de page)</label><br /><br />
+					<?php 
+					 	$sql2="SELECT * FROM contenu";
+					 	$pdo->query($sql2);
+					 	$liste = $pdo->query($sql2);
+
+
+					 	
+					 	while ($contenu = $liste->fetch()) {
+					 		echo $contenu['titre']." <select> <option value='position'>1</option> <br />";  
+					 	}
+					?>
 			</div>
-
-			<div>
-				<label for="Nom Nav inter page 2">Nom du deuxième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_nom_2" value="<?php echo $data['nav_page_nom_2']; ?>"/>
-			</div>
-
-			<div>
-				<label for="Lien du deuxieme lien vers la page">Lien du deuxieme lien vers la page</label>
-				<input class="form" type="text" name="nav_page_lien_2" value="<?php echo $data['nav_page_lien_2']; ?>"/>
-			</div>
-
-			<div>
-				<label for="Nom Nav inter page 3">Nom du troisième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_nom_3" value="<?php echo $data['nav_page_nom_3']; ?>"/>
-			</div>
-
-			<div>
-				<label for="Lien du troisième lien vers la page">Lien du troisième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_lien_3" value="<?php echo $data['nav_page_lien_3']; ?>"/>
-			</div>
-
-			<div>
-				<label for="Nom Nav inter page 4">Nom du quatrième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_nom_4" value="<?php echo $data['nav_page_nom_4']; ?>"/>
-			</div>
-
-			<div>
-				<label for="Lien du quatrième lien vers la page">Lien du quatrième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_lien_4" value="<?php echo $data['nav_page_lien_4']; ?>"/>
-			</div>
-
-			<div>
-				<label for="Nom Nav inter page 5">Nom du cinquième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_nom_5" value="<?php echo $data['nav_page_nom_5']; ?>"/>
-			</div>
-
-			<div>
-				<label for="Lien du cinquième lien vers la page">Lien du cinquième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_lien_5" value="<?php echo $data['nav_page_lien_5']; ?>"/>
-			</div>
-
-			<div>
-				<label for="Nom Nav inter page 6">Nom du sixième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_nom_6" value="<?php echo $data['nav_page_nom_6']; ?>"/>
-			</div>
-
-
-			<div>
-				<label for="Lien du sixième lien vers la page">Lien du sixième lien vers la page</label>
-				<input class="form" type="text" name="nav_page_lien_6" value="<?php echo $data['nav_page_lien_6']; ?>"/>
-			</div>
-
-			<div>
-				<label for="">Contenu de la page</label>
-				<textarea name="contenu" ><?php echo $data['nav_page_lien_6'] ?></textarea>
-			</div>
-
-
-
-			
-			
 		</fieldset>
 		
 		<input type="submit" name="enregistrer" id="enregistrer" value="Enregistrer" />
