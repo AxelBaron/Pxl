@@ -38,7 +38,7 @@
 
 			<div>
 				<label for="Resumé">Resumé en haut de page</label>
-				<input class="form" type="text" name="resume" value="<?php echo $data['resume']; ?>"/>
+				<textarea class="form" type="text" name="resume"><?php echo $data['resume']; ?></textarea>
 			</div>
 
 			<p style="color:red;">Inserer un bouton si l'utilisateur veux ajouter un contenu </p>
