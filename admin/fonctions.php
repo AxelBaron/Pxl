@@ -195,8 +195,4 @@
 		echo("<a href='form-ajout-".$categorie.".php'><button>Ajouter</button></a>");
 		echo("<a href='#' onclick='javascript:suppression($nbEntre, $newCategorie)'><button>Supprimer</button></a>");
 	}
-	
-	function writeHeader() {
-		echo("tertetete");
-	}
 ?>
