@@ -1,4 +1,4 @@
- <? include("morceaux/header.php");?>
+<?php include("morceaux/header.php");?>
 
 <!-- content -->
 <div class="wrapper row2">
