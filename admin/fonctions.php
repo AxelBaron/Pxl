@@ -1,8 +1,11 @@
 <?php
 	$fonction = $_POST['fonction'];
+	
+	//Regarde quel fonction est appelÃ© par l'AJAX
 	switch($fonction){
 		case "ajoutSM":
-			ajoutSM();
+			$categoriePost = $_POST['categorie'];
+			ajoutSM($categoriePost);
 		break;
 		
 		case "suppression":
@@ -22,18 +25,39 @@
 		break;
 	}
 			
-	function ajoutSM() {
-		$fnName = "'ajoutSM(id);'";
-		$nbSM = ($_POST['nbPresentSM'] + 1);
-		echo("<div>");
-			echo("<label for='sm_nom_".$nbSM."'>Intitulé du sous-menu ".$nbSM."</label>");
-			echo("<input type='text' name='sm_nom_".$nbSM."' id='sm_nom_".$nbSM."' />");
-		echo("</div>");
+	function ajoutSM($categorie) {
+		//Si c'est l'ajout d'un titre dans Ajout Page
+		if($categorie == "page"){
 		
-		echo("<div>");
-			echo("<label for='sm_lien_".$nbSM."'>Lien du sous-menu ".$nbSM."</label>");
-			echo("<input type='text' name='sm_lien_".$nbSM."' />");
-		echo("</div>");
+		$fnName = "'ajoutSM(id);'";
+			$nbSM = ($_POST['nbPresentSM'] + 1);
+			echo("<div>");
+				/*<label for="nav_page_nom_2">Nom du lien de navigation interne Ã  la page</label>
+				<input class="form" type="text" name="nav_page_nom_2" />*/
+				echo("<label for='nav_page_nom_".$nbSM."'>Nom du lien de navigation interne Ã  la page</label>");
+				echo("<input type='text' class='form' name='nav_page_nom_".$nbSM."' id='nav_page_nom_".$nbSM."' />");
+			echo("</div>");
+			
+			echo("<div>");
+				echo("<label for='nav_page_lien_".$nbSM."'>Adresse du lien de navigation interne Ã  la page</label>");
+				echo("<input type='text' class='form' name='nav_page_lien_".$nbSM."' />");
+			echo("</div>");
+		
+		//Si c'est l'ajout d'un sous-menu dans ajout menu
+		}else if($categorie == "menu"){
+		
+			$fnName = "'ajoutSM(id);'";
+			$nbSM = ($_POST['nbPresentSM'] + 1);
+			echo("<div>");
+				echo("<label for='sm_nom_".$nbSM."'>IntitulÃ© du sous-menu ".$nbSM."</label>");
+				echo("<input type='text' name='sm_nom_".$nbSM."' id='sm_nom_".$nbSM."' />");
+			echo("</div>");
+			
+			echo("<div>");
+				echo("<label for='sm_lien_".$nbSM."'>Lien du sous-menu ".$nbSM."</label>");
+				echo("<input type='text' name='sm_lien_".$nbSM."' />");
+			echo("</div>");
+		}
 	}
 	
 	function suppression($idPost, $categorie) {
@@ -109,9 +133,9 @@
 			echo("</div>");
 		}
 		
-		//Si il n'y a aucun entrées
+		//Si il n'y a aucun entrÃ©es
 		if($pasElements == true){
-			echo("Vous n'avez aucun éléments dans cette page.");
+			echo("Vous n'avez aucun Ã©lÃ©ments dans cette page.");
 		}
 	}
 	
@@ -148,7 +172,7 @@
 		}
 		
 		echo("<input type='checkbox' id='checkbox-tout' onclick='javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)' />");
-		echo("<label>Tout cocher/décocher</label>");
+		echo("<label>Tout cocher/dÃ©cocher</label>");
 		echo("<a href='form-ajout-".$categorie.".php'><button>Ajouter</button></a>");
 		echo("<a href='#' onclick='javascript:suppression($nbEntre, $newCategorie)'><button>Supprimer</button></a>");
 	}

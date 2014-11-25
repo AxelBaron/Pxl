@@ -80,21 +80,31 @@ function listGestion(categorie){
 }
 
 //Dans la page de formulaire d'ajout de menu
-function ajoutSM(){
-	//Sinon boucle pour savoir combien il y en a
-	for(i = 0; i < 9; i++){
-		if(document.getElementById('sm_nom_'+i)){
-			var nbPresentSM = i;
+function ajoutSM(categorie){
+
+	if(categorie == "menu"){
+		//Boucle pour savoir combien il y en a de présent
+		for(i = 0; i < 9; i++){
+			if(document.getElementById('sm_nom_'+i)){
+				var nbPresentSM = i;
+			}
+		}
+		
+	}else if(categorie == "page"){
+		for(i = 0; i < 7; i++){
+			if(document.getElementById('nav_page_nom_'+i)){
+				var nbPresentSM = i;
+			}
 		}
 	}
 	
-	//S'il n'y a pas de sous-menu
+	//S'il n'y a pas de sous-menu ou de titre de pages
 	if(!nbPresentSM){
 		var nbPresentSM = 0;
 	}
-	if(nbPresentSM < 8){
+	if((nbPresentSM < 8 && categorie == 'menu') || (nbPresentSM < 6 && categorie == 'page')){
 		$.ajax({
-			data: 'fonction=ajoutSM&nbPresentSM='+nbPresentSM,
+			data: 'fonction=ajoutSM&nbPresentSM='+nbPresentSM+'&categorie='+categorie,
 			url: 'fonctions.php',
 			method: 'POST', // or GET
 			success: function(elements) {
