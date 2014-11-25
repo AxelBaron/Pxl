@@ -36,7 +36,7 @@
 		
 		//Création de la page
 		
-		function writeHeader() {
+		function writeHeader($titre, $resume) {
 			$header = "";
 			$header = "<?php include('morceaux/header.php') ?>
 						<!-- content -->
@@ -59,16 +59,16 @@
 									  <img src='' alt='Les pros du web' title='Les pros du web' width='420' height='315'>
 								  </article>
 									<article id='descriptionproweb'>
-										
-										  <h2>#TIM en vidéo </h2>
-										  <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique elementum dolor, maximus vestibulum ante varius id. 
-										  Integer non dapibus ligula. Morbi finibus tortor sit amet ex maximus, sed elementum sapien sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-										  Vivamus dapibus finibus ante, vitae tempus velit ali„quet sed. Morbi rhoncus lorem quis felis mattis, vitae tincidunt quam malesuada. 
-										  Aenean tincidunt turpis non arcu elementum varius. In quis tortor sit amet nulla consectetur malesuada in id nulla. 
-										  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed a urna vulputate eros tempor consectetur. </p></li>
+										  <h2>$titre</h2>";
 										  
+									//Regarde s'il y a un résumé ou non 
+									if($resume != ''){
+										$header .= "<li><p>$resume</p></li>";
+									  }else{
+										$header .= "<li><p>Il n'y a pas de résumé disponible pour cette page.</p></li>";
+									  }		
 										  
-									</article>
+						$header .= "</article>
 								  </section>
 								  
 								</div>
@@ -98,12 +98,12 @@
 		return $footer;
 		}
 		
-		$thePage = fopen("../$titre.php", "w");
-		$header = writeHeader();
+		/*$thePage = fopen("../$titre.php", "w");
+		$header = writeHeader($titre, $resume);
 		fwrite($thePage, $header);
 		$footer = writeFooter();
 		fwrite($thePage, $footer);
-		fclose($thePage);
+		fclose($thePage);*/
 
 
 		$sql2= "INSERT INTO contenu(contenu)
