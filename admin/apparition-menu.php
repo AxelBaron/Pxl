@@ -6,33 +6,40 @@
 <p>Voir cette image d'exemple :</p>
 <img src="menu.jpg" alt="exemple du menu"/> <br /><br /> <br />
 <div class="liste-deroulante">
-<h3>Gerez les indices :</h3>
-<?php 
 
 
 
-	$sql="SELECT * FROM menu";
-	$req = $pdo->query($sql);
-
-	$nb_menu =0;
-	while($data = $req->fetch()){
-		$nb_menu ++;
-	}
-	echo $nb_menu;
-
-
-	$sql="SELECT * FROM menu";
-	$req = $pdo->query($sql);
-
-	while($data = $req->fetch()){
-		echo "<p class='border-deroulant'>".$data['nom']."  <select class='select' name='position'>";
-		for($i=1; $i < $nb_menu + 1 ; $i++) { 
-			echo "<option value='$i'> $i </option>";
-		}
-		echo "</select> </p> ";
-	}
+<form action="traitement-apparition-menu.php" method="POST">
 	
- ?>
+		<fieldset>
+			<legend>Gerez les indices :</legend>
+			<?php 
+				$sql="SELECT * FROM menu";
+				$req = $pdo->query($sql);
+				$position =0;
+
+				$nb_menu =0;
+				while($data = $req->fetch()){
+					$nb_menu ++;
+				}
+
+				$sql="SELECT * FROM menu";
+				$req = $pdo->query($sql);
+
+				while($data = $req->fetch()){
+					$position++;
+					echo "<p class='border-deroulant'>".$data['nom']."  <select class='select' name='position".$position."'>";
+					for($i=1; $i < $nb_menu+1; $i++) { 
+						echo "<option value='$i'> $i </option>";
+					}
+					echo "</select> </p> ";
+				}
+			?>
+		</fieldset>
+		
+	
+		<input type="submit" name="enregistrer" id="enregistrer" value="Enregistrer"/>
+	</form>
  </div>
 
 
