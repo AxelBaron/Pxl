@@ -15,6 +15,7 @@
 	<label>Tout cocher/décocher</label>
 	<a href="form-ajout-menu.php"><button>Ajouter</button></a>
 	<a href="#" onclick="javascript:suppression(<?php echo ($nbEntre); ?>, 'menu')"><button>Supprimer</button></a>
+	<a href="apparition-menu.php"><button>Gérer l'ordre d'apparition des menus</button></a>
 </div>
 <!-- Liste des Menu -->
 <form>

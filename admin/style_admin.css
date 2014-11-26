@@ -160,3 +160,20 @@ textarea{
 	width: 100%;
 	margin-bottom: 20px;
 }
+
+.right p span{
+	color : red;
+}
+
+.liste-deroulante{
+	width: 20%;
+}
+
+.select{
+	float: right;
+}
+
+.border-deroulant{
+	border-bottom: 1px solid orange;
+	padding-bottom:5px;
+}
