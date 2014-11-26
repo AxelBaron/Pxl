@@ -4,6 +4,13 @@
 
 <?php 
 	
+	// for ($i=1; $i < 8 ; $i++) { 
+	// 	$positionEtIDmenu = explode("_",$_POST["position$i"]);
+	// }
+
+
+	
+	print_r($_POST);
 	$position1 = $_POST['position1'];
 	$position2 = $_POST['position2'];
 	$position3 = $_POST['position3'];
@@ -11,6 +18,7 @@
 	$position5 = $_POST['position5'];
 	$position6 = $_POST['position6'];
 	$position7 = $_POST['position7'];
+
 
 
 	if ($position1 == $position2 || $position1 == $position3 || $position1 == $position4 || $position1 == $position5 || $position1 == $position6 || $position1 == $position7) {
@@ -30,9 +38,9 @@
 	}else{
 		echo "Tout est ok";
 		// for ($i=1; $i < 8; $i++) { 
-		// 	$sql ="UPDATE menu SET position = position".$i."WHERE" ;
-		// 	echo $sql;
-		// }
+		//  	$sql ="UPDATE menu SET position = position".$i."WHERE menu_id =".$positionEtIDmenu[1];
+		//  	echo $sql;
+		}
 		
 	}
  ?>
