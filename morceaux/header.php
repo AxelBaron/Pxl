@@ -27,7 +27,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
     
     <!-- Retrait de la div logo de la liste pour un placement plus facile -->
     <div id="logo">
-         <a href="index.php"><img src="images/TIMlogo2.svg" alt="Logo TIM" width="240" height="88"></a>
+         <a href="index.php"><img src="images/timorange.png" alt="Logo TIM" width="240" height="88"></a>
     </div>
 
     <nav>
