@@ -3,12 +3,9 @@
 	<?php $menu_id = $_GET['menu_id']; ?>
 
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Portfolio Modifié : <?php echo $_POST["nom"] ;?></h2>
+	<h2>Menu Modifié : <?php echo $_POST["nom"] ;?></h2>
 
 	<?php 
-
-		include('test_upload.php');
-		uploadImage($_FILES["fileToUpload"]);
 
 		$nom = $_POST['nom'];
 		$nom_lien = $_POST['nom_lien'];
