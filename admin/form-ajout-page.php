@@ -17,7 +17,7 @@
 				
 				<div>
 					<label for="resume">Résumé de la page. ( Situé en haut de page )</label>
-					<textarea class="form" type="text" name="resume"> </textarea>
+					<textarea class="form" type="text" name="resume"></textarea>
 				</div>
 				
 			</div>
