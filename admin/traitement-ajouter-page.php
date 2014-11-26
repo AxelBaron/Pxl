@@ -11,14 +11,28 @@
 		
 		$sql = "INSERT INTO page(titre,resume) 
 			VALUES('$titre','$resume')";
-		$pdo->exec($sql); ?>
-
-		<a href="form-ajout-contenu.php"><button>Ajouter du contenu pour cette page</button></a>
+		$pdo->exec($sql);
 		
-		<?php 
 		//Création de la page
 		
 		function writeHeader($titre, $resume) {
+			include("connectionbdd.php");
+			
+			//INUTILE
+			//Requete pour avoir l'ID de la page
+			$sql = "SELECT * FROM page ORDER BY page_id DESC";
+			$liste = $pdo->query($sql);
+			$contenu = $liste->fetch();
+			$id = $contenu['page_id'];
+			
+			//Requete pour trouver les contenus associés à la page
+			$sql = "SELECT * FROM contenu WHERE id_page_=".$id;
+			$resultat = $pdo->query($sql);
+			while($donnees = $resultat->fetch()){
+				
+			}
+			//FIN INUTILE
+			
 			$header = "";
 			$header = "<?php include('morceaux/header.php') ?>
 						<!-- content -->
@@ -44,12 +58,14 @@
 										  <h2>$titre</h2>";
 										  
 									//Regarde s'il y a un résumé ou non 
-									if($resume != ''){
+									if($resume != '' && isset($resume)){
 										$header .= "<li><p>$resume</p></li>";
-									  }else{
+									}else{
 										$header .= "<li><p>Il n'y a pas de résumé disponible pour cette page.</p></li>";
-									  }		
-										  
+									}
+									
+									$header .= "<h2 id='lienancre'><a href='#matieresmulti'></a></h2>";
+									
 						$header .= "</article>
 								  </section>
 								  
@@ -80,12 +96,12 @@
 		return $footer;
 		}
 		
-		/*$thePage = fopen("../$titre.php", "w");
+		$thePage = fopen("../$titre.php", "w");
 		$header = writeHeader($titre, $resume);
 		fwrite($thePage, $header);
 		$footer = writeFooter();
 		fwrite($thePage, $footer);
-		fclose($thePage);*/
+		fclose($thePage);
 
 	?>
 	<a href="gestion-page.php"><button>Retour</button></a>
