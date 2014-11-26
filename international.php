@@ -11,7 +11,7 @@
      <!-- #tim? Image -->
 
       <section id="services" class="clear"> 
-          <img src="images/porfolio.png" alt="Portfolios" title="Portfolios" width="960" height="104">
+          <img src="images/international.png" alt="International" title="International" width="960" height="104">
       </section>
       <section>
         <article id="proweb">
@@ -92,22 +92,41 @@
 
         <h1 id="jusquematane">De partout dans le monde (ou presque!) à Matane</h1>
         <div class="conteneursecondaire">
+        <h2>Conditions d'admission</h2>
+        <p>
+          <ul>
+            <li>Être étudiant au DUT en Services et réseaux de communications (SRC)</li>
+            <li>Avoir de bons résultats scolaires</li>
+            <li>Être sélectionné par son IUT et le Cégep de Matane</li>
+          </ul>
+        </p>
 
-        <p>Les étudiants internationaux peuvent s’inscrire dans ce programme technique d’enseignement supérieur d’une durée de 3 ans. Ces études sont sanctionnées par un diplôme d’études collégiales (DEC), un diplôme d’État reconnu et équivalant au BTS et au DUT (niveau Bac+2) du système d’éducation français.</p>
+        <h2>Description du projet</h2>
+        <p>
+        Le Cégep de Matane offre un projet d’échange en mobilité étudiante aux étudiants du programme d’études québécois DEC Intégration multimédia et du programme d’études français DUT en SRC.  Les deux programmes d’études mènent à un diplôme d’État BAC+2. Le projet s’inscrit dans le cadre d’une entente interinstitutionnelle définissant les activités du séjour, l’encadrement interinstitutionnel ainsi que la reconnaissance de la réussite scolaire.
+        </p>
 
         <p>Un étudiant international trouvera des avantages à la poursuite de ses études au Cégep de Matane. Une fois son admission effectuée, le cégep peut soumettre sa candidature dans le cadre du Programme de bourses et d’exemptions de frais de scolarité du ministère de l’Éducation du Québec géré par Cégep International. Pour plus d’information, consulter le site Web de Cégep International. </p>
 
-        <p>Bourse d'excellence académique de 15 000 $ canadiens jumelée à l'exemption de ses frais de scolarité d'environ 10 000 $ canadiens pour tout étudiant en provenance de la francophonie ou du Mexique, de l'Inde, de la Chine, du Japon et du Brésil.
-        Exemption de ses frais de scolarité d'environ 10 000 $ canadiens.</p>
-
+        <h2>Avantages</h2>
         <p>Un étudiant international trouvera plusieurs avantages à la poursuite de ses études au Cégep de Matane en Techniques d'intégration multimédia :
 
         <ul>
-          <li>Une expérience scolaire dans un cadre différents, avec une mentalité différente, permettant une toute autre approche du cursus.</li>
-          <li>La possibilité d'obtenir une exemption de ses frais de scolarité grâce à un programme de l'organisme Cégep international.</li>
-          <li>La nature à proximité avec la Réserve Matane et le Parc de la Gaspésie, sans oublier la présence du majestueux fleuve Saint-Laurent.</li>
-          <li>Une expérience humaine enrichissante et appréciée sur un C.V.</li>
+          <li>Un séjour scolaire dans un secteur d’activité en pleine effervescence au Québec!</li>
+          <li>La formation en Multimédia suit les tendances Web et les développements pour appareils mobiles. Au programme : de la gestion de projet, de l’imagerie 3D, du développement Web, du développement flash et de la création pour les médias sociaux!</li>
+          <li>Un accès aux salles d'ordinateurs avec Internet, les soirs et les week-ends!</li>
+          <li>Des étudiants de quelques autres nationalités inscrits dans divers programmes d’études contribuent à un environnement multiculturel chaleureux!</li>
+          <li>Une expérience à la nord-américaine!</li>
+          <li>Un campus avec résidences, plateaux sportifs et clubs parascolaires!</li>
+          <li>Exemption des frais de scolarité pour les étudiants possédant la nationalité française (Accords France-Québec)!</li>
+          <li>Assurance médicale pour les étudiants possédant la nationalité française (Accords France-Québec)!</li>
         </ul>
+        </p>
+
+        <h2>Pour vous inscrire</h2>
+        <p>
+        Demander à votre école de communiquer avec la responsable de la mobilité internationale au Cégep de Matane.
+        </p>
 
         <p class="imgalign"><img src="http://www.travelhouse.ch/CMS/18/3023930/2/matane-matane.jpg" alt="Matane" title="Matane"></p>
         </p>
