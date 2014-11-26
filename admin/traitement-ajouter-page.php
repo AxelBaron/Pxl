@@ -11,8 +11,11 @@
 		
 		$sql = "INSERT INTO page(titre,resume) 
 			VALUES('$titre','$resume')";
-		$pdo->exec($sql);
+		$pdo->exec($sql); ?>
+
+		<a href="form-ajout-contenu.php"><button>Ajouter du contenu pour cette page</button></a>
 		
+		<?php 
 		//Création de la page
 		
 		function writeHeader($titre, $resume) {
