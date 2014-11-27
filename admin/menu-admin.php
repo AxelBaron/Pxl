@@ -6,6 +6,7 @@
 				<a href="gestion-menu.php"><li><span>Menus</li></span></a>
 				<a href="gestion-page.php"><li><span>Pages</li></span></a>
 				<a href="gestion-contenu.php"><li><span>Contenus</li></span></a>
+				<a href="gestion-prof.php"><li><span>Professeurs</li></span></a>
 				<a href="gestion-admin.php"><li><span>Administrateurs</li></span></a>
 				<a href="../index.php" target="_blank"><li><span>Retour page index publique</li></span></a>
 		</ul>
