@@ -30,7 +30,11 @@
 					$position++;
 					echo "<p class='border-deroulant'>".$data['nom']."  <select class='select' name='position".$position."'>";
 					for($i=1; $i < $nb_menu+1; $i++) { 
-						echo "<option value='".$i."_".$data['menu_id']."'> $i </option>";
+						if ($data['position'] == $i) {
+							echo "<option selected value='".$i."_".$data['menu_id']."'> $i </option>";
+						}else{
+							echo "<option value='".$i."_".$data['menu_id']."'> $i </option>";
+						}
 					}
 					echo "</select> </p> ";
 				}
