@@ -16,7 +16,7 @@
 
       <section>
         <article id="proweb">
-            <img src="images/prosduweb.jpg" alt="Les pros du web" title="Les pros du web" width="312" height="300">
+            <img src="images/producmulti.jpg" alt="Grille de cours" title="Grille de cours" width="312" height="300">
         </article>
         <article id="descriptionproweb">
               
@@ -249,9 +249,9 @@
       		<table id="trois">
       		<tr class="annee"><td colspan="8">3e année</td></tr>
       		<tr class="session">
-      			<td colspan="4">4e session</td>
-
       			<td colspan="4">5e session</td>
+
+      			<td colspan="4">6e session</td>
       		</tr>
       		<tr class="formation">
       			<td colspan="4">Formation Générale</td>

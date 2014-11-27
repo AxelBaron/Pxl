@@ -12,7 +12,7 @@
 
       <section>
         <article id="proweb">
-            <img src="images/prosduweb.jpg" alt="Les pros du web" title="Les pros du web" width="312" height="300">
+            <img src="images/travail.png" alt="Après Tim?" title="Après Tim?" width="300" height="312">
         </article>
         <article id="descriptionproweb">
               
