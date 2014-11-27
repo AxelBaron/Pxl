@@ -144,7 +144,7 @@ button{
 .btn_modif{
 	float: right;
 	text-decoration: none;
-	color: #1E2D57;; 
+	color: #1E2D57; 
 }
 
 
@@ -176,4 +176,26 @@ textarea{
 .border-deroulant{
 	border-bottom: 1px solid orange;
 	padding-bottom:5px;
+}
+
+a button {
+	border: none;
+	background-color: #1E2D57;
+	color: white; 
+	border-radius: 10px;
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14px; 
+}
+
+input[type="submit"]{
+ border: none;
+	background-color: #1E2D57;
+	color: white; 
+	border-radius: 10px;
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14px;
 }

@@ -59,7 +59,7 @@
 			</div>	
 
 			<div>
-				<label for="Nom sous menu 3">Nom du troiième sous menu:</label>
+				<label for="Nom sous menu 3">Nom du troisième sous menu:</label>
 				<input class="form" type="text" name="sm_nom_3" value="<?php echo $data['sm_nom_3']; ?>"/>
 			</div>
 
@@ -116,6 +116,10 @@
 			<div>
 				<label for="Nom sous menu 8">Page vers lequel amene le huitième sous menu :</label>
 				<input class="form" type="text" name="sm_lien_8" value="<?php echo $data['sm_lien_8']; ?>"/>
+			</div>
+
+			<div>
+				
 			</div>
 
 
