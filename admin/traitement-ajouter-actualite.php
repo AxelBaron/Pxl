@@ -5,15 +5,18 @@
 	<?php 
 
 		include('connectionbdd.php');
-		include('test_upload.php');
 
-		uploadImage($_FILES["fileToUpload"]);
 		$titre = $_POST['titre'];
 		$auteur = $_POST['auteur'];
 		$date = $_POST['date'];
 		$contenu = $_POST['contenu'];
-		$image = "/upload/".$_FILES["fileToUpload"]["name"];
-
+		$image = "";
+		if(isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"] != "" && $_FILES["fileToUpload"] != null && $_FILES["fileToUpload"]["size"] != 0){
+			include('test_upload.php');
+			echo("fgfgvdhgvfdgh");
+			uploadImage($_FILES["fileToUpload"]);
+			$image = "/upload/".$_FILES["fileToUpload"]["name"];
+		}
 		$sql = "INSERT INTO actualite(titre, auteur,date,image,contenu) VALUES('$titre','$auteur','$date','$image','$contenu')";
 		
 		$pdo->exec($sql);
