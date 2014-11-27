@@ -34,7 +34,8 @@
 			//FIN INUTILE
 			
 			$header = "";
-			$header = "<?php include('morceaux/header.php') ?>
+			$header = "<?php include('morceaux/header.php');
+							include('admin/connectionbdd.php')	?>
 						<!-- content -->
 						<div class='wrapper row2'>
 						  <div id='container'>
@@ -64,7 +65,15 @@
 										$header .= "<li><p>Il n'y a pas de résumé disponible pour cette page.</p></li>";
 									}
 									
-									$header .= "<h2 id='lienancre'><a href='#matieresmulti'></a></h2>";
+								$header .= '<?php 
+											$sql = "SELECT * FROM contenu WHERE id_page_='.$id.'";
+											$resultat = $pdo->query($sql);
+											while($donnees = $resultat->fetch()){
+												echo ("<h2 id=\'lienancre\'><a href=\'#\'>".$donnees[\'titre\']."</a></h2>");
+											}
+											?>';
+								$header .= "<h2 id='lienancre'><a href='#'></a></h2>";
+									
 									
 						$header .= "</article>
 								  </section>
@@ -96,12 +105,12 @@
 		return $footer;
 		}
 		
-		$thePage = fopen("../$titre.php", "w");
+	/*	$thePage = fopen("../$titre.php", "w");
 		$header = writeHeader($titre, $resume);
 		fwrite($thePage, $header);
 		$footer = writeFooter();
 		fwrite($thePage, $footer);
-		fclose($thePage);
+		fclose($thePage);*/
 
 	?>
 	<a href="gestion-page.php"><button>Retour</button></a>
