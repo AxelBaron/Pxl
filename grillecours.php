@@ -334,6 +334,157 @@
       		</tr>
       		</table>
           
+      <h1 id="matieresmulti">Les matières</h1>
+        <div class="conteneursecondaire">
+          <h2>Première année</h2>
+          <div class="mat">
+            <h2>Environnement informatique</h2>
+            <p>
+              L'étudiant prépare son environnement informatique et se familiarise avec les systèmes d'exploitation ainsi qu'avec les réseaux. Il évalue ses besoins en logiciels, gestion de l'information et en ergonomie du poste de travail. Il configure le système d'exploitation et logiciels selon ses besoins.
+            </p>
+            
+          </div>
+          <div class="mat">
+            <h2>Domaine du multimédia</h2>
+            <p>
+              L'étudiant se familiarise avec les principaux aspects des métiers de développeur, concepteur, designer et réalisateur multimédia. Il prend connaissance des différents types de produits offerts sur le marché ainsi que des différents types d'entreprises. Il s'initie aux principaux outils utilisés.
+            </p>
+            
+          </div>
+          <div class="mat">
+            <h2>Illustration</h2>
+            <p>
+              L'étudiant apprend les bases du dessin et de l'illustration. Il se familiarise avec des notions telles que la ligne de contour, la perspective, la typographie et la classification des couleurs. Il commence son apprentissage du dessin vectoriel et en comprend l'importance dans la production multimédia.
+            </p>
+             
+          </div>
+          <div class="mat">
+            <h2>Conception de sites Web</h2>
+            <p>
+              L'étudiant apprend les bases des langages de balisage et de feuilles de style pour le Web. Il apprend à faire une démarcation entre la structure et la présentation d'un document. À l'aide d'un éditeur, il monte des pages Web selon les constructions les plus courantes.
+              <br />
+            </p>
+             
+          </div>
+          <div class="mat">
+            <h2>Algorithmique et interactivité</h2>
+            <p>
+              L'étudiant s'initie à la résolution de problèmes, à l'algorithmie et au monde de la programmation.
+              Il traduit l'algorithme dans un langage de programmation simple. Il réalise une application multimédia interactive et résout les erreurs de programmation.
+            </p>
+             
+          </div>
+
+          <div class="mat">
+            <h2>Programmation de l'interactivité</h2>
+            <p>
+              L'étudiant poursuit sa logique de programmation et se familiarise avec les différents niveaux d'interactivité dans une production multimédia. Il programme l'interactivité et intègre de façon cohérente les différents médias. Il adapte et vérifie la programmation sur différents fureteurs et plates-formes.
+            </p>
+            
+          </div>
+
+          <div class="mat">
+            <h2>Ergonomie Web</h2>
+            <p>
+              L’étudiant crée et adapte les contenus et les fonctionnalités d'un site Web en vue d'en faciliter l'utilisation pour ses visiteurs. Il prévoit les réactions des utilisateurs et conçoit des pages Web facilement utilisables. Il saisit l'importance de la normalisation, de l'accessibilité et à la qualité d'un site Web.
+            </p>
+             
+          </div>
+          <div class="mat">
+            <h2>Graphisme et mise en page</h2>
+            <p>
+              L'étudiant aborde la manipulation des images et des textes sous l'angle des traitements matriciels. Il se familiarise avec les périphériques d'entrée. Il crée et optimise les éléments visuels d'une page-écran en vue de leur intégration. Il prend conscience des enjeux reliés à la propriété intellectuelle.
+            </p>
+            
+          </div>
+          <div class="mat">
+            <h2>Architecture de l'information</h2>
+            <p>
+              L'étudiant se familiarise avec les principaux outils de recherche, apprend à trier, à classer l'information, à rédiger et à présenter les résultats de ses recherches. Il élabore un scénario non linéaire et tient compte des structures d'organisation du contenu.
+            </p>
+             
+          </div>
+          <div class="mat">
+            <h2>Animation</h2>
+            <p>
+              L'étudiant se familiarise avec les notions de base en animation. Il réalise des animations simples en utilisant les outils à sa disposition dont il aura appris l'utilisation. Il est introduit aux notions de base du mouvement et à l'écriture d'un scénarimage.
+            </p>
+          </div>
+
+          <div class="mat">
+            <h2>Environnement informatique</h2>
+            <p>
+              L'étudiant prépare son environnement informatique et se familiarise avec les systèmes d'exploitation ainsi qu'avec les réseaux. Il évalue ses besoins en logiciels, gestion de l'information et en ergonomie du poste de travail. Il configure le système d'exploitation et logiciels selon ses besoins.
+            </p>
+            
+          </div>
+          <div class="mat">
+            <h2>Domaine du multimédia</h2>
+            <p>
+              L'étudiant se familiarise avec les principaux aspects des métiers de développeur, concepteur, designer et réalisateur multimédia. Il prend connaissance des différents types de produits offerts sur le marché ainsi que des différents types d'entreprises. Il s'initie aux principaux outils utilisés.
+            </p>
+            
+          </div>
+          <div class="mat">
+            <h2>Illustration</h2>
+            <p>
+              L'étudiant apprend les bases du dessin et de l'illustration. Il se familiarise avec des notions telles que la ligne de contour, la perspective, la typographie et la classification des couleurs. Il commence son apprentissage du dessin vectoriel et en comprend l'importance dans la production multimédia.
+            </p>
+             
+          </div>
+          <div class="mat">
+            <h2>Conception de sites Web</h2>
+            <p>
+              L'étudiant apprend les bases des langages de balisage et de feuilles de style pour le Web. Il apprend à faire une démarcation entre la structure et la présentation d'un document. À l'aide d'un éditeur, il monte des pages Web selon les constructions les plus courantes.
+              <br />
+            </p>
+             
+          </div>
+          <div class="mat">
+            <h2>Algorithmique et interactivité</h2>
+            <p>
+              L'étudiant s'initie à la résolution de problèmes, à l'algorithmie et au monde de la programmation.
+              Il traduit l'algorithme dans un langage de programmation simple. Il réalise une application multimédia interactive et résout les erreurs de programmation.
+            </p>
+             
+          </div>
+
+          <div class="mat">
+            <h2>Programmation de l'interactivité</h2>
+            <p>
+              L'étudiant poursuit sa logique de programmation et se familiarise avec les différents niveaux d'interactivité dans une production multimédia. Il programme l'interactivité et intègre de façon cohérente les différents médias. Il adapte et vérifie la programmation sur différents fureteurs et plates-formes.
+            </p>
+            
+          </div>
+
+          <div class="mat">
+            <h2>Ergonomie Web</h2>
+            <p>
+              L’étudiant crée et adapte les contenus et les fonctionnalités d'un site Web en vue d'en faciliter l'utilisation pour ses visiteurs. Il prévoit les réactions des utilisateurs et conçoit des pages Web facilement utilisables. Il saisit l'importance de la normalisation, de l'accessibilité et à la qualité d'un site Web.
+            </p>
+             
+          </div>
+          <div class="mat">
+            <h2>Graphisme et mise en page</h2>
+            <p>
+              L'étudiant aborde la manipulation des images et des textes sous l'angle des traitements matriciels. Il se familiarise avec les périphériques d'entrée. Il crée et optimise les éléments visuels d'une page-écran en vue de leur intégration. Il prend conscience des enjeux reliés à la propriété intellectuelle.
+            </p>
+            
+          </div>
+          <div class="mat">
+            <h2>Architecture de l'information</h2>
+            <p>
+              L'étudiant se familiarise avec les principaux outils de recherche, apprend à trier, à classer l'information, à rédiger et à présenter les résultats de ses recherches. Il élabore un scénario non linéaire et tient compte des structures d'organisation du contenu.
+            </p>
+             
+          </div>
+          <div class="mat">
+            <h2>Animation</h2>
+            <p>
+              L'étudiant se familiarise avec les notions de base en animation. Il réalise des animations simples en utilisant les outils à sa disposition dont il aura appris l'utilisation. Il est introduit aux notions de base du mouvement et à l'écriture d'un scénarimage.
+            </p>
+          </div>
+        </div>
       </div>
 
       
