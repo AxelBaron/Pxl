@@ -37,7 +37,7 @@
 
 			<div>
 				<label for="id_page_">A quelle page voulez vous affecter ce contenu ?</label>
-				<select name="position">
+				<select name="id_page_">
 					<?php  
 						
 							$sql="SELECT * FROM page";
