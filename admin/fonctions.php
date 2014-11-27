@@ -92,6 +92,10 @@
 				$id = "contenu_id=";
 			break;
 			
+			case "prof":
+				$id = "prof_id=";
+			break;
+			
 		}
 		$id .= $idPost;
 		$sql = "DELETE FROM $categorie WHERE $id";
@@ -136,6 +140,11 @@
 				case "contenu":
 					$id = "contenu_id";
 					$entre = $donnees["titre"];
+				break;
+				
+				case "prof":
+					$id = "prof_id";
+					$entre = $donnees['prenom']." ".$donnees['nom'];
 				break;
 			}
 		
@@ -188,12 +197,18 @@
 				$newCategorie = '"contenu"';
 			break;
 			
+			case "prof":
+				$newCategorie = '"prof"';
+			break;
+			
 		}
 		
 		echo("<input type='checkbox' id='checkbox-tout' onclick='javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)' />");
 		echo("<label>Tout cocher/décocher</label>");
 		echo("<a href='form-ajout-".$categorie.".php'><button>Ajouter</button></a>");
 		echo("<a href='#' onclick='javascript:suppression($nbEntre, $newCategorie)'><button>Supprimer</button></a>");
-		echo("<a href='apparition-menu.php'><button>Gérer l'ordre d\'apparition des menus</button></a>");
+		if($newCategorie == '"menu"'){
+			echo("<a href='apparition-menu.php'><button>Gérer l'ordre d\'apparition des menus</button></a>");
+		}
 	}
 ?>
