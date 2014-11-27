@@ -55,25 +55,29 @@
 								  <article id='tim_video'>
 									  <img src='' alt='Les pros du web' title='Les pros du web' width='420' height='315'>
 								  </article>
-									<article id='descriptionproweb'>
-										  <h2>$titre</h2>";
-										  
-									//Regarde s'il y a un résumé ou non 
-									if($resume != '' && isset($resume)){
-										$header .= "<li><p>$resume</p></li>";
-									}else{
-										$header .= "<li><p>Il n'y a pas de résumé disponible pour cette page.</p></li>";
-									}
+									<article id='descriptionproweb'>";
 									
-								$header .= '<?php 
-											$sql = "SELECT * FROM contenu WHERE id_page_='.$id.'";
-											$resultat = $pdo->query($sql);
-											while($donnees = $resultat->fetch()){
-												echo ("<h2 id=\'lienancre\'><a href=\'#\'>".$donnees[\'titre\']."</a></h2>");
-											}
-											?>';
-								$header .= "<h2 id='lienancre'><a href='#'></a></h2>";
-									
+									//Insère le résumé et le titre
+									$header .= '<?php 
+												$sql = "SELECT * FROM page WHERE page_id='.$id.'";
+												$resultat = $pdo->query($sql);
+												$contenu = $resultat->fetch();
+												echo "<h2>".$contenu[\'titre\']."</h2>";
+												if($contenu[\'resume\'] != "" && isset($contenu[\'resume\'])){
+													echo "<li><p>".$contenu[\'resume\']."</p></li>";
+												}else{
+													echo "<li><p>Il n\'y a pas de résumé disponible pour cette page.</p></li>";
+												}
+												?>';	
+								
+									//Insère les titres de Contenues
+									$header .= '<?php 
+												$sql = "SELECT * FROM contenu WHERE id_page_='.$id.'";
+												$resultat = $pdo->query($sql);
+												while($donnees = $resultat->fetch()){
+													echo ("<h2 id=\'lienancre\'><a href=\'#\'>".$donnees[\'titre\']."</a></h2>");
+												}
+												?>';								
 									
 						$header .= "</article>
 								  </section>
