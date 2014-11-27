@@ -194,5 +194,6 @@
 		echo("<label>Tout cocher/décocher</label>");
 		echo("<a href='form-ajout-".$categorie.".php'><button>Ajouter</button></a>");
 		echo("<a href='#' onclick='javascript:suppression($nbEntre, $newCategorie)'><button>Supprimer</button></a>");
+		echo("<a href='apparition-menu.php'><button>Gérer l'ordre d\'apparition des menus</button></a>");
 	}
 ?>
