@@ -10,18 +10,22 @@
 		include('connectionbdd.php');
 		include('test_upload.php');
 
-		uploadImage($_FILES["fileToUpload"]);
-
 
 		$titre = $_POST['titre'];
 		$auteur = $_POST['auteur'];
 		$contenu = $_POST['contenu'];
 		$date = $_POST['date'];
-		$image = "/upload/".$_FILES["fileToUpload"]["name"];
-		
-		$sql = "UPDATE actualite 
-		  SET titre ='$titre',auteur='$auteur',contenu='$contenu',date='$date',image='$image'
-		  WHERE actu_id=$actu_id";
+		if(isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"] != "" && $_FILES["fileToUpload"] != null && $_FILES["fileToUpload"]["size"] != 0){
+			uploadImage($_FILES["fileToUpload"]);
+			$image = "/upload/".$_FILES["fileToUpload"]["name"];
+			$sql = "UPDATE actualite 
+			SET titre ='$titre',auteur='$auteur',contenu='$contenu',date='$date',image='$image'
+			WHERE actu_id=$actu_id";
+		}else{
+			$sql = "UPDATE actualite 
+			SET titre ='$titre',auteur='$auteur',contenu='$contenu',date='$date'
+			WHERE actu_id=$actu_id";
+		}
 		$pdo->exec($sql);
 	?>
 	<a href="gestion-actualite.php"><button>Retour</button></a>
