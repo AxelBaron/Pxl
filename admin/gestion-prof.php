@@ -14,7 +14,7 @@
 	<input type='checkbox' id="checkbox-tout" onclick="javascript:checkAndUnCheckAll(<?php echo ($nbEntre); ?>)" />
 	<label>Tout cocher/décocher</label>
 	<a href="form-ajout-prof.php"><button>Ajouter</button></a>
-	<a href="#" onclick="javascript:suppression(<?php echo ($nbEntre); ?>, 'portfolio')"><button>Supprimer</button></a>
+	<a href="#" onclick="javascript:suppression(<?php echo ($nbEntre); ?>, 'prof')"><button>Supprimer</button></a>
 </div>
 <!-- Liste des Portfolios -->
 <form>
