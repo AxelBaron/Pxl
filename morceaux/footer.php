@@ -3,8 +3,8 @@
       <div id="conteneurfooter">
         <div class="part1">
             <p>Rejoignez-nous!</p>
-            <img src="images/fb.png" alt="Facebook" width="55" height="55" />
-            <img src="images/tw.png" alt="Twitter" width="55" height="55" />
+            <a href=""><img src="images/fb.png" alt="Facebook" width="55" height="55" /></a>
+            <a href=""><img src="images/tw.png" alt="Twitter" width="55" height="55" /></a>
           
         </div>
         <div class="part2">
@@ -25,7 +25,7 @@
         </div>
         <div class="part2">
           <p class="imgalign">
-            <img src="images/logofooter.png" alt="logofooter" width="201" height="60">
+            <a href="index.php"><img src="images/logofooter.png" alt="logofooter" width="201" height="60" /></a>
           </p>
         </div>
         <div class="clear"></div>

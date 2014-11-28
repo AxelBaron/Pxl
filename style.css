@@ -652,7 +652,7 @@ article:last-child{
 }
 
 #descriptionproweb{
-	width: 47%;
+	width: 49%;
 
 	/*Il faut que cet élément se place en float, après la div proweb*/
 	float: left;

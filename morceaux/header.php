@@ -65,7 +65,8 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
         <li>
           <a href="#">Étudier à Matane</a>
           <ul>
-            <a href="passerelledep.php"><li>Passerelle DEP</li></a>
+            <!-- <a href="passerelledep.php"><li>Passerelle DEP</li></a> -->
+            <a href="modalites.php"><li>Modalités</li></a>
             <a href="international.php"><li>International</li></a>
             <a href="cdrin.php"><li>CDRIN</li></a>
             <a href="regiondematane.php"><li>Région de Matane</li></a>

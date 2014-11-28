@@ -26,22 +26,22 @@
 		<div class="circle2">
 			<div>
 			<h4>Polyvalence</h4>
-			<p>lapin lapin lapin lapin lapin lapin lapin lapin</p>
+			<p>Intégration, Dév., design, gestion</p>
 			</div>
 			<div>
 			<h4>Gestion</h4>
-			<p>lapin lapin lapin lapin lapin lapin lapin lapin</p>
+			<p>Toutes les techniques pour gérer un projet</p>
 			</div>
 			<div>
 			<h4>Design</h4>
-			<p>lapin lapin lapin lapin lapin lapin lapin lapin</p>
+			<p>Les normes, pour le web, le print, etc</p>
 			</div>
 			<div>
-			<h4>Dev.Web</h4>
-			<p>lapin lapin lapin lapin lapin lapin lapin lapin</p>
+			<h4>Dev./Inté Web</h4>
+			<p>HTML, CSS, AS3, PHP, JQuery, Ajax...</p>
 			</div>
 			<div>
 			<h4>Vidéo</h4>
-			<p>lapin lapin lapin lapin lapin lapin lapin lapin</p>
+			<p>Scénario, cadrages, animation, 3D...</p>
 			</div>
 		</div>

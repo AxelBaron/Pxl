@@ -15,7 +15,7 @@
       <!-- #TIM Matane en Vidéo -->
       <section>
       <article id="tim_video">
-          <img src="" alt="Les pros du web" title="Les pros du web" width="420" height="315">
+          <img src="images/youtube.jpg" alt="Les pros du web" title="Les pros du web" width="411" height="315">
       </article>
         <article id="descriptionproweb">
             
@@ -25,6 +25,8 @@
               Vivamus dapibus finibus ante, vitae tempus velit ali„quet sed. Morbi rhoncus lorem quis felis mattis, vitae tincidunt quam malesuada. 
               Aenean tincidunt turpis non arcu elementum varius. In quis tortor sit amet nulla consectetur malesuada in id nulla. 
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed a urna vulputate eros tempor consectetur. </p></li>
+              <h2 id="lienancre"><a href="http://www.cegep-matane.qc.ca/medias/Depliant/multimedia1415.pdf" target="_blank" alt"Dépliant de la formation multimédia">Dépliant récapitulatif de la formation</a></h2>
+
               
               
         </article>
