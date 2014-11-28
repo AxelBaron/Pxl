@@ -90,7 +90,10 @@ section article h1{
 
 img.float{
 	float: left;
+	margin-right: 20px;
 }
+
+
 
 
 /*----------------------------------------------Header-------------------------------------*/
@@ -617,6 +620,8 @@ article:last-child{
     padding: 20px 0 0 0;
     
     font-family: 'Museo', Arial, sans-serif;
+
+    opacity: 1;
     
 }
 
@@ -1009,7 +1014,7 @@ td.chiffreslast{
 		height: 100%;
 		/*couleur du fond de la div*/
 		background: #ef713b;
-		background: rgba(239,113,59,1);
+		background: rgba(239,113,59,0.8);
 		
 	}
 	.da-thumbs li a div span {
@@ -1027,9 +1032,12 @@ td.chiffreslast{
 		/* une marge de 40px en haut, 20px à droite, 20px en bas, 20px à gauche*/
 		margin: 40px 20px 20px 20px;
 		
-		color: rgba(255,255,255,0.9);
+		color: rgba(255,255,255,1);
+		
 		
 	}
+
+
 
 	.da-thumbs li a div span.plus{
 		font-size: 50px;
@@ -1044,6 +1052,9 @@ td.chiffreslast{
 		-ms-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
 	}
+
+	
+
 	.da-thumbs li a:hover div{
 		left: 0px;
 	}
@@ -1056,7 +1067,6 @@ td.chiffreslast{
 	width: 50%;
 	min-height: 100%;
 	float: left;
-
 }
 #adresse{
 	width: 50%;
@@ -1073,6 +1083,26 @@ td.chiffreslast{
 	max-height:50%;
 	float: left;
 	border-top: 3px solid #FA8B60;
+
+}
+
+.contactenseignants{
+	width: 95%;
+	height: 35px;
+	margin-right: 10px;
+	background-color: #FA8B60;
+
+	border-radius: 5px;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	
+
+}
+
+.contactenseignants p{
+	text-align: center;
+	line-height: 35px;
+	color: white;
 
 }
 

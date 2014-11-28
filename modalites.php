@@ -4,7 +4,7 @@
 <div class="wrapper row2">
   <div id="container">
     <!-- Slider -->
-    <section id="slider"><a href="#"><img src="images/slider.jpg" alt="Slider1" width="960" height="auto"></a></section>
+    <section id="slider"><a href="index.php"><img src="images/slider.jpg" alt="Slider1" width="960" height="230" /></a></section>
     <!-- main content -->
     <div id="homepage">
 
@@ -45,6 +45,7 @@
 
         <h1 id="admission">Admission</h1>
         <div class="conteneursecondaire">
+        <p><img class="float" src="images/sracq.jpg" width="81" height="76" alt="SRACQ" /></p>
           <p>
             Le site Web du département TIM du Cégep de Matane ne constitue en aucune façon un guide d'admission. Les renseignements qu'on y retrouve concernant l'admission sont présentés à titre indicatif seulement. Les textes officiels relatifs à l'admission, notamment ceux traitant des programmes offerts et de leurs préalables, sont présentés sur le site du SRACQ. Les candidats sont priés de s'en tenir à ces indications lors de la préparation de leur demande d'admission.
           </p>

@@ -4,7 +4,7 @@
 <div class="wrapper row2">
   <div id="container">
     <!-- Slider -->
-    <section id="slider"><a href="#"><img src="images/slider.jpg" alt="Slider1" width="960" height="auto"></a></section>
+    <section id="slider"><a href="index.php"><img src="images/slider.jpg" alt="Slider1" width="960" height="230" /></a></section>
     <!-- main content -->
     <div id="homepage">
 
@@ -20,11 +20,18 @@
 
 
       <div id="conteneurprincipal">
-        <h1 id="timcestquoi">Nous contacter</h1>
+        <h1 id="timcestquoi">Contacter le département TIM</h1>
         <div class="conteneursecondaire">
 
           <div id="formulaire">
             <form action="" method="post" class="contacter">
+              <h2>Contacter nos enseignants</h2>
+              
+                <a href="equipe.php" alt="l'équipe">
+                  <div class="contactenseignants">
+                    <p>Contacter les enseignants</p>
+                  </div>
+                </a>
               <div class="box">
                 <h2>Formulaire de contact</h2>
                 <p>Les champs précédés d'un <span class="important">*</span> sont à remplir obligatoirement.</p>
@@ -67,7 +74,9 @@
             </p>
             
             <p>
-              Courriel : <a href="mailto:information@cegep-matane.qc.ca">information@cegep-matane.qc.ca</a> <br />
+              Courriel : <a href="mailto:information@cegep-matane.qc.ca">information@cegep-matane.qc.ca</a>
+            </p>
+            <p>
               Téléphone : 418 562-1240 <br />
               Télécopieur : 418 562-2115 <br />
             </p>
