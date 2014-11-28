@@ -1,6 +1,6 @@
-html{overflow-y:scroll;} 
+html{overflow-y:scroll; height: 100%;} 
 
-body{ list-style:none; /*retrait de toutes marges*/ padding:0px; margin:0px; /*Pourquoi un margin-right de 10px? -> Modifiée à margin:0px; et ajout de padding:0px;*/ padding:0; font-size:13px; font-family:'Avenir Next', Arial, Times, serif; color:#232323;  }
+body{ list-style:none; /*retrait de toutes marges*/ padding:0px; margin:0px; /*Pourquoi un margin-right de 10px? -> Modifiée à margin:0px; et ajout de padding:0px;*/ padding:0; font-size:13px; font-family:'Avenir Next', Arial, Times, serif; color:#232323; min-height: 100%;  }
 
 a{outline:none; text-decoration:none;}
 
@@ -460,6 +460,7 @@ hr{
 #conteneurun{
 
 	width: 680px;
+	height: 100%;
 	margin-right: 30px;
 	float: left;
 }
@@ -714,10 +715,6 @@ p .imgillus{
 	/*-n+3 car "première année" est compté comme un élément*/
 	margin-top: 30px;
 }
-
-
-
-
 
 
 /*un sur deux en impaire*/
@@ -1045,6 +1042,139 @@ td.chiffreslast{
 	}
 /* ===== FIN PAGE RÉALISATIONS ===== */
 
+
+/* ===== PAGE CONTACT ===== */
+
+#formulaire{
+	width: 50%;
+	min-height: 100%;
+	float: left;
+
+}
+#adresse{
+	width: 50%;
+	max-height:50%;
+	float: left;
+}
+/* adresse */
+#adresse p{
+	font-size: 14px;
+}
+
+#google{
+	width: 50%;
+	max-height:50%;
+	float: left;
+	border-top: 3px solid #FA8B60;
+
+}
+
+/* conteneur du formulaire*/
+div.box {
+	margin:0 auto;
+	width:100%;
+	background:none;
+	position:relative;
+}
+
+
+/* label contenant les champs */
+div.box label {
+	width:100%;
+	display: block;
+	background:none;
+	padding:10px 0 10px 0;
+}
+
+/* texte des labels des champs */
+div.box label p {
+	/*couleur du texte des champs*/
+	color:black;
+
+	font-size: 16px;
+	text-align:right;
+	line-height: 3px;
+
+	float:left;
+	display: inline;
+	width: 100px;
+	padding:5px 20px 0 0;
+}
+
+/*champs du formulaire*/
+div.box input {
+
+	padding:10px 10px;
+	width:65%;
+
+	/*fond du champ texte*/
+	background: #e1e1e0;
+
+	border: 0px solid white;
+	border-radius: 5px;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	font-family: 'Avenir'; 
+	font-size: 16px; 
+	color: black; 
+}
+
+/*div.box input:-webkit-input-placeholder{
+    color: #a1b2c3; 
+	}
+div.box input:-moz-placeholder{
+	color: #a1b2c3;  
+	}*/
+
+/* champs texte pour le message, textarea */
+div.box .message{
+	padding:7px 7px;
+	max-width: 66%;
+
+	height: 300px;
+	max-height:400px;
+	background:#e1e1e0;
+	
+	overflow:hidden;
+	height:150px;
+
+	font-family: 'Avenir';
+	font-size: 16px;
+	color: black; 
+
+	border: 0px solid white;
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	}
+	
+
+/*bouton d'envoi*/
+div.box .button
+{
+	border:0px;
+	position: relative;
+	width:69%;
+	height: 50px;
+	float: right; 
+	padding: 10px 15px; 
+	margin: 0 28px 0 0;
+	cursor: pointer;
+}
+
+/* astérisque rouge*/
+span.important{
+	color: red;
+}
+
+/* focus orange lorsque l'on sélectionne le champs*/
+
+div.box input:focus, textarea:focus {
+	outline:none;
+	box-shadow: 0px 0px 1pt 2pt #FA8B60;
+}
+
+/* ===== FIN PAGE CONTACT ===== */
 
 /* ---- FOOTER ---- */
 

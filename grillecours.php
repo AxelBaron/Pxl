@@ -10,7 +10,7 @@
 
      <!-- #tim? Image -->
 
-      <section id="services" class="clear"> 
+      <section id="services"> 
           <img src="images/cours.png" alt="cours" title="cours" width="960" height="104">
       </section>
 
