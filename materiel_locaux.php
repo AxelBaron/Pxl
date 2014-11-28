@@ -23,7 +23,7 @@
       </article>
       
       <article id="descriptionproweb">
-        <h2>#Locaux & Matériaux </h2>
+        <h2>Matériel & Locaux</h2>
         <li><p> Retrouver dans cette pages toutes les informations concernant les locaux du Cégep de Matane à disposition pour la formation.</p></li>   
         <h2 id="lienancre"><a href="#">Matériel</a></h2>
         <h2 id="lienancre"><a href="#">Locaux</a></h2>

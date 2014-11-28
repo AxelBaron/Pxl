@@ -28,6 +28,7 @@
                 <h2 id="lienancre"><a href="#un">1e année</a></h2>
                 <h2 id="lienancre"><a href="#deux">2e année</a></h2>
                 <h2 id="lienancre"><a href="#trois">3e année</a></h2>
+                <h2 id="lienancre"><a href="#lesmatieres">Les Matières</a>
                 
         </article>
       </section>
@@ -37,8 +38,6 @@
     </div>
     <!-- main content -->
     <div id="content">
-      
-
       <div id="conteneurprincipal">
       <h1>La grille des cours</h1>
 
@@ -334,7 +333,7 @@
       		</tr>
       		</table>
           
-      <h1 id="matieresmulti">Les matières</h1>
+      <h1 id="lesmatieres">Les matières</h1>
         <div class="conteneursecondaire">
           <h2>Première année</h2>
           <div class="conteneur-matieres">

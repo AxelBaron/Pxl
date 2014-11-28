@@ -36,7 +36,8 @@ nav ul{margin:0; padding:0; list-style:none;}
 
 address{font-style:normal;}
 
-a { color:#FA8B60 }
+a { color:#FA8B60; }
+a:hover{text-decoration: none;}
 
 form, fieldset, legend{margin:0; padding:0; border:none;}
 legend{display:none;}
@@ -845,6 +846,10 @@ table{
 	margin-bottom: 30px;
 }
 
+table a:hover{
+	text-decoration: underline;
+}
+
 table:last-child{
 	/*on ne veut pas de marge en bas du dernier tableau*/
 	margin-bottom: 0px;
@@ -903,6 +908,8 @@ td.chiffreslast{
 .conteneur-matieres{
 	overflow: auto;
 }
+
+
 
 
 
@@ -1147,10 +1154,12 @@ div.box .message{
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px;
 	}
+
+
 	
 
 /*bouton d'envoi*/
-div.box .button
+.contacter div.box .button
 {
 	border:0px;
 	position: relative;
@@ -1175,6 +1184,72 @@ div.box input:focus, textarea:focus {
 }
 
 /* ===== FIN PAGE CONTACT ===== */
+
+/* ==== PAGE STAGES ==== */
+	table.tableau tr td{
+		width: 240px;
+	}
+
+	.formstage{
+		max-width: 800px;
+		margin: auto;
+
+	}
+
+	.formstage .message{
+		width: 100%;
+	}
+
+	.formstage .button{
+		width: 68%;
+		float: none;
+		position: relative;
+		left: 120px;
+	}
+
+	div.box select, div.box select option {
+	padding:10px 10px;
+	height: 45px;
+	width: 68%;
+
+	/*fond du champ texte*/
+	background: #e1e1e0;
+
+	border: 0px solid white;
+	border-radius: 5px;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	font-family: 'Avenir'; 
+	font-size: 16px; 
+	color: black; 
+	}
+
+/* témoignages*/
+.temoignages{
+	width: 320px;
+	float: left;
+}
+
+.temoignages h2{
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.temoignages p{
+	text-align: justify;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.temoignages p.imgalign{
+	text-align: center;
+}
+
+.nomtemoignage{
+	font-weight: bold;
+}
+	
+/* ==== FIN PAGE STAGES ==== */
 
 /* ---- FOOTER ---- */
 

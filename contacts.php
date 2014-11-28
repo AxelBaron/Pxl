@@ -24,7 +24,7 @@
         <div class="conteneursecondaire">
 
           <div id="formulaire">
-            <form action="" method="post" class="basic-grey">
+            <form action="" method="post" class="contacter">
               <div class="box">
                 <h2>Formulaire de contact</h2>
                 <p>Les champs précédés d'un <span class="important">*</span> sont à remplir obligatoirement.</p>

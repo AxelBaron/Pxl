@@ -69,7 +69,7 @@
           <h1>Portfolios</h1>
           <hr />
           
-          <a href="">
+          <a href="http://localhost:8888/Pxl/stages.php#proposerunstage" title="Proposer un stage">
             <div id="proposerstage">
               <p>Proposer un stage</p>
             </div>
