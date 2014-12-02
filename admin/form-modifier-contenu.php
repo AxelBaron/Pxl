@@ -42,6 +42,7 @@
 					footer: true,
 					fonts: ['Verdana','Arial','Georgia','Trebuchet MS'],
 					xhtml: true,
+					cssfile:'../style.css',
 					content: <?php echo json_encode($data['contenu']); ?>,
 					bodyid: 'editor',
 					footerclass: 'tinyeditor-footer',
