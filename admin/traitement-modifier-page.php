@@ -7,13 +7,18 @@
 
 	<?php 
 
+		include('test_upload.php');
 		$titre = $_POST['titre'];
 		$resume = $_POST['resume'];
+		$image = "/upload/".$_FILES["fileToUpload"]["name"];
+
+		uploadImage($_FILES["fileToUpload"]);
 
 		
 		$sql = "UPDATE page 
-		  		SET titre ='$titre', resume ='$resume'
+		  		SET titre ='$titre', resume ='$resume', image ='$image'
 		  		WHERE page_id =$page_id;";
+		 echo $sql;
 		$pdo->exec($sql);
 	?>
 	<a href="gestion-page.php"><button>Retour</button></a>

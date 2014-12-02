@@ -4,13 +4,17 @@
 	<h2>Page Ajoutée</h2>
 
 	<?php 
+		include('test_upload.php');
 		
 		$titre = $_POST['titre'];
 		$resume = $_POST['resume'];
+		$image = "/upload/".$_FILES["fileToUpload"]["name"];
 
+		uploadImage($_FILES["fileToUpload"]);
 		
-		$sql = "INSERT INTO page(titre,resume) 
-			VALUES('$titre','$resume')";
+		$sql = "INSERT INTO page(titre,resume,image) 
+			VALUES('$titre','$resume','$image')";
+			echo $sql;
 		$pdo->exec($sql);
 		
 		//Création de la page
@@ -24,6 +28,7 @@
 			$liste = $pdo->query($sql);
 			$contenu = $liste->fetch();
 			$id = $contenu['page_id'];
+			
 			
 			//Requete pour trouver les contenus associés à la page
 			$sql = "SELECT * FROM contenu WHERE id_page_=".$id;

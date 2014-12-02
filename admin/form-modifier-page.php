@@ -26,7 +26,7 @@
 			<h1>#TIM Matane Administration</h1>	
 			<h2>Modifier la page: <?php echo $data['titre']; ?> </h2>
 			 
-			 <form action="traitement-modifier-page.php?page_id=<?php echo $data['page_id']?>" method="POST">
+			 <form action="traitement-modifier-page.php?page_id=<?php echo $data['page_id']?>" method="POST" enctype="multipart/form-data">
 	
 		<fieldset>
 			<legend>Formulaire de Modification :</legend>
@@ -39,6 +39,12 @@
 			<div>
 				<label for="Resumé">Resumé en haut de page</label>
 				<textarea class="form" type="text" name="resume"><?php echo $data['resume']; ?></textarea>
+			</div>
+
+			<div>
+					<label for="image-preview">Image situé en haut de page</label><br/>
+					<p> Attention ! Veuillez télécharger une image carré de 300 pixels x 312 pixels</p>
+	    			<input type="file" name="fileToUpload" id="fileToUpload">
 			</div>
 
 			<p style="color:red;">Inserer un bouton si l'utilisateur veux modifier l'ordre un contenu </p>
