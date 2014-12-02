@@ -51,16 +51,18 @@
 
 								  <!-- Image de description -->
 								  <section>
-								  <article id='tim_video'>
-									  <img src='' alt='Les pros du web' title='Les pros du web' width='420' height='315'>
-								  </article>
-									<article id='descriptionproweb'>";
+								  <article id='proweb'>";
 									
 									//Insère le résumé et le titre
 									$header .= '<?php 
 												$sql = "SELECT * FROM page WHERE page_id='.$id.'";
 												$resultat = $pdo->query($sql);
 												$contenu = $resultat->fetch();
+												
+												echo "<img src=\'admin/".$contenu[\'image\']."\' alt=\'Les pros du web\' title=\'Les pros du web\' width=\'312\' height=\'300\'>";
+												echo "</article>";
+												echo "<article id=\'descriptionproweb\'>";
+												
 												echo "<h2>".$contenu[\'titre\']."</h2>";
 												if($contenu[\'resume\'] != "" && isset($contenu[\'resume\'])){
 													echo "<li><p>".$contenu[\'resume\']."</p></li>";
