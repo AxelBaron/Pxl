@@ -14,7 +14,6 @@
 		
 		$sql = "INSERT INTO page(titre,resume,image) 
 			VALUES('$titre','$resume','$image')";
-			echo $sql;
 		$pdo->exec($sql);
 		
 		//Création de la page
