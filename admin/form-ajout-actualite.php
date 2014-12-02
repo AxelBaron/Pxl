@@ -33,7 +33,7 @@
 			
 			<div>
 				<label for="date">Date</label><br/>
-				<input class="form" type="date" name="date" />
+				<input class="form" type="date" name="date" required/>
 			</div>
 			
 			<div>
