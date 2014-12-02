@@ -3,7 +3,9 @@
 <head>
 <title>Site Web Techniques d'intégration Multimédia</title>
 <meta charset="utf-8">
-<link rel="stylesheet" media="screen" href="style.css" type="text/css">
+<link rel="stylesheet" media="screen and (min-width : 960px)" href="style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width : 959px) and (min-width : 641px)" href="styletablette.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width : 640px)" href="stylesmartphone.css" type="text/css">
 <script type="text/javascript">
 <!--
 sfHover = function() {
