@@ -1,7 +1,7 @@
 html{
 	width: ;
 	height: 100%;
-	background-color: blue;
+	background-color: green;
 	margin: 0px;
 	padding: 0px;
 }
@@ -134,6 +134,21 @@ section{
 	list-style-type: none;
 }
 
+#proweb{
+	/*largeur de 50%, hauteur de 400px (taille de l'image)*/
+	width: 50%;
+
+	height: 100%;
+	/*background-color: red;*/
+
+	/*un float pour placer mon élément à gauche, en premier*/
+	float: left;
+	
+	/*Un text-align pour aligner l'image au centre de sa div*/
+	text-align: center;
+	margin-bottom: 30px;
+}
+
 /* ---- BARRE DES CINQ POINTS ---- */
 
 /* CINQ POINTS */
@@ -167,14 +182,14 @@ section{
 .c1, .c2, .c3, .c4, .c5{
 	position:absolute;
 	top: 15px;
-	margin-left: 30px;
+	margin-left: 3%;
 
 	background-color:#1e2d57;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 390px;
 	border-radius: 390px;
-	width:120px;
-	height:120px;
+	width:100px;
+	height:100px;
 }
 
 .c1{
@@ -196,8 +211,8 @@ section{
 
 .circle2 div{
 	float: left;
-	width: 15%;
-	margin-right: 5.5%;
+	width: 16%;
+	margin-right: 4%;
 
 }
 
@@ -205,22 +220,22 @@ section{
 .circle2 div:last-child { margin-right:0px }
 
 .circle img{
-	margin-top: 25px;
-	margin-left: 25px;
+	margin-top: 15px;
+	margin-left: 15px;
 }
 
 .c2 img{
-	margin-left: 40px;
+	margin-left: 32px;
 }
 .c3 img{
-	margin-left: 52px;
+	margin-left: 43px;
 }
 .c4 img{
-	margin-left: 40px;
+	margin-left: 32px;
 }
 .c5 img{
-	margin-left: 35px;
-	margin-top: 35px;
+	margin-left: 25px;
+	margin-top: 25px;
 }
 
 /* FIN CINQ POINTS */

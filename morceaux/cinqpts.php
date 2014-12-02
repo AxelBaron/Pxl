@@ -37,7 +37,7 @@
 			<p>Les normes, pour le web, le print, etc</p>
 			</div>
 			<div>
-			<h4>Dev./Inté Web</h4>
+			<h4>Code</h4>
 			<p>HTML, CSS, AS3, PHP, JQuery, Ajax...</p>
 			</div>
 			<div>
