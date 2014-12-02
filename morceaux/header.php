@@ -48,7 +48,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
               <li>Après TIM?</li>
             </a>
             <a href="equipe.php">
-              <li>L'équipe</li>
+              <li>Enseignants</li>
             </a>
           </ul>
         </li>
