@@ -4,14 +4,33 @@
 	<h2>Page Ajoutée</h2>
 
 	<?php 
+
+		include('connectionbdd.php');
 		
-		$titre = $_POST['titre'];
-		$resume = $_POST['resume'];
+		$liste_de_filtres = array(
+		'titre' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
+		'resume' => FILTER_SANITIZE_FULL_SPECIAL_CHARS
+		);
+		
+		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
+		print_r($data_filtre);
 
 		
-		$sql = "INSERT INTO page(titre,resume) 
-			VALUES('$titre','$resume')";
-		$pdo->exec($sql);
+		$image = "";
+		if(isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"] != "" && $_FILES["fileToUpload"] != null && $_FILES["fileToUpload"]["size"] != 0){
+			include('test_upload.php');
+			echo("fgfgvdhgvfdgh");
+			uploadImage($_FILES["fileToUpload"]);
+			$image = "/upload/".$_FILES["fileToUpload"]["name"];
+		}
+		
+		$sql = "INSERT INTO page(titre,resume,image) VALUES(:titre,:resume,:image)";
+		$requete =$pdo->prepare($sql);
+		$requete->bindParam(':titre', $data_filtre['titre'], PDO::PARAM_STR);
+		$requete->bindParam(':resume', $data_filtre['resume'], PDO::PARAM_STR);
+		$requete->bindParam(':image', $image ,PDO::PARAM_STR);
+		echo $sql;
+		$requete->execute();
 		
 		//Création de la page
 		
