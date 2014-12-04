@@ -15,8 +15,6 @@
 		);
 		
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
-		print_r($data_filtre);
-
 		
 		$image = "";
 		if(isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"] != "" && $_FILES["fileToUpload"] != null && $_FILES["fileToUpload"]["size"] != 0){
@@ -33,7 +31,6 @@
 				$requete->bindParam(':titre', $data_filtre['titre'], PDO::PARAM_STR);
 				$requete->bindParam(':resume', $data_filtre['resume'], PDO::PARAM_STR);
 				$requete->bindParam(':image', $image ,PDO::PARAM_STR);
-				echo $sql;
 				$requete->execute();
 
 

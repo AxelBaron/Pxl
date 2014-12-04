@@ -15,11 +15,9 @@
 		
 
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
-		print_r($data_filtre);
 		$image = "";
 		if(isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"] != "" && $_FILES["fileToUpload"] != null && $_FILES["fileToUpload"]["size"] != 0){
 			include('test_upload.php');
-			echo("fgfgvdhgvfdgh");
 			uploadImage($_FILES["fileToUpload"]);
 			$image = "/upload/".$_FILES["fileToUpload"]["name"];
 		}
@@ -30,7 +28,6 @@
 		$requete->bindParam(':lien', $data_filtre['lien'], PDO::PARAM_STR);
 		$requete->bindParam(':annee', $data_filtre['annee'], PDO::PARAM_STR);
 		$requete->bindParam(':image', $image ,PDO::PARAM_STR);
-		echo $sql;
 		$requete->execute();	
 
 	?>
