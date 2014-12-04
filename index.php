@@ -55,8 +55,8 @@
                   $nb_actu ++;
                   echo "<h2>".$data['titre']."</h2>";
                   echo "<p>".$data['date']."</p>";
-                  if (strlen($data['contenu']>745) {
-                    # code...
+                  if (strlen($data['contenu']) > 745) {
+                    echo "<p>".substr($data['contenu'], 0, 745)."... <a href='actualites.php' title='Actualités'>Lire plus</a></p>";
                   }else{
                     echo "<p>".$data['contenu']."</p>";
                   }
