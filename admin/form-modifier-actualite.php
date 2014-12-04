@@ -40,7 +40,7 @@
 
 			<div>
 				<label for="Date">Date</label>
-				<input class="form" type="date" name="date" value="<?php echo $data['date']; ?>"/>
+				<input class="form" type="date" name="date" value="<?php echo $data['date']; ?>" required/>
 			</div>
 
 			<div>

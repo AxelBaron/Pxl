@@ -15,7 +15,6 @@
 
 	
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
-		print_r($data_filtre) ;
 
 		$image = "";
 		if(isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"] != "" && $_FILES["fileToUpload"] != null && $_FILES["fileToUpload"]["size"] != 0){
