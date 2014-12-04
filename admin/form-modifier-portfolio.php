@@ -46,7 +46,7 @@
 
 			<div>
 				<label for="annees">Année optiention diplome</label>
-				<input class="form"type="text" name="annees" value="<?php echo $data['annees']; ?>"/>
+				<input class="form"type="text" name="annee" value="<?php echo $data['annees']; ?>"/>
 			</div>
 						
 		</fieldset>
