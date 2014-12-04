@@ -9,17 +9,27 @@
 
 		include('connectionbdd.php');
 
-
-		$usager = $_POST['usager'];
-		$mdp = $_POST['mdp'];
-		$nom = $_POST['nom'];
-		$prenom = $_POST['prenom'];
-		$courriel = $_POST['courriel'];
+		$liste_de_filtres = array(
+		'usager' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
+		'mdp' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
+		'nom' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
+		'prenom' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,	
+		'courriel' => FILTER_SANITIZE_EMAIL,	
+		);
+		
+		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
 		
 		$sql = "UPDATE admin 
-		  SET usager ='$usager',mdp='$mdp',nom='$nom',prenom='$prenom',courriel='$courriel'
+		  SET usager =:usager,mdp=:mdp,nom=:nom,prenom=:prenom,courriel=:courriel
 		  WHERE admin_id=$admin_id";
-		$pdo->exec($sql);
+		$requete = $pdo->prepare($sql);
+		$requete->bindParam(':usager', $data_filtre['usager'], PDO::PARAM_STR);
+		$requete->bindParam(':mdp', $data_filtre['mdp'], PDO::PARAM_STR);
+		$requete->bindParam(':nom', $data_filtre['nom'], PDO::PARAM_STR);
+		$requete->bindParam(':prenom', $data_filtre['prenom'] ,PDO::PARAM_STR);
+		$requete->bindParam(':courriel', $data_filtre['courriel'], PDO::PARAM_STR);
+		$requete->execute();
+
 	?>
 	<a href="gestion-admin.php"><button>Retour</button></a>
 <?php include("footer-admin.php"); ?>
