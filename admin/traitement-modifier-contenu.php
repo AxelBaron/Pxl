@@ -1,5 +1,6 @@
 <?php include("header-admin.php"); ?>
 
+<?php $id= $_GET['contenu_id']; ?>
 
 	<h1>Administration #TIM Matane</h1>	
 	<h2>Contenu Modifiée : <?php echo $_POST["titre"] ;?></h2>
@@ -7,16 +8,24 @@
 	<?php 
 
 		include('connectionbdd.php');
-
-		$id= $_GET['contenu_id'];
-		$titre = $_POST['titre'];
-		$contenu = $_POST['contenu'];
-		$idpage = $_POST['id_page_'];
+		
+		$liste_de_filtres = array(
+		'titre' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
+		'contenu' => FILTER_UNSAFE_RAW,
+		'id_page_' => FILTER_SANITIZE_STRING ,	
+		);
+		
+		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
 		
 		$sql = "UPDATE contenu
-				SET titre='$titre',contenu='$contenu',id_page_=$idpage
+				SET titre=:titre,contenu=:contenu,id_page_=:id_page_
 				WHERE contenu_id = $id";
-		$pdo->exec($sql);
+		$requete = $pdo->prepare($sql);
+		$requete->bindParam(':titre', $data_filtre['titre'], PDO::PARAM_STR);
+		$requete->bindParam(':contenu', $data_filtre['contenu'], PDO::PARAM_STR);
+		$requete->bindParam(':id_page_', $data_filtre['id_page_'], PDO::PARAM_STR);
+		$requete->execute();
+		
 	?>
 	<a href="gestion-contenu.php"><button>Retour</button></a>
 <?php include("footer-admin.php"); ?>
