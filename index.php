@@ -55,7 +55,11 @@
                   $nb_actu ++;
                   echo "<h2>".$data['titre']."</h2>";
                   echo "<p>".$data['date']."</p>";
-                  echo "<p>".$data['contenu']."</p>";
+                  if (strlen($data['contenu']>745) {
+                    # code...
+                  }else{
+                    echo "<p>".$data['contenu']."</p>";
+                  }
                   echo "<img src='admin/".$data['image']."'/>";
               }
              
