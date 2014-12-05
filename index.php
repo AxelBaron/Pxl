@@ -62,6 +62,7 @@
           <p class="imgalign">
             <img src="images/actu2.jpg" alt="image actualité" width="680" height="200" />
           </p>
+
           </article>
           
 

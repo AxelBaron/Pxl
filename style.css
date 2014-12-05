@@ -1342,4 +1342,348 @@ footer{
 
 
 
+/*===== CSS GRANDE TABLETTE =====*/
+@media screen and (max-width: 959px) and (min-width: 841px){
+
+	/* ===== GENÉRAL =====*/
+	html{
+		width: 100% ;
+		height: 100%;
+		background-color: purple;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	body{
+		max-width: 100%;
+		min-height: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#header nav{
+		display: none;
+	}
+
+	section{
+		width: 100%;
+		height: 100%;
+		margin-top: 30px;
+		display: inline-block;
+
+	}
+
+
+	#container #content{
+		width: 100%;
+	}
+
+	#container, #content, #footer{
+		width: 100%;
+	}
+
+
+
+
+	#slider img{
+		width: 100%;
+		height: auto;
+	}
+
+	#services img{
+		width: 100%;
+		height: auto;
+		margin-top: -5.6%;
+	}
+
+
+	/* DÉBUT header/ descriptif section */
+
+	#container #homepage #tim_video{
+		width: 48%;
+		margin-left: 10px;
+	}
+
+	#tim_video img{
+		width: 100%;
+		height: auto;
+	}
+
+	#descriptionproweb{
+		width: 47%;
+		margin-right: 10px;
+		padding: 0px;
+	}
+
+	#proweb{
+		/*largeur de 50%, hauteur de 400px (taille de l'image)*/
+		width: 50%;
+
+		height: 100%;
+		/*background-color: red;*/
+
+		/*un float pour placer mon élément à gauche, en premier*/
+		float: left;
+		
+		/*Un text-align pour aligner l'image au centre de sa div*/
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	/* FIN header/descriptif section*/
+
+	/* ---- BARRE DES CINQ POINTS ---- */
+
+	/* CINQ POINTS */
+
+	.circle{
+		
+		position:relative;
+		width:100%;
+		height:150px;
+		background-color: #e1e1e0;
+	}
+
+	.circle2{
+		width:100%;
+		height:100px;
+		background-color: #e1e1e0;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.trait{
+		background-color: #ef713b;
+		width: 85%;
+		height: 6px;
+
+		margin-top: 65px;
+		margin-left: 50px;
+		position: absolute;
+	}
+
+	.c1, .c2, .c3, .c4, .c5{
+		position:absolute;
+		top: 15px;
+		margin-left: 30px;
+
+		background-color:#1e2d57;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 390px;
+		border-radius: 390px;
+		width:120px;
+		height:120px;
+	}
+
+	.c1{
+		left: 0%;
+	}
+
+	.c2{
+		left:20%;
+	}
+	.c3{
+		left:40%;
+	}
+	.c4{
+		left:60%;	
+	}
+	.c5{
+		left:80%;	
+	}
+
+	.circle2 div{
+		float: left;
+		width: 15%;
+		margin-right: 5.5%;
+
+	}
+
+	.circle2 div:first-child{ padding-left: 16px;}
+	.circle2 div:last-child { margin-right:0px }
+
+	.circle img{
+		margin-top: 25px;
+		margin-left: 25px;
+	}
+
+	.c2 img{
+		margin-left: 40px;
+	}
+	.c3 img{
+		margin-left: 52px;
+	}
+	.c4 img{
+		margin-left: 40px;
+	}
+	.c5 img{
+		margin-left: 35px;
+		margin-top: 35px;
+	}
+
+	/* FIN CINQ POINTS */
+
+
+
+/* ===== CONTENEURS ===== */
+	/*PAGE ACCUEIL*/
+	#conteneurun{
+		width: 70%;
+		margin-left: 10px;
+		margin-right: 2%;
+	}
+
+	#conteneurun img{
+		width: 100%;
+		height: auto;
+	}
+
+	/*COLONNE DE GAUCHE*/
+	#conteneurdeux{
+		width: 25%;
+		margin-left: 7px;
+	}
+	.ch-item{
+		width: 100%;
+	}
+	.ch-item img{
+		width: 100%;
+		height: 100%;
+	}
+	.ch-grid li{
+		width: 100%;
+		height: auto;
+	}
+	.ch-info{
+		width: 80%;
+		height: 80%;
+	}
+	/*FIN PAGE ACCUEIL*/
+
+	/*AUTRES PAGES*/
+	#conteneurprincipal{
+		width: 100%;
+	}
+	.conteneursecondaire{
+		width: 100%;
+	}
+	/*FIN AUTRES PAGES*/
+
+	/* PAGE ACTUALITÉS */
+	div#plus{
+		width: 100%;
+	}
+	/*FIN PAGE ACTUALITÉS*/
+
+	.conteneursecondaire p.imgalign{
+		text-align: center;
+	}
+
+	/* MARGES À GAUCHE/ DROITE TEXTES ET TITRES*/
+	#conteneurprincipal h1{
+		margin-left: 20px;
+	}
+	.conteneursecondaire p{
+		margin-right: 20px;
+		margin-left: 20px;
+		text-align: justify;
+	}
+	#content .conteneursecondaire h2{
+		margin-left: 20px;
+	}
+
+	#content .conteneursecondaire h3{
+		margin-left: 20px;
+	}
+	/* FIN MARGES */
+
+	.conteneursecondaire img{
+		width: 90%;
+		height: auto;
+	}
+
+	/* TABLEAUX */
+	table{
+		width: 100%;
+	}
+	/* FIN TABLEAUX */
+
+	/* MATIÈRES */
+
+	.mat:nth-child(odd){
+		width: 45%;
+		height: 180px;		
+		margin-left: 2%;
+	}
+
+	.mat:nth-child(even){
+		width: 45%;
+		height: 180px;
+		margin-right: 2%;
+	}
+
+
+	.conteneur-matieres .mat h2{
+		margin-bottom: 0px;
+	}
+
+	.mat p{
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+
+	/* FIN MATIÈRES */
+
+	/* ENSEIGNANTS */
+
+	#conteneurmatieres{
+		width: 100%;
+	}
+
+	#conteneurmatieres h1{
+		margin-left: 20px;
+	}
+	#matieres{
+		width: 100%;
+	}
+
+	.enseignants{
+		width: 47%;
+	}
+	.enseignants:nth-child(odd){
+		margin-left: 0px;
+	}
+	.enseignants:nth-child(even){
+		margin-right: 10px;
+
+	}
+	/* FIN ENSEIGNANTS */
+
+
+	#citations{
+		width: 100%;
+	}
+
+	/* ====== FOOTER ====== */
+	footer{
+		width: 100%;
+		height: auto;
+	}
+}
+
+/*===== CSS PETITE TABLETTE =====*/
+@media screen and (max-width: 840px) and (min-width: 640px){
+	html{ 
+		background-color: yellow; 
+		width: 100%; 
+		height: 100%;}
+}
+
+/*===== CSS SMARTPHONE =====*/
+@media screen and (max-width: 639px){
+	html{ 
+		background-color: red; 
+		width: 100%; 
+		height: 100%;}
+}
 
