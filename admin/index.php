@@ -50,7 +50,7 @@
 	exit();
 }
 ?>
-<h1>Connection</h1>
+<h1>Connexion</h1>
 <!-- Formulaires -->
 <form method="post" action="index.php">
 	<label for="login">Identifiant</label>
