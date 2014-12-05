@@ -55,8 +55,9 @@
                   $nb_actu ++;
                   echo "<h2>".$data['titre']."</h2>";
                   echo "<p>".$data['date']."</p>";
-                  if (strlen($data['contenu']>745) {
-                    # code...
+                  if (strlen($data['contenu'])> 100){
+                    $text= wordwrap($data['contenu'],100," Lire la suite ...", false);
+                    echo "<p>".$text."</p>";
                   }else{
                     echo "<p>".$data['contenu']."</p>";
                   }
