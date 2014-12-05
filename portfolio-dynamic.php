@@ -33,7 +33,11 @@
                   echo "<ul id='da-thumbs' class='da-thumbs'>\n";
                   echo "<li>";
                   echo "<a href='".$data['lien']."' target='_blank'>";
-                  echo "<img src='".$data['image']."'width='240' height='240' />";
+                  if ($data['image'] != null) {
+                     echo "<img src='admin/".$data['image']."'width='240' height='240' />";
+                  }else{
+                     echo "<img src='admin/upload/inconnu.jpg' width='240' height='240' />";
+                  }
                   echo "<div><span>".$data['etudiant']."</span><span class='plus'>+</span></div>";
                   echo "</a>";
                   echo "</li>";
