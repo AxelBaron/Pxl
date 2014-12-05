@@ -52,6 +52,7 @@ h1, h2, h3{
 	color:#FA8B60;
 }
 
+
 h2 a{
 	color:#FA8B60;
 }
@@ -375,7 +376,7 @@ section#services{margin-bottom: 10px; }
 	color:#FA8B60;
     list-style:none;
     margin:auto;
-    padding-top:14px;
+    padding-top:18px;
     font-family: 'Museo', Arial;
 }
 #content h3{
@@ -835,7 +836,7 @@ p .imgillus{
 
 /* le lien étant placé sur la div, on fait en sorte que le lien sera en blanc*/
 #conteneurun a{
-	color: white;
+	color: #FA8B60;
 }
 
 /* ====== FIN PAGE ACTUALITÉS ===== */

@@ -54,10 +54,10 @@
               if ($nb_actu <2) {
                   $nb_actu ++;
                   echo "<h2>".$data['titre']."</h2>";
-                  echo "<p>".$data['date']."</p>";
-                  if (strlen($data['contenu'])> 100){
-                    $text= wordwrap($data['contenu'],100," Lire la suite ...", false);
-                    echo "<p>".$text."</p>";
+                  echo "<p class='actu-date'>".$data['date']."</p>";
+                  if (strlen($data['contenu'])> 660){
+                    $text= substr($data['contenu'],0,660);
+                    echo "<p>".$text.'  <a href="">Lire la suite ... </a> </p> ';
                   }else{
                     echo "<p>".$data['contenu']."</p>";
                   }
