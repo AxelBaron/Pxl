@@ -57,7 +57,7 @@
                   echo "<p class='actu-date'>".$data['date']."</p>";
                   if (strlen($data['contenu'])> 660){
                     $text= substr($data['contenu'],0,660);
-                    echo "<p>".$text.'  <a href="">Lire la suite ... </a> </p> ';
+                    echo "<p>".$text."<a href='actualites.php?actu=".$data['actu_id']."'> ... Lire la suite.</a> </p>";
                   }else{
                     echo "<p>".$data['contenu']."</p>";
                   }
@@ -76,53 +76,35 @@
           <h1>Portfolios</h1>
           <hr />
           
-          <a href="http://localhost:8888/Pxl/stages.php#proposerunstage" title="Proposer un stage">
+          <a href="stages.php#proposerunstage" title="Proposer un stage">
             <div id="proposerstage">
               <p>Proposer un stage</p>
             </div>
           </a>
 
-          <ul class="ch-grid">
-            <li>
-                <div class="ch-item ch-img-1">
-                    <div class="ch-info">
-                        <a href="#">
-                          <h3>Visitez ce portfolio </h3>
-                          <h3> + </h3>
-                          <h3>Par Alexia</h3>
-                        </a>
-                    </div>
-                </div>
-            </li>
-          </ul>
+          <?php $sql="SELECT * FROM portfolio ORDER BY RAND()";
+                $liste = $pdo->query($sql);
 
-          <ul class="ch-grid">
-            <li>
-                <div class="ch-item ch-img-2">
-                    <div class="ch-info">
-                        <a href="#">
-                          <h3>Visitez ce portfolio </h3>
-                          <h3> + </h3>
-                          <h3>Par JM</h3>
-                        </a>
-                    </div>
-                </div>
-            </li>
-          </ul>
-
-          <ul class="ch-grid">
-            <li>
-                <div class="ch-item ch-img-3">
-                    <div class="ch-info">
-                        <a href="#">
-                          <h3>Visitez ce portfolio </h3>
-                          <h3> + </h3>
-                          <h3>Par Sarah</h3>
-                        </a>
-                    </div>
-                </div>
-            </li>
-          </ul>
+                $nb_portfolio =0;
+                while ($data = $liste->fetch()) {
+                    if ($nb_portfolio < 3) {
+                        $nb_portfolio ++;
+                        echo '<ul class="ch-grid">';
+                        echo '<li>';
+                        echo '<div class="ch-item ch-img-1">';
+                        echo '<div class="ch-info">';
+                        echo '<a href="#">';
+                        echo '<h3>Visitez ce portfolio </h3>';
+                        echo'<h3> + </h3>';
+                        echo '<h3>Par '.$data["etudiant"].'</h3>';
+                        echo '</a>';
+                        echo '</div>'; 
+                        echo '</div>';
+                        echo '</li>';
+                        echo '</ul>';
+                      }
+                }
+          ?>
 
         </div><!-- FIN CONTENEUR 2 -->
       </div>
