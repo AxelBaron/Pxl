@@ -9,5 +9,6 @@
 				<a href="gestion-prof.php"><li><span>Professeurs</li></span></a>
 				<a href="gestion-admin.php"><li><span>Administrateurs</li></span></a>
 				<a href="../index.php" target="_blank"><li><span>Retour page index publique</li></span></a>
+				<a href="disconnect.php"><li><span>Deconnexion</li></span></a>
 		</ul>
 	</nav>
