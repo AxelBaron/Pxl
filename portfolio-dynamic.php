@@ -30,20 +30,19 @@
                 $sql="SELECT * FROM portfolio ORDER BY RAND()";
                 $liste = $pdo->query($sql);
                 while ($data = $liste->fetch()) {
-                  echo "<ul id='da-thumbs' class='da-thumbs'>";
+                  echo "<ul id='da-thumbs' class='da-thumbs'>\n";
                   echo "<li>";
-                  echo "<a href='".$data['lien']."'>";
+                  echo "<a href='".$data['lien']."' target='_blank'>";
                   echo "<img src='".$data['image']."'width='240' height='240' />";
                   echo "<div><span>".$data['etudiant']."</span><span class='plus'>+</span></div>";
                   echo "</a>";
-                  echo " </li>";
+                  echo "</li>";
                 }
-           ?>
+          ?>
           </ul>
         </div>
       </div>
-
-
+      
       <div class="clear"></div>
       <div id="citations">
         <p class="cita">"Une formation qui a de l'avenir..."</p>
