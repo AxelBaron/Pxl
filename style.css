@@ -202,6 +202,10 @@ img.float{
         min-height: 0; /* Corrige un bug sous IE */
 }
 
+#navigationtablette{
+	display: none;
+}
+
 /* ---- FIN NAVIGATION ---- */
 
 /*----------------------------------------------Content Area-------------------------------------*/
@@ -572,13 +576,19 @@ article:last-child{
     
     transition: all 0.4s ease-in-out;
 }
-/* images de fond */
-.ch-img-1 { 
-    background-image: url(images/portfiolio1.jpg);
+
+.ch-item img{
+	z-index: -5;
+    cursor: pointer;
 }
+/* images de fond */
+/*.ch-img-1 { 
+    background-image: url(images/portfiolio1.jpg);
+}*/
  
 .ch-img-2 { 
-    background-image: url(images/portfiolio2.jpg);
+    z-index: -5;
+    cursor: pointer;
 }
  
 .ch-img-3 { 
@@ -1362,6 +1372,19 @@ footer{
 		padding: 0px;
 	}
 
+	#navigationtablette{
+		margin: 0px;
+		position: relative;
+		background-color: #232323;
+		z-index: -1;
+		width: 100%;
+		height: 93px;
+		display: inline-block;
+	}
+
+
+
+
 	#header nav{
 		display: none;
 	}
@@ -1380,6 +1403,10 @@ footer{
 	}
 
 	#container, #content, #footer{
+		width: 100%;
+	}
+
+	#header {
 		width: 100%;
 	}
 
@@ -1593,12 +1620,16 @@ footer{
 		margin-left: 20px;
 	}
 
+	.conteneursecondaire h2{
+		margin-left: 20px;
+	}
+
 	#content .conteneursecondaire h3{
 		margin-left: 20px;
 	}
 	/* FIN MARGES */
 
-	.conteneursecondaire img{
+	#conteneurprincipal .conteneursecondaire .imgalign img{
 		width: 90%;
 		height: auto;
 	}
@@ -1652,13 +1683,43 @@ footer{
 		width: 47%;
 	}
 	.enseignants:nth-child(odd){
-		margin-left: 0px;
-	}
-	.enseignants:nth-child(even){
 		margin-right: 10px;
-
+		float: left;
 	}
+
 	/* FIN ENSEIGNANTS */
+
+	/* PORTFOLIOS */
+
+	.da-thumbs{
+		width: 100%;
+		height:100%;
+	}
+
+	.da-thumbs li{
+		width: 25%;
+		height: 25%;
+	}
+
+	.da-thumbs img{
+		width: 100%;
+	}
+
+	/* FIN PORTFOLIOS */
+
+
+
+
+	/* FORMULAIRE */
+	.formstage .button{
+		left: 20%;
+	}
+
+
+	/* TÉMOIGNAGES */
+	.temoignages{
+		width: 33%;
+	}
 
 
 	#citations{
@@ -1677,7 +1738,12 @@ footer{
 	html{ 
 		background-color: yellow; 
 		width: 100%; 
-		height: 100%;}
+		height: 100%;
+	}
+
+	#navigationtablette{
+		display: none;
+	}
 }
 
 /*===== CSS SMARTPHONE =====*/
@@ -1686,5 +1752,9 @@ footer{
 		background-color: red; 
 		width: 100%; 
 		height: 100%;}
+
+	#navigationtablette{
+		display: none;
+	}
 }
 

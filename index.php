@@ -88,20 +88,24 @@
                           <h3>Par Alexia</h3>
                         </a>
                     </div>
+                    <img src="images/portfiolio3.jpg" width="250" height="250" />
                 </div>
             </li>
           </ul>
 
           <ul class="ch-grid">
             <li>
-                <div class="ch-item ch-img-2">
+                <div class="ch-item">
+                    
                     <div class="ch-info">
                         <a href="#">
                           <h3>Visitez ce portfolio </h3>
                           <h3> + </h3>
                           <h3>Par JM</h3>
                         </a>
+
                     </div>
+                    <img src="images/portfiolio1.jpg" width="250" height="250" />
                 </div>
             </li>
           </ul>
@@ -116,6 +120,7 @@
                           <h3>Par Sarah</h3>
                         </a>
                     </div>
+                    <img src="images/portfiolio2.jpg" width="250" height="250" />
                 </div>
             </li>
           </ul>

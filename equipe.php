@@ -77,7 +77,7 @@
               <li><a href="mailto:simard.jean-michel@cgmatane.qc.ca">Courriel</a></li>
               <li>Poste : 2561</li>
               <li>Bureau : V-119</li>
-              <li>Site Web :<br /><a href="http://www.cegep-matane.qc.ca/simardjm/" target="_blank"> http://www.cegep-matane.qc.ca/simardjm/</a></li>
+              <li>Site Web :<br /><a href="http://www.cegep-matane.qc.ca/simardjm/" target="_blank">www.cegep-matane.qc.ca/simardjm/</a></li>
             </ul>
           </div>
 
