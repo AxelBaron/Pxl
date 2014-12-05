@@ -57,7 +57,7 @@
                   echo "<p class='actu-date'>".$data['date']."</p>";
                   if (strlen($data['contenu'])> 660){
                     $text= substr($data['contenu'],0,660);
-                    echo "<p>".$text."<a href='actualites.php?actu=".$data['actu_id']."'> ... Lire la suite.</a> </p>";
+                    echo "<p>".$text."<a href='actualite_selected.php?actu=".$data['actu_id']."'> ... Lire la suite.</a> </p>";
                   }else{
                     echo "<p>".$data['contenu']."</p>";
                   }
