@@ -1,4 +1,5 @@
 <?php include("morceaux/header.php") ?>
+<?php include("admin/connectionbdd.php"); ?>
 <!-- content -->
 <div class="wrapper row2">
   <div id="container">
@@ -40,28 +41,31 @@
 
       <div id="conteneurprincipal">
         <div id="conteneurun">
+
           <h1>Actualités</h1>
           <hr />
           <article class="contenuprincip">
-          <h2>Concert au Cégep</h2>
-          <p>
-          Heure, Date <br />
-          Proin luctus magna augue, in rhoncus arcu efficitur et. Quisque malesuada ligula quis sapien egestas maximus. Nulla iaculis odio non porttitor sollicitudin. Duis cursus dignissim sagittis. Vestibulum eget eleifend augue, in faucibus ante. Duis viverra lectus justo, nec sodales neque ornare pellentesque. In convallis ipsum in lectus efficitur viverra. Praesent ut viverra nulla. Quisque at nisi et tortor accumsan sagittis. Donec vitae massa cursus, volutpat mauris vel, consectetur massa. Pellentesque fringilla rhoncus eros. Cras pretium, sapien a imperdiet condimentum, ante mauris ullamcorper nisl, at suscipit erat purus et nulla. Maecenas posuere enim a quam molestie scelerisque. Integer auctor nulla lorem, nec fermentum eros cursus ut... 
-          <a href="actualites.php" title="Actualités">Lire plus</a>
-          </p>
-          <p class="imgalign"><img src="images/actu1.jpg" alt="image actualité" width="680" height="200"></p>
-          </article>
-          
-          <article class="contenuprincip">
-          <h2>Soirée des étudiants</h2>
-          <p>
-          Heure, Date <br />
-          Proin luctus magna augue, in rhoncus arcu efficitur et. Quisque malesuada ligula quis sapien egestas maximus. Nulla iaculis odio non porttitor sollicitudin. Duis cursus dignissim sagittis. Vestibulum eget eleifend augue, in faucibus ante. Duis viverra lectus justo, nec sodales neque ornare pellentesque. In convallis ipsum in lectus efficitur viverra. Praesent ut viverra nulla. Quisque at nisi et tortor accumsan sagittis. Donec vitae massa cursus, volutpat mauris vel, consectetur massa. Pellentesque fringilla rhoncus eros. Cras pretium, sapien a imperdiet condimentum, ante mauris ullamcorper nisl, at suscipit erat purus et nulla. Maecenas posuere enim a quam molestie scelerisque. Integer auctor nulla lorem, nec fermentum eros cursus ut... 
-          <a href="actualites.php" title="Actualités">Lire plus</a>
-          </p>
-          <p class="imgalign">
-            <img src="images/actu2.jpg" alt="image actualité" width="680" height="200" />
-          </p>
+          <?php  
+            $sql="SELECT * FROM actualite ORDER BY date DESC";
+            $liste = $pdo->query($sql);
+
+            $nb_actu =0;
+            while ($data = $liste->fetch()) {
+              if ($nb_actu <2) {
+                  $nb_actu ++;
+                  echo "<h2>".$data['titre']."</h2>";
+                  echo "<p>".$data['date']."</p>";
+                  if (strlen($data['contenu']>745) {
+                    # code...
+                  }else{
+                    echo "<p>".$data['contenu']."</p>";
+                  }
+                  echo "<img src='admin/".$data['image']."'/>";
+              }
+             
+            }
+            
+          ?>
           </article>
           
 
