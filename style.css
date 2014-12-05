@@ -1002,7 +1002,7 @@ td.chiffreslast{
 
 	/*quatre premiers éléments*/
 	.da-thumbs li:nth-child(-n+4){
-		margin-top: 10px;
+		/*margin-top: 10px;*/
 	}
 
 	/*derniers éléments à partir du 13e éléments*/
