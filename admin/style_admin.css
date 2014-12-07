@@ -190,7 +190,7 @@ a button {
 }
 
 input[type="submit"]{
- border: none;
+ 	border: none;
 	background-color: #1E2D57;
 	color: white; 
 	border-radius: 10px;
@@ -198,4 +198,53 @@ input[type="submit"]{
 	padding-left: 10px;
 	padding-right: 10px;
 	font-size: 14px;
+}
+
+
+/*_____FORM CONNEXION_________________________________________________________________________________*/
+#form_connexion{
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+	width : 20%;
+	overflow: auto;
+	margin-top: 10%;
+}
+
+#containeur_form{
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	overflow: auto;
+}
+
+#login, #mdp{
+	width: 97%;
+}
+
+#form_connexion input[type="submit"]{
+ cursor:pointer;
+ width: 100%;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+
+#h1_connexion{
+	color: orange;
+	text-decoration: underline;
+}
+
+#conteneur_logo_connexion{
+	background-color: black;
+	margin: auto;
+}
+
+#conteneur_logo_connexion img{
+	margin-left: 25px;
+}
+
+#body_connexion{
+	background-color: #1E2D57;
 }

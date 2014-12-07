@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Connexion Administration</title>
+	<link rel="stylesheet" type="text/css" href="style_admin.css"/>
+</head>
+<body id="body_connexion">
 <?php
 	include "connectionbdd.php";
 	if(isset($_POST['login'], $_POST['mdp'])){
@@ -50,13 +58,19 @@
 	exit();
 }
 ?>
-<h1>Connexion</h1>
+
 <!-- Formulaires -->
-<form method="post" action="index.php">
-	<label for="login">Identifiant</label>
-	<input id="login" name="login" type="text" required />
-	<br/>
-	<label for="mdp">Mot de passe</label>
-	<input id="mdp" name="mdp" type="password" required />
-	<input type="submit" value="Connexion" />
+<form id="form_connexion" method="post" action="index.php">
+	<div id='conteneur_logo_connexion'><img src="../images/timorange.png" alt ="logo"/></div>
+	<div id="containeur_form">
+		<h3 id="h3_connexion" >Connexion Administration</h3>
+		<label for="login">Identifiant :</label>
+		<input id="login" name="login" type="text" required />
+		<br/>
+		<label for="mdp">Mot de passe :</label>
+		<input id="mdp" name="mdp" type="password" required />
+		<input type="submit" value="Connexion" />
+	</div>
 </form>
+</body>
+</html>
