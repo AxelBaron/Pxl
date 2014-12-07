@@ -543,7 +543,7 @@
             <div class="mat">
               <h2 id="preparation_a_l_epreuve_synthese">Préparation à l'épreuve-synthèse</h2>
               <p>
-                L'étudiant prépare la présentation publique du projet de fin d'études et rassemble les différents éléments de l'Épreuve synthèse de programme (cv, portfolio, etc.). <br/> <br/> <br/> <br/>
+                L'étudiant prépare la présentation publique du projet de fin d'études et rassemble les différents éléments de l'Épreuve synthèse de programme (cv, portfolio, etc.). 
               </p>
               
             </div>

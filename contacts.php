@@ -34,28 +34,34 @@
                 </a>
               <div class="box">
                 <h2>Formulaire de contact</h2>
-                <p>Les champs précédés d'un <span class="important">*</span> sont à remplir obligatoirement.</p>
+                <p>Merci de remplir <span class="important">tous</span> les champs du formulaire pour l'envoyer.</p>
                 <label>
-                  <p>Prénom <span class="important">*</span></p>
+                  <p>Prénom </p>
                   <input id="Prenom" type="text" name="Prenom" placeholder="Prenom">
                 </label>
                 <label>
-                  <p>Nom <span class="important">*</span></p>
+                  <p>Nom </p>
                   <input id="Nom" type="text" name="Nom" placeholder="Nom"> <br>
                 </label>
                 <label>
-                  <p>E-mail <span class="important">*</span></p>
-                  <input id="Email" type="email" name="Email" placeholder="E-mail">
+                  <p>Ville </p>
+                  <input id="Email" type="email" name="Email" placeholder="Ville">
                 </label>
                 <label>
-                  <p>Sujet</p>
+                <label>
+                  <p>Courriel </p>
+                  <input id="Email" type="email" name="Email" placeholder="Courriel">
+                </label>
+                <label>
+                  <p>Sujet </p>
                   <input id="Sujet" type="text" name="Sujet" placeholder="Sujet"> <br>
                 </label>
                 <label>  
-                  <p>Message <span class="important">*</span></p>
+                  <p>Message </p>
                   <textarea class="message" rows="4" cols="50" placeholder="Message"></textarea>
                 </label>  
                 <label>
+                <p>&nbsp</p>
                   <input class="button" type="submit" value="Envoyer">
                 </label>
 

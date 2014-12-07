@@ -65,7 +65,7 @@
         </div>
         <h1 id="essai">TIM VS les autres départements</h1>
         <div class="conteneursecondaire">
-          <p class="imgalign"><img src="images/comparaison.jpg" alt="comparaison" width="853" height="877"></p>
+          <p class="imgalign" id="imgalign1"><img src="images/comparaison.jpg" alt="comparaison" width="853" height="877"></p>
             
         </div><!-- FIN VS -->
       </div><!-- FIN CONTENEURVS -->

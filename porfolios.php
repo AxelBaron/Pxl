@@ -138,7 +138,7 @@
 </div>
 
 <!-- appel du script qui servira au hover -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
     <script type="text/javascript" src="js/jquery.hoverdir.js"></script>  
     
     <script type="text/javascript">
@@ -148,7 +148,6 @@
 
       });
 </script>
-<script src="js/modernizr.custom.97074.js"></script>
 
 </body>
 </html>

@@ -128,6 +128,7 @@
                   <textarea class="message" rows="4" cols="50" placeholder="Message"></textarea>
                 </label>  
                 <label>
+                  <p>&nbsp</p>
                   <input class="button" type="submit" value="Envoyer">
                 </label>
 

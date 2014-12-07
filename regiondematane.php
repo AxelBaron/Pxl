@@ -67,7 +67,7 @@
               <img src="" alt="img quelconque" width="960" height="547">
             </p>
 
-            Matane met aussi au service de sa population : une marina et un club de voile, une piscine, un aréna, un centre de ski, une piste de ski de fond, des courts de tennis, une piste de patins à roues alignées, un terrain de golf, des salons de quilles, des sentiers de motoneige, un centre d'activité physique, etc.
+            <p>Matane met aussi au service de sa population : une marina et un club de voile, une piscine, un aréna, un centre de ski, une piste de ski de fond, des courts de tennis, une piste de patins à roues alignées, un terrain de golf, des salons de quilles, des sentiers de motoneige, un centre d'activité physique, etc.</p>
 
 
           </p>
@@ -83,19 +83,3 @@
 
     <?php include("morceaux/footer.php") ?>
 </div>
-
-<!-- appel du script qui servira au hover -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>  
-    
-    <script type="text/javascript">
-      $(function() {
-      
-        $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
-
-      });
-</script>
-<script src="js/modernizr.custom.97074.js"></script>
-
-</body>
-</html>
