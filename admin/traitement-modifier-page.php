@@ -36,8 +36,11 @@
 				$nb_contenu = $_POST["nb_contenu"];
 				
 				for ($i=1; $i < $nb_contenu ; $i++) { 
-					// faire la vérification autant de fois qu'il y a de contenu.
-					// J'ai pas réussi à adapter le code de traitement apparition menu.
+					// Vérification si l'utilisateur pas mis 2x la même position.
+					// Vérifier si la pos du premier contenu n'est pas egale à celle des autres contenus.
+					// Faire cette vérification autant de fois qu'il y a de contenus.
+					// Le code de la page 'traitement apparition menu' effectue cette vérification
+					// Mais je n'ai pas russi à l'adapter pour cette page.
 				}
 				
 				

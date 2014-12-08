@@ -134,12 +134,12 @@
 		return $footer;
 		}
 		
-		/*$thePage = fopen("../$titre.php", "w");
+		$thePage = fopen("../$titre.php", "w");
 		$header = writeHeader($titre, $resume);
 		fwrite($thePage, $header);
 		$footer = writeFooter();
 		fwrite($thePage, $footer);
-		fclose($thePage);*/
+		fclose($thePage);
 
 	?>
 	<a href="gestion-page.php"><button>Retour</button></a>
