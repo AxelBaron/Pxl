@@ -33,39 +33,14 @@
 				$requete->bindParam(':image', $image ,PDO::PARAM_STR);
 				$requete->execute();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		// include('connectionbdd.php');
-		// include('test_upload.php');
-
-		// include('test_upload.php');
-		// $titre = $_POST['titre'];
-		// $resume = $_POST['resume'];
-		// $image = "/upload/".$_FILES["fileToUpload"]["name"];
-
-		// uploadImage($_FILES["fileToUpload"]);
-
-		
-		// $sql = "UPDATE page 
-		//   		SET titre ='$titre', resume ='$resume', image ='$image'
-		//   		WHERE page_id =$page_id;";
-		// $pdo->exec($sql);
+				$nb_contenu = $_POST["nb_contenu"];
+				
+				for ($i=1; $i < $nb_contenu ; $i++) { 
+					// faire la vérification autant de fois qu'il y a de contenu.
+					// J'ai pas réussi à adapter le code de traitement apparition menu.
+				}
+				
+				
 	?>
 	<a href="gestion-page.php"><button>Retour</button></a>
 <?php include("footer-admin.php"); ?>
