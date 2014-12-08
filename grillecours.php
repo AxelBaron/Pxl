@@ -4,7 +4,7 @@
 <div class="wrapper row2">
   <div id="container">
     <!-- Slider -->
-    <section id="slider"><a href="index.php"><img src="images/slider.jpg" alt="Slider1" width="100%" height="100%" /></a></section>
+    <?php include('morceaux/slider.php') ?>
     <!-- main content -->
     <div id="homepage">
 

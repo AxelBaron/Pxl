@@ -3,8 +3,8 @@
 <!-- content -->
 <div class="wrapper row2">
   <div id="container">
-    <!-- Slider -->
-    <section id="slider"><a href="index.php"><img src="images/slider.jpg" alt="Slider1" width="960" height="230" /></a></section>
+    <!-- slider -->
+    <?php include('morceaux/slider.php') ?>
     <!-- main content -->
     <div id="homepage">
 

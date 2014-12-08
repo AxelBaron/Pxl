@@ -227,6 +227,13 @@ img.float{
 section#slider{
 	margin: 0px;
 }
+section#slidersmartphone{
+		display: none;
+	}
+
+img.smartphone{
+		display: none;
+	}
 
 section#services{margin-bottom: 10px; }
 #container .last{margin:0;}
@@ -589,12 +596,6 @@ article:last-child{
 
 .ch-item img{
 	z-index: -5;
-    cursor: pointer;
-}
-
- 
-.ch-img-2 { 
-    z-index: -5;
     cursor: pointer;
 }
 
@@ -1057,7 +1058,8 @@ td.chiffreslast{
 
 	.da-thumbs li a div {
 		top: 0px;
-		left: -100%;
+		left: -100%; 
+		/* à modifier pour non hover */
 		-webkit-transition: all 0.3s ease;
 		-moz-transition: all 0.3s ease-in-out;
 		-o-transition: all 0.3s ease-in-out;
@@ -1070,6 +1072,8 @@ td.chiffreslast{
 	.da-thumbs li a:hover div{
 		left: 0px;
 	}
+
+	
 /* ===== FIN PAGE RÉALISATIONS ===== */
 
 
@@ -1442,14 +1446,14 @@ footer{
 	.dl-menuwrapper button:after {
 		content: '';
 		position: absolute;
-		width: 68%;
+		width: 100%;
 		height: 5px;
-		background: #fff;
+		background: #FA8B60;
 		top: 10px;
 		left: 16%;
 		box-shadow: 
-			0 10px 0 #fff, 
-			0 20px 0 #fff;
+			0 10px 0 #FA8B60, 
+			0 20px 0 #FA8B60;
 	}
 
 	.dl-menuwrapper ul {
@@ -1938,6 +1942,8 @@ footer{
 	.ch-info{
 		width: 80%;
 		height: 80%;
+		opacity: 0.8;
+		transform: scale(1);
 	}
 	/*FIN PAGE ACCUEIL*/
 
@@ -2052,6 +2058,18 @@ footer{
 	.da-thumbs li{
 		width: 25%;
 		height: 25%;
+	}
+
+	.da-thumbs li a div {
+		
+		/*couleur du fond de la div*/
+		background: none;
+		background: rgba(239,113,59,0.6);
+
+		}
+
+	.da-thumbs li a div{
+		left: 0px;
 	}
 
 	.da-thumbs img{
@@ -2185,6 +2203,7 @@ footer{
 		float: none;
 		width: 100%;
 		text-align: center;
+		margin: 0px;
 	}
 
 	#container #homepage #tim_video img{
@@ -2203,19 +2222,6 @@ footer{
 		line-height: 17px;
 		text-align: center;
 	}
-
-
-	.ch-item{
-		width: 100%;
-		height: auto;
-	}
-
-	.ch-info{
-		height: auto;
-		margin-top: 10%;
-		margin-left: 10%;
-	}
-
 
 
 	#conteneurprincipal h1{
@@ -2289,14 +2295,14 @@ footer{
 	.dl-menuwrapper button:after {
 		content: '';
 		position: absolute;
-		width: 68%;
+		width: 100%;
 		height: 5px;
-		background: #fff;
+		background: #FA8B60;
 		top: 10px;
 		left: 16%;
 		box-shadow: 
-			0 10px 0 #fff, 
-			0 20px 0 #fff;
+			0 10px 0 #FA8B60, 
+			0 20px 0 #FA8B60;
 	}
 
 	.dl-menuwrapper ul {
@@ -2628,6 +2634,10 @@ footer{
 		height: auto;
 	}
 
+	#slidersmartphone{
+		display: none;
+	}
+
 	#services img{
 		width: 100%;
 		height: auto;
@@ -2745,6 +2755,8 @@ footer{
 	.ch-info{
 		width: 80%;
 		height: 80%;
+		opacity: 0.8;
+		transform: scale(1);
 	}
 
 	.ch-info a h3{
@@ -2874,6 +2886,18 @@ footer{
 	.da-thumbs img{
 		width: 100%;
 		height: 100%;
+	}
+
+	.da-thumbs li a div {
+		
+		/*couleur du fond de la div*/
+		background: none;
+		background: rgba(239,113,59,0.6);
+
+		}
+
+	.da-thumbs li a div{
+		left: 0px;
 	}
 
 	/* FIN PORTFOLIOS */
@@ -3017,7 +3041,7 @@ footer{
 /*===== CSS SMARTPHONE =====*/
 @media screen and (max-width: 639px){
 	html{ 
-		background-color: red; 
+		/*background-color: red; */
 		width: 100%; 
 		height: 100%;}
 
@@ -3035,6 +3059,31 @@ footer{
 	}
 
 	/* descriptif*/
+
+	section#slider{
+		display: none;
+	}
+
+	#header{
+		width: 100%;
+	}
+
+	section#slidersmartphone {
+		display: inline;
+	}
+
+	section#slidersmartphone img{
+		width: 100%;
+		height: auto;
+	}
+
+	img.smartphone{
+		display: inline;
+	}
+
+	img.orditablette{
+		display: none;
+	}
 
 	#proweb{
 		width: 100%;
@@ -3134,6 +3183,8 @@ footer{
 		height: 80%;
 		margin-top: 10%;
 		margin-left: 10%;
+		opacity: 0.8;
+		transform: scale(1);
 	}
 
 	/* fin portfolio accueil */
@@ -3198,7 +3249,7 @@ footer{
 	}
 
 	.dl-menuwrapper:first-child {
-		margin-right: 100px;
+		margin-right: 0px;
 	}
 
 	.dl-menuwrapper button {
@@ -3229,14 +3280,14 @@ footer{
 	.dl-menuwrapper button:after {
 		content: '';
 		position: absolute;
-		width: 68%;
+		width: 100%;
 		height: 5px;
-		background: #fff;
+		background: #FA8B60;
 		top: 10px;
 		left: 16%;
 		box-shadow: 
-			0 10px 0 #fff, 
-			0 20px 0 #fff;
+			0 10px 0 #FA8B60, 
+			0 20px 0 #FA8B60;
 	}
 
 	.dl-menuwrapper ul {
@@ -3591,11 +3642,30 @@ footer{
 		height: auto;
 	}
 
+
+
 	#services img{
 		width: 100%;
 		height: auto;
-		margin-top: -5.6%;
+		margin-top: -9.6%;
 	}
+
+	#container #homepage #services p{
+		color: white;
+		text-align: center;
+		font-family: 'Museo', arial;
+		font-size: 20px;
+		display: block;
+		margin: 0px;
+		padding: 0px;
+		line-height: 0px;
+		position: relative;
+		top:-8px;
+	}
+
+	table.tableau td{
+		font-size: 10.5px;
+	} 
 
 	/* MATIÈRES */
 
@@ -3654,7 +3724,7 @@ footer{
 	/* portfolios */
 
 	.da-thumbs{
-		z-index: -2;
+		/*z-index: -1;*/
 	}
 
 	.da-thumbs li{
@@ -3669,6 +3739,22 @@ footer{
 
 	.da-thumbs li:nth-child(n+13){
 		margin-bottom: 0px;
+	}
+
+	.da-thumbs li a div {
+		
+		/*couleur du fond de la div*/
+		background: none;
+		background: rgba(239,113,59,0.6);
+
+		}
+
+	.da-thumbs li a div{
+		left: 0px;
+	}
+
+	.da-thumbs li a div span{
+		margin:30px 20px 0px 20px;
 	}
 
 	/* fin portfolios */
@@ -3686,6 +3772,15 @@ footer{
 
 	.temoignages{
 		width: 100%;
+	}
+
+	.conteneursecondaire .temoignages p.imgalign img{
+		width: 50%;
+		height: auto;
+		float: left;
+		margin-top: 17px;
+		margin-right: 5px;
+		margin-bottom: 5px;
 	}
 
 	/* fin page stages smartphone */
@@ -3740,6 +3835,10 @@ footer{
 		width: 68%;
 		margin: 0 0 0 0;
 		float: left;
+	}
+
+	div.box select, div.box select option{
+		width: 70%;
 	}
 
 	#adresse{

@@ -4,7 +4,7 @@
 <div class="wrapper row2">
   <div id="container">
     <!-- Slider -->
-    <section id="slider"><a href="index.php"><img src="images/slider.jpg" alt="Slider1" width="960" height="230" /></a></section>
+    <?php include('morceaux/slider.php') ?>
     <!-- main content -->
     <div id="homepage">
 
@@ -99,24 +99,24 @@
             Si vous êtes intéressé à obtenir des informations sur les stages ou encore à accueillir un stagiaire dans votre entreprise, communiquez avec nous dans les plus brefs délais à l'aide du formulaire ci-dessous. Il nous fera plaisir de vous informer des modalités de stage et par la même occasion de vous suggérer des étudiants pour réaliser vos projets Web ou sur support.
           </p>
           <p>
-            Les champs précédés d'un <span class="important">*</span> sont à remplir obligatoirement.
+            Merci de remplir <span class="important">tous</span> les champs afin de valider et d'envoyer votre formulaire.
           </p>
             <form action="" method="post" class="formstage">
               <div class="box">
                 <label>
-                  <p>Prénom <span class="important">*</span></p>
+                  <p>Prénom </p>
                   <input id="Prenom" type="text" name="Prenom" placeholder="Prenom">
                 </label>
                 <label>
-                  <p>Nom <span class="important">*</span></p>
+                  <p>Nom </p>
                   <input id="Nom" type="text" name="Nom" placeholder="Nom"> <br>
                 </label>
                 <label>
-                  <p>E-mail <span class="important">*</span></p>
+                  <p>E-mail </p>
                   <input id="Email" type="email" name="Email" placeholder="E-mail">
                 </label>
                 <label>
-                  <p>Sujet <span class="important">*</span></p>
+                  <p>Sujet </p>
                   <select id="Sujet" name="sujet" >
                     <option selected value="selectionner" disabled>Votre sujet...</option>
                     <option value="proposer">Proposer un stage</option>
@@ -124,7 +124,7 @@
                   </select>
                 </label>
                 <label>  
-                  <p>Message <span class="important">*</span></p>
+                  <p>Message </p>
                   <textarea class="message" rows="4" cols="50" placeholder="Message"></textarea>
                 </label>  
                 <label>

@@ -3,8 +3,8 @@
 <!-- content -->
 <div class="wrapper row2">
   <div id="container">
-    <!-- Slider -->
-    <section id="slider"><a href="index.php"><img src="images/slider.jpg" alt="Slider1" width="960" height="230" /></a></section>
+    <!-- slider -->
+    <?php include('morceaux/slider.php') ?>
     <!-- main content -->
     <div id="homepage">
 
@@ -139,15 +139,19 @@
 
 <!-- appel du script qui servira au hover -->
 
+
+
     <script type="text/javascript" src="js/jquery.hoverdir.js"></script>  
     
     <script type="text/javascript">
+      
+      
       $(function() {
       
-        $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+          $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
 
       });
-</script>
+    </script>
 
 </body>
 </html>

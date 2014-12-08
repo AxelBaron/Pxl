@@ -2,14 +2,17 @@
 <!-- content -->
 <div class="wrapper row2">
   <div id="container">
-    <!-- Silder -->
-    <section id="slider"><a href="index.php"><img src="images/slider.jpg" alt="Slider1" width="960" height="230" /></a></section>
+    <!-- slider -->
+    <?php include('morceaux/slider.php') ?>
     <!-- main content -->
     <div id="homepage">
      <!-- #Index Image -->
 
       <section id="services" class="clear"> 
-          <img src="images/index.png">
+          <!-- <p class="ariane">Index</p> -->
+          <img class="orditablette" src="images/index.png" alt="page index" />
+          <img class="smartphone" src="images/indexsmartphone.png" alt="page index" />
+
       </section>
 
       <!-- #TIM Matane en Vidéo -->
