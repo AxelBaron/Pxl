@@ -11,7 +11,7 @@
 		include('test_upload.php');
 
 		$liste_de_filtres = array(
-		'etudiant' => FILTER_SANITIZE_SRING,
+		'etudiant' => FILTER_SANITIZE_STRING,
 		'lien' => FILTER_SANITIZE_URL,
 		'annee' => FILTER_SANITIZE_NUMBER_INT
 		);
@@ -19,12 +19,12 @@
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
 		
 		if(isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"] != "" && $_FILES["fileToUpload"] != null && $_FILES["fileToUpload"]["size"] != 0){
+			echo("");
 			uploadImage($_FILES["fileToUpload"]);
 			$image = "/upload/".$_FILES["fileToUpload"]["name"];
 			$sql = "UPDATE portfolio 
-			SET etudiant =:etudiant,lien=:lien,annee=:annee,image=:image
+			SET etudiant =:etudiant,lien=:lien,annees=:annee,image=:image
 			WHERE portfolio_id=$portfolio_id";
-			$sql = "INSERT INTO portfolio(etudiant,lien,annees,image) VALUES(:etudiant,:lien,:annee,:image)";
 			$requete =$pdo->prepare($sql);
 			$requete->bindParam(':etudiant', $data_filtre['etudiant'], PDO::PARAM_STR);
 			$requete->bindParam(':lien', $data_filtre['lien'], PDO::PARAM_STR);
