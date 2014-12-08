@@ -44,7 +44,7 @@
 
 			<div>
 				<label for="id_page_">A quelle page voulez vous affecter ce contenu ?</label>
-				<select name="id_page_">
+				<select name="id_page_" required>
 				<option value=""></option>
 					<?php  
 							$sql="SELECT * FROM page";
@@ -56,7 +56,6 @@
 					?>
 				</select>
 			</div>
-
 		</fieldset>
 		
 	

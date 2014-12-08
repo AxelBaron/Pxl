@@ -16,6 +16,7 @@
 		);
 		
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
+		$idpagesauvgarde = $_POST['id_page_'];
 		
 		$sql = "UPDATE contenu
 				SET titre=:titre,contenu=:contenu,id_page_=:id_page_
@@ -27,5 +28,5 @@
 		$requete->execute();
 		
 	?>
-	<a href="gestion-contenu.php"><button>Retour</button></a>
+		<a href="form-modifier-page.php?page_id=<?php echo $idpagesauvgarde; ?>"><button>Gérer la position du contenu crée dans la page en question</button></a>
 <?php include("footer-admin.php"); ?>
