@@ -674,7 +674,7 @@ article:last-child{
 
 
 #descriptionproweb{
-	width: 51%;
+	width: 50%;
 
 	/*Il faut que cet élément se place en float, après la div proweb*/
 	float: left;
@@ -794,12 +794,6 @@ p .imgillus{
 	font-size: 14px;
 	color: #FA8B60;
 }
-
-
-
-
-
-
 
 
 /* ---- CITATION ---- */
@@ -1396,10 +1390,6 @@ footer{
 	#header nav{
 		display: none;
 	}
-
-
-
-
 
 	/* Common styles of menus */
 
@@ -2877,8 +2867,8 @@ footer{
 	}
 
 	.da-thumbs li{
-		width: 25%;
-		height: 25%;
+		width: 33.3%;
+		height: 33.3%;
 	}
 
 	.da-thumbs img{
@@ -3031,5 +3021,798 @@ footer{
 		width: 100%; 
 		height: 100%;}
 
+	html{ 
+		/*background-color: yellow; */
+		width: 100%; 
+		height: 100%;
+	}
+
+	body{
+		max-width: 100%;
+		min-height: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	/* descriptif*/
+
+	#proweb{
+		width: 100%;
+		float: none;
+	}
+
+	#container #homepage #tim_video{
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#container #homepage #tim_video img{
+		width: 90%;
+		height: auto;
+	}
+
+	#proweb img{
+		width: 90%;
+		height: auto;
+
+	}
+
+	#descriptionproweb{
+		width: 96%;
+		float: none;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	#lienancre{
+		line-height: 17px;
+		text-align: center;
+	}
+
+	.conteneursecondaire p.imgalign img{
+		width: 100%;
+		height: auto;
+	}
+
+	/* fin descriptif */
+
+	/* cinq points smartphone */
+	.circle{
+		display: none;
+	}
+
+	.circle2{
+		display: none;
+	}
+
+	/* fin cinq points */
+
+	/* conteneur accueil */
+
+	#conteneurprincipal{
+		width: 100%;
+	}
+
+	#conteneurun{
+		width: 100%;
+		float: none;
+	}
+
+	.conteneursecondaire{
+		width: 96%;
+		height: auto;
+		margin-right: 2%;
+		margin-left: 2%;
+		text-align: justify;
+
+	}
+
+	/* fin conteneur accueil */
+
+	/* page accueil smartphone */
+
+		#plus{
+			width: 96%;
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+
+	/* fin page accueil smartphone */
+
+
+	/* portfolio accueil smartphone */
+	.ch-item{
+		width: 100%;
+		height: auto;
+	}
+
+	.ch-info{
+		width: 80%;
+		height: 80%;
+		margin-top: 10%;
+		margin-left: 10%;
+	}
+
+	/* fin portfolio accueil */
+
+
+	#conteneurprincipal h1{
+		font-size: 24px;
+		line-height: 30px;
+		margin-left: 2%;
+	}
+
+	.conteneursecondaire #imgalign1 img{
+		width: 100%;
+		height: auto;
+	}
+
+	#conteneurdeux{
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.ch-grid{
+		text-align: center;
+	}
+
+	#container #content{
+		width: 100%;
+	}
+
+	#container, #content, #footer{
+		width: 100%;
+	}
+
+	/*header de la page smartphone */
+
+	#header{
+		width: 100%;
+		background: #232323;
+		height: 93px;
+	}
+
+	#header nav{
+		display: none;
+	}
+
+
+	/* MENU smartphone */
+	#dl-menu{
+		display: inline;
+	}
+
+	.dl-menuwrapper {
+		width: 100%;
+		max-width: 300px;
+		/*float: right;
+		position: relative;*/
+		-webkit-perspective: 1000px;
+		perspective: 1000px;
+		-webkit-perspective-origin: 50% 200%;
+		perspective-origin: 50% 200%;
+	}
+
+	.dl-menuwrapper:first-child {
+		margin-right: 100px;
+	}
+
+	.dl-menuwrapper button {
+		background: #ccc;
+		border: none;
+		width: 48px;
+		height: 45px;
+		text-indent: -900em;
+		overflow: hidden;
+		position: relative;
+		cursor: pointer;
+		outline: none;
+		float: right;
+		/*placement du bouton à 20px du haut et 10 de la droite*/
+		margin-top: 20px;
+		margin-right: 10px;
+
+
+	}
+
+	.dl-menuwrapper button:hover,
+	.dl-menuwrapper button.dl-active,
+	.dl-menuwrapper ul {
+		background-color: #232323;
+
+	}
+
+	.dl-menuwrapper button:after {
+		content: '';
+		position: absolute;
+		width: 68%;
+		height: 5px;
+		background: #fff;
+		top: 10px;
+		left: 16%;
+		box-shadow: 
+			0 10px 0 #fff, 
+			0 20px 0 #fff;
+	}
+
+	.dl-menuwrapper ul {
+		padding: 0;
+		list-style: none;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		z-index: 2;
+	}
+
+	.dl-menuwrapper li {
+		position: relative;
+	}
+
+	.dl-menuwrapper li a {
+		display: block;
+		position: relative;
+		padding: 15px 20px;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 300;
+		color: #fff;
+		outline: none;
+	}
+
+	.no-touch .dl-menuwrapper li a:hover {
+		background: rgba(255,248,213,0.1);
+	}
+
+	.dl-menuwrapper li.dl-back > a {
+		padding-left: 30px;
+		background: rgba(0,0,0,0.1);
+	}
+
+	.dl-menuwrapper li.dl-back:after,
+	.dl-menuwrapper li > a:not(:only-child):after {
+		position: absolute;
+		top: 0;
+		line-height: 50px;
+		font-family: 'icomoon';
+		speak: none;
+		-webkit-font-smoothing: antialiased;
+		content: "\e000";
+	}
+
+	.dl-menuwrapper li.dl-back:after {
+		left: 10px;
+		color: rgba(212,204,198,0.3);
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+
+	.dl-menuwrapper li > a:after {
+		right: 10px;
+		color: rgba(0,0,0,0.15);
+	}
+
+	.dl-menuwrapper .dl-menu {
+		margin: 70px 0 0 0;
+		position: absolute;
+		width: 100%;
+		opacity: 0;
+		pointer-events: none;
+		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+
+	.dl-menuwrapper .dl-menu.dl-menu-toggle {
+		transition: all 0.3s ease;
+	}
+
+	.dl-menuwrapper .dl-menu.dl-menuopen {
+		opacity: 1;
+		pointer-events: auto;
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+
+	/* Hide the inner submenus */
+	.dl-menuwrapper li .dl-submenu {
+		display: none;
+	}
+
+	/* 
+	When a submenu is openend, we will hide all li siblings.
+	For that we give a class to the parent menu called "dl-subview".
+	We also hide the submenu link. 
+	The opened submenu will get the class "dl-subviewopen".
+	All this is done for any sub-level being entered.
+	*/
+	.dl-menu.dl-subview li,
+	.dl-menu.dl-subview li.dl-subviewopen > a,
+	.dl-menu.dl-subview li.dl-subview > a {
+		display: none;
+	}
+
+	.dl-menu.dl-subview li.dl-subview,
+	.dl-menu.dl-subview li.dl-subview .dl-submenu,
+	.dl-menu.dl-subview li.dl-subviewopen,
+	.dl-menu.dl-subview li.dl-subviewopen > .dl-submenu,
+	.dl-menu.dl-subview li.dl-subviewopen > .dl-submenu > li {
+		display: block;
+	}
+
+	/* Dynamically added submenu outside of the menu context */
+	.dl-menuwrapper > .dl-submenu {
+		position: absolute;
+		width: 100%;
+		top: 50px;
+		left: 0;
+		margin: 0;
+	}
+
+	/* Animation classes for moving out and in */
+
+	.dl-menu.dl-animate-out-1 {
+		-webkit-animation: MenuAnimOut1 0.4s;
+		animation: MenuAnimOut1 0.4s;
+	}
+
+
+	@-webkit-keyframes MenuAnimOut1 {
+		0% { }
+		50% {
+			-webkit-transform: translateZ(-250px) rotateY(30deg);
+		}
+		75% {
+			-webkit-transform: translateZ(-372.5px) rotateY(15deg);
+			opacity: .5;
+		}
+		100% {
+			-webkit-transform: translateZ(-500px) rotateY(0deg);
+			opacity: 0;
+		}
+	}
+
+
+	@keyframes MenuAnimOut1 {
+		0% { }
+		50% {
+			-webkit-transform: translateZ(-250px) rotateY(30deg);
+			transform: translateZ(-250px) rotateY(30deg);
+		}
+		75% {
+			-webkit-transform: translateZ(-372.5px) rotateY(15deg);
+			transform: translateZ(-372.5px) rotateY(15deg);
+			opacity: .5;
+		}
+		100% {
+			-webkit-transform: translateZ(-500px) rotateY(0deg);
+			transform: translateZ(-500px) rotateY(0deg);
+			opacity: 0;
+		}
+	}
+
+
+
+	.dl-menu.dl-animate-in-1 {
+		-webkit-animation: MenuAnimIn1 0.3s;
+		animation: MenuAnimIn1 0.3s;
+	}
+
+
+
+	@-webkit-keyframes MenuAnimIn1 {
+		0% {
+			-webkit-transform: translateZ(-500px) rotateY(0deg);
+			opacity: 0;
+		}
+		20% {
+			-webkit-transform: translateZ(-250px) rotateY(30deg);
+			opacity: 0.5;
+		}
+		100% {
+			-webkit-transform: translateZ(0px) rotateY(0deg);
+			opacity: 1;
+		}
+	}
+
+
+
+	@keyframes MenuAnimIn1 {
+		0% {
+			-webkit-transform: translateZ(-500px) rotateY(0deg);
+			transform: translateZ(-500px) rotateY(0deg);
+			opacity: 0;
+		}
+		20% {
+			-webkit-transform: translateZ(-250px) rotateY(30deg);
+			transform: translateZ(-250px) rotateY(30deg);
+			opacity: 0.5;
+		}
+		100% {
+			-webkit-transform: translateZ(0px) rotateY(0deg);
+			transform: translateZ(0px) rotateY(0deg);
+			opacity: 1;
+		}
+	}
+
+
+	.dl-menuwrapper > .dl-submenu.dl-animate-in-1 {
+		-webkit-animation: SubMenuAnimIn1 0.4s ease;
+		animation: SubMenuAnimIn1 0.4s ease;
+	}
+
+
+	@-webkit-keyframes SubMenuAnimIn1 {
+		0% {
+			-webkit-transform: translateX(50%);
+			opacity: 0;
+		}
+		100% {
+			-webkit-transform: translateX(0px);
+			opacity: 1;
+		}
+	}
+
+
+
+	@keyframes SubMenuAnimIn1 {
+		0% {
+			-webkit-transform: translateX(50%);
+			transform: translateX(50%);
+			opacity: 0;
+		}
+		100% {
+			-webkit-transform: translateX(0px);
+			transform: translateX(0px);
+			opacity: 1;
+		}
+	}
+
+
+	.dl-menuwrapper > .dl-submenu.dl-animate-out-1 {
+		-webkit-animation: SubMenuAnimOut1 0.4s ease;
+		animation: SubMenuAnimOut1 0.4s ease;
+	}
+
+
+
+	@-webkit-keyframes SubMenuAnimOut1 {
+		0% {
+			-webkit-transform: translateX(0%);
+			opacity: 1;
+		}
+		100% {
+			-webkit-transform: translateX(50%);
+			opacity: 0;
+		}
+	}
+
+
+
+	@keyframes SubMenuAnimOut1 {
+		0% {
+			-webkit-transform: translateX(0%);
+			transform: translateX(0%);
+			opacity: 1;
+		}
+		100% {
+			-webkit-transform: translateX(50%);
+			transform: translateX(50%);
+			opacity: 0;
+		}
+	}
+
+
+	/* No JS Fallback */
+	.no-js .dl-menuwrapper .dl-menu {
+		position: relative;
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+
+	.no-js .dl-menuwrapper li .dl-submenu {
+		display: block;
+	}
+
+	.no-js .dl-menuwrapper li.dl-back {
+		display: none;
+	}
+
+	.no-js .dl-menuwrapper li > a:not(:only-child) {
+		background: rgba(0,0,0,0.1);
+	}
+
+	.no-js .dl-menuwrapper li > a:not(:only-child):after {
+		content: '';
+	}
+
+	/* Colors for demos */
+
+	/* Demo 1 */
+	.demo-1 .dl-menuwrapper button {
+		background: #232323;
+	}
+
+	.demo-1 .dl-menuwrapper button:hover,
+	.demo-1 .dl-menuwrapper button.dl-active,
+	.demo-1 .dl-menuwrapper ul {
+		background: #232323;
+
+	}
+
+	/* ===== FIN MENU ===== */
+	
+	section{
+		width: 100%;
+		height: 100%;
+		margin-top: 30px;
+		display: inline-block;
+
+	}
+
+	#conteneurun h1{
+		margin-left: 10px;
+	}
+
+	#conteneurdeux h1{
+		margin-left: 10px;
+	}
+
+	article.contenuprincip img{
+		width: 100%;
+		height:auto;
+	}
+
+	article.contenuprincip{
+		margin-left: 10px;
+		margin-right: 10px;
+
+	}
+
+
+	#container #content{
+		width: 100%;
+	}
+
+	#container, #content, #footer{
+		width: 100%;
+	}
+
+	#header {
+		width: 100%;
+	}
+
+	#slider img{
+		width: 100%;
+		height: auto;
+	}
+
+	#services img{
+		width: 100%;
+		height: auto;
+		margin-top: -5.6%;
+	}
+
+	/* MATIÈRES */
+
+	.mat:nth-child(odd){
+		width: 100%;
+		height: 100%;
+		margin:0;
+		padding: 0;
+	}
+
+	.mat:nth-child(even){
+		width: 100%;
+		height: 100%;
+		margin:0;
+		padding: 0;
+	}
+	/* FIN MATIÈRES */
+
+	/* ENSEIGNANTS */
+
+	#conteneurmatieres{
+		width: 100%;
+	}
+
+	#conteneurmatieres h1{
+		margin-left: 20px;
+	}
+	#matieres{
+		width: 100%;
+	}
+
+	.enseignants{
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 20px;
+		margin-top: 0px;
+	}
+
+
+	.enseignants:nth-child(odd){
+		margin-left: 0px;
+		float: none;
+	}
+
+	.enseignants:nth-child(even){
+		margin-left: 0px;
+		float: none;
+	}
+
+	.enseignants:nth-child(n+7){
+		margin-bottom: 0px;
+	}
+
+	/* FIN ENSEIGNANTS */
+
+	/* portfolios */
+
+	.da-thumbs{
+		z-index: -2;
+	}
+
+	.da-thumbs li{
+		width: 50%;
+		height: auto;
+	}
+
+	.da-thumbs img{
+		width: 100%;
+		height: 100%;
+	}
+
+	.da-thumbs li:nth-child(n+13){
+		margin-bottom: 0px;
+	}
+
+	/* fin portfolios */
+
+
+	/* tableaux smartphone */
+	table{
+		width: 100%
+	}
+	/* fin tableaux smartphone */
+
+	/* page contact smartphone */
+
+	/* page stages smartphone */
+
+	.temoignages{
+		width: 100%;
+	}
+
+	/* fin page stages smartphone */
+
+	/* FORMULAIRE STAGE */
+
+	.formstage .button{
+		width: 70%;
+		margin-left: 0;
+		float: left;
+		left: 0px;
+	}
+
+	/* FIN FORMULAIRE STAGE */
+
+
+	/* FORMULAIRE CONTACT & PAGE CONTACT*/
+	#formulaire{
+		float: none;
+		width: 100%;
+	}
+
+	.contactenseignants{
+		width: 96%;
+		height: 40px;
+		margin-left:2%;
+		margin-right: 2%; 
+	}
+
+	.contactenseignants p{
+		line-height: 40px;
+		text-align: center;
+	}
+
+	/*FORMULAIRE DE CONTACT*/
+
+
+	div.box label p{
+		width: 17%;
+	}
+
+	.contacter div.box .button{
+		width: 67%;
+		margin: 0 50px 0 0;
+	}
+
+	div.box .message{
+		width: 66%;
+	}
+
+	.contacter div.box .button{
+		width: 68%;
+		margin: 0 0 0 0;
+		float: left;
+	}
+
+	#adresse{
+		float: none;
+		width: 100%;
+		margin-top: 60px;
+		border-top: 3px solid #FA8B60;
+	}
+
+	#google{
+		float: none;
+		width: 100%;
+		border-top: 3px solid #FA8B60;
+	}
+
+	#google iframe{
+		width: 100%;
+		height: auto;
+	}
+
+
+
+	/* ===== FIN PAGE CONTACT ===== */
+
+
+
+	/* fin page contact */
+
+
+
+
+
+	#citations{
+		width: 100%;
+	}
+
+	.cita{
+		font-size: 1.7em;
+	}
+
+	footer{
+		width: 100%;
+		height: 100%;
+	}
+
+	footer .part2:nth-child(2){
+		width: 50%;
+	}
+
+	footer .part2:nth-child(3){
+		width: 48%;
+		margin-left: 2%;
+	}
+
+	footer .part2:nth-child(4){
+		width: 100%;
+	}
+
+	footer .part1{
+		width: 100%;
+		text-align: center;
+	}
+
+
+	footer .part3{
+		width: 100%;
+	}
+
+	#conteneurfooter{
+		width: 96%;
+		padding-left: 2%;
+		padding-right: 2%;
+		height: 100%;
+	}
 }
 

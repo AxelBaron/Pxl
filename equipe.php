@@ -29,7 +29,7 @@
               <li><a href="mailto:billettec@cgmatane.qc.ca">Courriel</a></li>
               <li>Poste : 2563</li>
               <li>Bureau : V-123</li>
-              <li>Site Web :<br /><a href="www.cegep-matane.qc.ca/billettec/" target="_blank">www.cegep-matane.qc.ca/billettec/</a> </li>
+              <li><a href="www.cegep-matane.qc.ca/billettec/" target="_blank">Site Web</a></li>
             </ul>
           </div>
 
@@ -41,7 +41,7 @@
               <li><a href="mailto:tremblayma@cgmatane.qc.ca">Courriel</a></li>
               <li>Poste: 2157</li>
               <li>Bureau: V-125</li>
-              <li>Site Web :<br /> <a href="www.cegep-matane.qc.ca/tremblayma/" target="_blank">www.cegep-matane.qc.ca/tremblayma/</a></li>
+              <li><a href="www.cegep-matane.qc.ca/tremblayma/" target="_blank">Site Web</a></li>
             </ul>
           </div>
 
@@ -53,7 +53,7 @@
               <li><a href="mailto:devilles@cgmatane.qc.ca">Courriel</a></li>
               <li>Poste : 2238</li>
               <li>Bureau : V-117</li>
-              <li>Site Web :<br /><a href="www.cegep-matane.qc.ca/devilles/" target="_blank">www.cegep-matane.qc.ca/devilles/</a></li>
+              <li><a href="www.cegep-matane.qc.ca/devilles/" target="_blank">Site Web</a></li>
             </ul>
           </div>
 
@@ -77,7 +77,7 @@
               <li><a href="mailto:simard.jean-michel@cgmatane.qc.ca">Courriel</a></li>
               <li>Poste : 2561</li>
               <li>Bureau : V-119</li>
-              <li>Site Web :<br /><a href="http://www.cegep-matane.qc.ca/simardjm/" target="_blank">www.cegep-matane.qc.ca/simardjm/</a></li>
+              <li><a href="http://www.cegep-matane.qc.ca/simardjm/" target="_blank">Site Web</a></li>
             </ul>
           </div>
 
@@ -89,7 +89,7 @@
               <li><a href="mailto:ferlatte.tommy@cgmatane.qc.ca">Courriel</a></li>
               <li>Poste : 2577</li>
               <li>Bureau : V-119</li>
-              <li>Site Web :<br /><a href="http://www.tommyisback.com/" target="_blank">http://www.tommyisback.com/</a></li>
+              <li><a href="http://www.tommyisback.com/" target="_blank">Site Web</a></li>
             </ul>
           </div>
           
