@@ -8,8 +8,8 @@
 		include('connectionbdd.php');
 		
 		$liste_de_filtres = array(
-		'titre' => FILTER_SANITIZE_SRING,
-		'resume' => FILTER_SANITIZE_SRING
+		'titre' => FILTER_SANITIZE_STRING,
+		'resume' => FILTER_SANITIZE_STRING
 		);
 		
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
@@ -60,7 +60,7 @@
 								 <!-- #Index Image -->
 
 								  <section id='services' class='clear'> 
-									  <img src='images/Actu.png'>
+									  <img src='images/dynamic.png'>
 								  </section>
 
 								  <!-- Image de description -->
@@ -73,7 +73,7 @@
 												$resultat = $pdo->query($sql);
 												$contenu = $resultat->fetch();
 												
-												echo "<img src=\'admin/".$contenu[\'image\']."\' alt=\'Les pros du web\' title=\'Les pros du web\' width=\'312\' height=\'300\'>";
+												echo "<img src=\'admin/".$contenu[\'image\']."\' alt=\'Image de description\' title=\'Image de description\' width=\'312\' height=\'300\'>";
 												echo "</article>";
 												echo "<article id=\'descriptionproweb\'>";
 												
@@ -132,8 +132,8 @@
 			</html>";
 		return $footer;
 		}
-		
-		$thePage = fopen("../".$data_filtre['titre'].".php", "w");
+		$nomDuFichier = urlencode($data_filtre['titre']);
+		$thePage = fopen("../".$nomDuFichier.".php", "w");
 		$header = writeHeader();
 		fwrite($thePage, $header);
 		$footer = writeFooter();
