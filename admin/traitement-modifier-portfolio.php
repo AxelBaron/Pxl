@@ -11,7 +11,7 @@
 		include('test_upload.php');
 
 		$liste_de_filtres = array(
-		'etudiant' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
+		'etudiant' => FILTER_SANITIZE_SRING,
 		'lien' => FILTER_SANITIZE_URL,
 		'annee' => FILTER_SANITIZE_NUMBER_INT
 		);

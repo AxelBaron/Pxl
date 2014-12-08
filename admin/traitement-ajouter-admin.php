@@ -8,10 +8,10 @@
 		include('connectionbdd.php');
 
 		$liste_de_filtres = array(
-		'usager' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
-		'mdp' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
-		'nom' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
-		'prenom' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,	
+		'usager' => FILTER_SANITIZE_SRING,
+		'mdp' => FILTER_SANITIZE_SRING,
+		'nom' => FILTER_SANITIZE_SRING,
+		'prenom' => FILTER_SANITIZE_SRING,	
 		'courriel' => FILTER_SANITIZE_EMAIL,	
 		);
 		

@@ -210,6 +210,10 @@ a {
 	text-decoration: none;
 }
 
+.rouge{
+	color: red;
+}
+
 /*_____FORM CONNEXION_________________________________________________________________________________*/
 #form_connexion{
 	margin: auto;

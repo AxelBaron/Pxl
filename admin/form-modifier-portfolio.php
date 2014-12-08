@@ -56,7 +56,11 @@
 					echo "<input type='file' name='fileToUpload' id='fileToUpload'>";
 					echo "</div>";
 				}else{
-					echo "<a href='#' onclick=''><button> Modifier l'image existante</button></a>";
+					echo "<div>";
+					echo "<label for='image-preview'>Image située en haut de page.</label><br/>";
+					echo "<p class='rouge'> Attention ! Une image existe déjà, si vous en télécharger une nouvelle, l'ancienne sera ecrasée !</p>";
+					echo "<input type='file' name='fileToUpload' id='fileToUpload'>";
+					echo "</div>";
 				}
 
 			 ?>

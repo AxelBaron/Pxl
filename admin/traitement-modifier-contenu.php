@@ -10,7 +10,7 @@
 		include('connectionbdd.php');
 		
 		$liste_de_filtres = array(
-		'titre' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
+		'titre' => FILTER_SANITIZE_SRING,
 		'contenu' => FILTER_UNSAFE_RAW,
 		'id_page_' => FILTER_SANITIZE_STRING ,	
 		);

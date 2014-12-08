@@ -10,8 +10,8 @@
 		include('connectionbdd.php');
 		
 		$liste_de_filtres = array(
-		'titre' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
-		'resume' => FILTER_SANITIZE_FULL_SPECIAL_CHARS
+		'titre' => FILTER_SANITIZE_SRING,
+		'resume' => FILTER_SANITIZE_SRING
 		);
 		
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
