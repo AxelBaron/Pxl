@@ -19,8 +19,6 @@
 					  WHERE page_id= $page_id";
 				$liste = $pdo->query($sql);
 				$data = $liste->fetch();
-
-
 			 ?>
 			
 			<h1>#TIM Matane Administration</h1>	
@@ -71,7 +69,7 @@
 								if ($contenu['position'] == $i) {
 									echo "<option selected value='".$i."_".$contenu['contenu_id']."'> $i </option>";
 								}else{
-									echo "<option value='".$i."_".$dcontenu['contenu_id']."'> $i </option>";
+									echo "<option value='".$i."_".$contenu['contenu_id']."'> $i </option>";
 								}
 					 		}
 					 		echo "</select> </p>";
