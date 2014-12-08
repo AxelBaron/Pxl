@@ -13,7 +13,6 @@
 		);
 		
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
-		
 		$image = "";
 		if(isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"] != "" && $_FILES["fileToUpload"] != null && $_FILES["fileToUpload"]["size"] != 0){
 			include('test_upload.php');
@@ -30,7 +29,7 @@
 		
 		//Création de la page
 		
-		function writeHeader($titre, $resume) {
+		function writeHeader() {
 			include("connectionbdd.php");
 			
 			//INUTILE
@@ -134,8 +133,8 @@
 		return $footer;
 		}
 		
-		$thePage = fopen("../$titre.php", "w");
-		$header = writeHeader($titre, $resume);
+		$thePage = fopen("../".$data_filtre['titre'].".php", "w");
+		$header = writeHeader();
 		fwrite($thePage, $header);
 		$footer = writeFooter();
 		fwrite($thePage, $footer);
