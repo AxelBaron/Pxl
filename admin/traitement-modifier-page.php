@@ -16,10 +16,10 @@
 		
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
 		
+		//L'image
 		$image = "";
 		if(isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"] != "" && $_FILES["fileToUpload"] != null && $_FILES["fileToUpload"]["size"] != 0){
 			include('test_upload.php');
-			echo("fgfgvdhgvfdgh");
 			uploadImage($_FILES["fileToUpload"]);
 			$image = "/upload/".$_FILES["fileToUpload"]["name"];
 		}
@@ -33,17 +33,63 @@
 				$requete->bindParam(':image', $image ,PDO::PARAM_STR);
 				$requete->execute();
 
-				$nb_contenu = $_POST["nb_contenu"];
 				
-				for ($i=1; $i < $nb_contenu ; $i++) { 
-					// Vérification si l'utilisateur pas mis 2x la même position.
-					// Vérifier si la pos du premier contenu n'est pas egale à celle des autres contenus.
-					// Faire cette vérification autant de fois qu'il y a de contenus.
-					// Le code de la page 'traitement apparition menu' effectue cette vérification
-					// Mais je n'ai pas russi à l'adapter pour cette page.
+		
+		$nb_contenu = $_POST["nb_contenu"];
+		
+		//Création des variables dynamic
+		 for ($i=1; $i < $nb_contenu+1 ; $i++) { 
+			$varContainer = "position".$i."EtIDcontenu";
+			$$varContainer = explode("_",$_POST["position$i"]);
+		 }
+		 $deuxIdentique = false;
+	 
+		//Condition pour les contenu
+		for ($i=1; $i < $nb_contenu+1 ; $i++) { 
+			for ($y=$i+1; $y < $nb_contenu+1 ; $y++) { 
+				//Vérifie Si le Varcontainer n'est pas identique
+				//ex: "$position1EtIDmenu" != "$position2EtIDmenu"
+				$varContainer1 = "position".$i."EtIDcontenu";
+				$varContainer2 = "position".$y."EtIDcontenu";
+				
+				if($varContainer1 != $varContainer2){
+					//Retire les variables pour les emmagasiner
+					$varContainer1Position = array_shift($$varContainer1);
+					$varContainer2Position = array_shift($$varContainer2);
+					//Remet les variables dans le tableau (OBLIGÉ?)
+					array_unshift($$varContainer1, $varContainer1Position);
+					array_unshift($$varContainer2, $varContainer2Position);
+					
+					//Vérifie si les positions sont identiques
+					//ex:$position1EtIDmenu[0] == $position2EtIDmenu[0]
+					if($varContainer1Position == $varContainer2Position){
+					
+						/*echo("<div>$$varContainer1 == $$varContainer2</div>");
+						echo("<div>$varContainer1Position == $varContainer2Position</div>");
+						echo("<div>Deux identique</div>");*/
+						$deuxIdentique = true;
+					}
 				}
+			}
+		}
+		
+		//S'il y a deux positions identiques
+		if($deuxIdentique == false){
+			for ($i=1; $i < $nb_contenu+1; $i++) { 
+				$varContainer = "position".$i."EtIDcontenu";
+				$position = array_shift($$varContainer);
+				$id = array_shift($$varContainer);
+				$sql ="UPDATE contenu SET position = $position WHERE contenu_id = $id";
+				$pdo->exec($sql);
+				//echo "<div>".$sql."</div>";
+			}
+			echo("<a href='gestion-page.php'><button>Retour</button></a>");
+		}else{
+			echo("Vous avez deux positions de contenu identique!");
+			
+			echo("<a href='form-modifier-page.php?page_id=".$page_id."'><button>Retour</button></a>");
+		}
 				
 				
 	?>
-	<a href="gestion-page.php"><button>Retour</button></a>
 <?php include("footer-admin.php"); ?>
