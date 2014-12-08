@@ -15,7 +15,16 @@
 		);
 		
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
+
+
+
+		$sql="SELECT * FROM page WHERE page_id=$page_id";
+		$liste = $pdo->query($sql);
+		$data = $liste -> fetch();
+		print_r($data);
+
 		
+<<<<<<< Updated upstream
 		//L'image
 		$image = "";
 		if(isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"] != "" && $_FILES["fileToUpload"] != null && $_FILES["fileToUpload"]["size"] != 0){
@@ -88,8 +97,6 @@
 			echo("Vous avez deux positions de contenu identique!");
 			
 			echo("<a href='form-modifier-page.php?page_id=".$page_id."'><button>Retour</button></a>");
-		}
-				
-				
+		} 			
 	?>
 <?php include("footer-admin.php"); ?>

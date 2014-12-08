@@ -39,11 +39,29 @@
 				<textarea class="form" type="text" name="resume"><?php echo $data['resume']; ?></textarea>
 			</div>
 
-			<div>
-					<label for="image-preview">Image situé en haut de page</label><br/>
-					<p> Attention ! Veuillez télécharger une image carré de 300 pixels x 312 pixels</p>
-	    			<input type="file" name="fileToUpload" id="fileToUpload">
-			</div>
+
+			<?php 
+				include('connectionbdd.php');
+				$sql ="SELECT * FROM page WHERE page_id=$page_id";
+				$liste=$pdo->query($sql);
+				$data=$liste->fetch();
+
+				if ($data['image']=="") {
+					echo "<div>";
+					echo "<label for='image-preview'>Image située en haut de page.</label><br/>";
+					echo "<p> Attention ! Veuillez télécharger une image de 300 pixels x 312 pixels.</p>";
+					echo "<input type='file' name='fileToUpload id='fileToUpload>";
+					echo "</div>";
+				}else{
+					echo "<a href='#' onclick=''><button> Modifier l'image existante</button></a>";
+				}
+
+
+			 ?>
+			
+					
+					
+	    	
 
 			<p style="color:red;">Inserer un bouton si l'utilisateur veux modifier l'ordre un contenu </p>
 			

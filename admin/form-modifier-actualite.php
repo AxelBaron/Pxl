@@ -43,11 +43,24 @@
 				<input class="form" type="date" name="date" value="<?php echo $data['date']; ?>" required/>
 			</div>
 
-			<div>
-				<label for="image-preview">Image de preview</label><br/>
-				<p> Attention ! Veuillez télécharger une image de 680 pixels x 200 pixels</p>
-    			<input type="file" name="fileToUpload" id="fileToUpload">
-			</div>
+			<?php 
+				include('connectionbdd.php');
+				$sql ="SELECT * FROM actualite WHERE actu_id = $actu_id";
+				$liste=$pdo->query($sql);
+				$data=$liste->fetch();
+
+				if ($data['image']=="") {
+					echo "<div>";
+					echo "<label for='image-preview'>Image située en haut de page.</label><br/>";
+					echo "<p> Attention ! Veuillez télécharger une image de 300 pixels x 312 pixels.</p>";
+					echo "<input type='file' name='fileToUpload id='fileToUpload>";
+					echo "</div>";
+				}else{
+					echo "<a href='#' onclick=''><button> Modifier l'image existante</button></a>";
+				}
+
+
+			 ?>
 
 			<div>
 				<label for="Contenu">Contenu</label>
