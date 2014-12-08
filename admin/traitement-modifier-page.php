@@ -21,10 +21,7 @@
 		$sql="SELECT * FROM page WHERE page_id=$page_id";
 		$liste = $pdo->query($sql);
 		$data = $liste -> fetch();
-		print_r($data);
 
-		
-<<<<<<< Updated upstream
 		//L'image
 		$image = "";
 		if(isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"] != "" && $_FILES["fileToUpload"] != null && $_FILES["fileToUpload"]["size"] != 0){

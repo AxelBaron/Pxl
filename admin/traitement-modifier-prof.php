@@ -24,13 +24,14 @@
 		$image = "";
 		if(isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"] != "" && $_FILES["fileToUpload"] != null && $_FILES["fileToUpload"]["size"] != 0){
 			include('test_upload.php');
-			echo("fgfgvdhgvfdgh");
 			uploadImage($_FILES["fileToUpload"]);
 			$image = "/upload/".$_FILES["fileToUpload"]["name"];
+			echo "poil";
 		}
 		
 		$sql = "UPDATE prof SET prenom=:prenom, nom=:nom, role=:role, courriel=:courriel, tel_poste=:tel_poste ,bureau=:bureau,site=:site,image=:image
 				WHERE prof_id=$portfolio_id";
+		echo $sql;
 		$requete =$pdo->prepare($sql);
 		$requete->bindParam(':prenom', $data_filtre['prenom'], PDO::PARAM_STR);
 		$requete->bindParam(':nom', $data_filtre['nom'], PDO::PARAM_STR);

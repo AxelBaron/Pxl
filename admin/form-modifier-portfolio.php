@@ -53,7 +53,7 @@
 					echo "<div>";
 					echo "<label for='image-preview'>Image située en haut de page.</label><br/>";
 					echo "<p> Attention ! Veuillez télécharger une image de 300 pixels x 312 pixels.</p>";
-					echo "<input type='file' name='fileToUpload id='fileToUpload>";
+					echo "<input type='file' name='fileToUpload' id='fileToUpload'>";
 					echo "</div>";
 				}else{
 					echo "<a href='#' onclick=''><button> Modifier l'image existante</button></a>";

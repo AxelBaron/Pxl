@@ -24,7 +24,7 @@
 			<h1>#TIM Matane Administration</h1>	
 			<h2>Modifier la page: <?php echo $data['titre']; ?> </h2>
 			 
-		<form action="traitement-modifier-page.php?page_id=<?php echo $data['page_id']?>" method="POST" enctype="multipart/form-data">
+		<form action="traitement-modifier-page.php?page_id= <?php echo $data['page_id']; ?>" method="POST" enctype="multipart/form-data">
 	
 		<fieldset>
 			<legend>Formulaire de Modification :</legend>
@@ -50,7 +50,7 @@
 					echo "<div>";
 					echo "<label for='image-preview'>Image située en haut de page.</label><br/>";
 					echo "<p> Attention ! Veuillez télécharger une image de 300 pixels x 312 pixels.</p>";
-					echo "<input type='file' name='fileToUpload id='fileToUpload>";
+					echo "<input type='file' name='fileToUpload' id='fileToUpload'>";
 					echo "</div>";
 				}else{
 					echo "<a href='#' onclick=''><button> Modifier l'image existante</button></a>";
