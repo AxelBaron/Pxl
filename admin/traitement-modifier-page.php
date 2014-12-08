@@ -10,8 +10,8 @@
 		include('connectionbdd.php');
 		
 		$liste_de_filtres = array(
-		'titre' => FILTER_SANITIZE_SRING,
-		'resume' => FILTER_SANITIZE_SRING
+		'titre' => FILTER_SANITIZE_STRING,
+		'resume' => FILTER_SANITIZE_STRING
 		);
 		
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
@@ -22,24 +22,31 @@
 		$liste = $pdo->query($sql);
 		$data = $liste -> fetch();
 
-		//L'image
-		$image = "";
+		//Upload de l'image + lien dans la base de donnée
 		if(isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"] != "" && $_FILES["fileToUpload"] != null && $_FILES["fileToUpload"]["size"] != 0){
 			include('test_upload.php');
 			uploadImage($_FILES["fileToUpload"]);
 			$image = "/upload/".$_FILES["fileToUpload"]["name"];
+			
+			$sql = "UPDATE page 
+			SET titre =:titre, resume =:resume, image =:image
+			WHERE page_id =$page_id;";
+			$requete =$pdo->prepare($sql);
+			$requete->bindParam(':titre', $data_filtre['titre'], PDO::PARAM_STR);
+			$requete->bindParam(':resume', $data_filtre['resume'], PDO::PARAM_STR);
+			$requete->bindParam(':image', $image ,PDO::PARAM_STR);
+			$requete->execute();
+		}else{
+			//S'il y a pas d'image
+			$sql = "UPDATE page 
+			SET titre =:titre, resume =:resume
+			WHERE page_id =$page_id;";
+			$requete =$pdo->prepare($sql);
+			$requete->bindParam(':titre', $data_filtre['titre'], PDO::PARAM_STR);
+			$requete->bindParam(':resume', $data_filtre['resume'], PDO::PARAM_STR);
+			$requete->execute();	
 		}
-		
-		$sql = "UPDATE page 
-			   	SET titre =:titre, resume =:resume, image =:image
-				WHERE page_id =$page_id;";
-				$requete =$pdo->prepare($sql);
-				$requete->bindParam(':titre', $data_filtre['titre'], PDO::PARAM_STR);
-				$requete->bindParam(':resume', $data_filtre['resume'], PDO::PARAM_STR);
-				$requete->bindParam(':image', $image ,PDO::PARAM_STR);
-				$requete->execute();
 
-				
 		
 		$nb_contenu = $_POST["nb_contenu"];
 		
