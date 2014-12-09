@@ -28,6 +28,15 @@
 				$sm_lien_6 = $data['sm_lien_6'];
 				$sm_lien_7 = $data['sm_lien_7'];
 				$sm_lien_8 = $data['sm_lien_8'];
+
+				$sm_nom_1 = $data['sm_nom_1'];
+				$sm_nom_2 = $data['sm_nom_2'];
+				$sm_nom_3 = $data['sm_nom_3'];
+				$sm_nom_4 = $data['sm_nom_4'];
+				$sm_nom_5 = $data['sm_nom_5'];
+				$sm_nom_6 = $data['sm_nom_6'];
+				$sm_nom_7 = $data['sm_nom_7'];
+				$sm_nom_8 = $data['sm_nom_8'];
 				
 			 ?>
 			
@@ -70,7 +79,7 @@
 
 			<div>
 				<label for="Nom sous menu 1">Nom du premier sous menu:</label>
-				<input class="form-menu" type="text" name="sm_nom_1" value="<?php echo $data['sm_nom_1']; ?>"/>
+				<input class="form-menu" type="text" name="sm_nom_1" value="<?php echo $sm_nom_1; ?>"/>
 				<label for="Nom sous menu 1"></label>
 				<?php
 					//Requete à la BD pour PAGE
@@ -99,7 +108,7 @@
 
 			<div>
 				<label for="Nom sous menu 2">Nom du deuxieme sous menu:</label>
-				<input class="form-menu" type="text" name="sm_nom_2" value="<?php echo $data['sm_nom_2']; ?>"/>
+				<input class="form-menu" type="text" name="sm_nom_2" value="<?php echo $sm_nom_2; ?>"/>
 
 				<label for="Nom sous menu 2"></label>
 				<?php
@@ -129,7 +138,7 @@
 
 			<div>
 				<label for="Nom sous menu 3">Nom du troisième sous menu:</label>
-				<input class="form" type="text" name="sm_nom_3" value="<?php echo $data['sm_nom_3']; ?>"/>
+				<input class="form" type="text" name="sm_nom_3" value="<?php echo $sm_nom_3 ?>"/>
 
 				<label for="Nom sous menu 3"></label>
 				<?php
@@ -159,7 +168,7 @@
 			
 			<div>
 				<label for="Nom sous menu 4">Nom du quatrième sous menu:</label>
-				<input class="form-menu" type="text" name="sm_nom_4" value="<?php echo $data['sm_nom_4']; ?>"/>
+				<input class="form-menu" type="text" name="sm_nom_4" value="<?php echo $sm_nom_4; ?>"/>
 	
 				<label for="Nom sous menu 4"></label>
 				<?php
@@ -189,7 +198,7 @@
 
 			<div>
 				<label for="Nom sous menu 5">Nom du cinquième sous menu:</label>
-				<input class="form-menu" type="text" name="sm_nom_5" value="<?php echo $data['sm_nom_5']; ?>"/>
+				<input class="form-menu" type="text" name="sm_nom_5" value="<?php echo $sm_nom_5; ?>"/>
 		
 				<label for="Nom sous menu 5"></label>
 				<?php
@@ -219,7 +228,7 @@
 
 			<div>
 				<label for="Nom sous menu 6">Nom du sixième sous menu:</label>
-				<input class="form-menu" type="text" name="sm_nom_6" value="<?php echo $data['sm_nom_6']; ?>"/>
+				<input class="form-menu" type="text" name="sm_nom_6" value="<?php echo $sm_nom_6; ?>"/>
 	
 				<label for="Nom sous menu 6"></label>
 				<?php
@@ -249,7 +258,7 @@
 
 			<div>
 				<label for="Nom sous menu 7">Nom du septième sous menu:</label>
-				<input class="form-menu" type="text" name="sm_nom_7" value="<?php echo $data['sm_nom_7']; ?>"/>
+				<input class="form-menu" type="text" name="sm_nom_7" value="<?php echo $sm_nom_7; ?>"/>
 		
 				<label for="Nom sous menu 7"></label>
 				<?php
@@ -279,7 +288,7 @@
 
 			<div>
 				<label for="Nom sous menu 8">Nom du huitième sous menu:</label>
-				<input class="form-menu" type="text" name="sm_nom_8" value="<?php echo $data['sm_nom_8']; ?>"/>
+				<input class="form-menu" type="text" name="sm_nom_8" value="<?php echo $sm_nom_8; ?>"/>
 
 				<label for="Nom sous menu 8"></label>
 				<?php
