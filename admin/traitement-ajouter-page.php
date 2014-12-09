@@ -57,12 +57,6 @@
 							<!-- main content -->
 								<div id='homepage'>
 
-								 <!-- #Index Image -->
-
-								  <section id='services' class='clear'> 
-									  <img src='images/dynamic.png'>
-								  </section>
-
 								  <!-- Image de description -->
 								  <section>
 								  <article id='proweb'>";
