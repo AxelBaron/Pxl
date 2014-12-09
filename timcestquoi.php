@@ -7,7 +7,14 @@
     <?php include('morceaux/slider.php') ?>
     <!-- main content -->
     <div id="homepage">
-    <!-- #TIM? image -->
+
+     <!-- #tim? Image -->
+
+      <section id="services" class="clear"> 
+          <img src="images/timhr.png" alt="tim?" title="tim?" width="960" height="104" />
+      </section>
+      
+   <!-- #TIM? image -->
       <section>
     		<article id="proweb">
     				<img src="images/prosduweb.jpg" alt="Les pros du web" title="Les pros du web" width="312" height="300" />

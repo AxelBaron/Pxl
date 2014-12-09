@@ -3,15 +3,14 @@
 <div class="wrapper row2">
   <div id="container">
     <!-- Silder -->
-    <?php include('morceaux/slider.php') ?>
+    <section id="slider"><a href="index.php"><img src="images/slider.jpg" alt="Slider1" width="960" height="230" /></a></section>
     <!-- main content -->
 	    <div id="homepage">
 
 	     <!-- #Index Image -->
 
 	      <section id="services" class="clear"> 
-	          <img class="orditablette" src="images/Actu.png" alt="Page Actualités" width="960" height="104" />
-            <img class="smartphone" src="images/actusmartphone.png" alt="page actualités" title="Page Actualités" width="640" height="104" />
+	          <img src="images/Actu.png">
 	      </section>
 
 	   	</div>

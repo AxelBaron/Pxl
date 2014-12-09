@@ -39,15 +39,31 @@
 			</div>
 
 			<div>
-				<label for="image-preview">Image de preview</label><br/>
-				<p> Attention ! Veuillez télécharger une image carré de 250 pixels x 250 pixels</p>
-    			<input type="file" name="fileToUpload" id="fileToUpload">
-			</div>
-
-			<div>
 				<label for="annees">Année optiention diplome</label>
 				<input class="form"type="text" name="annee" value="<?php echo $data['annees']; ?>"/>
 			</div>
+
+			<?php 
+				include('connectionbdd.php');
+				$sql ="SELECT * FROM portfolio WHERE portfolio_id = $portfolio_id";
+				$liste=$pdo->query($sql);
+				$data=$liste->fetch();
+
+				if ($data['image']=="") {
+					echo "<div>";
+					echo "<label for='image-preview'>Image située en haut de page.</label><br/>";
+					echo "<p> Attention ! Veuillez télécharger une image de 300 pixels x 312 pixels.</p>";
+					echo "<input type='file' name='fileToUpload' id='fileToUpload'>";
+					echo "</div>";
+				}else{
+					echo "<div>";
+					echo "<label for='image-preview'>Image située en haut de page.</label><br/>";
+					echo "<p class='rouge'> Attention ! Une image existe déjà, si vous en télécharger une nouvelle, l'ancienne sera ecrasée !</p>";
+					echo "<input type='file' name='fileToUpload' id='fileToUpload'>";
+					echo "</div>";
+				}
+
+			 ?>
 						
 		</fieldset>
 		

@@ -9,6 +9,10 @@
     <div id="homepage">
 
      <!-- #tim? Image -->
+
+      <section id="services" class="clear"> 
+          <img src="images/cdrin.png" alt="CDRIN" title="CDRIN" width="960" height="104">
+      </section>
       <section>
         <article id="proweb">
             <img src="images/CDRIN.jpg" alt="CDRIN" title="CDRIN" width="312" height="300">

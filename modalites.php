@@ -10,7 +10,9 @@
 
      <!-- #tim? Image -->
 
-      
+      <section id="services" class="clear"> 
+          <img src="images/modalites.png" alt="Modalitées" title="Modalités" width="960" height="104">
+      </section>
       <section>
         <article id="proweb">
             <img src="images/inscription.jpg" alt="Modalités" title="Modalités" width="312" height="300">

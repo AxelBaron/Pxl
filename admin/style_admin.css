@@ -169,6 +169,11 @@ textarea{
 	width: 20%;
 }
 
+.liste-deroulante-contenu{
+	width: 70%;
+}
+
+
 .select{
 	float: right;
 }
@@ -200,6 +205,14 @@ input[type="submit"]{
 	font-size: 14px;
 }
 
+a {
+	color: orange;
+	text-decoration: none;
+}
+
+.rouge{
+	color: red;
+}
 
 /*_____FORM CONNEXION_________________________________________________________________________________*/
 #form_connexion{

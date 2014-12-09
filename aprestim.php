@@ -6,6 +6,10 @@
     <!-- Slider -->
     <?php include('morceaux/slider.php') ?>
     <div id="homepage">
+      <section id="services" class="clear"> 
+          <img src="images/apres.png" alt="Après?" title="Après?" width="960" height="104">
+      </section>
+
       <section>
         <article id="proweb">
             <img src="images/travail.png" alt="Après Tim?" title="Après Tim?" width="300" height="312">

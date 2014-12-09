@@ -4,35 +4,64 @@
 
 <?php 
 	
-	 for ($i=1; $i < 8 ; $i++) { 
+	//Calcule le nombre de menu
+	$sql="SELECT * FROM menu";
+	$req = $pdo->query($sql);
+	$nb_menu=0;
+	while($data = $req->fetch()){
+		$nb_menu ++;
+	}
+	
+	//Création des variables
+	 for ($i=1; $i < $nb_menu+1 ; $i++) { 
 		$varContainer = "position".$i."EtIDmenu";
 		$$varContainer = explode("_",$_POST["position$i"]);
 	 }
 	 
+	 $deuxIdentique = false;
 	 
-	if ($position1EtIDmenu[0] == $position2EtIDmenu[0] || $position1EtIDmenu[0] == $position3EtIDmenu[0] || $position1EtIDmenu[0] == $position4EtIDmenu[0] || $position1EtIDmenu[0] == $position5EtIDmenu[0] || $position1EtIDmenu[0] == $position6EtIDmenu[0] || $position1EtIDmenu[0] == $position7EtIDmenu[0]) {
-		echo "<p> Désolé, la modification n'as pas été prise en compte car plusieurs menus avait le même indice!";
-	}elseif($position2EtIDmenu[0] == $position1EtIDmenu[0] || $position2EtIDmenu[0] == $position3EtIDmenu[0] || $position2EtIDmenu[0] == $position4EtIDmenu[0] || $position2EtIDmenu[0] == $position5EtIDmenu[0] || $position2EtIDmenu[0] == $position6EtIDmenu[0] || $position2EtIDmenu[0] == $position7EtIDmenu[0]) {
-		echo "<p> Désolé, la modification n'as pas été prise en compte car plusieurs menus avait le même indice!";	
-	}elseif ($position3EtIDmenu[0] == $position1EtIDmenu[0] || $position3EtIDmenu[0] == $position2EtIDmenu[0] || $position3EtIDmenu[0] == $position4EtIDmenu[0] || $position3EtIDmenu[0] == $position5EtIDmenu[0] || $position3EtIDmenu[0] == $position6EtIDmenu[0] || $position3EtIDmenu[0] == $position7EtIDmenu[0]) {
-		echo "<p> Désolé, la modification n'as pas été prise en compte car plusieurs menus avait le même indice!";
-	}elseif ($position4EtIDmenu[0] == $position1EtIDmenu[0] || $position4EtIDmenu[0] == $position2EtIDmenu[0] || $position4EtIDmenu[0] == $position3EtIDmenu[0] || $position4EtIDmenu[0] == $position5EtIDmenu[0] || $position4EtIDmenu[0] == $position6EtIDmenu[0] || $position4EtIDmenu[0] == $position7EtIDmenu[0]) {
-		echo "<p> Désolé, la modification n'as pas été prise en compte car plusieurs menus avait le même indice!";
-	}elseif ($position5EtIDmenu[0] == $position1EtIDmenu[0] || $position5EtIDmenu[0] == $position2EtIDmenu[0] || $position5EtIDmenu[0] == $position3EtIDmenu[0] || $position5EtIDmenu[0] == $position4EtIDmenu[0] || $position5EtIDmenu[0] == $position6EtIDmenu[0] || $position5EtIDmenu[0] == $position7EtIDmenu[0]) {
-		echo "<p> Désolé, la modification n'as pas été prise en compte car plusieurs menus avait le même indice!";
-	}elseif ($position6EtIDmenu[0] == $position1EtIDmenu[0] || $position6EtIDmenu[0] == $position2EtIDmenu[0] || $position6EtIDmenu[0] == $position3EtIDmenu[0] || $position6EtIDmenu[0] == $position4EtIDmenu[0] || $position6EtIDmenu[0] == $position5EtIDmenu[0] || $position6EtIDmenu[0] == $position7EtIDmenu[0]) {
-		echo "<p> Désolé, la modification n'as pas été prise en compte car plusieurs menus avait le même indice!";
-	}elseif ($position7EtIDmenu[0] == $position1EtIDmenu[0] || $position7EtIDmenu[0] == $position2EtIDmenu[0] || $position7EtIDmenu[0] == $position3EtIDmenu[0] || $position7EtIDmenu[0]== $position4EtIDmenu[0] || $position7EtIDmenu[0] == $position5EtIDmenu[0] || $position7EtIDmenu[0] == $position6EtIDmenu[0]) {
-		echo "<p> Désolé, la modification n'as pas été prise en compte car plusieurs menus avait le même indice!";
-	}else{
-		echo "Tout est ok";
-		 for ($i=1; $i < 8; $i++) { 
+	 for ($i=1; $i < $nb_menu+1 ; $i++) { 
+		for ($y=$i+1; $y < $nb_menu+1 ; $y++) { 
+			//Vérifie Si le Varcontainer n'est pas identique
+			//ex: "$position1EtIDmenu" != "$position2EtIDmenu"
+			$varContainer1 = "position".$i."EtIDmenu";
+			$varContainer2 = "position".$y."EtIDmenu";
+			
+			if($varContainer1 != $varContainer2){
+				//Retire les variables pour les emmagasiner
+				$varContainer1Position = array_shift($$varContainer1);
+				$varContainer2Position = array_shift($$varContainer2);
+				//Remet les variables dans le tableau (OBLIGÉ?)
+				array_unshift($$varContainer1, $varContainer1Position);
+				array_unshift($$varContainer2, $varContainer2Position);
+				
+				//Vérifie si les positions sont identiques
+				//ex:$position1EtIDmenu[0] == $position2EtIDmenu[0]
+				if($varContainer1Position == $varContainer2Position){
+				
+					/*echo("<div>$$varContainer1 == $$varContainer2</div>");
+					echo("<div>$varContainer1Position == $varContainer2Position</div>");
+					echo("<div>Deux identique</div>");*/
+					$deuxIdentique = true;
+				}
+			}
+		}
+	}
+	
+	if($deuxIdentique == false){
+		for ($i=1; $i < $nb_menu+1; $i++) { 
 			$varContainer = "position".$i."EtIDmenu";
 			$position = array_shift($$varContainer);
 			$id = array_shift($$varContainer);
-		  	$sql ="UPDATE menu SET position = $position WHERE menu_id = $id";
+			$sql ="UPDATE menu SET position = $position WHERE menu_id = $id";
 			$pdo->exec($sql);
-		  	echo "<div>".$sql."</div>";
+			//echo "<div>".$sql."</div>";
 		}
+		echo("<a href='gestion-menu.php'><button>Retour</button></a>");
+	}else{
+		echo("Vous avez deux positions de menu identique!");
+		
+		echo("<a href='apparition-menu.php'><button>Retour</button></a>");
 	}
- ?>
+?>
+<?php include("footer-admin.php"); ?>

@@ -6,7 +6,19 @@
     <!-- slider -->
     <?php include('morceaux/slider.php') ?>
     <!-- main content -->
+    <div id="homepage">
+
+     <!-- #tim? Image -->
+
+      <section id="services" class="clear"> 
+          <img src="images/contact.png" alt="Contact" title="contact" width="960" height="104" />
+      </section>
+      
+    </div>
+    <!-- main content -->
     <div id="content">
+
+
       <div id="conteneurprincipal">
         <h1 id="timcestquoi">Contacter le département TIM</h1>
         <div class="conteneursecondaire">
@@ -15,7 +27,7 @@
             <form action="" method="post" class="contacter">
               <h2>Contacter nos enseignants</h2>
               
-                <a href="equipe.php" alt="l'équipe">
+                <a href="enseignants.php" alt="l'équipe">
                   <div class="contactenseignants">
                     <p>Contacter les enseignants</p>
                   </div>

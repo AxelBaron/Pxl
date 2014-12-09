@@ -5,6 +5,17 @@
     <!-- Slider -->
     <?php include('morceaux/slider.php') ?>
     <!-- main content -->
+	    <div id="homepage">
+
+	     <!-- #Index Image -->
+
+	      <section id="services" class="clear"> 
+	          <img src="images/Actu.png">
+	      </section>
+
+	   	</div>
+    </section>
+    <!-- main content -->
     <div id="content">
 
       <div id="conteneurprincipal">

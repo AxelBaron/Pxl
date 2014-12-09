@@ -10,7 +10,9 @@
 
      <!-- #tim? Image -->
 
-      
+      <section id="services" class="clear"> 
+          <img src="images/stages.png" alt="Stages" title="Stages" width="960" height="104">
+      </section>
       <section>
         <article id="proweb">
             <img src="images/stagiaire.jpg" alt="Stage" title="Stage" width="312" height="300">
@@ -42,7 +44,7 @@
         <h1 id="infos">Informations et dates</h1>
         <div class="conteneursecondaire">
 
-          <table class="tableau" border="0">
+          <table class="tableau" border="1">
             <tr class="formation">
               <td>Stage</td>
               <td>Étudiants visés</td>
@@ -110,7 +112,7 @@
                   <input id="Nom" type="text" name="Nom" placeholder="Nom"> <br>
                 </label>
                 <label>
-                  <p>Courriel </p>
+                  <p>E-mail </p>
                   <input id="Email" type="email" name="Email" placeholder="E-mail">
                 </label>
                 <label>
