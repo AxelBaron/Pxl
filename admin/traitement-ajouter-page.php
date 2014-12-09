@@ -52,12 +52,10 @@
 						<!-- content -->
 						<div class='wrapper row2'>
 						  <div id='container'>
-							<!-- Silder -->
-							<section id='slider'><a href='index.php'><img src='images/slider.jpg' alt='Slider1'></a></section>
+							<!-- Slider -->
+							<?php include('morceaux/slider.php') ?>
 							<!-- main content -->
-								<div id='homepage'>
-
-								  <!-- Image de description -->
+							<div id='homepage'>
 								  <section>
 								  <article id='proweb'>";
 									
