@@ -34,6 +34,7 @@ a{outline:none; text-decoration:none;}
 
 #header, #container, #footer{display:block; width:960px; margin:0 auto; /*background-color: blue;*/}
 
+
 .conteneursecondaire{
 	width: 100%;
 	height: 100%;
@@ -105,6 +106,10 @@ img.float{
 	margin-right: 20px;
 }
 
+a img{
+	border: none;
+}
+
 
 
 
@@ -114,6 +119,8 @@ img.float{
 
 	width:960px;
 	margin: auto;
+	background: #232323;
+	height: 93px;
 }
 
 #services img{
@@ -135,7 +142,7 @@ img.float{
 /*ajout de la taille de la navigation avec width:960px;*/
 #header nav{
 	/*le menu fait 960 - la taille du logo + 40px, donc 680px*/
-	width: 680px; 
+	width: 70.4%; 
 	/* il fait la hauteur du logo, de 93px*/
 	height: 93px;
 	/*un float est nécessaire pour se placer à droite du logo*/
@@ -225,7 +232,7 @@ img.float{
 /*----------------------------------------------Content Area-------------------------------------*/
 /* suppression du padding 30px du container car sinon le footer a 30px d'espace avec le bas */
 #container{padding:0, 0;}
-#container section{display:block; width:100%; margin:0 0 30px 0; padding:0;}
+#container section{display:inline-block; width:100%; margin:0 0 30px 0; padding:0;}
 
 section#slider{
 	margin: 0px;
