@@ -6,19 +6,6 @@
     <!-- Slider -->
     <?php include('morceaux/slider.php') ?>
     <!-- main content -->
-    <div id="homepage">
-
-     <!-- #tim? Image -->
-
-      <section id="services" class="clear"> 
-          <img src="images/porfolio.png" alt="Portfolios" title="Portfolios" width="960" height="104">
-      </section>
-
-      
-   <!-- #TIM? image -->
-      
-    </div>
-    <!-- main content -->
     <div id="content">
       <div id="conteneurprincipal">
         <h1>Porfolios de nos étudiants de 3e année</h1>

@@ -6,15 +6,6 @@
     <!-- Slider -->
     <?php include('morceaux/slider.php') ?>
     <!-- main content -->
-    <div id="homepage">
-
-     <!-- #tim? Image -->
-
-      <section id="services"> 
-          <img src="images/equipe.png" alt="tim?" title="tim?" width="960" height="104">
-      </section>
-    </div>
-    <!-- main content -->
     <div id="content">
 
       <div id="conteneurmatieres">

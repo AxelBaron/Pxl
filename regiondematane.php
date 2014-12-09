@@ -7,12 +7,6 @@
     <?php include('morceaux/slider.php') ?>
     <!-- main content -->
     <div id="homepage">
-
-     <!-- #tim? Image -->
-
-      <section id="services" class="clear"> 
-          <img src="images/matane.png" alt="Matanie" title="Matanie" width="960" height="104">
-      </section>
       <section>
         <article id="proweb">
             <img src="images/matane4.jpg" alt="Matanie" title="Matanie" width="312" height="300">
