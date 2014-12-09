@@ -27,7 +27,7 @@
             <form action="" method="post" class="contacter">
               <h2>Contacter nos enseignants</h2>
               
-                <a href="equipe.php" alt="l'équipe">
+                <a href="enseignants.php" alt="l'équipe">
                   <div class="contactenseignants">
                     <p>Contacter les enseignants</p>
                   </div>

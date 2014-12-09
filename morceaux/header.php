@@ -48,7 +48,7 @@
                     <li><a href="timcestquoi.php">TIM c'est quoi?</a></li>
                     <li><a href="grillecours.php">Grille des cours</a></li>
                     <li><a href="aprestim.php">Après TIM?</a></li>
-                    <li><a href="equipe.php">Enseignants</a></li>
+                    <li><a href="enseignants.php">Enseignants</a></li>
                   </ul>
                 </li>
                 <li>
@@ -95,7 +95,7 @@
               <a href="aprestim.php">
                 <li>Après TIM?</li>
               </a>
-              <a href="equipe.php">
+              <a href="enseignants.php">
                 <li>Enseignants</li>
               </a>
             </ul>
