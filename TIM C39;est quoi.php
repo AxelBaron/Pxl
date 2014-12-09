@@ -37,7 +37,11 @@
 							<!-- main content -->
 							<div id='content'>
 
-							  <div id='conteneurprincipal'><?php
+							  <div id='conteneurprincipal'>
+								<section>
+        							<?php include("morceaux/cinqpts.php") ?>
+      							</section>
+							  	<?php
 						$sql = "SELECT * FROM contenu WHERE id_page_=93";
 						$resultat = $pdo->query($sql);
 						while($donnees = $resultat->fetch()){
