@@ -8,16 +8,6 @@
     <!-- main content -->
     <div id="homepage">
      <!-- #Index Image -->
-
-<<<<<<< HEAD
-      <section id="services" class="clear"> 
-          <!-- <p class="ariane">Index</p> -->
-          
-
-      </section>
-
-=======
->>>>>>> FETCH_HEAD
       <!-- #TIM Matane en Vidéo -->
       <section>
       <article id="tim_video">
