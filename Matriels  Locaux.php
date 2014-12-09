@@ -3,21 +3,13 @@
 						<!-- content -->
 						<div class='wrapper row2'>
 						  <div id='container'>
-							<!-- Silder -->
-							<section id='slider'><a href='index.php'><img src='images/slider.jpg' alt='Slider1'></a></section>
+							<!-- Slider -->
+							<?php include('morceaux/slider.php') ?>
 							<!-- main content -->
-								<div id='homepage'>
-
-								 <!-- #Index Image -->
-
-								  <section id='services' class='clear'> 
-									  <img src='images/dynamic.png'>
-								  </section>
-
-								  <!-- Image de description -->
+							<div id='homepage'>
 								  <section>
 								  <article id='proweb'><?php 
-												$sql = "SELECT * FROM page WHERE page_id=83";
+												$sql = "SELECT * FROM page WHERE page_id=102";
 												$resultat = $pdo->query($sql);
 												$contenu = $resultat->fetch();
 												
@@ -32,7 +24,7 @@
 													echo "<li><p>Il n'y a pas de résumé disponible pour cette page.</p></li>";
 												}
 												?><?php 
-												$sql = "SELECT * FROM contenu WHERE id_page_=83";
+												$sql = "SELECT * FROM contenu WHERE id_page_=102";
 												$resultat = $pdo->query($sql);
 												while($donnees = $resultat->fetch()){
 													echo ("<h2 id='lienancre'><a href='#".$donnees['titre']."'>".$donnees['titre']."</a></h2>");
@@ -46,7 +38,7 @@
 							<div id='content'>
 
 							  <div id='conteneurprincipal'><?php
-						$sql = "SELECT * FROM contenu WHERE id_page_=83";
+						$sql = "SELECT * FROM contenu WHERE id_page_=102";
 						$resultat = $pdo->query($sql);
 						while($donnees = $resultat->fetch()){
 							echo("<h1 id='".$donnees['titre']."'>".$donnees['titre']."</h1>");

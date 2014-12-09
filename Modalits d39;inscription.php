@@ -9,7 +9,7 @@
 							<div id='homepage'>
 								  <section>
 								  <article id='proweb'><?php 
-												$sql = "SELECT * FROM page WHERE page_id=106";
+												$sql = "SELECT * FROM page WHERE page_id=104";
 												$resultat = $pdo->query($sql);
 												$contenu = $resultat->fetch();
 												
@@ -24,7 +24,7 @@
 													echo "<li><p>Il n'y a pas de résumé disponible pour cette page.</p></li>";
 												}
 												?><?php 
-												$sql = "SELECT * FROM contenu WHERE id_page_=106";
+												$sql = "SELECT * FROM contenu WHERE id_page_=104";
 												$resultat = $pdo->query($sql);
 												while($donnees = $resultat->fetch()){
 													echo ("<h2 id='lienancre'><a href='#".$donnees['titre']."'>".$donnees['titre']."</a></h2>");
@@ -38,7 +38,7 @@
 							<div id='content'>
 
 							  <div id='conteneurprincipal'><?php
-						$sql = "SELECT * FROM contenu WHERE id_page_=106";
+						$sql = "SELECT * FROM contenu WHERE id_page_=104";
 						$resultat = $pdo->query($sql);
 						while($donnees = $resultat->fetch()){
 							echo("<h1 id='".$donnees['titre']."'>".$donnees['titre']."</h1>");
