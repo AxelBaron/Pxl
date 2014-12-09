@@ -44,7 +44,7 @@
 			//S'il y a eu une recherche
 			if($_GET != null){
 				include "admin/connectionbdd.php";
-				$recherche = filter_var($_GET["recherche"],FILTER_SANITIZE_STRING);
+				$recherche = filter_var($_GET["recherche"],FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 				
 				//Recherche d'étudiant
 				$liste = "";

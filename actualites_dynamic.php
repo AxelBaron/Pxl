@@ -5,7 +5,17 @@
     <!-- Slider -->
     <?php include('morceaux/slider.php') ?>
     <!-- main content -->
+	    <div id="homepage">
 
+	     <!-- #Index Image -->
+
+	      <section id="services" class="clear"> 
+	          <img src="images/Actu.png">
+	      </section>
+
+	   	</div>
+    </section>
+    <!-- main content -->
     <div id="content">
 
       <div id="conteneurprincipal">
@@ -14,7 +24,7 @@
           <article class="contenuprincip">
           <?php 
                 include('admin/connectionbdd.php');
-                $sql="SELECT * FROM actualite ORDER BY date DESC";
+                $sql="SELECT * FROM actualite";
                 $liste = $pdo->query($sql);
                 while ($data = $liste->fetch()) {
                   echo "<h2>".$data['titre']."</h2>";
@@ -36,42 +46,42 @@
           <hr />
           
           <ul>
-            <li>
-              Novembre
-              <ul>
-                <li>Vendredi 21</li>
-                <li>Mercredi 6</li>
-              </ul>
+          	<li>
+          		Novembre
+          		<ul>
+          			<li>Vendredi 21</li>
+          			<li>Mercredi 6</li>
+          		</ul>
 
-            </li>
+          	</li>
 
-            <li>Octobre</li>
-            <li>Septembre</li>
-            <li>Août</li>
-            <li>Juillet</li>
-            <li>Juin</li>
-            <li>Mai</li>
-            <li>Avril</li>
-            <li>Mars</li>
-            <li>Février</li>
-            <li>Janvier</li>
-            <li>
-              2013
-              <ul>
-                <li>Décembre</li>
-                <li>Novembre</li>
-                <li>Octobre</li>
-                <li>Septembre</li>
-                <li>Août</li>
-                <li>Juillet</li>
-                <li>Juin</li>
-                <li>Mai</li>
-                <li>Avril</li>
-                <li>Mars</li>
-                <li>Février</li>
-                <li>Janvier</li>
-            </ul>
-        </li>
+          	<li>Octobre</li>
+          	<li>Septembre</li>
+          	<li>Août</li>
+          	<li>Juillet</li>
+          	<li>Juin</li>
+          	<li>Mai</li>
+          	<li>Avril</li>
+          	<li>Mars</li>
+          	<li>Février</li>
+          	<li>Janvier</li>
+          	<li>
+          		2013
+          		<ul>
+          			<li>Décembre</li>
+          			<li>Novembre</li>
+		          	<li>Octobre</li>
+		          	<li>Septembre</li>
+		          	<li>Août</li>
+		          	<li>Juillet</li>
+		          	<li>Juin</li>
+		          	<li>Mai</li>
+		          	<li>Avril</li>
+		          	<li>Mars</li>
+		          	<li>Février</li>
+		          	<li>Janvier</li>
+		        </ul>
+		    </li>
           </ul>
 
         </div><!-- FIN CONTENEUR 2 -->
