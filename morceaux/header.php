@@ -47,6 +47,15 @@
               <button class="dl-trigger">Open Menu</button>
               <ul class="dl-menu">
         
+		<?php
+		function nomDuFichier($recu){
+			$file = preg_replace("([^\w\s\d\-_~,;:\[\]\(\).])", '', $recu);
+			// Remove any runs of periods (thanks falstro!)
+			$file = preg_replace("([\.]{2,})", '', $file);
+			return $file;
+		}
+		?>
+		
         <?php
         include ("admin/connectionbdd.php");
         
@@ -69,7 +78,7 @@
             //Affiche l'élément dans le menu
             print_r($data);
             print_r($reponse);
-            echo("<a href='".urlencode($reponse['titre']).".php'>".$data['nom']."</a>");
+            echo("<a href='".nomDuFichier($reponse['titre']).".php'>".$data['nom']."</a>");
             //S'il n'y a pas de lien de menu
           }else{
             echo("<a href='#'>".$data['nom']."</a>");
@@ -96,7 +105,7 @@
                 $sql="SELECT * FROM page WHERE page_id=".$data["sm_lien_$i"];
                 $liste = $pdo->query($sql);
                 $reponse = $liste->fetch();
-                  echo("<a href='".urlencode($reponse['titre']).".php'>".$data["sm_nom_$i"]."</a>");
+                  echo("<a href='".nomDuFichier($reponse['titre']).".php'>".$data["sm_nom_$i"]."</a>");
                 }else{
                   echo("<a href='#'>".$data["sm_nom_$i"]."</a>");
                 }
@@ -139,7 +148,7 @@
        $liste = $pdo->query($sql);
        $reponse = $liste->fetch();
         //Affiche l'élément dans le menu
-        echo("<a href='".urlencode($reponse['titre']).".php'>".$data['nom']."</a>");
+        echo("<a href='".nomDuFichier($reponse['titre']).".php'>".$data['nom']."</a>");
       }else{
         echo("<a href='#'>".$data['nom']."</a>");
       }
@@ -160,7 +169,7 @@
             $sql="SELECT * FROM page WHERE page_id=".$data["sm_lien_$i"];
             $liste = $pdo->query($sql);
             $reponse = $liste->fetch();
-              echo("<a href='".urlencode($reponse['titre']).".php'>");
+              echo("<a href='".nomDuFichier($reponse['titre']).".php'>");
             }else{
               echo("<a href='#'>");
             }

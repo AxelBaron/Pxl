@@ -126,7 +126,12 @@
 			</html>";
 		return $footer;
 		}
-		$nomDuFichier = urlencode($data_filtre['titre']);
+		
+		$file = preg_replace("([^\w\s\d\-_~,;:\[\]\(\).])", '', $data_filtre['titre']);
+		// Remove any runs of periods (thanks falstro!)
+		$file = preg_replace("([\.]{2,})", '', $file);
+		
+		$nomDuFichier = $file;
 		$thePage = fopen("../".$nomDuFichier.".php", "w");
 		$header = writeHeader();
 		fwrite($thePage, $header);
