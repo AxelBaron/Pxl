@@ -9,7 +9,7 @@
 		
 		$liste_de_filtres = array(
 		'titre' => FILTER_SANITIZE_STRING,
-		'resume' => FILTER_SANITIZE_STRING
+		'resume' => FILTER_SANITIZE_STRING,
 		);
 		
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);

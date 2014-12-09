@@ -183,6 +183,23 @@ textarea{
 	padding-bottom:5px;
 }
 
+.border-deroulant-menu{
+	border-bottom: 1px solid orange;
+	margin: 0px;
+	margin-bottom: 50px;
+}
+
+.border-deroulant-menu select{
+	float: none;
+	margin-left: 25px;
+	width: 200px;
+}
+
+.form-menu{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
 a button {
 	border: none;
 	background-color: #1E2D57;
