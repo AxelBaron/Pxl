@@ -30,7 +30,7 @@
 	}
 			
 	function ajoutSM($categorie) {
-		//Si c'est l'ajout d'un titre dans Ajout Page
+		//Si c'est l'ajout d'un titre dans Ajout Page (N'EXISTE PLUS?)
 		if($categorie == "page"){
 		
 		$fnName = "'ajoutSM(id);'";
@@ -49,7 +49,7 @@
 		
 		//Si c'est l'ajout d'un sous-menu dans ajout menu
 		}else if($categorie == "menu"){
-		
+			include "connectionbdd.php";
 			$fnName = "'ajoutSM(id);'";
 			$nbSM = ($_POST['nbPresentSM'] + 1);
 			echo("<div>");
@@ -58,8 +58,21 @@
 			echo("</div>");
 			
 			echo("<div>");
-				echo("<label for='sm_lien_".$nbSM."'>Lien du sous-menu ".$nbSM."</label>");
-				echo("<input type='text' name='sm_lien_".$nbSM."' />");
+				//Requete à la BD pour PAGE
+				$sql="SELECT * FROM page";
+				$req = $pdo->query($sql);
+				
+				//Fait apparaître le select
+				echo "<p class='border-deroulant'><label for='sm_lien_".$nbSM."'>Lien du sous-menu ".$nbSM."</label><select class='select' name='sm_lien_".$nbSM."'>";
+				
+				//Choix vide
+				echo "<option value=''></option>";
+				
+				//Affiche comme option: Les pages; Le value du POST = Id de la page
+				while($data = $req->fetch()){
+					echo "<option value='".$data['page_id']."'>".$data['titre']."</option>";
+				}
+				echo "</select> </p> ";
 			echo("</div>");
 		}
 	}
