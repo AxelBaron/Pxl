@@ -11,15 +11,15 @@
 		include('test_upload.php');
 
 		$liste_de_filtres = array(
-			'titre' => FILTER_SANITIZE_STRING,
-			'auteur' => FILTER_SANITIZE_STRING,
+			'titre' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
+			'auteur' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
 			'date' => FILTER_SANITIZE_ENCODED,
-			'contenu' => FILTER_SANITIZE_STRING,	
+			'contenu' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,	
 		);
 
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
 
-		//Upload de l'image + lien dans la base de donnée
+		
 		if(isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"] != "" && $_FILES["fileToUpload"] != null && $_FILES["fileToUpload"]["size"] != 0){
 			uploadImage($_FILES["fileToUpload"]);
 			$image = "/upload/".$_FILES["fileToUpload"]["name"];

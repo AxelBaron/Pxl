@@ -10,13 +10,12 @@
 		include('connectionbdd.php');
 		
 		$liste_de_filtres = array(
-		'titre' => FILTER_SANITIZE_STRING,
+		'titre' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
 		'contenu' => FILTER_UNSAFE_RAW,
 		'id_page_' => FILTER_SANITIZE_STRING ,	
 		);
 		
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
-		$idpagesauvgarde = $_POST['id_page_'];
 		
 		$sql = "UPDATE contenu
 				SET titre=:titre,contenu=:contenu,id_page_=:id_page_
@@ -28,5 +27,5 @@
 		$requete->execute();
 		
 	?>
-		<a href="form-modifier-page.php?page_id=<?php echo $idpagesauvgarde; ?>"><button>Gérer la position du contenu crée dans la page en question</button></a>
+	<a href="gestion-contenu.php"><button>Retour</button></a>
 <?php include("footer-admin.php"); ?>

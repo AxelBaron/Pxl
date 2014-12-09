@@ -8,23 +8,23 @@
 	<?php 
 		
 		$liste_de_filtres = array(
-		'nom' => FILTER_SANITIZE_STRING,
+		'nom' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
 		'nom_lien' => FILTER_SANITIZE_URL,
-		'sm_nom_1' => FILTER_SANITIZE_STRING,	
+		'sm_nom_1' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,	
 		'sm_lien_1' => FILTER_SANITIZE_URL,	
-		'sm_nom_2' => FILTER_SANITIZE_STRING,	
+		'sm_nom_2' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,	
 		'sm_lien_2' => FILTER_SANITIZE_URL,	
-		'sm_nom_3' => FILTER_SANITIZE_STRING,	
+		'sm_nom_3' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,	
 		'sm_lien_3' => FILTER_SANITIZE_URL,	
-		'sm_nom_4' => FILTER_SANITIZE_STRING,	
+		'sm_nom_4' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,	
 		'sm_lien_4' => FILTER_SANITIZE_URL,
-		'sm_nom_5' => FILTER_SANITIZE_STRING,	
+		'sm_nom_5' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,	
 		'sm_lien_5' => FILTER_SANITIZE_URL,	
-		'sm_nom_6' => FILTER_SANITIZE_STRING,	
+		'sm_nom_6' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,	
 		'sm_lien_6' => FILTER_SANITIZE_URL,	
-		'sm_nom_7' => FILTER_SANITIZE_STRING,	
+		'sm_nom_7' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,	
 		'sm_lien_7' => FILTER_SANITIZE_URL,
-		'sm_nom_8' => FILTER_SANITIZE_STRING,	
+		'sm_nom_8' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,	
 		'sm_lien_8' => FILTER_SANITIZE_URL,
 		);
 		

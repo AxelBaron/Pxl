@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Connexion Administration</title>
+	<link rel="stylesheet" type="text/css" href="style_admin.css"/>
+</head>
+<body id="body_connexion">
 <?php
 	include "connectionbdd.php";
 	if(isset($_POST['login'], $_POST['mdp'])){
@@ -38,7 +46,7 @@
 				
 				print_r($user);
 			}else{
-				echo("L'utilisateur n'existe pas !");
+				echo("user existe pas");
 			}
 			
 			
@@ -50,15 +58,6 @@
 	exit();
 }
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Connexion Administration</title>
-	<link rel="stylesheet" type="text/css" href="style_admin.css"/>
-</head>
-<body id="body_connexion">
 
 <!-- Formulaires -->
 <form id="form_connexion" method="post" action="index.php">

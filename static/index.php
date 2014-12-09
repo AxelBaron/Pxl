@@ -2,17 +2,14 @@
 <!-- content -->
 <div class="wrapper row2">
   <div id="container">
-    <!-- slider -->
-    <?php include('morceaux/slider.php') ?>
+    <!-- Silder -->
+    <section id="slider"><a href="index.php"><img src="images/slider.jpg" alt="Slider1" width="960" height="230" /></a></section>
     <!-- main content -->
     <div id="homepage">
      <!-- #Index Image -->
 
       <section id="services" class="clear"> 
-          <!-- <p class="ariane">Index</p> -->
-          <img class="orditablette" src="images/index.png" alt="page index" />
-          <img class="smartphone" src="images/indexsmartphone.png" alt="page index" />
-
+          <img src="images/index.png">
       </section>
 
       <!-- #TIM Matane en Vidéo -->
@@ -65,7 +62,6 @@
           <p class="imgalign">
             <img src="images/actu2.jpg" alt="image actualité" width="680" height="200" />
           </p>
-
           </article>
           
 
@@ -91,24 +87,20 @@
                           <h3>Par Alexia</h3>
                         </a>
                     </div>
-                    <img src="images/portfiolio3.jpg" width="250" height="250" />
                 </div>
             </li>
           </ul>
 
           <ul class="ch-grid">
             <li>
-                <div class="ch-item">
-                    
+                <div class="ch-item ch-img-2">
                     <div class="ch-info">
                         <a href="#">
                           <h3>Visitez ce portfolio </h3>
                           <h3> + </h3>
                           <h3>Par JM</h3>
                         </a>
-
                     </div>
-                    <img src="images/portfiolio1.jpg" width="250" height="250" />
                 </div>
             </li>
           </ul>
@@ -123,7 +115,6 @@
                           <h3>Par Sarah</h3>
                         </a>
                     </div>
-                    <img src="images/portfiolio2.jpg" width="250" height="250" />
                 </div>
             </li>
           </ul>

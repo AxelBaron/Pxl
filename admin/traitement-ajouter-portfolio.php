@@ -8,7 +8,7 @@
 		include('connectionbdd.php');
 		
 		$liste_de_filtres = array(
-		'etudiant' => FILTER_SANITIZE_STRING,
+		'etudiant' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
 		'lien' => FILTER_SANITIZE_URL,
 		'annee' => FILTER_SANITIZE_NUMBER_INT
 		);

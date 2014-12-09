@@ -21,7 +21,8 @@ include "header-admin.php";
 
 			<article>
 				<h1>Guide d'utilisateur !</h1>
-				<p> Si vous rencontrez des porblèmes, cliquez ici pour <a href="#">consulter le guide utilisateur.</a></p>
+				<p> Si vous rencontrez des porblèmes, cliquez ici pour consulter le guide utilisateur.</p>
+				<div id="plus"><p>+</p></div>
 			</article>
 		</section>
 	</div>
