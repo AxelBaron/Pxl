@@ -7,10 +7,10 @@
 		include('connectionbdd.php');
 
 		$liste_de_filtres = array(
-		'titre' => FILTER_SANITIZE_SRING,
-		'auteur' => FILTER_SANITIZE_SRING,
+		'titre' => FILTER_SANITIZE_STRING,
+		'auteur' => FILTER_SANITIZE_STRING,
 		'date' => FILTER_SANITIZE_ENCODED,
-		'contenu' => FILTER_SANITIZE_SRING,	
+		'contenu' => FILTER_SANITIZE_STRING,	
 		);
 
 	

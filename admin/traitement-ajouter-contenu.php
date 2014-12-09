@@ -9,7 +9,7 @@
 
 		
 		$liste_de_filtres = array(
-		'titre' => FILTER_SANITIZE_SRING,
+		'titre' => FILTER_SANITIZE_STRING,
 		'contenu' => FILTER_UNSAFE_RAW,
 		'id_page_' => FILTER_SANITIZE_STRING ,	
 		);

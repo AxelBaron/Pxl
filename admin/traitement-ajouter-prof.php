@@ -8,12 +8,12 @@
 		include('connectionbdd.php');
 		
 		$liste_de_filtres = array(
-		'prenom' => FILTER_SANITIZE_SRING,
-		'nom' => FILTER_SANITIZE_SRING,
-		'role' => FILTER_SANITIZE_SRING,
+		'prenom' => FILTER_SANITIZE_STRING,
+		'nom' => FILTER_SANITIZE_STRING,
+		'role' => FILTER_SANITIZE_STRING,
 		'courriel' => FILTER_SANITIZE_EMAIL,
 		'tel_poste' => FILTER_SANITIZE_NUMBER_INT,
-		'bureau' => FILTER_SANITIZE_SRING,
+		'bureau' => FILTER_SANITIZE_STRING,
 		'site' => FILTER_SANITIZE_URL
 		);
 		
