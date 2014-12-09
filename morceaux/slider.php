@@ -210,3 +210,12 @@
     <section id="slidersmartphone">
     		<img src="images/headerimg.png" alt="headersmartphone" width="640" height="291">
     </section>
+
+    <div id="arianerech">
+      <div id="ariane">Fil d'ariane</div>
+      <div id="recherche">
+        <input type="search" placeholder="Rechercher..." name="search" />
+        <input type="submit" value="Rechercher" />
+      </div>
+    </div>
+    <div class="clear"></div>

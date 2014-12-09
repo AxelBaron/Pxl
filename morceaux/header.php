@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta name="Content-Type" content="UTF-8">
+    <meta name="Content-Type" content="UTF-8">
     <meta name="Content-Language" content="fr">
     <meta name="Description" content="A Matane, le département TIM (Techniques d'intégration mutlimédia), du Cégep est un département d'études dans le domaine du multimédia. Ce département offre un large panel de cours permettant une grande polyvalence dans le domaine du web et du multimédia.">
     <meta name="Keywords" content="Matane, Cégep, TIM, tim, #TIM, #tim, techniques d'intégration multimédia, multimédia, web, intégration, développement, graphisme, vidéo, jeu vidéo, animateur, concepteur, programmeur, intégrateur, Canada, Québec">

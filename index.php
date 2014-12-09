@@ -1,17 +1,17 @@
 <?php include("morceaux/header.php") ?>
 <?php include("admin/connectionbdd.php"); ?>
 
-<header>
-
 <title>TIM Matane - Accueil</title>
 
-</header>
 <!-- content -->
 <div class="wrapper row2">
   <div id="container">
     <!-- Silder -->
     <?php include('morceaux/slider.php') ?>
     <!-- main content -->
+
+    
+
     <div id="homepage">
      <!-- #Index Image -->
 
@@ -30,8 +30,6 @@
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed a urna vulputate eros tempor consectetur. </p></li>
               <h2 id="lienancre"><a href="http://www.cegep-matane.qc.ca/medias/Depliant/multimedia1415.pdf" target="_blank" alt"Dépliant de la formation multimédia">Dépliant récapitulatif de la formation</a></h2>
 
-              
-              
         </article>
       </section>
     </div>

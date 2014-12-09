@@ -1,4 +1,5 @@
 ﻿<?php include("morceaux/header.php");?>
+<title>TIM Matane - Après TIM?</title>
 
 <!-- content -->
 <div class="wrapper row2">

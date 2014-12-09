@@ -1,5 +1,6 @@
 <?php include('morceaux/header.php');
 							include('admin/connectionbdd.php')	?>
+							<title>TIM Matane - Matériels et locaux</title>
 						<!-- content -->
 						<div class='wrapper row2'>
 						  <div id='container'>

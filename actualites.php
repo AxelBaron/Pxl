@@ -1,9 +1,5 @@
 <?php include("morceaux/header.php") ?>
-<header>
-
-  <title>TIM Matane - Actualités</title>
-
-</header>
+<title>TIM Matane - Actualités</title>
 <!-- content -->
 <div class="wrapper row2">
   <div id="container">

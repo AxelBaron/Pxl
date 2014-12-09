@@ -1,5 +1,7 @@
 <?php include("morceaux/header.php");?>
 
+<title>TIM Matane - Stages</title>
+
 <!-- content -->
 <div class="wrapper row2">
   <div id="container">
