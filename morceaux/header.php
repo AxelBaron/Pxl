@@ -7,10 +7,6 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" /><![endif]-->
     <link rel="stylesheet" media="screen" href="style.css" type="text/css">
-<<<<<<< HEAD
-    
-=======
->>>>>>> FETCH_HEAD
     <script type="text/javascript">
     sfHover = function() {
             var sfEls = document.getElementById("header").getElementsByTagName("LI");
