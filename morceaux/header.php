@@ -76,8 +76,6 @@
             $liste = $pdo->query($sql);
             $reponse = $liste->fetch();
             //Affiche l'élément dans le menu
-            print_r($data);
-            print_r($reponse);
             echo("<a href='".nomDuFichier($reponse['titre']).".php'>".$data['nom']."</a>");
             //S'il n'y a pas de lien de menu
           }else{
