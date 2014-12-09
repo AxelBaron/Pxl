@@ -52,7 +52,7 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="porfolios.php">Portfolios</a>
+                  <a href="portfolios.php">Portfolios</a>
                 </li>
                 <li>
                   <a href="#">Cégep</a>
@@ -101,7 +101,7 @@
             </ul>
           </li>
           <li>
-            <a href="porfolios.php">Porfolios</a>
+            <a href="portfolios.php">Porfolios</a>
           </li>
           <li>
             <a href="#">Cégep</a>
