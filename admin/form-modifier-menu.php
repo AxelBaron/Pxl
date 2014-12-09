@@ -18,6 +18,17 @@
 				$sql="SELECT * FROM menu WHERE menu_id= $menu_id";
 				$liste = $pdo->query($sql);
 				$data = $liste->fetch();
+				
+				$nom_lien = $data['nom_lien'];
+				$sm_lien_1 = $data['sm_lien_1'];
+				$sm_lien_2 = $data['sm_lien_2'];
+				$sm_lien_3 = $data['sm_lien_3'];
+				$sm_lien_4 = $data['sm_lien_4'];
+				$sm_lien_5 = $data['sm_lien_5'];
+				$sm_lien_6 = $data['sm_lien_6'];
+				$sm_lien_7 = $data['sm_lien_7'];
+				$sm_lien_8 = $data['sm_lien_8'];
+				
 			 ?>
 			
 			<h1>#TIM Matane Administration</h1>	
@@ -35,7 +46,29 @@
 
 			<div>
 				<label for="Nom lien">Page vers lequel amene le menu :</label>
-				<input class="form" type="text" name="nom_lien" value="<?php echo $data['nom_lien']; ?>"/>
+				<?php
+					//Requete à la BD pour PAGE
+					$sql="SELECT * FROM page";
+					$req = $pdo->query($sql);
+					
+					//Fait apparaître le select
+					echo "<p class='border-deroulant'><label for='nom_lien'>Lien du menu principal</label><select class='select' name='nom_lien'>";
+					
+					//Choix vide
+					echo "<option value=''></option>";
+					
+					//Affiche comme option: Les pages; Le value du POST = Id de la page
+					while($data = $req->fetch()){
+						if($data['page_id'] != $nom_lien){
+							//Affiche toute les pages
+							echo "<option value='".$data['page_id']."'>".$data['titre']."</option>";
+						}else{
+							//Sélectionne la déjà associé s'il a lieu
+							echo "<option selected value='".$data['page_id']."'>".$data['titre']."</option>";
+						}
+					}
+					echo "</select> </p> ";
+				?>
 			</div>
 
 			<div>
@@ -45,7 +78,29 @@
 
 			<div>
 				<label for="Nom sous menu 1">Page vers lequel amene le premier sous menu :</label>
-				<input class="form" type="text" name="sm_lien_1" value="<?php echo $data['sm_lien_1']; ?>"/>
+				<?php
+					//Requete à la BD pour PAGE
+					$sql="SELECT * FROM page";
+					$req = $pdo->query($sql);
+					
+					//Fait apparaître le select
+					echo "<p class='border-deroulant'><label for='sm_lien_1'>Lien du menu principal</label><select class='select' name='sm_lien_1'>";
+					
+					//Choix vide
+					echo "<option value=''></option>";
+					
+					//Affiche comme option: Les pages; Le value du POST = Id de la page
+					while($data = $req->fetch()){
+						if($data['page_id'] != $sm_lien_1){
+							//Affiche toute les pages
+							echo "<option value='".$data['page_id']."'>".$data['titre']."</option>";
+						}else{
+							//Sélectionne la déjà associé s'il a lieu
+							echo "<option selected value='".$data['page_id']."'>".$data['titre']."</option>";
+						}
+					}
+					echo "</select> </p> ";
+				?>
 			</div>
 
 			<div>
@@ -55,7 +110,29 @@
 
 			<div>
 				<label for="Nom sous menu 2">Page vers lequel amene le deuxieme sous menu :</label>
-				<input class="form" type="text" name="sm_lien_2" value="<?php echo $data['sm_lien_2']; ?>"/>
+				<?php
+					//Requete à la BD pour PAGE
+					$sql="SELECT * FROM page";
+					$req = $pdo->query($sql);
+					
+					//Fait apparaître le select
+					echo "<p class='border-deroulant'><label for='sm_lien_2'>Lien du menu principal</label><select class='select' name='sm_lien_2'>";
+					
+					//Choix vide
+					echo "<option value=''></option>";
+					
+					//Affiche comme option: Les pages; Le value du POST = Id de la page
+					while($data = $req->fetch()){
+						if($data['page_id'] != $sm_lien_2){
+							//Affiche toute les pages
+							echo "<option value='".$data['page_id']."'>".$data['titre']."</option>";
+						}else{
+							//Sélectionne la déjà associé s'il a lieu
+							echo "<option selected value='".$data['page_id']."'>".$data['titre']."</option>";
+						}
+					}
+					echo "</select> </p> ";
+				?>
 			</div>	
 
 			<div>
@@ -65,7 +142,29 @@
 
 			<div>
 				<label for="Nom sous menu 3">Page vers lequel amene le troisième sous menu :</label>
-				<input class="form" type="text" name="sm_lien_3" value="<?php echo $data['sm_lien_3']; ?>"/>
+				<?php
+					//Requete à la BD pour PAGE
+					$sql="SELECT * FROM page";
+					$req = $pdo->query($sql);
+					
+					//Fait apparaître le select
+					echo "<p class='border-deroulant'><label for='sm_lien_3'>Lien du menu principal</label><select class='select' name='sm_lien_3'>";
+					
+					//Choix vide
+					echo "<option value=''></option>";
+					
+					//Affiche comme option: Les pages; Le value du POST = Id de la page
+					while($data = $req->fetch()){
+						if($data['page_id'] != $sm_lien_3){
+							//Affiche toute les pages
+							echo "<option value='".$data['page_id']."'>".$data['titre']."</option>";
+						}else{
+							//Sélectionne la déjà associé s'il a lieu
+							echo "<option selected value='".$data['page_id']."'>".$data['titre']."</option>";
+						}
+					}
+					echo "</select> </p> ";
+				?>
 			</div>
 			
 			<div>
@@ -75,7 +174,29 @@
 
 			<div>
 				<label for="Nom sous menu 4">Page vers lequel amene le quatrième sous menu :</label>
-				<input class="form" type="text" name="sm_lien_4" value="<?php echo $data['sm_lien_4']; ?>"/>
+				<?php
+					//Requete à la BD pour PAGE
+					$sql="SELECT * FROM page";
+					$req = $pdo->query($sql);
+					
+					//Fait apparaître le select
+					echo "<p class='border-deroulant'><label for='sm_lien_4'>Lien du menu principal</label><select class='select' name='sm_lien_4'>";
+					
+					//Choix vide
+					echo "<option value=''></option>";
+					
+					//Affiche comme option: Les pages; Le value du POST = Id de la page
+					while($data = $req->fetch()){
+						if($data['page_id'] != $sm_lien_4){
+							//Affiche toute les pages
+							echo "<option value='".$data['page_id']."'>".$data['titre']."</option>";
+						}else{
+							//Sélectionne la déjà associé s'il a lieu
+							echo "<option selected value='".$data['page_id']."'>".$data['titre']."</option>";
+						}
+					}
+					echo "</select> </p> ";
+				?>
 			</div>
 
 			<div>
@@ -85,7 +206,29 @@
 
 			<div>
 				<label for="Nom sous menu 5">Page vers lequel amene le cinquième sous menu :</label>
-				<input class="form" type="text" name="sm_lien_5" value="<?php echo $data['sm_lien_5']; ?>"/>
+				<?php
+					//Requete à la BD pour PAGE
+					$sql="SELECT * FROM page";
+					$req = $pdo->query($sql);
+					
+					//Fait apparaître le select
+					echo "<p class='border-deroulant'><label for='sm_lien_5'>Lien du menu principal</label><select class='select' name='sm_lien_5'>";
+					
+					//Choix vide
+					echo "<option value=''></option>";
+					
+					//Affiche comme option: Les pages; Le value du POST = Id de la page
+					while($data = $req->fetch()){
+						if($data['page_id'] != $sm_lien_5){
+							//Affiche toute les pages
+							echo "<option value='".$data['page_id']."'>".$data['titre']."</option>";
+						}else{
+							//Sélectionne la déjà associé s'il a lieu
+							echo "<option selected value='".$data['page_id']."'>".$data['titre']."</option>";
+						}
+					}
+					echo "</select> </p> ";
+				?>
 			</div>
 
 			<div>
@@ -95,7 +238,29 @@
 
 			<div>
 				<label for="Nom sous menu 6">Page vers lequel amene le sixième sous menu :</label>
-				<input class="form" type="text" name="sm_lien_6" value="<?php echo $data['sm_lien_6']; ?>"/>
+				<?php
+					//Requete à la BD pour PAGE
+					$sql="SELECT * FROM page";
+					$req = $pdo->query($sql);
+					
+					//Fait apparaître le select
+					echo "<p class='border-deroulant'><label for='sm_lien_6'>Lien du menu principal</label><select class='select' name='sm_lien_6'>";
+					
+					//Choix vide
+					echo "<option value=''></option>";
+					
+					//Affiche comme option: Les pages; Le value du POST = Id de la page
+					while($data = $req->fetch()){
+						if($data['page_id'] != $sm_lien_6){
+							//Affiche toute les pages
+							echo "<option value='".$data['page_id']."'>".$data['titre']."</option>";
+						}else{
+							//Sélectionne la déjà associé s'il a lieu
+							echo "<option selected value='".$data['page_id']."'>".$data['titre']."</option>";
+						}
+					}
+					echo "</select> </p> ";
+				?>
 			</div>
 
 			<div>
@@ -105,7 +270,29 @@
 
 			<div>
 				<label for="Nom sous menu 7">Page vers lequel amene le septième sous menu :</label>
-				<input class="form" type="text" name="sm_lien_7" value="<?php echo $data['sm_lien_7']; ?>"/>
+				<?php
+					//Requete à la BD pour PAGE
+					$sql="SELECT * FROM page";
+					$req = $pdo->query($sql);
+					
+					//Fait apparaître le select
+					echo "<p class='border-deroulant'><label for='sm_lien_7'>Lien du menu principal</label><select class='select' name='sm_lien_7'>";
+					
+					//Choix vide
+					echo "<option value=''></option>";
+					
+					//Affiche comme option: Les pages; Le value du POST = Id de la page
+					while($data = $req->fetch()){
+						if($data['page_id'] != $sm_lien_7){
+							//Affiche toute les pages
+							echo "<option value='".$data['page_id']."'>".$data['titre']."</option>";
+						}else{
+							//Sélectionne la déjà associé s'il a lieu
+							echo "<option selected value='".$data['page_id']."'>".$data['titre']."</option>";
+						}
+					}
+					echo "</select> </p> ";
+				?>
 			</div>
 
 			<div>
@@ -115,7 +302,29 @@
 
 			<div>
 				<label for="Nom sous menu 8">Page vers lequel amene le huitième sous menu :</label>
-				<input class="form" type="text" name="sm_lien_8" value="<?php echo $data['sm_lien_8']; ?>"/>
+				<?php
+					//Requete à la BD pour PAGE
+					$sql="SELECT * FROM page";
+					$req = $pdo->query($sql);
+					
+					//Fait apparaître le select
+					echo "<p class='border-deroulant'><label for='sm_lien_8'>Lien du menu principal</label><select class='select' name='sm_lien_8'>";
+					
+					//Choix vide
+					echo "<option value=''></option>";
+					
+					//Affiche comme option: Les pages; Le value du POST = Id de la page
+					while($data = $req->fetch()){
+						if($data['page_id'] != $sm_lien_8){
+							//Affiche toute les pages
+							echo "<option value='".$data['page_id']."'>".$data['titre']."</option>";
+						}else{
+							//Sélectionne la déjà associé s'il a lieu
+							echo "<option selected value='".$data['page_id']."'>".$data['titre']."</option>";
+						}
+					}
+					echo "</select> </p> ";
+				?>
 			</div>
 
 			<div>

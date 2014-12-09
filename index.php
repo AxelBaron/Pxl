@@ -1,19 +1,23 @@
-<?php include("morceaux/header.php") ?>
+ <?php include("morceaux/header.php") ?>
+<?php include("admin/connectionbdd.php"); ?>
 <!-- content -->
 <div class="wrapper row2">
   <div id="container">
-    <!-- slider -->
+    <!-- Silder -->
     <?php include('morceaux/slider.php') ?>
     <!-- main content -->
     <div id="homepage">
      <!-- #Index Image -->
 
+<<<<<<< HEAD
       <section id="services" class="clear"> 
           <!-- <p class="ariane">Index</p> -->
           
 
       </section>
 
+=======
+>>>>>>> FETCH_HEAD
       <!-- #TIM Matane en Vidéo -->
       <section>
       <article id="tim_video">
@@ -42,29 +46,32 @@
 
       <div id="conteneurprincipal">
         <div id="conteneurun">
+
           <h1>Actualités</h1>
           <hr />
           <article class="contenuprincip">
-          <h2>Concert au Cégep</h2>
-          <p>
-          Heure, Date <br />
-          Proin luctus magna augue, in rhoncus arcu efficitur et. Quisque malesuada ligula quis sapien egestas maximus. Nulla iaculis odio non porttitor sollicitudin. Duis cursus dignissim sagittis. Vestibulum eget eleifend augue, in faucibus ante. Duis viverra lectus justo, nec sodales neque ornare pellentesque. In convallis ipsum in lectus efficitur viverra. Praesent ut viverra nulla. Quisque at nisi et tortor accumsan sagittis. Donec vitae massa cursus, volutpat mauris vel, consectetur massa. Pellentesque fringilla rhoncus eros. Cras pretium, sapien a imperdiet condimentum, ante mauris ullamcorper nisl, at suscipit erat purus et nulla. Maecenas posuere enim a quam molestie scelerisque. Integer auctor nulla lorem, nec fermentum eros cursus ut... 
-          <a href="actualites.php" title="Actualités">Lire plus</a>
-          </p>
-          <p class="imgalign"><img src="images/actu1.jpg" alt="image actualité" width="680" height="200"></p>
-          </article>
-          
-          <article class="contenuprincip">
-          <h2>Soirée des étudiants</h2>
-          <p>
-          Heure, Date <br />
-          Proin luctus magna augue, in rhoncus arcu efficitur et. Quisque malesuada ligula quis sapien egestas maximus. Nulla iaculis odio non porttitor sollicitudin. Duis cursus dignissim sagittis. Vestibulum eget eleifend augue, in faucibus ante. Duis viverra lectus justo, nec sodales neque ornare pellentesque. In convallis ipsum in lectus efficitur viverra. Praesent ut viverra nulla. Quisque at nisi et tortor accumsan sagittis. Donec vitae massa cursus, volutpat mauris vel, consectetur massa. Pellentesque fringilla rhoncus eros. Cras pretium, sapien a imperdiet condimentum, ante mauris ullamcorper nisl, at suscipit erat purus et nulla. Maecenas posuere enim a quam molestie scelerisque. Integer auctor nulla lorem, nec fermentum eros cursus ut... 
-          <a href="actualites.php" title="Actualités">Lire plus</a>
-          </p>
-          <p class="imgalign">
-            <img src="images/actu2.jpg" alt="image actualité" width="680" height="200" />
-          </p>
+          <?php  
+            $sql="SELECT * FROM actualite ORDER BY date DESC";
+            $liste = $pdo->query($sql);
 
+            $nb_actu =0;
+            while ($data = $liste->fetch()) {
+              if ($nb_actu <2) {
+                  $nb_actu ++;
+                  echo "<h2>".$data['titre']."</h2>";
+                  echo "<p class='actu-date'>".$data['date']."</p>";
+                  if (strlen($data['contenu'])> 660){
+                    $text= substr($data['contenu'],0,660);
+                    echo "<p>".$text."<a href='actualite_selected.php?actu=".$data['actu_id']."'> ... Lire la suite.</a> </p>";
+                  }else{
+                    echo "<p>".$data['contenu']."</p>";
+                  }
+                  echo "<img src='admin/".$data['image']."'/>";
+              }
+             
+            }
+            
+          ?>
           </article>
           
 
@@ -74,58 +81,40 @@
           <h1>Portfolios</h1>
           <hr />
           
-          <a href="http://localhost:8888/Pxl/stages.php#proposerunstage" title="Proposer un stage">
+          <a href="stages.php#proposerunstage" title="Proposer un stage">
             <div id="proposerstage">
               <p>Proposer un stage</p>
             </div>
           </a>
 
-          <ul class="ch-grid">
-            <li>
-                <div class="ch-item ch-img-1">
-                    <div class="ch-info">
-                        <a href="#">
-                          <h3>Visitez ce portfolio </h3>
-                          <h3> + </h3>
-                          <h3>Par Alexia</h3>
-                        </a>
-                    </div>
-                    <img src="images/portfiolio3.jpg" width="250" height="250" />
-                </div>
-            </li>
-          </ul>
+          <?php $sql="SELECT * FROM portfolio ORDER BY RAND()";
+                $liste = $pdo->query($sql);
 
-          <ul class="ch-grid">
-            <li>
-                <div class="ch-item">
-                    
-                    <div class="ch-info">
-                        <a href="#">
-                          <h3>Visitez ce portfolio </h3>
-                          <h3> + </h3>
-                          <h3>Par JM</h3>
-                        </a>
-
-                    </div>
-                    <img src="images/portfiolio1.jpg" width="250" height="250" />
-                </div>
-            </li>
-          </ul>
-
-          <ul class="ch-grid">
-            <li>
-                <div class="ch-item ch-img-3">
-                    <div class="ch-info">
-                        <a href="#">
-                          <h3>Visitez ce portfolio </h3>
-                          <h3> + </h3>
-                          <h3>Par Sarah</h3>
-                        </a>
-                    </div>
-                    <img src="images/portfiolio2.jpg" width="250" height="250" />
-                </div>
-            </li>
-          </ul>
+                $nb_portfolio =0;
+                while ($data = $liste->fetch()) {
+                    if ($nb_portfolio < 3) {
+                        $nb_portfolio ++;
+                        echo '<ul class="ch-grid">';
+                        echo '<li>';
+                        echo '<div class="ch-item ch-img-1">';
+                        echo '<div class="ch-info">';
+                        echo '<a href="'.$data["lien"].'" target="_blank">';
+                        echo '<h3>Visitez ce portfolio </h3>';
+                        echo '<h3> + </h3>';
+                        echo '<h3>Par '.$data["etudiant"].'</h3>';
+                        echo '</a>';
+                        echo '</div>';
+                        if ($data['image'] != null) {
+                          echo "<img src='admin/".$data['image']."'width='240' height='240' />";
+                        }else{
+                          echo "<img src='admin/upload/inconnu.jpg' width='240' height='240' />";
+                        }
+                        echo '</div>';
+                        echo '</li>';
+                        echo '</ul>';
+                      }
+                }
+          ?>
 
         </div><!-- FIN CONTENEUR 2 -->
       </div>

@@ -8,12 +8,11 @@
 		include('connectionbdd.php');
 		
 		$liste_de_filtres = array(
-		'titre' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
-		'resume' => FILTER_SANITIZE_FULL_SPECIAL_CHARS
+		'titre' => FILTER_SANITIZE_STRING,
+		'resume' => FILTER_SANITIZE_STRING
 		);
 		
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
-		
 		$image = "";
 		if(isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"] != "" && $_FILES["fileToUpload"] != null && $_FILES["fileToUpload"]["size"] != 0){
 			include('test_upload.php');
@@ -30,7 +29,7 @@
 		
 		//Création de la page
 		
-		function writeHeader($titre, $resume) {
+		function writeHeader() {
 			include("connectionbdd.php");
 			
 			//INUTILE
@@ -58,12 +57,6 @@
 							<!-- main content -->
 								<div id='homepage'>
 
-								 <!-- #Index Image -->
-
-								  <section id='services' class='clear'> 
-									  <img src='images/Actu.png'>
-								  </section>
-
 								  <!-- Image de description -->
 								  <section>
 								  <article id='proweb'>";
@@ -74,7 +67,7 @@
 												$resultat = $pdo->query($sql);
 												$contenu = $resultat->fetch();
 												
-												echo "<img src=\'admin/".$contenu[\'image\']."\' alt=\'Les pros du web\' title=\'Les pros du web\' width=\'312\' height=\'300\'>";
+												echo "<img src=\'admin/".$contenu[\'image\']."\' alt=\'Image de description\' title=\'Image de description\' width=\'312\' height=\'300\'>";
 												echo "</article>";
 												echo "<article id=\'descriptionproweb\'>";
 												
@@ -133,13 +126,13 @@
 			</html>";
 		return $footer;
 		}
-		
-		/*$thePage = fopen("../$titre.php", "w");
-		$header = writeHeader($titre, $resume);
+		$nomDuFichier = urlencode($data_filtre['titre']);
+		$thePage = fopen("../".$nomDuFichier.".php", "w");
+		$header = writeHeader();
 		fwrite($thePage, $header);
 		$footer = writeFooter();
 		fwrite($thePage, $footer);
-		fclose($thePage);*/
+		fclose($thePage);
 
 	?>
 	<a href="gestion-page.php"><button>Retour</button></a>

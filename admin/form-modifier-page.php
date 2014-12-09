@@ -19,14 +19,12 @@
 					  WHERE page_id= $page_id";
 				$liste = $pdo->query($sql);
 				$data = $liste->fetch();
-
-
 			 ?>
 			
 			<h1>#TIM Matane Administration</h1>	
 			<h2>Modifier la page: <?php echo $data['titre']; ?> </h2>
 			 
-			 <form action="traitement-modifier-page.php?page_id=<?php echo $data['page_id']?>" method="POST" enctype="multipart/form-data">
+		<form action="traitement-modifier-page.php?page_id= <?php echo $data['page_id']; ?>" method="POST" enctype="multipart/form-data">
 	
 		<fieldset>
 			<legend>Formulaire de Modification :</legend>
@@ -41,30 +39,72 @@
 				<textarea class="form" type="text" name="resume"><?php echo $data['resume']; ?></textarea>
 			</div>
 
-			<div>
-					<label for="image-preview">Image situé en haut de page</label><br/>
-					<p> Attention ! Veuillez télécharger une image carré de 300 pixels x 312 pixels</p>
-	    			<input type="file" name="fileToUpload" id="fileToUpload">
-			</div>
+
+			<?php 
+				include('connectionbdd.php');
+				$sql ="SELECT * FROM page WHERE page_id=$page_id";
+				$liste=$pdo->query($sql);
+				$data=$liste->fetch();
+
+				if ($data['image']=="") {
+					echo "<div>";
+					echo "<label for='image-preview'>Image située en haut de page.</label><br/>";
+					echo "<p> Attention ! Veuillez télécharger une image de 300 pixels x 312 pixels.</p>";
+					echo "<input type='file' name='fileToUpload' id='fileToUpload'>";
+					echo "</div>";
+				}else{
+					echo "<div>";
+					echo "<label for='image-preview'>Image située en haut de page.</label><br/>";
+					echo "<p class='rouge'> Attention ! Une image existe déjà, si vous en télécharger une nouvelle, l'ancienne sera ecrasée !</p>";
+					echo "<input type='file' name='fileToUpload' id='fileToUpload'>";
+					echo "</div>";
+				}
+
+
+			 ?>
+			
+					
+					
+	    	
 
 			<p style="color:red;">Inserer un bouton si l'utilisateur veux modifier l'ordre un contenu </p>
+			
 
-			<div>
+			<fieldset>
+			<legend>Gerez la position des contenus :</legend>
 				<label for="resume">Choisisez dans quelle ordre s'afficherons les contenus dans votre page. (1 = haut de page)</label><br /><br />
 					<?php 
-					 	$sql2="SELECT * FROM contenu";
-					 	$pdo->query($sql2);
+					 	$sql2="SELECT * FROM contenu WHERE id_page_ = $page_id";
 					 	$liste = $pdo->query($sql2);
-
+					 	$position =0;
+					 	$nb_contenu = 0;
 					 	while ($contenu = $liste->fetch()) {
-					 		echo $contenu['titre']." <select> <option value='position'>1</option> <br />";  
+							$nb_contenu ++;
+					 	}
+
+					 	$sql2="SELECT * FROM contenu WHERE id_page_ = $page_id";
+					 	$liste = $pdo->query($sql2);
+					 	while ($contenu = $liste->fetch()) {
+							$position ++;
+							echo "<p class='border-deroulant'>".$contenu['titre']." <select class='select' name='position".$position."'>";
+							for ($i=1; $i < $nb_contenu+1; $i++) { 
+								if ($contenu['position'] == $i) {
+									echo "<option selected value='".$i."_".$contenu['contenu_id']."'> $i </option>";
+								}else{
+									echo "<option value='".$i."_".$contenu['contenu_id']."'> $i </option>";
+								}
+					 		}
+					 		echo "</select> </p>";
 					 	}
 					?>
-			</div>
-		</fieldset>
+				
+	    			<input type="hidden" name="nb_contenu" value="<?php echo $nb_contenu ?>"/>
+
+			</fieldset>
+
 		
 		<input type="submit" name="enregistrer" id="enregistrer" value="Enregistrer" />
-
+		</form>
 		</section>
 	</div>
 

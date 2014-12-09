@@ -9,16 +9,14 @@
 
 		
 		$liste_de_filtres = array(
-		'titre' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
+		'titre' => FILTER_SANITIZE_STRING,
 		'contenu' => FILTER_UNSAFE_RAW,
 		'id_page_' => FILTER_SANITIZE_STRING ,	
 		);
 		
 		$data_filtre = filter_input_array(INPUT_POST,$liste_de_filtres);
 		
-		$titre = $_POST['titre'];
-		$contenu = $_POST['contenu'];
-		$idpage = $_POST['id_page_'];
+		$idpagesauvgarde = $_POST['id_page_'];
 
 
 		$sql = "INSERT INTO contenu(titre,contenu,id_page_) VALUES(:titre,:contenu,:id_page_)";
@@ -28,5 +26,5 @@
 		$requete->bindParam(':id_page_', $data_filtre['id_page_'], PDO::PARAM_STR);
 		$requete->execute();
 	?>
-	<a href="gestion-contenu.php"><button>Retour</button></a>
+		<a href="form-modifier-page.php?page_id=<?php echo $idpagesauvgarde; ?>"><button>Gérer la position du contenu crée dans la page en question</button></a>
 <?php include("footer-admin.php"); ?>
