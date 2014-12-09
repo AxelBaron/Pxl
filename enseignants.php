@@ -21,8 +21,12 @@
             $liste = $pdo->query($sql);
             while ($data = $liste->fetch()) {
               echo "<div class='enseignants'>";
-              echo "<img src='admin/".$data['image']."' alt='".$data['prenom']."' width='170' height='200'/>";
               echo "<h2>".$data['prenom']." ".$data['nom']."</h2>";
+              if ($data['image'] != null) {
+                echo "<img src='admin/".$data['image']."' alt='".$data['prenom']."' width='170' height='200'/>";
+              }else{
+                echo "<img src='admin/upload/inconnu.jpg' width='170' height='200 />";
+              }          
               echo "<ul>";
               echo "<li>".$data['role']."</li>";
               echo "<li><a href='mailto:".$data['courriel']."'>Courriel</a></li>";
