@@ -4,7 +4,7 @@
 
 	<?php 
 
-		$nom = filter_var($_POST['nom'], FILTER_SANITIZE_SRING);
+		$nom = filter_var($_POST['nom'], FILTER_SANITIZE_STRING);
 		$nom_lien = filter_var($_POST['nom_lien'],FILTER_SANITIZE_URL);
 	
 		include('connectionbdd.php');
@@ -19,7 +19,7 @@
 			if(isset($_POST["sm_nom_$i"])){
 				//Met les bonne valeurs s'ils existent à leur variable respective: sm_nom_1, sm_nom_2....
 				$varContainer = "sm_nom_".$i;
-				$$varContainer = filter_var($_POST["sm_nom_$i"], FILTER_SANITIZE_SRING);
+				$$varContainer = filter_var($_POST["sm_nom_$i"], FILTER_SANITIZE_STRING);
 				$varContainer = "sm_lien_".$i;
 				$$varContainer = filter_var($_POST["sm_lien_$i"], FILTER_SANITIZE_URL);
 			}
