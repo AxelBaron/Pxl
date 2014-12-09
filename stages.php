@@ -97,37 +97,180 @@
           </p>
             <form action="" method="post" class="formstage">
               <div class="box">
-                <label>
-                  <p>Prénom </p>
-                  <input id="Prenom" type="text" name="Prenom" placeholder="Prenom">
-                </label>
-                <label>
-                  <p>Nom </p>
-                  <input id="Nom" type="text" name="Nom" placeholder="Nom"> <br>
-                </label>
-                <label>
-                  <p>E-mail </p>
-                  <input id="Email" type="email" name="Email" placeholder="E-mail">
-                </label>
-                <label>
-                  <p>Sujet </p>
-                  <select id="Sujet" name="sujet" >
-                    <option selected value="selectionner" disabled>Votre sujet...</option>
-                    <option value="proposer">Proposer un stage</option>
-                    <option value="info">Demande d'informations</option>
-                  </select>
-                </label>
-                <label>  
-                  <p>Message </p>
-                  <textarea class="message" rows="4" cols="50" placeholder="Message"></textarea>
-                </label>  
+                <fieldset>
+                <legend>Coordonnées de l'organisation</legend>
+                  <label>
+                    <p>Nom</p>
+                    <input id="nomorga" type="text" name="telorga" placeholder="Nom de l'organisation">
+                  </label>
+                  <label>
+                    <p>Adresse</p>
+                    <input id="adressorga" type="text" name="adressorga" placeholder="Adresse">
+                  </label>
+                  <label>
+                    <p>Ville </p>
+                    <input id="villorga" type="text" name="villorga" placeholder="Ville">
+                  </label>
+                  <label>
+                    <p>CP</p>
+                    <input id="codepostalorga" type="text" name="codepostalorga" placeholder="Code postal">
+                  </label>
+                  <label>
+                    <p>Téléphone </p>
+                    <input id="telorga" type="text" name="telorga" placeholder="Téléphone">
+                  </label>
+                  <label>
+                    <p>Courriel </p>
+                    <input id="courrielorga" type="text" name="courrielorga" placeholder="Courriel">
+                  </label>
+                   <label>
+                    <p>Site web </p>
+                    <input id="siteweborga" type="text" name="siteweborga" placeholder="Site web">
+                  </label>
+                  <label>
+                    <p>Télécopieur </p>
+                    <input id="telecopieurorga" type="text" name="telecopieurorga" placeholder="Télécopieur">
+                  </label>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Lieu de stage</legend>
+                  <label>
+                    <p>&nbsp</p>
+                    <input type="checkbox" id="checkbox">Même adresse que ci-dessus</input>
+                  </label>
+                  <label>
+                    <p>Adresse </p>
+                    <input id="adressorga" type="text" name="adressorga" placeholder="Adresse">
+                  </label>
+                  <label>
+                    <p>Ville </p>
+                    <input id="villorga" type="text" name="villorga" placeholder="Ville">
+                  </label>
+                  <label>
+                    <p>CP</p>
+                    <input id="codepostalorga" type="text" name="codepostalorga" placeholder="Code postal">
+                  </label>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Répondant en milieu de stage</legend>
+                  <label>
+                    <p>Nom </p>
+                    <input id="nomrepondant" type="text" name="nomrepondant" placeholder="Nom du répondant">
+                  </label>
+                  <label>
+                    <p>Titre </p>
+                    <input id="titrerepondant" type="text" name="titrerepondant" placeholder="Titre du répondant">
+                  </label>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Superviseur en milieu de stage</legend>
+                  <label>
+                    <p>&nbsp</p>
+                    <input type="checkbox" id="checkbox" name="memepersonne">Même personne que ci-dessus</input>
+                  </label>
+                  <label>
+                    <p>Nom </p>
+                    <input id="nomsuperviseur" type="text" name="nomsuperviseur" placeholder="Nom"> 
+                  </label>
+                  <label>
+                    <p>Titre </p>
+                    <input id="titresuperviseur" type="text" name="titresuperviseur" placeholder="Titre">
+                  </label>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Directeur des ressources humaines ou directeur de l'organisation</legend>
+                  <label>
+                    <p>Nom </p>
+                    <input id="nomdirect" type="text" name="nomdirect" placeholder="Nom"> 
+                  </label>
+                  <label>
+                    <p>Titre </p>
+                    <input id="titredirect" type="text" name="titredirect" placeholder="Titre"> 
+                  </label>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Description de l'organisation</legend>
+                  <label>  
+                    <p>Description </p>
+                    <textarea class="message" name="descriptionorga" rows="4" cols="50" placeholder="Description de votre organisation"></textarea>
+                  </label>  
+                  <label>  
+                    <p>Nombre d'employés </p>
+                    <input class="number" type="number" min="0" />
+                  </label>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Description du poste</legend>
+                  <label>
+                    <p>Poste offert </p>
+                    <input id="posteoffert" type="text" name="posteoffert" placeholder="Poste offert"> 
+                  </label>
+
+                  <label>  
+                    <p>Nature du poste </p>
+                    <textarea class="message" name="natureposte" rows="4" cols="50" placeholder="Description du poste, nature de la tâche et de ses responsabilités..."></textarea>
+                  </label>  
+                  <label>  
+                    <p>Compétences</p>
+                    <textarea class="message" name="natureposte" rows="4" cols="50" placeholder="Connaissances et habiletés souhaitées..."></textarea>
+                  </label>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Dates du stage</legend>
+                  <label>  
+                    <p>Stage 1</p>
+                    <input type="checkbox" id="checkbox" name="stage1">Du 23 février 2015 au 2 avril 2015.<br /> Stage crédité (stage non rémunéré et non éligible pour le crédit d'impôt)</input>
+                  </label>
+                  <label>
+                    <p>Nombre d'h/semaine</p>
+                    <input id="nbheures1" type="text" name="nbheures" placeholder="Nombre d'heures"> 
+                  </label>
+
+                  <label>  
+                    <p>Stage 2</p>
+                    <input type="checkbox" id="checkbox" name="stage1">Du 23 février 2015 au 1e mai 2015.<br /> Stage crédité des étudiants français au Québec (non rémunéré et non éligible pour le crédit d'impôt)</input>
+                  </label>
+                  <label>
+                    <p>Nombre d'h/semaine</p>
+                    <input id="nbheures2" type="text" name="nbheures2" placeholder="Nombre d'heures"> 
+                  </label>
+
+                  <label>  
+                    <p>Stage 3</p>
+                    <input type="checkbox" id="checkbox" name="stage1">Du 7 avril 2015 au 29 mai 2015.<br /> Stage ATE (stage rémunéré et éligible pour le crédit d'impôt)</input>
+                  </label>
+                  <label>
+                    <p>Nombre d'h/semaine</p>
+                    <input id="nbheures3" type="text" name="nbheures3" placeholder="Nombre d'heures"> 
+                  </label>
+                  <label>
+                    <p>Taux horaire</p>
+                    <input id="txh" type="text" name="txh" placeholder="Taux horaire"> 
+                  </label>
+                </fieldset>
+
+                <fieldset>
+                <legend>Autres commentaires</legend>
+                  <label>  
+                    <p>Commentaire</p>
+                    <textarea class="message" name="commentaire" rows="4" cols="50" placeholder="Autres commentaires..."></textarea>
+                  </label>
+                </fieldset>
+
                 <label>
                   <p>&nbsp</p>
                   <input class="button" type="submit" value="Envoyer">
                 </label>
 
               </div>
-            </form> 
+            </form>
 
             <div class="clear"></div>
         

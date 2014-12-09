@@ -52,7 +52,7 @@ a { color:#FA8B60; }
 a:hover{text-decoration: none;}
 
 form, fieldset, legend{margin:0; padding:0; border:none;}
-legend{display:none;}
+
 input, textarea, select{font-size:12px; font-family:'Avenir Next', Arial ,Times,serif;}
 
 h1{
@@ -234,6 +234,8 @@ a img{
 #container{padding:0, 0;}
 #container section{display:inline-block; width:100%; margin:0 0 30px 0; padding:0;}
 
+
+
 section#slider{
 	margin: 0px;
 	width: 960px;
@@ -275,6 +277,7 @@ section#slidersmartphone{
 img.smartphone{
 		display: none;
 	}
+
 
 section#services{margin-bottom: 10px; }
 #container .last{margin:0;}
@@ -1174,6 +1177,28 @@ td.chiffreslast{
 		position:relative;
 	}
 
+	div.box fieldset{
+		width: 100%;
+		border-color: #ffbfa4;
+	 	border-style: solid;
+	 	border-width: 2px;
+	 	margin-bottom: 10px;
+	}
+
+
+	div.box fieldset:last-of-type {
+	  margin-bottom: 0;
+	}
+
+	div.box legend {
+		width: auto;
+		color: #FA8B60;
+	  	font-family: 'Museo', Arial;
+	  	font-size: 16px;
+	  	margin-left: 20px;
+	  	padding-left: 10px;
+	  	padding-right: 10px;
+	}
 
 	/* label contenant les champs */
 	div.box label {
@@ -1187,15 +1212,19 @@ td.chiffreslast{
 	div.box label p {
 		/*couleur du texte des champs*/
 		color:black;
+		line-height: 11px;
 
 		font-size: 16px;
 		text-align:right;
-		line-height: 3px;
+		line-height: 20px;
+
+		padding:5px 20px 0 0;
+		margin: 0px;
 
 		float:left;
 		display: inline;
-		width: 100px;
-		padding:5px 20px 0 0;
+
+		width: 20%;
 	}
 
 	/*champs du formulaire*/
@@ -1205,7 +1234,7 @@ td.chiffreslast{
 		width:65%;
 
 		/*fond du champ texte*/
-		background: #e1e1e0;
+		background: #eaeaea;
 
 		border: 0px solid white;
 		border-radius: 5px;
@@ -1214,6 +1243,11 @@ td.chiffreslast{
 		font-family: 'Avenir'; 
 		font-size: 16px; 
 		color: black; 
+
+	}
+
+	div.box input#checkbox{
+		width: auto;
 	}
 
 	/*div.box input:-webkit-input-placeholder{
@@ -1230,7 +1264,7 @@ td.chiffreslast{
 
 		height: 300px;
 		max-height:400px;
-		background:#e1e1e0;
+		background:#eaeaea;
 		
 		overflow:hidden;
 		height:150px;
@@ -2181,7 +2215,9 @@ footer{
 
 	/* texte des labels des champs */
 	.contacter div.box label p {
-		width: 17%;
+		width: 20%;
+		line-height: 15px;
+
 
 	}
 
@@ -2423,6 +2459,8 @@ footer{
 		pointer-events: auto;
 		-webkit-transform: translateY(0px);
 		transform: translateY(0px);
+
+		z-index: 2;
 	}
 
 	/* Hide the inner submenus */
@@ -3930,7 +3968,10 @@ footer{
 
 
 	div.box label p{
-		width: 17%;
+		width: 20%;
+		line-height: 15px;
+		margin: 0px;
+
 	}
 
 	.contacter div.box .button{
