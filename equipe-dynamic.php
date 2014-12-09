@@ -11,7 +11,8 @@
      <!-- #tim? Image -->
 
       <section id="services"> 
-          <img src="images/equipe.png" alt="tim?" title="tim?" width="960" height="104">
+        <img class="orditablette" src="images/equipe.png" alt="Équipe enseignante" title="Équipe enseignante" width="960" height="104" />
+          <img class="smartphone" src="images/enseignantssmartphone.png" alt="Équipe enseignante" title="Équipe enseignante" width="640" height="104" />
       </section>
     </div>
     <!-- main content -->

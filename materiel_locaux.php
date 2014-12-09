@@ -6,38 +6,23 @@
     <!-- Slider -->
     <?php include('morceaux/slider.php') ?>
     <!-- main content -->
-    <div id="homepage">
-
-     <!-- #tim? Image -->
-
-      <section id="services" class="clear"> 
-          <img src="images/locauxmateriel.png" alt="Locaux et Matériel" title="Locaux et Matériel" width="960" height="104">
-      </section>
-      
-      <!-- #TIM? image -->  
-    </div>
-
     <section>
-    <article id="proweb">
-        <img src="" alt="Les pros du web" title="Les pros du web" width="312" height="300">
-    </article>
-        <article id="descriptionproweb">
-            
-              <h2>#Locaux & Matériaux </h2>
-              <li>
-                <p> 
-                  
-                  Les étudiants en techniques d'intégration multimédia possèdent des locaux qui leur sont propres ainsi qu'un équipement adapté à leur formation dans ces locaux. De plus, des équipements (appareil photo, caméra, tablettes, téléphones) sont mis à disposition pour leurs travaux et utilisation personnelle. Vous trouverez sur cette page le descriptif de tout cela.
-                </p>
-              </li>
-              
-              <h2 id="lienancre"><a href="#materiel">Matériel</a></h2>
-              <h2 id="lienancre"><a href="#locaux">Locaux</a></h2>
-              <h2 id="lienancre"><a href="#prets">Prêts</a></h2>
-              
-        </article>
-      </section>
-<div class="clear"></div>
+      <article id="proweb">
+          <img src="" alt="Les pros du web" title="Les pros du web" width="312" height="300">
+      </article>
+      <article id="descriptionproweb">
+        <h2>Matériels & Locaux </h2>
+          <li>
+            <p> 
+              Les étudiants en techniques d'intégration multimédia possèdent des locaux qui leur sont propres ainsi qu'un équipement adapté à leur formation dans ces locaux. De plus, des équipements (appareil photo, caméra, tablettes, téléphones) sont mis à disposition pour leurs travaux et utilisation personnelle. Vous trouverez sur cette page le descriptif de tout cela.
+            </p>
+          </li>
+          <h2 id="lienancre"><a href="#materiel">Matériel</a></h2>
+          <h2 id="lienancre"><a href="#locaux">Locaux</a></h2>
+          <h2 id="lienancre"><a href="#prets">Prêts</a></h2>   
+      </article>
+    </section>
+    <div class="clear"></div>
     <!-- main content -->
     <div id="content">
       <div id="conteneurprincipal">

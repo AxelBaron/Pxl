@@ -3,7 +3,7 @@
       <div id="conteneurfooter">
         <div class="part1">
             <p>Rejoignez-nous!</p>
-            <a href=""><img src="images/fb.png" alt="Facebook" width="55" height="55" /></a>
+            <a href="https://fr-ca.facebook.com/timmatane" target="_blank"><img src="images/fb.png" alt="Facebook" width="55" height="55" /></a>
             <a href=""><img src="images/tw.png" alt="Twitter" width="55" height="55" /></a>
           
         </div>
