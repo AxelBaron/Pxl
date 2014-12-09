@@ -8,6 +8,7 @@
     <!-- main content -->
     <div id="homepage">
      <!-- #Index Image -->
+     
       <!-- #TIM Matane en Vidéo -->
       <section>
       <article id="tim_video">
