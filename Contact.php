@@ -1,6 +1,9 @@
 <?php include("morceaux/header.php");?>
-<title>TIM Matane - Contact</title>
+<script src="../Pxl-master/lib/jquery.js"></script>
+<script src="../Pxl-master/dist/jquery.validate.js"></script>
+<style>
 
+</style>
 <!-- content -->
 <div class="wrapper row2">
   <div id="container">
@@ -11,9 +14,9 @@
       <div id="conteneurprincipal">
         <h1 id="timcestquoi">Contacter le département TIM</h1>
         <div class="conteneursecondaire">
-
+		
           <div id="formulaire">
-            <form action="" method="post" class="contacter">
+          <form class="cmxform" id="commentForm" method="get" action="#succes">
               <h2>Contacter nos enseignants</h2>
               
                 <a href="enseignants.php" alt="l'équipe">
@@ -23,35 +26,64 @@
                 </a>
               <div class="box">
                 <h2>Formulaire de contact</h2>
-                <p>Merci de remplir <span class="important">tous</span> les champs du formulaire pour l'envoyer.</p>
+				<!-- Si le formulaire à été envoyé -->
+				<?php
+					
+					if(isset($_GET['envoyer'])){
+						//ini_set('sendmail_from', 'tonadresse@serveur.com');
+						$Prenom = $_GET["Prenom"];
+						$Nom = $_GET["Nom"];
+						$Ville = $_GET["Ville"];
+						$Email = $_GET["Email"];
+						$Sujet = $_GET["Sujet"];
+						$Message = $_GET["Message"];
+
+
+						// Envoie du Email à mes 2 adresses courriels
+						$messageAEnvoyer ="
+						<ul>
+							<li>Prénom: ".$Prenom."</li>
+							<li>Nom: ".$Nom."</li>
+							<li>Ville: ".$Ville."</li>
+							<li>Courriel: ".$Email."</li>
+						</ul>
+						<p>".$Message."</p>
+						";
+						mail("odimu@hotmail.com", $Sujet, "test");
+
+						echo("<label class='messageEnvoyer' id='succes'>Le message a été envoyé!</label>");
+					
+					}
+				?>
+                <p>Les champs avec un <span class="important">*</span> sont obligatoires.</p>
                 <label>
-                  <p>Prénom </p>
-                  <input id="Prenom" type="text" name="Prenom" placeholder="Prenom">
+                  <p>Prénom <span class="important">*</span></p>
+                  <input id="Prenom" type="text" name="Prenom" placeholder="Prenom" required>
                 </label>
                 <label>
-                  <p>Nom </p>
-                  <input id="Nom" type="text" name="Nom" placeholder="Nom"> <br>
+                  <p>Nom <span class="important">*</span></p>
+                  <input id="Nom" type="text" name="Nom" placeholder="Nom" required> <br>
                 </label>
                 <label>
                   <p>Ville </p>
-                  <input id="Email" type="email" name="Email" placeholder="Ville">
+                  <input id="Ville" type="text" name="Ville" placeholder="Ville">
                 </label>
                 <label>
                 <label>
-                  <p>Courriel </p>
-                  <input id="Email" type="email" name="Email" placeholder="Courriel">
+                  <p>Courriel <span class="important">*</span></p>
+                  <input id="Email" type="email" name="Email" placeholder="Courriel" required>
                 </label>
                 <label>
-                  <p>Sujet </p>
-                  <input id="Sujet" type="text" name="Sujet" placeholder="Sujet"> <br>
+                  <p>Sujet <span class="important">*</span></p>
+                  <input id="Sujet" type="text" name="Sujet" placeholder="Sujet" required> <br>
                 </label>
                 <label>  
-                  <p>Message </p>
-                  <textarea class="message" rows="4" cols="50" placeholder="Message"></textarea>
+                  <p>Message <span class="important">*</span></p>
+                  <textarea class="message" name="Message" required rows="4" cols="50" placeholder="Message"></textarea>
                 </label>  
                 <label>
                 <p>&nbsp</p>
-                  <input class="button" type="submit" value="Envoyer">
+                  <input class="button" name="envoyer" type="submit" value="Envoyer">
                 </label>
 
               </div>
