@@ -1,0 +1,2 @@
+[10-Dec-2014 12:56:47 America/New_York] PHP Warning:  move_uploaded_file(http://tim.cgmatane.qc.ca/prod/2014/efc/eq3//admin/upload/prosduweb.jpg): failed to open stream: HTTP wrapper does not support writeable connections in /home/tim/public_html/prod/2014/efc/eq3/admin/test_upload.php on line 40
+[10-Dec-2014 12:56:47 America/New_York] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpFY2D7k' to 'http://tim.cgmatane.qc.ca/prod/2014/efc/eq3//admin/upload/prosduweb.jpg' in /home/tim/public_html/prod/2014/efc/eq3/admin/test_upload.php on line 40
