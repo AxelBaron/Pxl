@@ -18,7 +18,7 @@
       <!-- #TIM Matane en Vidéo -->
       <section>
       <article id="tim_video">
-          <img src="images/youtube.jpg" alt="Les pros du web" title="Les pros du web" width="411" height="315">
+        <iframe width="411" height="315" src="//www.youtube.com/embed/HS3XBB72ldQ?list=PL2GAkE3jv4dGXFcp5VQ_MMwlI_G2lhPwP" frameborder="0" allowfullscreen></iframe>
       </article>
         <article id="descriptionproweb">
             
