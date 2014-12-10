@@ -28,7 +28,6 @@
     if (window.attachEvent) window.attachEvent("onload", sfHover);
     </script>
 
-    
     <link rel="shortcut icon" href="images/favicon.ico"> 
     <script src="js/modernizr.custom.js"></script>
 
