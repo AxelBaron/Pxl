@@ -11,7 +11,6 @@
     <meta name="Distribution" content="global">
     <meta name="Geography" content="Matane, Canada, G4W 1L1">
     <meta name="Category" content="internet">
-
     <meta charset="utf-8">
     <link rel="stylesheet" media="screen" href="style.css" type="text/css">
     <script type="text/javascript">

@@ -1,15 +1,15 @@
-<?php include("morceaux/head.php") ?>
+<?php include("morceaux/head.php"); ?>
 <title>TIM Matane - Département Techniques d'intégration multimédia au Cégep de Matane</title>
 <meta description="TIM Matane, site département des techniques de l'intégration multimédia du Cégep de Matane a pour but de vous présenter sa formation en 3 ans, débouchant sur l'obtention d'un DEC. Vous trouverez sur ce site toutes les informations concernant la formation en multimédia ainsi que sur le Cégep de Matane." >
 </head>
 
-<?php include("morceaux/header.php") ?>
+<?php include("morceaux/header.php"); ?>
 <?php include("admin/connectionbdd.php"); ?>
 <!-- content -->
 <div class="wrapper row2">
   <div id="container">
     <!-- Silder -->
-    <?php include('morceaux/slider.php') ?>
+    <?php include('morceaux/slider.php'); ?>
     <!-- main content -->
 
     
