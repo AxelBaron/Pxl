@@ -1,6 +1,9 @@
+<?php include("morceaux/head.php") ?>
+<title>TIM Matane - Modalités d'inscription</title>
+<meta description="Si vous souhaitez vous inscrire en TIM il vous faut connaitre toutes les modalités d'inscription que vous trouverez ici." >
+</head>
 <?php include('morceaux/header.php');
 							include('admin/connectionbdd.php')	?>
-							<title>TIM Matane - Modalités</title>
 						<!-- content -->
 						<div class='wrapper row2'>
 						  <div id='container'>

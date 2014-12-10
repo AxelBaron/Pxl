@@ -1,5 +1,8 @@
+<?php include("morceaux/head.php") ?>
+<title>TIM Matane - Portfolios de nos finissants</title>
+<meta description="Durant les trois années de DEC en TIM, nos finissants ont rassemblé dans leurs portfolios bon nombre de travaux qu'ils ont réalisés. Venez découvrir ce qu'ils ont pu faire durant leurs études en TIM au Cégep de Matane." >
+</head>
 <?php include("morceaux/header.php");?>
-<title>TIM Matane - Portfolios</title>
 
 <!-- content -->
 <div class="wrapper row2">

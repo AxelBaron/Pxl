@@ -1,6 +1,9 @@
+<?php include("morceaux/head.php") ?>
+<title>TIM Matane - Les clubs et le parascolaire</title>
+<meta description="Étudier est une chose, se divertir en est une autre. Les clubs parascolaires du Cégep de Matane sont là pour ça et sont nombreux. Intéressez-vous à eux pour rencontrer des personnes et créer des liens, ou simplement vous développer." >
+</head>
 <?php include('morceaux/header.php');
 							include('admin/connectionbdd.php')	?>
-							<title>TIM Matane - Clubs</title>
 						<!-- content -->
 						<div class='wrapper row2'>
 						  <div id='container'>
