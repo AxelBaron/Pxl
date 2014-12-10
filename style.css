@@ -4199,4 +4199,49 @@ footer{
 	}
 }
 
+/*******************/
+/* CODE À KEVIN------------------------------------------------------------------------------------------------------------------------------------*/
+/*******************/
+.error{
+	color:red;
+	padding:0;
+}
+
+label #Prenom-error{
+	margin-left:24%;
+	padding:0;
+}
+
+label #Nom-error{
+	margin-left:24%;
+	padding:0;
+}
+
+label #Ville-error{
+	margin-left:24%;
+	padding:0;
+}
+
+label #Email-error{
+	margin-left:24%;
+	padding:0;
+}
+
+label #Sujet-error{
+	margin-left:24%;
+	padding:0;
+}
+
+label #Message-error{
+	margin-left:24%;
+	padding:0;
+}
+
+.messageEnvoyer{
+	color:green;
+}
+
+#messageEnvoyer{
+	color:green;
+}
 
