@@ -12,6 +12,7 @@
     <meta name="Geography" content="Matane, Canada, G4W 1L1">
     <meta name="Category" content="internet">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" media="screen" href="style.css" type="text/css">
     <script type="text/javascript">
     sfHover = function() {
