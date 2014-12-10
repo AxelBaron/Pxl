@@ -1,6 +1,6 @@
 html{overflow-y:scroll; height: 100%; width: 100%;} 
 
-body{ list-style:none; /*retrait de toutes marges*/ padding:0px; margin:0px; /*Pourquoi un margin-right de 10px? -> Modifiée à margin:0px; et ajout de padding:0px;*/ padding:0; font-size:13px; font-family:'Avenir Next', 'Avenir', Arial, serif; color:#232323; min-height: 100%; width: 100%;  }
+body{ list-style:none; /*retrait de toutes marges*/ padding:0px; margin:0px; /*Pourquoi un margin-right de 10px? -> Modifiée à margin:0px; et ajout de padding:0px;*/ padding:0; font-size:13px; font-family:'Avenir', Arial, serif; color:#232323; min-height: 100%; width: 100%;  }
 
 a{outline:none; text-decoration:none;}
 
@@ -58,7 +58,7 @@ a:hover{text-decoration: none;}
 
 form, fieldset, legend{margin:0; padding:0; border:none;}
 
-input, textarea, select{font-size:12px; font-family:'Avenir Next', Arial ,Times,serif;}
+input, textarea, select{font-size:12px; font-family:'Avenir Next', 'Avenir' Arial,serif;}
 
 h1{
 	font-size: 2em;
