@@ -1,3 +1,7 @@
+<?php include("morceaux/head.php") ?>
+<title>TIM Matane - TIM c'est quoi? Définition de TIM</title>
+<meta description="La formation TIM du Cégep de Matane est définie ici, avec les cours dispensés ainsi qu'une comparaison entre cette formation et la formation 3D aussi dispensée au Cégep de Matane." >
+</head>
 <?php include('morceaux/header.php');
 							include('admin/connectionbdd.php')	?>
 						<!-- content -->

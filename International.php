@@ -1,6 +1,9 @@
+<?php include("morceaux/head.php") ?>
+<title>TIM Matane - Volet international</title>
+<meta description="Venir au Cégep Matane pour continuer vos études en TIM ou les débuter? Ici se trouvent toutes les informations sur le domaine international pour les étudiants venant de tout horizons, ou presque." >
+</head>
 <?php include('morceaux/header.php');
 							include('admin/connectionbdd.php')	?>
-							<title>TIM Matane - International</title>
 						<!-- content -->
 						<div class='wrapper row2'>
 						  <div id='container'>

@@ -1,6 +1,9 @@
+<?php include("morceaux/head.php") ?>
+<title>TIM Matane - Matériels et locaux disponibles en TIM au Cégep de Matane</title>
+<meta description="Dans la section Matériels et locaux, vous trouverez tout ce qui concerne les locaux dans lesquels vous ferez vos études et des informations sur les salles et laboratoires. Ainsi que sur le comptoir de prêts et tout le matériel disponible durant la formation." >
+</head>
 <?php include('morceaux/header.php');
 							include('admin/connectionbdd.php')	?>
-							<title>TIM Matane - Matériels et locaux</title>
 						<!-- content -->
 						<div class='wrapper row2'>
 						  <div id='container'>

@@ -1,9 +1,8 @@
+<?php include("morceaux/head.php") ?>
+<title>TIM Matane - Contactez l'équipe de TIM</title>
+<meta description="Vous êtes intéressé par les études en techniques d'intégration multimédia au Cégep de Matane mais il vous manque quelques détails? Vous avez des questions? Contactez-nous via le formulaire, ou venez simplement nous rencontrer au Cégep de Matane." >
+</head>
 <?php include("morceaux/header.php");?>
-<script src="../Pxl-master/lib/jquery.js"></script>
-<script src="../Pxl-master/dist/jquery.validate.js"></script>
-<style>
-
-</style>
 <!-- content -->
 <div class="wrapper row2">
   <div id="container">

@@ -1,5 +1,8 @@
-<?php include("morceaux/header.php") ?>
+<?php include("morceaux/head.php") ?>
 <title>TIM Matane - Actualité choisie</title>
+<meta description="Voici la continuité de l'actualité que vous avez choisie sur la page index du site TIM du Cégep de Matane." >
+</head>
+<?php include("morceaux/header.php") ?>
 <!-- content -->
 <div class="wrapper row2">
   <div id="container">

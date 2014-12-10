@@ -1,6 +1,9 @@
+<?php include("morceaux/head.php") ?>
+<title>TIM Matane - Grille des cours de TIM au Cégep de Matane</title>
+<meta description="Il y a de nombreuses matières abordées durant les 3 années d'études en TIM au Cégep de Matane. Vous trouverez ici toutes les informations sur celles-ci." >
+</head>
 <?php include('morceaux/header.php');
 							include('admin/connectionbdd.php')	?>
-							<title>TIM Matane - Grille de cours</title>
 						<!-- content -->
 						<div class='wrapper row2'>
 						  <div id='container'>

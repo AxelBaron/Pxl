@@ -1,6 +1,9 @@
+<?php include("morceaux/head.php") ?>
+<title>TIM Matane - Après TIM?</title>
+<meta description="Vous souhaitez faire vos études en techniques d'intégration multimédia au Cégep de Matane mais vous vous posez des questions quant aux débouchés professionnels? Vous trouverez des informations relatives à cela dans cette catégorie." >
+</head>
 <?php include('morceaux/header.php');
 							include('admin/connectionbdd.php')	?>
-							<title>TIM Matane - Après TIM?</title>
 						<!-- content -->
 						<div class='wrapper row2'>
 						  <div id='container'>

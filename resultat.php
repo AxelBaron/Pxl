@@ -1,3 +1,7 @@
+<?php include("morceaux/head.php") ?>
+<title>TIM Matane - Résultat de votre recherche</title>
+<meta description="Voici la résultat de votre recherche sur le site du département TIM du Cégep de Matane." >
+</head>
 <?php include("morceaux/header.php");?>
 
 <!-- content -->

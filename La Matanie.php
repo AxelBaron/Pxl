@@ -1,6 +1,9 @@
+<?php include("morceaux/head.php") ?>
+<title>TIM Matane - Matanie, région de Matane et de son Cégep.</title>
+<meta description="Le Cégep de Matane se situe dans la région de la Matanie qui a de nombreuses choses à vous faire découvrir en dehors de vos heures d'études. L'aspect touristique de la ville est importante à découvrir." >
+</head>
 <?php include('morceaux/header.php');
 							include('admin/connectionbdd.php')	?>
-							<title>TIM Matane - La Matanie</title>
 						<!-- content -->
 						<div class='wrapper row2'>
 						  <div id='container'>
