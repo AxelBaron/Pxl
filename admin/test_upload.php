@@ -1,7 +1,7 @@
 <?php
 
 	function uploadImage($files){
-		$target_dir = "/Applications/MAMP/htdocs/Pxl/admin/upload/";
+		$target_dir = "http://tim.cgmatane.qc.ca/prod/2014/efc/eq3//admin/upload/";
 	$target_file = $target_dir . basename($files["name"]);
 	$uploadOk = 1;
 	$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
