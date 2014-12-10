@@ -214,8 +214,10 @@
     <div id="arianerech">
       <div id="ariane">Fil d'ariane</div>
       <div id="recherche">
-        <input type="search" placeholder="Rechercher..." name="search" />
+	  <form action="resultat.php" method="GET">
+        <input type="search" placeholder="Rechercher..." name="recherche" />
         <input type="submit" value="Rechercher" />
+	  </form>
       </div>
     </div>
     <div class="clear"></div>
