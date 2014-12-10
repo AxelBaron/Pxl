@@ -3,7 +3,7 @@
 	<?php $page_id = $_GET['page_id']; ?>
 
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Page Modifiée : <?php echo $_POST["titre"] ;?></h2>
+	<h2>Page modifié : <?php echo $_POST["titre"] ;?></h2>
 
 	<?php
 

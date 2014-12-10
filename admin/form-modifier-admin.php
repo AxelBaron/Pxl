@@ -20,36 +20,36 @@
 				$data = $liste->fetch();
 			 ?>
 			
-			<h1>#TIM Matane Administration</h1>	
-			<h2>Modifier l'Administrateur: <?php echo $data['usager']; ?> </h2>
+			<h1>#TIM Matane administration</h1>	
+			<h2>Modifier l'administrateur: <?php echo $data['usager']; ?> </h2>
 			 
 			 <form action="traitement-modifier-admin.php?admin_id=<?php echo $data['admin_id']?>" method="POST">
 	
 		<fieldset>
-			<legend>Formulaire de Modification :</legend>
+			<legend>Formulaire de modification :</legend>
 			
 			<div>
-				<label for="Usager">Usager / Loggin</label>
+				<label for="Usager">Usager / Login : </label>
 				<input class="form" type="text" name="usager" value="<?php echo $data['usager']; ?>"/>
 			</div>
 
 			<div>
-				<label for="Mot de Passe">Mot de Passe</label>
+				<label for="Mot de Passe">Mot de Passe : </label>
 				<input class="form" type="text" name="mdp" value="<?php echo $data['mdp']; ?>"/>
 			</div>
 
 			<div>
-				<label for="Nom">Nom</label>
+				<label for="Nom">Nom : </label>
 				<input class="form" type="text" name="nom" value="<?php echo $data['nom']; ?>"/>
 			</div>
 
 			<div>
-				<label for="Prenom">Prénom</label>
+				<label for="Prenom">Prénom : </label>
 				<input class="form" type="text" name="prenom" value="<?php echo $data['prenom']; ?>"/>
 			</div>
 
 			<div>
-				<label for="Courriel">Courriel</label>
+				<label for="Courriel">Courriel : </label>
 				<input class="form" type="text" name="courriel" value="<?php echo $data['courriel']; ?>"/>
 			</div>
 			

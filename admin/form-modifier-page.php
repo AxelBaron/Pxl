@@ -21,21 +21,21 @@
 				$data = $liste->fetch();
 			 ?>
 			
-			<h1>#TIM Matane Administration</h1>	
+			<h1>#TIM Matane administration</h1>	
 			<h2>Modifier la page: <?php echo $data['titre']; ?> </h2>
 			 
 		<form action="traitement-modifier-page.php?page_id= <?php echo $data['page_id']; ?>" method="POST" enctype="multipart/form-data">
 	
 		<fieldset>
-			<legend>Formulaire de Modification :</legend>
+			<legend>Formulaire de modification : </legend>
 			
 			<div>
-				<label for="Titre">Titre de la page</label>
+				<label for="Titre">Titre de la page : </label>
 				<input class="form" type="text" name="titre" value="<?php echo $data['titre']; ?>"/>
 			</div>
 
 			<div>
-				<label for="Resumé">Resumé en haut de page</label>
+				<label for="Resumé">Resumé en haut de page : </label>
 				<textarea class="form" type="text" name="resume"><?php echo $data['resume']; ?></textarea>
 			</div>
 
@@ -55,7 +55,7 @@
 				}else{
 					echo "<div>";
 					echo "<label for='image-preview'>Image située en haut de page.</label><br/>";
-					echo "<p class='rouge'> Attention ! Une image existe déjà, si vous en télécharger une nouvelle, l'ancienne sera ecrasée !</p>";
+					echo "<p class='rouge'> Attention ! Une image existe déjà, si vous en téléchargez une nouvelle, l'ancienne sera ecrasée !</p>";
 					echo "<input type='file' name='fileToUpload' id='fileToUpload'>";
 					echo "</div>";
 				}
@@ -63,16 +63,10 @@
 
 			 ?>
 			
-					
-					
-	    	
-
-			<p style="color:red;">Inserer un bouton si l'utilisateur veux modifier l'ordre un contenu </p>
-			
 
 			<fieldset>
-			<legend>Gerez la position des contenus :</legend>
-				<label for="resume">Choisisez dans quelle ordre s'afficherons les contenus dans votre page. (1 = haut de page)</label><br /><br />
+			<legend>Gérez la position des contenus : </legend>
+				<label for="resume">Choisisez dans quelle ordre s'afficheront les contenus dans votre page. (1 = haut de page) : </label><br /><br />
 					<?php 
 					 	$sql2="SELECT * FROM contenu WHERE id_page_ = $page_id";
 					 	$liste = $pdo->query($sql2);

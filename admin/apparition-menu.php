@@ -1,7 +1,7 @@
 <?php include('header-admin.php'); ?>
 
-<h1>#TIM Matane Administration</h1>	
-<h2>Modifier l'ordre d'apparition des menu existants sur le site.</h2>
+<h1>#TIM Matane administration</h1>	
+<h2>Modifier l'ordre d'apparition des menus existants sur le site.</h2>
 <p> Vous pouvez modifier içi l'ordre d'apparition des menus sur le site. Selectionner l'indice coincident au menu choisi. L'indice 1 fera apparaitre le menu le plus à gauche sur votre site. <span>Il ne peut avoir que 7 menus</span>, à vous de les organiser et de choisir dans quel ordre les faire apparaitre !</p>
 <p>Voir cette image d'exemple :</p>
 <img src="menu.jpg" alt="exemple du menu"/> <br /><br /> <br />

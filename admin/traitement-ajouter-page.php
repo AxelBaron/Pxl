@@ -1,7 +1,7 @@
 <?php include("header-admin.php"); ?>	
 	
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Page Ajoutée</h2>
+	<h2>Page Ajouté</h2>
 
 	<?php 
 

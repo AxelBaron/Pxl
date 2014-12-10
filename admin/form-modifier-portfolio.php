@@ -20,26 +20,26 @@
 				$data = $liste->fetch();
 			 ?>
 			
-			<h1>#TIM Matane Administration</h1>	
-			<h2>Modifier le portfolio de: <?php echo $data['etudiant']; ?> </h2>
+			<h1>#TIM Matane administration</h1>	
+			<h2>Modifier le portfolio de : <?php echo $data['etudiant']; ?> </h2>
 			 
 			 <form action="traitement-modifier-portfolio.php?portfolio_id=<?php echo $data['portfolio_id']?>" method="POST" enctype="multipart/form-data">
 	
 		<fieldset>
-			<legend>Formulaire de Modification :</legend>
+			<legend>Formulaire de modification :</legend>
 			
 			<div>
-				<label for="Etudiant">Etudiant</label>
+				<label for="Etudiant">Etudiant : </label>
 				<input class="form"type="text" name="etudiant" value="<?php echo $data['etudiant']; ?>"/>
 			</div>
 
 			<div>
-				<label for="Lien">Lien</label>
+				<label for="Lien">Lien : </label>
 				<input class="form"type="text" name="lien" value="<?php echo $data['lien']; ?>"/>
 			</div>
 
 			<div>
-				<label for="annees">Année optiention diplome</label>
+				<label for="annees">Année optiention diplome : </label>
 				<input class="form"type="text" name="annee" value="<?php echo $data['annees']; ?>"/>
 			</div>
 
@@ -52,13 +52,13 @@
 				if ($data['image']=="") {
 					echo "<div>";
 					echo "<label for='image-preview'>Image située en haut de page.</label><br/>";
-					echo "<p> Attention ! Veuillez télécharger une image de 300 pixels x 312 pixels.</p>";
+					echo "<p> Attention ! Veuillez télécharger une image de 300x312 pixels.</p>";
 					echo "<input type='file' name='fileToUpload' id='fileToUpload'>";
 					echo "</div>";
 				}else{
 					echo "<div>";
 					echo "<label for='image-preview'>Image située en haut de page.</label><br/>";
-					echo "<p class='rouge'> Attention ! Une image existe déjà, si vous en télécharger une nouvelle, l'ancienne sera ecrasée !</p>";
+					echo "<p class='rouge'> Attention ! Une image existe déjà, si vous en téléchargez une nouvelle, l'ancienne sera ecrasée !</p>";
 					echo "<input type='file' name='fileToUpload' id='fileToUpload'>";
 					echo "</div>";
 				}

@@ -3,7 +3,7 @@
 	<?php $actu_id = $_GET['actu_id']; ?>
 
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Actualité Modifiée : <?php echo $_POST["titre"] ;?></h2>
+	<h2>Actualité modifié : <?php echo $_POST["titre"] ;?></h2>
 
 	<?php 
 

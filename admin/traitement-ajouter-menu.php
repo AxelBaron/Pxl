@@ -1,6 +1,6 @@
 <?php include("header-admin.php"); ?>		
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Menu Ajoutée</h2>
+	<h2>Menu Ajouté</h2>
 
 	<?php 
 

@@ -19,7 +19,7 @@
 			<legend>Formulaire</legend>
 			
 			<div>
-				<label for="titre">Titre du contenu</label>
+				<label for="titre">Titre du contenu : </label>
 				<input class="form" type="text" name="titre" value="<?php echo $data['titre']; ?>"/>
 			</div>
 			

@@ -3,7 +3,7 @@
 	<?php $portfolio_id = $_GET['prof_id']; ?>
 	
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Professeurs Ajoutée</h2>
+	<h2>Professeurs Ajouté</h2>
 
 	<?php 
 

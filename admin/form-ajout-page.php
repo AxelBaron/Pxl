@@ -3,7 +3,7 @@
 ?>
 	
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Ajouter une Page</h2>
+	<h2>Ajouter une page</h2>
 
 	<form action="traitement-ajouter-page.php" method="POST" enctype="multipart/form-data">
 	
@@ -11,18 +11,18 @@
 			<legend>Formulaire</legend>
 			<div id="liste-elements">
 				<div>
-					<label for="titre">Titre de la page</label>
+					<label for="titre">Titre de la page : </label>
 					<input class="form" type="text" name="titre" required/>
 				</div>
 				
 				<div>
-					<label for="resume">Résumé de la page. ( Situé en haut de page )</label>
+					<label for="resume">Résumé de la page. ( Situé en haut de page ) : </label>
 					<textarea class="form" type="text" name="resume"></textarea>
 				</div>
 
 				<div>
 					<label for="image-preview">Image situé en haut de page</label><br/>
-					<p> Attention ! Veuillez télécharger une image carré de 300 pixels x 312 pixels</p>
+					<p> Attention ! Veuillez télécharger une image de 300x312 pixels.</p>
 	    			<input type="file" name="fileToUpload" id="fileToUpload">
 				</div>
 				

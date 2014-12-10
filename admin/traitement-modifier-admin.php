@@ -3,7 +3,7 @@
 	<?php $admin_id = $_GET['admin_id']; ?>
 
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Actualité Modifiée : <?php echo $_POST["usager"] ;?></h2>
+	<h2>Actualité modifié : <?php echo $_POST["usager"] ;?></h2>
 
 	<?php 
 

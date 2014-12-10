@@ -14,7 +14,7 @@
 		<section>
 	
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Ajouter une Actualité</h2>
+	<h2>Ajouter une actualité</h2>
 
 	<form action="traitement-ajouter-actualite.php" method="POST" enctype="multipart/form-data">
 	
@@ -22,28 +22,28 @@
 			<legend>Formulaire</legend>
 			
 			<div>
-				<label for="titre">Titre</label><br/>
+				<label for="titre">Titre :</label><br/>
 				<input class="form" type="text" name="titre"/>
 			</div>
 			
 			<div>
-				<label for="auteur">Auteur</label><br/>
+				<label for="auteur">Auteur :</label><br/>
 				<input class="form" type="text" name="auteur" />
 			</div>
 			
 			<div>
-				<label for="date">Date</label><br/>
+				<label for="date">Date :</label><br/>
 				<input class="form" type="date" name="date" required/>
 			</div>
 			
 			<div>
-				<label for="image-preview">Image de preview</label><br/>
+				<label for="image-preview">Image de preview :</label><br/>
 				<p> Attention ! Veuillez télécharger une image de 680 pixels x 200 pixels</p>
     			<input type="file" name="fileToUpload" id="fileToUpload">
 			</div>
 			
 			<div>
-				<label for="contenu">Contenu</label><br/>
+				<label for="contenu">Contenu :</label><br/>
 				<textarea class="form" name="contenu"></textarea>
 			</div>
 		</fieldset>

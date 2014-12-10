@@ -40,13 +40,13 @@
 				
 			 ?>
 			
-			<h1>#TIM Matane Administration</h1>	
-			<h2>Modifier le Menu: <?php echo $data['nom']; ?> </h2>
+			<h1>#TIM Matane administration</h1>	
+			<h2>Modifier le Menu : <?php echo $data['nom']; ?> </h2>
 			 
 			 <form action="traitement-modifier-menu.php?menu_id=<?php echo $data['menu_id']?>" method="POST">
 	
 		<fieldset>
-			<legend>Formulaire de Modification :</legend>
+			<legend>Formulaire de modification :</legend>
 			
 			<div>
 				<label for="Nom">Nom :</label>
@@ -78,9 +78,9 @@
 			</div>
 
 			<div>
-				<label for="Nom sous menu 1">Nom du premier sous menu:</label>
+				<label for="Nom sous-menu 1">Nom du premier sous-menu:</label>
 				<input class="form-menu" type="text" name="sm_nom_1" value="<?php echo $sm_nom_1; ?>"/>
-				<label for="Nom sous menu 1"></label>
+				<label for="Nom sous-menu 1"></label>
 				<?php
 					//Requete à la BD pour PAGE
 					$sql="SELECT * FROM page";
@@ -107,10 +107,10 @@
 			</div>
 
 			<div>
-				<label for="Nom sous menu 2">Nom du deuxieme sous menu:</label>
+				<label for="Nom sous-menu 2">Nom du deuxieme sous-menu:</label>
 				<input class="form-menu" type="text" name="sm_nom_2" value="<?php echo $sm_nom_2; ?>"/>
 
-				<label for="Nom sous menu 2"></label>
+				<label for="Nom sous-menu 2"></label>
 				<?php
 					//Requete à la BD pour PAGE
 					$sql="SELECT * FROM page";
@@ -137,10 +137,10 @@
 			</div>	
 
 			<div>
-				<label for="Nom sous menu 3">Nom du troisième sous menu:</label>
+				<label for="Nom sous-menu 3">Nom du troisième sous-menu:</label>
 				<input class="form" type="text" name="sm_nom_3" value="<?php echo $sm_nom_3 ?>"/>
 
-				<label for="Nom sous menu 3"></label>
+				<label for="Nom sous-menu 3"></label>
 				<?php
 					//Requete à la BD pour PAGE
 					$sql="SELECT * FROM page";
@@ -167,10 +167,10 @@
 			</div>
 			
 			<div>
-				<label for="Nom sous menu 4">Nom du quatrième sous menu:</label>
+				<label for="Nom sous-menu 4">Nom du quatrième sous-menu:</label>
 				<input class="form-menu" type="text" name="sm_nom_4" value="<?php echo $sm_nom_4; ?>"/>
 	
-				<label for="Nom sous menu 4"></label>
+				<label for="Nom sous-menu 4"></label>
 				<?php
 					//Requete à la BD pour PAGE
 					$sql="SELECT * FROM page";
@@ -197,10 +197,10 @@
 			</div>
 
 			<div>
-				<label for="Nom sous menu 5">Nom du cinquième sous menu:</label>
+				<label for="Nom sous-menu 5">Nom du cinquième sous-menu:</label>
 				<input class="form-menu" type="text" name="sm_nom_5" value="<?php echo $sm_nom_5; ?>"/>
 		
-				<label for="Nom sous menu 5"></label>
+				<label for="Nom sous-menu 5"></label>
 				<?php
 					//Requete à la BD pour PAGE
 					$sql="SELECT * FROM page";
@@ -227,10 +227,10 @@
 			</div>
 
 			<div>
-				<label for="Nom sous menu 6">Nom du sixième sous menu:</label>
+				<label for="Nom sous-menu 6">Nom du sixième sous-menu:</label>
 				<input class="form-menu" type="text" name="sm_nom_6" value="<?php echo $sm_nom_6; ?>"/>
 	
-				<label for="Nom sous menu 6"></label>
+				<label for="Nom sous-menu 6"></label>
 				<?php
 					//Requete à la BD pour PAGE
 					$sql="SELECT * FROM page";
@@ -257,10 +257,10 @@
 			</div>
 
 			<div>
-				<label for="Nom sous menu 7">Nom du septième sous menu:</label>
+				<label for="Nom sous-menu 7">Nom du septième sous-menu:</label>
 				<input class="form-menu" type="text" name="sm_nom_7" value="<?php echo $sm_nom_7; ?>"/>
 		
-				<label for="Nom sous menu 7"></label>
+				<label for="Nom sous-menu 7"></label>
 				<?php
 					//Requete à la BD pour PAGE
 					$sql="SELECT * FROM page";
@@ -287,10 +287,10 @@
 			</div>
 
 			<div>
-				<label for="Nom sous menu 8">Nom du huitième sous menu:</label>
+				<label for="Nom sous-menu 8">Nom du huitième sous-menu:</label>
 				<input class="form-menu" type="text" name="sm_nom_8" value="<?php echo $sm_nom_8; ?>"/>
 
-				<label for="Nom sous menu 8"></label>
+				<label for="Nom sous-menu 8"></label>
 				<?php
 					//Requete à la BD pour PAGE
 					$sql="SELECT * FROM page";

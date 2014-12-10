@@ -14,7 +14,7 @@
 		<section>
 	
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Ajouter un Administrateur</h2>
+	<h2>Ajouter un administrateur</h2>
 
 	<form action="traitement-ajouter-admin.php" method="POST" enctype="multipart/form-data">
 	
@@ -22,27 +22,27 @@
 			<legend>Formulaire</legend>
 			
 			<div>
-				<label for="usager">Pseudo de connection usager / loggin</label>
+				<label for="usager">Pseudo de connection usager / login : </label>
 				<input class="form" type="text" name="usager"/>
 			</div>
 			
 			<div>
-				<label for="mdp">Mot de Passe</label>
+				<label for="mdp">Mot de Passe : </label>
 				<input class="form" type="text" name="mdp" />
 			</div>
 			
 			<div>
-				<label for="nom">Nom</label>
+				<label for="nom">Nom : </label>
 				<input class="form" type="text" name="nom" />
 			</div>
 			
 			<div>
-				<label for="prenom">Prénom</label>
+				<label for="prenom">Prénom : </label>
 				<input class="form" type="text" name="prenom" />
 			</div>
 
 			<div>
-				<label for="courriel">Courriel</label>
+				<label for="courriel">Courriel : </label>
 				<input class="form" type="text" name="courriel" />
 			</div>
 

@@ -20,26 +20,26 @@
 				$data = $liste->fetch();
 			 ?>
 			
-			<h1>#TIM Matane Administration</h1>	
-			<h2>Modifier l'Actualité: <?php echo $data['titre']; ?> </h2>
+			<h1>#TIM Matane administration</h1>	
+			<h2>Modifier l'actualité: <?php echo $data['titre']; ?> </h2>
 			 
 			 <form action="traitement-modifier-actualite.php?actu_id=<?php echo $data['actu_id']?>" method="POST" enctype="multipart/form-data" >
 	
 		<fieldset>
-			<legend>Formulaire de Modification :</legend>
+			<legend>Formulaire de modification : </legend>
 			
 			<div>
-				<label for="titre">Titre</label>
+				<label for="titre">Titre : </label>
 				<input class="form" type="text" name="titre" value="<?php echo $data['titre']; ?>"/>
 			</div>
 
 			<div>
-				<label for="Auteur">Auteur</label>
+				<label for="Auteur">Auteur : </label>
 				<input class="form" type="text" name="auteur" value="<?php echo $data['auteur']; ?>"/>
 			</div>
 
 			<div>
-				<label for="Date">Date</label>
+				<label for="Date">Date : </label>
 				<input class="form" type="date" name="date" value="<?php echo $data['date']; ?>" required/>
 			</div>
 
@@ -52,13 +52,13 @@
 				if ($data['image']=="") {
 					echo "<div>";
 					echo "<label for='image-preview'>Image située en haut de page.</label><br/>";
-					echo "<p> Attention ! Veuillez télécharger une image de 300 pixels x 312 pixels.</p>";
+					echo "<p> Attention ! Veuillez télécharger une image de 300x312 pixels.</p>";
 					echo "<input type='file' name='fileToUpload' id='fileToUpload'>";
 					echo "</div>";
 				}else{
 					echo "<div>";
 					echo "<label for='image-preview'>Image située en haut de page.</label><br/>";
-					echo "<p class='rouge'> Attention ! Une image existe déjà, si vous en télécharger une nouvelle, l'ancienne sera ecrasée !</p>";
+					echo "<p class='rouge'> Attention ! Une image existe déjà, si vous en téléchargez une nouvelle, l'ancienne sera écrasée !</p>";
 					echo "<input type='file' name='fileToUpload' id='fileToUpload'>";
 					echo "</div>";
 				}

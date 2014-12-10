@@ -1,6 +1,6 @@
 	<?php include_once "header-admin.php"; ?>
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Ajouter un Contenu</h2>
+	<h2>Ajouter un c@ontenu</h2>
 
 	<form action="traitement-ajouter-contenu.php?" method="POST">
 	

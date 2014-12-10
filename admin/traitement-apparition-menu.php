@@ -1,5 +1,5 @@
 <?php include("header-admin.php");?>
-<h1>#TIM Matane Administration</h1>	
+<h1>#TIM Matane administration</h1>	
 <h2>Les positions des menus ont été modifiées</h2>
 
 <?php 

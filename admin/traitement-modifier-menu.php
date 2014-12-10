@@ -3,7 +3,7 @@
 	<?php $menu_id = $_GET['menu_id']; ?>
 
 	<h1>Administration #TIM Matane</h1>	
-	<h2>Menu Modifié : <?php echo $_POST["nom"] ;?></h2>
+	<h2>Menu modifié : <?php echo $_POST["nom"] ;?></h2>
 
 	<?php 
 		

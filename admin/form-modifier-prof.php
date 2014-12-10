@@ -7,41 +7,41 @@
 				$data = $liste->fetch();
 			 ?>
 			
-			<h1>#TIM Matane Administration</h1>	
+			<h1>#TIM Matane administration</h1>	
 			<h2>Modifier le professeur : <?php echo $data['prenom']." ".$data['nom']; ?> </h2>
 			 
 			 <form action="traitement-modifier-prof.php?prof_id=<?php echo $data['prof_id']?>" method="POST" enctype="multipart/form-data">
 	
 		<fieldset>
-			<legend>Formulaire de Modification :</legend>
+			<legend>Formulaire de modification :</legend>
 			
 			<div>
-				<label for="Etudiant">Prenom</label>
+				<label for="Etudiant">Prénom : </label>
 				<input class="form"type="text" name="prenom" value="<?php echo $data['prenom']; ?>"/>
 			</div>
 
 			<div>
-				<label for="Lien">Nom</label>
+				<label for="Lien">Nom : </label>
 				<input class="form"type="text" name="nom" value="<?php echo $data['nom']; ?>"/>
 			</div>
 
 			<div>
-				<label for="Lien">Rôle</label>
+				<label for="Lien">Rôle : </label>
 				<input class="form"type="text" name="role" value="<?php echo $data['role']; ?>"/>
 			</div>
 
 			<div>
-				<label for="Lien">Teléphone de poste</label>
+				<label for="Lien">Teléphone de poste : </label>
 				<input class="form"type="number" name="tel_poste" value="<?php echo $data['tel_poste']; ?>"/>
 			</div>
 
 			<div>
-				<label for="Lien">Bureau</label>
+				<label for="Lien">Bureau : </label>
 				<input class="form"type="text" name="bureau" value="<?php echo $data['bureau']; ?>"/>
 			</div>
 
 			<div>
-				<label for="Lien">Site</label>
+				<label for="Lien">Sit : </label>
 				<input class="form"type="text" name="site" value="<?php echo $data['site']; ?>"/>
 			</div>
 
@@ -60,7 +60,7 @@
 				}else{
 					echo "<div>";
 					echo "<label for='image-preview'>Image située en haut de page.</label><br/>";
-					echo "<p class='rouge'> Attention ! Une image existe déjà, si vous en télécharger une nouvelle, l'ancienne sera ecrasée !</p>";
+					echo "<p class='rouge'> Attention ! Une image existe déjà, si vous en téléchargez une nouvelle, l'ancienne sera ecrasée !</p>";
 					echo "<input type='file' name='fileToUpload' id='fileToUpload'>";
 					echo "</div>";
 				}
