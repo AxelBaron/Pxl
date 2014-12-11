@@ -1,3 +1,7 @@
+<?php include("morceaux/head.php") ?>
+<title>TIM Matane - CDRIN centre de recherches de l'internet et du numérique.</title>
+<meta description="Non loin du Cégep de Matane, à moins de 100 mètres, se trouve le CDRIN. Ce centre de recherche est complémentaire aux études en TIM. Ainsi il accueille chaque année quelques étudiants durant la période de stage." >
+</head>
 <?php include('morceaux/header.php');
 							include('admin/connectionbdd.php')	?>
 							<title>TIM Matane - CDRIN</title>
