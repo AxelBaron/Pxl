@@ -1,5 +1,9 @@
+<?php include("morceaux/head.php") ?>
+<title>TIM Matane - Actualités du département</title>
+<meta description="Car il se passe beaucoup de chose au Cégep de Matane, ainsi que dans le département TIM, voici la page qui vous en tiendra informé." >
+</head>
 <?php include("morceaux/header.php") ?>
-<title>TIM Matane - Actualités</title>
+
 <!-- content -->
 <div class="wrapper row2">
   <div id="container">

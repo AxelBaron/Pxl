@@ -11,9 +11,6 @@
     <!-- Silder -->
     <?php include('morceaux/slider.php'); ?>
     <!-- main content -->
-
-    
-
     <div id="homepage">
      <!-- #Index Image -->
 
